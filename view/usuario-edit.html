@@ -1,0 +1,70 @@
+<div>
+    <h2>Usuário</h2>
+    <hr>
+    <form role="form" class="form-horizontal" ng-submit="save()">
+        <div class="form-group">
+            <label for="codUsuario" class="col-sm-4 col-md-4 control-label">Código</label>
+            <div class="col-sm-1 col-md-1">
+                <input type="text" class="form-control" id="codUsuario" disabled ng-model="usuario.codUsuario">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="perfil" class="col-sm-4 col-md-4 control-label">Perfil</label>
+            <div class="col-sm-2 col-md-2">
+                <select id="perfil" class="form-control" ng-model="usuario.codPerfil">
+                    <option value="">Selecione...</option>
+                    <option ng-repeat="perfil in perfilList" value="{{perfil.codPerfil}}">{{perfil.nome}}</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="nome" class="col-sm-4 col-md-4 control-label">Nome</label>
+            <div class="col-sm-3 col-md-3">
+                <input type="text" class="form-control" id="nome" placeholder="Nome" required ng-model="usuario.nome">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="endereco" class="col-sm-4 col-md-4 control-label">Endereço</label>
+            <div class="col-sm-3 col-md-3">
+                <input type="text" class="form-control" id="endereco" placeholder="endereco" required ng-model="usuario.endereco">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="telefone" class="col-sm-4 col-md-4 control-label">Telefone</label>
+            <div class="col-sm-2 col-md-2">
+                <input type="text" class="form-control" id="telefone" placeholder="telefone" required ng-model="usuario.telefone">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="email" class="col-sm-4 col-md-4 control-label">E-mail</label>
+            <div class="col-sm-3 col-md-3">
+                <input type="text" class="form-control" id="email" placeholder="E-mail" required ng-model="usuario.email">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="login" class="col-sm-4 col-md-4 control-label">Login</label>
+            <div class="col-sm-2 col-md-2">
+                <input type="text" class="form-control" id="login" placeholder="Login" required ng-model="usuario.login">
+            </div>
+        </div>
+        <div class="form-group" ng-show="!isEdit">
+            <label for="senha" class="col-sm-4 col-md-4 control-label">Senha</label>
+            <div class="col-sm-2 col-md-2">
+                <input type="password" class="form-control" id="senha" placeholder="Senha" ng-required="!isEdit" ng-model="usuario.senha">
+            </div>
+        </div>
+        <div class="form-group" ng-show="!isEdit">
+            <label for="confirmacaoSenha" class="col-sm-4 col-md-4 control-label">Confirmação de Senha</label>
+            <div class="col-sm-2 col-md-2">
+                <input type="password" class="form-control" id="confirmacaoSenha" placeholder="Confirmação" ng-required="!isEdit" ng-model="usuario.confirmacaoSenha">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-sm-offset-4 col-md-offset-4 col-sm-3 col-md-3">
+                <button type="submit" class="btn btn-blue">Salvar</button>
+                <button type="button" class="btn btn-default" ng-click="go('usuario/')">Voltar</button>
+            </div>
+        </div>
+    </form>
+</div>

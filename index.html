@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="" />
+    <base href="/zeitgeist-web/" />
+
+    <title>ZeitGeist</title>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body ng-app="ZeitGeist">
+    <div ng-controller="MainCtrl as main">
+        <ul>
+            <li>
+                <a href="./home">
+                    <span>Home</span>
+                </a>
+            </li>
+            <li>
+                <a href="./usuario">
+                    <span>Usuário</span>
+                </a>
+            </li>
+        </ul>
+        <!-- Main Content -->
+        <div ng-view></div>
+    </div>
+
+	<!-- Custom Scripts -->
+    <script src="assets/js/angular/angular.min.js"></script>
+    <script src="assets/js/angular/angular-route.min.js"></script>
+    <script src="assets/js/angular/angular-sanitize.min.js"></script>
+    <script src="assets/js/angular/angular-cookies.min.js"></script>
+    <script src="assets/js/angular/mask.min.js"></script>
+    <script src="app/app.js"></script>
+    <script src="app/module-main.js"></script>
+    <script src="app/module-usuario.js"></script>
+    <script src="app/service.js"></script>
+</body>
+</html>

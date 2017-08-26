@@ -1,0 +1,27 @@
+<div>
+    <h2>Usuário</h2>
+    <hr>
+    <a class="btn btn-blue" style="margin-bottom: 10px" ng-href="usuario/0">Novo</a>
+    <table class="table table-bordered table-striped datatable">
+        <tr>
+            <th class="text-center col-sm-1 col-md 1">Código</th>
+            <th>Nome</th>
+            <th>Perfil</th>
+            <th>Login</th>
+            <th>Telefone</th>
+            <th class="col-sm-3 col-md-3"></th>
+        </tr>
+        <tr ng-repeat="usuario in usuarioList">
+            <td class="text-center">{{usuario.codUsuario}}</td>
+            <td>{{usuario.nome}}</td>
+            <td>{{usuario.nomePerfil}}</td>
+            <td>{{usuario.login}}</td>
+            <td>{{usuario.telefone}}</td>
+            <td class="text-center">
+                <a ng-href="usuario/{{usuario.codUsuario}}" class="btn btn-default btn-sm btn-icon icon-left">
+                    <i class="entypo-pencil"></i>Editar
+                </a>
+            </td>
+        </tr>
+    </table>
+</div>
