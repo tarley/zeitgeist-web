@@ -33,6 +33,27 @@ switch ($controller){
         $usuario = new UsuarioController();
         $usuario->ProcessRequest($action);
         break;
+    case "pagina":
+        $pagina = new PaginaController();
+        $pagina->ProcessRequest($action);
+        break;
+    case "paginaDado":
+        $paginaDado = new PaginaDadoController();
+        $paginaDado->ProcessRequest($action);
+        break;
+    case "paginaImagem":
+        $paginaImagem = new PaginaImagemController();
+        $paginaImagem->ProcessRequest($action);
+        break;
+    case "paginaString":
+        $paginaString = new PaginaStringController();
+        $paginaString->ProcessRequest($action);
+        break;
+    case "paginaTexto":
+        $paginaTexto = new PaginaTextoController();
+        $paginaTexto->ProcessRequest($action);
+        break;
+    
     default:
         ToErrorJson("Controller not found");
 }

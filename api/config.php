@@ -8,6 +8,6 @@ define('LOG_DIR', $_SERVER['DOCUMENT_ROOT'] . CONTEXT_NAME . '_log/');
 define('SERVERNAME', "localhost");
 define('USERNAME', 'root');
 define('PASSWORD', '');
-define('DBNAME', 'ZeitGeistDB');
+define('DBNAME', 'BD_ZEITGEIST');
 
 define('ENV', 'Dev');
