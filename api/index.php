@@ -53,7 +53,18 @@ switch ($controller){
         $paginaTexto = new PaginaTextoController();
         $paginaTexto->ProcessRequest($action);
         break;
-    
+    case "dadosTemplate":
+        $dadosTemplate = new DadosTemplateController();
+        $dadosTemplate->ProcessRequest($action);
+        break;
+     case "jornal":
+        $jornal = new JornalController();
+        $jornal->ProcessRequest($action);
+        break;
+    case "situacao":
+        $situacao = new SituacaoController();
+        $situacao->ProcessRequest($action);
+        break;
     default:
         ToErrorJson("Controller not found");
 }

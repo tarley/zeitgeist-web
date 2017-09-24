@@ -1,14 +1,33 @@
 <?php
 
-class UsuarioRepository extends BaseRepository
+class DadosTemplateRepository extends BaseRepository
 {
 
-    function GetThis($codUsuario)
+    function GetThis($idTemplateDado)
     {
         $conn = $this->db->getConnection();
 
         $sql = 'SELECT 
-                id_template_dado,id_template,id_template_dado,chave_template_dado,desc_template_dado
+                id_template_dado,id_template,id_tipo_template_dado,chave_template_dado,desc_template_dado
+            FROM 
+                tb_template_dado
+            WHERE 
+               id_template_dado = :id_template_dado';
+
+        $stm = $conn->prepare($sql);
+        $stm->bindParam(':id_template_dado', $idTemplateDado);
+        $stm->execute();
+        $result = $stm->fetch(PDO::FETCH_ASSOC);
+
+        return $result;
+    }
+
+    function GetList($idTemplate)
+    {
+        $conn = $this->db->getConnection();
+
+        $sql = 'SELECT 
+                id_template_dado,id_template,id_tipo_template_dado,chave_template_dado,desc_template_dado
             FROM 
                 tb_template_dado
             WHERE 
@@ -16,21 +35,6 @@ class UsuarioRepository extends BaseRepository
 
         $stm = $conn->prepare($sql);
         $stm->bindParam(':id_template', $idTemplate);
-        $stm->execute();
-        $result = $stm->fetch(PDO::FETCH_ASSOC);
-
-        return $result;
-    }
-
-    function GetList()
-    {
-
-        $sql = 'SELECT 
-                id_template_dado,id_template, id_tipo_template_dado,chave_template_dado,desc_template_dado
-            FROM 
-                tb_template_dado';
-
-        $stm = $conn->prepare($sql);
         $stm->execute();
         $result = $stm->fetchAll(PDO::FETCH_ASSOC);
 

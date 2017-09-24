@@ -1,6 +1,6 @@
 <?php
 
-class UsuarioRepository extends BaseRepository
+class SituacaoRepository extends BaseRepository
 {
 
     function GetThis($codUsuario)

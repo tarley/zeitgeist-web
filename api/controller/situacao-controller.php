@@ -1,6 +1,6 @@
 <?php
 
-class UsuarioController extends BaseController
+class SituacaoController extends BaseController
 {
     function ProcessRequest($action)
     {
