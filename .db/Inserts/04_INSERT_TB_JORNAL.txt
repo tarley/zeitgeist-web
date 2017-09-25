@@ -1,0 +1,8 @@
+/*==========================================================*/
+/*		CADASTRO DE JORNAL			    */
+/*==========================================================*/
+
+INSERT INTO 
+`tb_jornal`(`id_usuario`, `id_situacao`, `num_edicao_jornal`, `nom_titulo_jornal`, `dta_publicacao_jornal`, `dta_ultima_atualizacao_jornal`) 
+VALUES 
+((SELECT `id_usuario` FROM tb_usuario WHERE nom_usuario ="teste"), (SELECT `id_situacao` FROM tb_situacao WHERE `id_situacao` = "1"), 1, "teste", "2017/09/15", "2017/09/15");

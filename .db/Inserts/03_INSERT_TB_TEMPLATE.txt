@@ -1,0 +1,6 @@
+/*==========================================================*/
+/*		CADASTRO DE TEMPLATE			    */
+/*==========================================================*/
+
+INSERT INTO `tb_template`(`desc_template`, `desc_caminho_template`) 
+VALUES ("Template teste 1", "C:/");
