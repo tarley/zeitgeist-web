@@ -8,7 +8,7 @@ class PaginaTextoRepository extends BaseRepository
         $conn = $this->db->getConnection();
 
         $sql = 'SELECT 
-                id_pagina_texto, id_pagina_dado, valor_pagina_texto
+                id_pagina_dado, valor_pagina_texto
             FROM 
                 tb_pagina_texto
             WHERE 
@@ -27,7 +27,7 @@ class PaginaTextoRepository extends BaseRepository
         $conn = $this->db->getConnection();
 
         $sql = 'SELECT 
-                id_pagina_texto, id_pagina_dado, valor_pagina_texto
+                id_pagina_dado, valor_pagina_texto
             FROM 
                 tb_pagina_texto
             WHERE 

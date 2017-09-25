@@ -27,6 +27,6 @@ class PaginaImagem
             $this->idPaginaDado = $dbArray['id_pagina_dado'];
 
         if (array_key_exists("valor_pagina_imagem", $dbArray))
-            $this->valorPaginaImagem = $dbArray['valor_pagina_imagem'];
+            $this->valorPaginaImagem = base64_encode($dbArray['valor_pagina_imagem']);
     }
 }

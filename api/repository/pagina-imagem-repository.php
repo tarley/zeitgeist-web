@@ -49,7 +49,7 @@ class PaginaImagemRepository extends BaseRepository
 
         $stm = $conn->prepare($sql);
         $stm->bindParam(':idPaginaDado', $pagina->idPaginaDado);
-        $stm->bindParam(':valorPaginaImagem', $pagina->valorPaginaImagem);
+        $stm->bindParam(':valorPaginaImagem', base64_decode($pagina->valorPaginaImagem));
         $stm->execute();
 
         $pagina->idPaginaImagem = $conn->lastInsertId();
@@ -69,7 +69,7 @@ class PaginaImagemRepository extends BaseRepository
                     id_pagina_imagem = :idPaginaImagem';
 
         $stm = $conn->prepare($sql);
-        $stm->bindParam(':valorPaginaImagem', $paginaImagem->valorPaginaImagem);
+        $stm->bindParam(':valorPaginaImagem', base64_decode($paginaImagem->valorPaginaImagem));
         $stm->bindParam(':idPaginaImagem', $paginaImagem->idPaginaImagem);
         $stm->execute();
 
