@@ -11,8 +11,8 @@ class DadosTemplateController extends BaseController
                     $this->ActionGetThis($idTemplateDado);
                     break;
                 case "list":
-                    $idTemplateDado = isset($_GET['key']) ? $_GET['key'] : null;
-                    $this->ActionGetList($idTemplateDado);
+                    $idTemplate = isset($_GET['key']) ? $_GET['key'] : null;
+                    $this->ActionGetList($idTemplate);
                     break;
                
                 default:
@@ -39,7 +39,7 @@ class DadosTemplateController extends BaseController
         ToWrappedJson($dadosTemplate);
     }
 
-    function ActionGetList($idTemplateDado)
+    function ActionGetList($idTemplate)
     {
         
         $dadosTemplateRepository = new DadosTemplateRepository();

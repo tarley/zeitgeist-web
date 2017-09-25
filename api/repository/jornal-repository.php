@@ -8,14 +8,14 @@ class JornalRepository extends BaseRepository
         $conn = $this->db->getConnection();
 
         $sql = 'SELECT 
-               id_jornal,tb_usuario,S.id_situacao,S.desc_situacao,num_edicao_jornal,nom_titulo_jornal,dta_publicacao_jornal,dta_ultima_atualizacao_jornal
+               id_jornal,S.id_situacao,S.desc_situacao,num_edicao_jornal,nom_titulo_jornal,dta_publicacao_jornal,dta_ultima_atualizacao_jornal
             FROM 
                 tb_jornal J INNER JOIN tb_situacao S ON(J.id_situacao=S.id_situacao)
             WHERE 
                 id_jornal = :id_jornal';
 
         $stm = $conn->prepare($sql);
-        $stm->bindParam(':id_jornal', $idJornal);
+        $stm->bindParam(':id_jornal', $id_jornal);
         $stm->execute();
         $result = $stm->fetch(PDO::FETCH_ASSOC);
 
@@ -29,17 +29,14 @@ class JornalRepository extends BaseRepository
         $conn = $this->db->getConnection();
 
         $sql = 'SELECT 
-               id_jornal,tb_usuario,S.id_situacao,S.desc_situacao,num_edicao_jornal,nom_titulo_jornal,dta_publicacao_jornal,dta_ultima_atualizacao_jornal
+               id_jornal,S.id_situacao,S.desc_situacao,num_edicao_jornal,nom_titulo_jornal,dta_publicacao_jornal,dta_ultima_atualizacao_jornal
             FROM 
-                tb_jornal J INNER JOIN tb_situacao S ON(J.id_situacao=S.id_situacao)
-            WHERE 
-                id_situacao = :id_situacao';
+                tb_jornal J INNER JOIN tb_situacao S ON(J.id_situacao=S.id_situacao)';
 
 
       $stm = $conn->prepare($sql);
-        $stm->bindParam(':id_situacao', $id_situacao);
         $stm->execute();
-        $result = $stm->fetch(PDO::FETCH_ASSOC);
+        $result = $stm->fetchAll(PDO::FETCH_ASSOC);
         
         return $result;
     }

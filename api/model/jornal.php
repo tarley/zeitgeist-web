@@ -11,7 +11,7 @@ class Jornal
     var $dtaUltimaAtualizacaoJornal;
     var $descSituacao;
     var $valorPaginaImagem;
-   
+    var $paginas;
 
     function FillByObject($obj)
     {
@@ -42,6 +42,16 @@ class Jornal
         if (property_exists($obj, 'valorPaginaImagem'))
             $this->valorPaginaImagem = $obj->valorPaginaImagem;    
       
+        if (property_exists($obj, 'paginas')) {
+            $this->paginas = array();
+
+            foreach ($obj->paginas as $pagina) {
+                $modelPagina = new Pagina();
+                $modelPagina->FillByObject($pagina);
+
+                $this->paginas[] = $modelPagina;
+            }
+        }
     }
 
     function FillByDB($dbArray)
@@ -70,7 +80,18 @@ class Jornal
         if (array_key_exists("desc_situacao", $dbArray))
             $this->descSituacao = $dbArray['desc_situacao'];
             
-        if (array_key_exists("valor_pagina_imagem", $dbArray))
-            $this->valorPaginaImagem = $dbArray['valor_pagina_imagem'];    
+        /*if (array_key_exists("valor_pagina_imagem", $dbArray))
+            $this->valorPaginaImagem = $dbArray['valor_pagina_imagem'];   */
+            
+        $this->paginas = array();
+        
+        $paginaRepository = new PaginaRepository();
+        $result = $paginaRepository->GetList($this->idJornal);
+
+        foreach ($result as $dbPagina) {
+            $modelPagina = new Pagina();
+            $modelPagina->FillByDB($dbPagina);
+            $this->paginas[] = $modelPagina;
+        }
     }
 }
