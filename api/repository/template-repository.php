@@ -3,7 +3,7 @@
 class TemplateRepository extends BaseRepository
 {
 
-    function GetThis($id_template)
+  /*  function GetThis($id_template)
     {
         $conn = $this->db->getConnection();
 
@@ -20,7 +20,7 @@ class TemplateRepository extends BaseRepository
         $result = $stm->fetch(PDO::FETCH_ASSOC);
 
         return $result;
-    }
+    }*/
 
     function GetList()
     {

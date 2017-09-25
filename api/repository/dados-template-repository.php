@@ -1,9 +1,9 @@
 <?php
 
-class UsuarioRepository extends BaseRepository
+class  DadosTemplate extends BaseRepository
 {
 
-    function GetThis($codUsuario)
+    function GetThis($idTemplateDado)
     {
         $conn = $this->db->getConnection();
 
