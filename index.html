@@ -3,41 +3,57 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="" />
-    <base href="/zeitgeist-web/" />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content=""/>
+    <base href="/zeitgeist-web/"/>
     <title>ZeitGeist</title>
-
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="assets/materialize/css/materialize.min.css" media="screen,projection"/>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body ng-app="ZeitGeist">
-    <div ng-controller="MainCtrl as main">
-        <ul>
-            <li>
-                <a href="./home">
-                    <span>Home</span>
-                </a>
-            </li>
-            <li>
-                <a href="./usuario">
-                    <span>Usuário</span>
-                </a>
-            </li>
+<div class="header indigo lighten-1 valign-wrapper">
+    <img class="logo" src="assets/images/logo-zeitgeist.png"/>
+    <div class="right-nav">
+        <div class="user">
+        <ul id="dropUser" class="dropdown-content">
+            <li><a href="#">Sair</a></li>
         </ul>
-        <!-- Main Content -->
-        <div ng-view></div>
+        <a class="profile dropdown-button" href="#" data-activates="dropUser">John Doe<i class="material-icons right">arrow_drop_down</i></a>
+        </div>
     </div>
+</div>
+<div class="side-bar indigo lighten-5 center-align">
+    <ul class="side-bar">
+        <li>
+            <a href="./home">
+                <span>Home</span>
+            </a>
+        </li>
+        <li>
+            <a href="./usuario">
+                <span>Usuário</span>
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="content" ng-controller="MainCtrl as main">
+    <div ng-view></div>
+</div>
 
-	<!-- Custom Scripts -->
-    <script src="assets/js/angular/angular.min.js"></script>
-    <script src="assets/js/angular/angular-route.min.js"></script>
-    <script src="assets/js/angular/angular-sanitize.min.js"></script>
-    <script src="assets/js/angular/angular-cookies.min.js"></script>
-    <script src="assets/js/angular/mask.min.js"></script>
-    <script src="app/app.js"></script>
-    <script src="app/module-main.js"></script>
-    <script src="app/module-usuario.js"></script>
-    <script src="app/service.js"></script>
+<!-- Custom Scripts -->
+<script src="assets/js/angular/angular.min.js"></script>
+<script src="assets/js/angular/angular-route.min.js"></script>
+<script src="assets/js/angular/angular-sanitize.min.js"></script>
+<script src="assets/js/angular/angular-cookies.min.js"></script>
+<script src="assets/js/angular/mask.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="assets/materialize/js/materialize.min.js"></script>
+<script src="assets/js/custom/custom.js"></script>
+
+<script src="app/app.js"></script>
+<script src="app/module-main.js"></script>
+<script src="app/module-usuario.js"></script>
+<script src="app/service.js"></script>
 </body>
 </html>
