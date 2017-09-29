@@ -36,12 +36,17 @@
                 <a href="./usuario">
                 <span>Usuário</span>
             </a>
-            </li>
-        </ul>
-    </div>
-    <div class="content" ng-controller="MainCtrl as main">
-        <div ng-view></div>
-    </div>
+        </li>
+        <li>
+        <a href="./jornal">
+            <span>Jornal</span>
+        </a>
+    </li>
+    </ul>
+</div>
+<div class="content" ng-controller="MainCtrl as main">
+    <div ng-view></div>
+</div>
 
     <!-- Custom Scripts -->
     <script src="assets/js/angular/angular.min.js"></script>
@@ -53,10 +58,11 @@
     <script type="text/javascript" src="assets/materialize/js/materialize.min.js"></script>
     <script src="assets/js/custom/custom.js"></script>
 
-    <script src="app/app.js"></script>
-    <script src="app/module-main.js"></script>
-    <script src="app/module-usuario.js"></script>
-    <script src="app/service.js"></script>
+<script src="app/app.js"></script>
+<script src="app/module-main.js"></script>
+<script src="app/module-usuario.js"></script>
+<script src="app/module-jornal.js"></script>
+<script src="app/service.js"></script>
 </body>
 
 </html>
