@@ -25,17 +25,20 @@ class JornalRepository extends BaseRepository
   
   
 
-    function GetList()
+    function GetList($id_situacao)
     {
         $conn = $this->db->getConnection();
 
         $sql = 'SELECT 
                id_jornal,S.id_situacao,S.desc_situacao,num_edicao_jornal,nom_titulo_jornal,dta_publicacao_jornal,dta_ultima_atualizacao_jornal
             FROM 
-                tb_jornal J INNER JOIN tb_situacao S ON(J.id_situacao=S.id_situacao)';
+                tb_jornal J INNER JOIN tb_situacao S ON(J.id_situacao=S.id_situacao)
+            WHERE
+                :id_situacao IS NULL OR J.id_situacao = :id_situacao';
 
 
       $stm = $conn->prepare($sql);
+      $stm->bindParam(':id_situacao', $id_situacao);
         $stm->execute();
         $result = $stm->fetchAll(PDO::FETCH_ASSOC);
         

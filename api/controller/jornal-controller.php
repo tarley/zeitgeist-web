@@ -7,7 +7,8 @@ class JornalController extends BaseController
         try {
             switch ($action) {
                 case "list":
-                    $this->ActionGetList();
+                    $idSituacao = isset($_GET['key']) ? $_GET['key'] : null;
+                    $this->ActionGetList($idSituacao);
                     break;
                 case "insert":
                     $data = file_get_contents("php://input");
@@ -29,10 +30,10 @@ class JornalController extends BaseController
 
    
 
-    function ActionGetList()
+    function ActionGetList($idSituacao)
     {
         $jornalRepository = new JornalRepository();
-        $result = $jornalRepository->GetList();
+        $result = $jornalRepository->GetList($idSituacao);
 
         $listJornal = array();
 

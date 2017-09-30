@@ -33,11 +33,16 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
             controller: 'UsuarioCtrl'
         })
 
-        .when('/jornal', {
+        .when('/jornal/', {
             templateUrl: 'view/jornal-list.html',
             controller: 'JornalCtrl'
         })
-        
+
+        .when('/jornal/:codJornal', {
+            templateUrl: 'view/jornal-edit.html',
+            controller: 'JornalCtrl'
+        })
+
         .when('/login', {})
         .otherwise({ templateUrl: 'view/page-404.html' });
 
