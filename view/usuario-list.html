@@ -6,19 +6,15 @@
         <tr>
             <th class="text-center col-sm-1 col-md 1">Código</th>
             <th>Nome</th>
-            <th>Perfil</th>
-            <th>Login</th>
-            <th>Telefone</th>
+            <th>Email</th>
             <th class="col-sm-3 col-md-3"></th>
         </tr>
         <tr ng-repeat="usuario in usuarioList">
-            <td class="text-center">{{usuario.codUsuario}}</td>
-            <td>{{usuario.nome}}</td>
-            <td>{{usuario.nomePerfil}}</td>
-            <td>{{usuario.login}}</td>
-            <td>{{usuario.telefone}}</td>
+            <td class="text-center">{{usuario.idUsuario}}</td>
+            <td>{{usuario.nomUsuario}}</td>
+            <td>{{usuario.emailUsuario}}</td>
             <td class="text-center">
-                <a ng-href="usuario/{{usuario.codUsuario}}" class="btn btn-default btn-sm btn-icon icon-left">
+                <a ng-href="usuario/{{usuario.idUsuario}}" class="btn btn-default btn-sm btn-icon icon-left">
                     <i class="entypo-pencil"></i>Editar
                 </a>
             </td>

@@ -7,8 +7,8 @@ class UsuarioController extends BaseController
         try {
             switch ($action) {
                 case "get":
-                    $codUsuario = isset($_GET['key']) ? $_GET['key'] : null;
-                    $this->ActionGetThis($codUsuario);
+                    $idUsuario = isset($_GET['key']) ? $_GET['key'] : null;
+                    $this->ActionGetThis($idUsuario);
                     break;
                 case "list":
                     $this->ActionGetList();
@@ -35,15 +35,15 @@ class UsuarioController extends BaseController
         }
     }
 
-    function ActionGetThis($codUsuario)
+    function ActionGetThis($idUsuario)
     {
         $usuarioRepository = new UsuarioRepository();
-        $result = $usuarioRepository->GetThis($codUsuario);
+        $result = $usuarioRepository->GetThis($idUsuario);
 
         $usuario = new Usuario();
         $usuario->FillByDB($result);
 
-        if (!$usuario->codUsuario)
+        if (!$usuario->idUsuario)
             throw new Warning("Usuario não encontrado");
 
         ToWrappedJson($usuario);
