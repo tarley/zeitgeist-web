@@ -1,3 +1,15 @@
+[29-Sep-2017 15:58:14 America/Sao_Paulo] PHP Warning:  fopen(/home/ubuntu/workspace/zeitgeist-web/api/_log/Log-2017_09_29.log): failed to open stream: No such file or directory in /home/ubuntu/workspace/api/util/util.php on line 15
+[29-Sep-2017 15:58:14 America/Sao_Paulo] PHP Warning:  fwrite() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/api/util/util.php on line 16
+[29-Sep-2017 15:58:14 America/Sao_Paulo] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/api/util/util.php on line 17
+[29-Sep-2017 16:00:47 America/Sao_Paulo] PHP Warning:  fopen(/home/ubuntu/workspace/zeitgeist-web/api/_log/Log-2017_09_29.log): failed to open stream: No such file or directory in /home/ubuntu/workspace/api/util/util.php on line 15
+[29-Sep-2017 16:00:47 America/Sao_Paulo] PHP Warning:  fwrite() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/api/util/util.php on line 16
+[29-Sep-2017 16:00:47 America/Sao_Paulo] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/api/util/util.php on line 17
+[29-Sep-2017 16:31:25 America/Sao_Paulo] PHP Warning:  fopen(/home/ubuntu/workspace/web-zeitgeist/api/_log/Log-2017_09_29.log): failed to open stream: No such file or directory in /home/ubuntu/workspace/api/util/util.php on line 15
+[29-Sep-2017 16:31:25 America/Sao_Paulo] PHP Warning:  fwrite() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/api/util/util.php on line 16
+[29-Sep-2017 16:31:25 America/Sao_Paulo] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/api/util/util.php on line 17
+[29-Sep-2017 16:31:26 America/Sao_Paulo] PHP Warning:  fopen(/home/ubuntu/workspace/web-zeitgeist/api/_log/Log-2017_09_29.log): failed to open stream: No such file or directory in /home/ubuntu/workspace/api/util/util.php on line 15
+[29-Sep-2017 16:31:26 America/Sao_Paulo] PHP Warning:  fwrite() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/api/util/util.php on line 16
+[29-Sep-2017 16:31:26 America/Sao_Paulo] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/api/util/util.php on line 17
 [17-Sep-2017 21:34:08 America/Sao_Paulo] PHP Warning:  require_once(pagina-string.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/api/controller/_includes.php on line 8
 [17-Sep-2017 21:34:08 America/Sao_Paulo] PHP Stack trace:
 [17-Sep-2017 21:34:08 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
