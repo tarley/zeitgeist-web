@@ -5,17 +5,22 @@ var app = angular.module('ZeitGeistModule')
         
         $scope.initListage = function() {
             $scope.jornal= {};
-            getListEdicoes(); 
+            getListEdicoes(2); 
         }
         
-        function getListEdicoes() {
-            $http.get('api/jornal/list/').then(function(response) {
+        function getListEdicoes(codStatus) {
+            $http.get('api/jornal/list/' + codStatus).then(function(response) {
                 var result = response.data;
                 $scope.jornalList = result.data;
                 $scope.hasError = result.hasError;
                 $scope.msg = result.msg;
             });
         }
+        
+        $scope.DropDownChanged = function () {
+            $scope.DropDownStatus = $scope.ZeitGeistModule;
+            getListEdicoes($scope.DropDownStatus);
+        };
         
         $scope.initCadastro = function() {
             $scope.jornal = {};
