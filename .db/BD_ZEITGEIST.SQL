@@ -112,9 +112,9 @@ CREATE TABLE tb_usuario
 );
 
 /*==============================================================*/
-/* Table: tipo_template_dado                                    */
+/* Table: tb_tipo_template_dado                                    */
 /*==============================================================*/
-CREATE TABLE tipo_template_dado
+CREATE TABLE tb_tipo_template_dado
 (
    id_tipo_template_dado tinyint not null PRIMARY KEY AUTO_INCREMENT,
    desc_tipo_template_dado varchar(50) not null
@@ -152,5 +152,5 @@ ALTER TABLE tb_template_dado ADD CONSTRAINT FK_template_template_dado FOREIGN KE
       REFERENCES tb_template (id_template);
 
 ALTER TABLE tb_template_dado ADD CONSTRAINT FK_tipo_template_dado FOREIGN KEY (id_tipo_template_dado)
-      REFERENCES tipo_template_dado (id_tipo_template_dado);
+      REFERENCES tb_tipo_template_dado (id_tipo_template_dado);
 
