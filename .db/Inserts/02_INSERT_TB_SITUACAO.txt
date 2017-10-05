@@ -1,6 +1,7 @@
 /*==========================================================*/
-/*		CADASTRO DE SITUA«√O			    */
+/*		CADASTRO DE SITUA√á√ÉO			    */
 /*==========================================================*/
 
-INSERT INTO `tb_situacao`(`desc_situacao`) VALUES ("EM AN¡LISE");
+INSERT INTO `tb_situacao`(`desc_situacao`) VALUES ("EM AN√ÅLISE");
 INSERT INTO `tb_situacao`(`desc_situacao`) VALUES ("PUBLICADO");
+INSERT INTO `tb_situacao`(`desc_situacao`) VALUES ("RASCUNHO");
