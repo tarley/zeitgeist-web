@@ -4,3 +4,7 @@
 
 INSERT INTO `tb_template`(`desc_template`, `desc_caminho_template`) 
 VALUES ("Template teste 1", "C:/");
+INSERT INTO `tb_template`(`desc_template`, `desc_caminho_template`) 
+VALUES ("Template teste 2", "C:/");
+INSERT INTO `tb_template`(`desc_template`, `desc_caminho_template`) 
+VALUES ("Template teste 3", "C:/");
