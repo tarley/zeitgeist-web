@@ -4,28 +4,26 @@ var app = angular.module('ZeitGeistModule')
         $scope.usuario = {};
         $scope.isEdit = false;
 
-        if ($routeParams.codUsuario && $routeParams.codUsuario != 0) {
+        if ($routeParams.idUsuario && $routeParams.idUsuario != 0) {
 			$scope.isEdit = true;
-            getUsuario($routeParams.codUsuario);
+            getUsuario($routeParams.idUsuario);
         } else {
             getListUsuario();
         }
 
-        getListPerfil();
-
 		if($scope.hasError)
-			toastr.error($scope.msg);
+			alert($scope.msg);
 
         $scope.save = function() {
-            if($routeParams.codUsuario == 0) {
+            if($routeParams.idUsuario == 0) {
                 insertUsuario();
             } else {
                 updateUsuario();
             }
         };
 
-        function getUsuario(codUsuario) {
-            $http.get('api/usuario/get/' + codUsuario).then(function (response) {
+        function getUsuario(idUsuario) {
+            $http.get('api/usuario/get/' + idUsuario).then(function (response) {
                 var result = response.data;
                 $scope.usuario = result.data;
                 $scope.hasError = result.hasError;
@@ -50,9 +48,9 @@ var app = angular.module('ZeitGeistModule')
                 $scope.msg = result.msg;
 
 				if(!$scope.hasError)
-					toastr.success(result.msg);
+					alert(result.msg);
 
-                $location.path('usuario/' + $scope.usuario.codUsuario);
+                $location.path('usuario/' + $scope.usuario.idUsuario);
             });
         }
 
@@ -64,7 +62,7 @@ var app = angular.module('ZeitGeistModule')
                 $scope.msg = result.msg;
 
 				if(!$scope.hasError)
-					toastr.success(result.msg);
+					alert(result.msg);
             });
         }
 

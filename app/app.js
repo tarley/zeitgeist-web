@@ -28,7 +28,7 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
             controller: 'UsuarioCtrl'
         })
 
-        .when('/usuario/:codUsuario', {
+        .when('/usuario/:idUsuario', {
             templateUrl: 'view/usuario-edit.html',
             controller: 'UsuarioCtrl'
         })
