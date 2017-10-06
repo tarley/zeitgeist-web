@@ -30,7 +30,7 @@ class JornalRepository extends BaseRepository
         $conn = $this->db->getConnection();
 
         $sql = 'SELECT 
-               id_jornal,S.id_situacao,S.desc_situacao,num_edicao_jornal,nom_titulo_jornal,dta_publicacao_jornal,dta_ultima_atualizacao_jornal
+               id_jornal,S.id_situacao,S.desc_situacao,num_edicao_jornal,nom_titulo_jornal, date_format(dta_publicacao_jornal, "%m/%Y") AS dta_publicacao_jornal, "%d/%m/%Y",dta_ultima_atualizacao_jornal
             FROM 
                 tb_jornal J INNER JOIN tb_situacao S ON(J.id_situacao=S.id_situacao)
             WHERE
