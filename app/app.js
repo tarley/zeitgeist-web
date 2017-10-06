@@ -28,7 +28,7 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
             controller: 'UsuarioCtrl'
         })
 
-        .when('/usuario/:codUsuario', {
+        .when('/usuario/:idUsuario', {
             templateUrl: 'view/usuario-edit.html',
             controller: 'UsuarioCtrl'
         })
@@ -38,9 +38,9 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
             controller: 'JornalCtrl'
         })
 
-        .when('/jornal/:codJornal', {
-            templateUrl: 'view/jornal-edit.html',
-            controller: 'JornalCtrl'
+        .when('/pagina/', {
+            templateUrl: 'view/pagina-edit.html',
+            controller: 'PaginaCtrl'
         })
 
         .when('/login', {})
