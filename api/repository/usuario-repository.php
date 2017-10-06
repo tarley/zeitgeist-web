@@ -85,7 +85,7 @@ class UsuarioRepository extends BaseRepository
     {
         $conn = $this->db->getConnection();
 
-        $sql = 'SELECT cod_usuario, nome FROM tb_usuario WHERE login = :login && senha = SHA1(:senha)';
+        $sql = 'SELECT id_usuario, nom_usuario FROM tb_usuario WHERE email_usuario = :login && senha_usuario = SHA1(:senha)';
 
         $stm = $conn->prepare($sql);
         $stm->bindParam(':login', $usuario->login);
@@ -94,7 +94,7 @@ class UsuarioRepository extends BaseRepository
 
         $result = $stm->fetch(PDO::FETCH_ASSOC);
 
-        if (!$result['cod_usuario']) {
+        if (!$result['id_usuario']) {
             throw new Warning("Usuário ou senha inválidos");
         }
 

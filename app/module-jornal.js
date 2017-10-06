@@ -1,8 +1,31 @@
 var app = angular.module('ZeitGeistModule')
 
-    .controller('JornalCtrl', ['$scope', '$http', '$routeParams', '$location', function($scope, $http, $routeParams, $location) {
-        $scope.jornal = {};
-        $scope.isEdit = false;
+    .controller('JornalCtrl', function($scope, $http, $routeParams, $location) {
+        
+        
+        $scope.initListage = function() {
+            $scope.jornal= {};
+            getListEdicoes(2); 
+        }
+        
+        function getListEdicoes(codStatus) {
+            $http.get('api/jornal/list/' + codStatus).then(function(response) {
+                var result = response.data;
+                $scope.jornalList = result.data;
+                $scope.hasError = result.hasError;
+                $scope.msg = result.msg;
+            });
+        }
+        
+        $scope.DropDownChanged = function () {
+            $scope.DropDownStatus = $scope.ZeitGeistModule;
+            getListEdicoes($scope.DropDownStatus);
+        };
+        
+        $scope.initCadastro = function() {
+            $scope.jornal = {};
+            $scope.isEdit = false;
+        }
 
         if ($routeParams.codJornal && $routeParams.codJornal != 0) {
             $scope.isEdit = true;
@@ -67,4 +90,4 @@ var app = angular.module('ZeitGeistModule')
                     toastr.success(result.msg);
             });
         }
-    }]);
+    });
