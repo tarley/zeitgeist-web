@@ -17,7 +17,7 @@ class DBContext
             $this->conn = $c;
         } catch (PDOException $e) {
             $conn = NULL;
-            CreateLog($e->getMessage());
+            Log::Error($e->getMessage());
         }
     }
 
