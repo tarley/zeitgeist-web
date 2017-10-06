@@ -34,7 +34,9 @@ class JornalRepository extends BaseRepository
             FROM 
                 tb_jornal J INNER JOIN tb_situacao S ON(J.id_situacao=S.id_situacao)
             WHERE
-                :id_situacao IS NULL OR J.id_situacao = :id_situacao';
+                :id_situacao IS NULL OR J.id_situacao = :id_situacao
+            ORDER BY 
+                num_edicao_jornal DESC';
 
 
       $stm = $conn->prepare($sql);
