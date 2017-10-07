@@ -44,7 +44,7 @@ class UsuarioController extends BaseController
         $usuario->FillByDB($result);
 
         if (!$usuario->idUsuario)
-            throw new Warning("Usuario não encontrado");
+            throw new Warning("Usuário não encontrado");
 
         ToWrappedJson($usuario);
     }
@@ -79,7 +79,7 @@ class UsuarioController extends BaseController
         $usuarioRepository = new UsuarioRepository();
         $usuarioRepository->Insert($usuario);
 
-        ToWrappedJson($usuario, "Usuario inserido com sucesso");
+        ToWrappedJson($usuario, "Usuário inserido com sucesso");
     }
 
     function ActionUpdate($data)
