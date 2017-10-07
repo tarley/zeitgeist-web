@@ -5,7 +5,8 @@ var app = angular.module('ZeitGeistModule')
         
         $scope.initListage = function() {
             $scope.jornal= {};
-            getListEdicoes(2); 
+            getListEdicoes(2);
+           
         }
         
         function getListEdicoes(codStatus) {
