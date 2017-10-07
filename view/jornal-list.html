@@ -11,28 +11,35 @@
         <div class="col s12">
             <div class="col s3 offset-s7">
                 <select select-name="dropChange" id="selectDefault" ng-model="ZeitGeistModule" class="browser-default" ng-change="DropDownChanged()">
-					<option value="2" selected="selected">Publicadas</option>
+					<option value="" selected="selected">Todas</option>
+					<option value="2">Publicadas</option>
 					<option value="1">Rascunhos</option>
 		 	</select>
             </div>
         </div>
-    </div>
+    </div>         
 
     <div class="valign-wrapper" class="col s2">
         <div class="fixed-action-btn">
-            <a class="btn-floating btn-large waves-effect waves-light red" ng-href="" ><i class="material-icons">add</i></a>
+            <a class="btn-floating btn-large waves-effect waves-light red" ng-href=""><i class="material-icons">add</i></a>
         </div>
     </div>
 
     <div class="row" ng-repeat="j in jornalList">
-        <div class="col s1">
-            <div class="card">
+        <div class="col l4">
+            <div class="card horizontal">
                 <div class="card-image">
-                    <img src="{{j.imagem}}"></img>
+                    <img src='data:image/jpg;base64,{{j.valorPaginaImagem}}'></img>
                 </div>
-                <div class="card-content center-align">
-                    <h6>N° {{j.numEdicaoJornal}}</h6>
-                    <h6>{{j.dtaPublicacaoJornal}}</h6>
+                <div class="card-stacked">
+                    <div class="card-content">
+                        <h6>N° {{j.numEdicaoJornal}}</h6>
+                        <h6>{{j.dtaPublicacaoJornal}}</h6>
+                        <h6>{{j.descSituacao}}</h6>
+                    </div>
+                    <div class="card-action">
+                        <a href="#">Visualizar</a>
+                    </div>
                 </div>
             </div>
         </div>

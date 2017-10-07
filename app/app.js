@@ -42,7 +42,12 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
             templateUrl: 'view/pagina-edit.html',
             controller: 'PaginaCtrl'
         })
-
+        
+        .when('/team', {
+            templateUrl: 'view/team.html',
+            controller: 'MainCtrl'
+        })
+        
         .when('/login', {})
         .otherwise({ templateUrl: 'view/page-404.html' });
 
