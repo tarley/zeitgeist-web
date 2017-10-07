@@ -1,4 +1,4 @@
-angular.module('ZeitGeistModule', ['ngRoute',]);
+angular.module('ZeitGeistModule', ['ngRoute', ]);
 angular.module('ZeitGeistService', []);
 
 var app = angular.module('ZeitGeist', [
@@ -49,7 +49,7 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
     $locationProvider.html5Mode(true);
 }]);
 
-app.run(['$rootScope', '$location', '$cookies', '$http', function ($rootScope, $location, $cookies, $http) {
+app.run(['$rootScope', '$location', '$cookies', '$http', function($rootScope, $location, $cookies, $http) {
     $rootScope.globals = $cookies.getObject('globals') || {};
 
     if ($rootScope.globals.currentUser) {
