@@ -3908,3 +3908,67 @@
 [06-Oct-2017 00:25:28 America/Sao_Paulo] PHP   3. PaginaController->ActionGetList() /home/ubuntu/workspace/api/controller/pagina-controller.php:15
 [06-Oct-2017 00:25:28 America/Sao_Paulo] PHP   4. PaginaRepository->GetList() /home/ubuntu/workspace/api/controller/pagina-controller.php:56
 >>>>>>> 29a93a5e6837d074a3c2b9e42d54f43686349ff0
+[06-Oct-2017 19:39:24 America/Sao_Paulo] PHP Warning:  fopen(/home/ubuntu/workspace/zeitgeist-web/api/_log/Log-2017_10_06.log): failed to open stream: No such file or directory in /home/ubuntu/workspace/api/util/util.php on line 15
+[06-Oct-2017 19:39:24 America/Sao_Paulo] PHP Warning:  fwrite() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/api/util/util.php on line 16
+[06-Oct-2017 19:39:24 America/Sao_Paulo] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/api/util/util.php on line 17
+[06-Oct-2017 19:39:24 America/Sao_Paulo] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/api/repository/usuario-repository.php on line 34
+[06-Oct-2017 19:39:25 America/Sao_Paulo] PHP Warning:  fopen(/home/ubuntu/workspace/zeitgeist-web/api/_log/Log-2017_10_06.log): failed to open stream: No such file or directory in /home/ubuntu/workspace/api/util/util.php on line 15
+[06-Oct-2017 19:39:25 America/Sao_Paulo] PHP Warning:  fwrite() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/api/util/util.php on line 16
+[06-Oct-2017 19:39:25 America/Sao_Paulo] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/api/util/util.php on line 17
+[06-Oct-2017 19:39:25 America/Sao_Paulo] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/api/repository/usuario-repository.php on line 34
+[06-Oct-2017 19:39:30 America/Sao_Paulo] PHP Warning:  fopen(/home/ubuntu/workspace/zeitgeist-web/api/_log/Log-2017_10_06.log): failed to open stream: No such file or directory in /home/ubuntu/workspace/api/util/util.php on line 15
+[06-Oct-2017 19:39:30 America/Sao_Paulo] PHP Warning:  fwrite() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/api/util/util.php on line 16
+[06-Oct-2017 19:39:30 America/Sao_Paulo] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/api/util/util.php on line 17
+[06-Oct-2017 19:39:30 America/Sao_Paulo] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/api/repository/jornal-repository.php on line 42
+[06-Oct-2017 19:39:30 America/Sao_Paulo] PHP Warning:  fopen(/home/ubuntu/workspace/zeitgeist-web/api/_log/Log-2017_10_06.log): failed to open stream: No such file or directory in /home/ubuntu/workspace/api/util/util.php on line 15
+[06-Oct-2017 19:39:30 America/Sao_Paulo] PHP Warning:  fwrite() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/api/util/util.php on line 16
+[06-Oct-2017 19:39:30 America/Sao_Paulo] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/api/util/util.php on line 17
+[06-Oct-2017 19:39:30 America/Sao_Paulo] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/api/repository/jornal-repository.php on line 42
+[06-Oct-2017 19:39:30 America/Sao_Paulo] PHP Warning:  fopen(/home/ubuntu/workspace/zeitgeist-web/api/_log/Log-2017_10_06.log): failed to open stream: No such file or directory in /home/ubuntu/workspace/api/util/util.php on line 15
+[06-Oct-2017 19:39:30 America/Sao_Paulo] PHP Warning:  fwrite() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/api/util/util.php on line 16
+[06-Oct-2017 19:39:30 America/Sao_Paulo] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/api/util/util.php on line 17
+[06-Oct-2017 19:39:30 America/Sao_Paulo] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/api/repository/jornal-repository.php on line 42
+[06-Oct-2017 19:39:30 America/Sao_Paulo] PHP Warning:  fopen(/home/ubuntu/workspace/zeitgeist-web/api/_log/Log-2017_10_06.log): failed to open stream: No such file or directory in /home/ubuntu/workspace/api/util/util.php on line 15
+[06-Oct-2017 19:39:30 America/Sao_Paulo] PHP Warning:  fwrite() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/api/util/util.php on line 16
+[06-Oct-2017 19:39:30 America/Sao_Paulo] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/api/util/util.php on line 17
+[06-Oct-2017 19:39:30 America/Sao_Paulo] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/api/repository/usuario-repository.php on line 34
+[06-Oct-2017 19:39:31 America/Sao_Paulo] PHP Warning:  fopen(/home/ubuntu/workspace/zeitgeist-web/api/_log/Log-2017_10_06.log): failed to open stream: No such file or directory in /home/ubuntu/workspace/api/util/util.php on line 15
+[06-Oct-2017 19:39:31 America/Sao_Paulo] PHP Warning:  fwrite() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/api/util/util.php on line 16
+[06-Oct-2017 19:39:31 America/Sao_Paulo] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/api/util/util.php on line 17
+[06-Oct-2017 19:39:31 America/Sao_Paulo] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/api/repository/usuario-repository.php on line 34
+[06-Oct-2017 19:39:31 America/Sao_Paulo] PHP Warning:  fopen(/home/ubuntu/workspace/zeitgeist-web/api/_log/Log-2017_10_06.log): failed to open stream: No such file or directory in /home/ubuntu/workspace/api/util/util.php on line 15
+[06-Oct-2017 19:39:31 America/Sao_Paulo] PHP Warning:  fwrite() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/api/util/util.php on line 16
+[06-Oct-2017 19:39:31 America/Sao_Paulo] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/api/util/util.php on line 17
+[06-Oct-2017 19:39:31 America/Sao_Paulo] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/api/repository/jornal-repository.php on line 42
+[06-Oct-2017 19:39:31 America/Sao_Paulo] PHP Warning:  fopen(/home/ubuntu/workspace/zeitgeist-web/api/_log/Log-2017_10_06.log): failed to open stream: No such file or directory in /home/ubuntu/workspace/api/util/util.php on line 15
+[06-Oct-2017 19:39:31 America/Sao_Paulo] PHP Warning:  fwrite() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/api/util/util.php on line 16
+[06-Oct-2017 19:39:31 America/Sao_Paulo] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/api/util/util.php on line 17
+[06-Oct-2017 19:39:31 America/Sao_Paulo] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/api/repository/jornal-repository.php on line 42
+[06-Oct-2017 19:39:31 America/Sao_Paulo] PHP Warning:  fopen(/home/ubuntu/workspace/zeitgeist-web/api/_log/Log-2017_10_06.log): failed to open stream: No such file or directory in /home/ubuntu/workspace/api/util/util.php on line 15
+[06-Oct-2017 19:39:31 America/Sao_Paulo] PHP Warning:  fwrite() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/api/util/util.php on line 16
+[06-Oct-2017 19:39:31 America/Sao_Paulo] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/api/util/util.php on line 17
+[06-Oct-2017 19:39:31 America/Sao_Paulo] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/api/repository/jornal-repository.php on line 42
+[06-Oct-2017 19:39:31 America/Sao_Paulo] PHP Warning:  fopen(/home/ubuntu/workspace/zeitgeist-web/api/_log/Log-2017_10_06.log): failed to open stream: No such file or directory in /home/ubuntu/workspace/api/util/util.php on line 15
+[06-Oct-2017 19:39:31 America/Sao_Paulo] PHP Warning:  fwrite() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/api/util/util.php on line 16
+[06-Oct-2017 19:39:31 America/Sao_Paulo] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/api/util/util.php on line 17
+[06-Oct-2017 19:39:31 America/Sao_Paulo] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/api/repository/usuario-repository.php on line 34
+[06-Oct-2017 19:39:32 America/Sao_Paulo] PHP Warning:  fopen(/home/ubuntu/workspace/zeitgeist-web/api/_log/Log-2017_10_06.log): failed to open stream: No such file or directory in /home/ubuntu/workspace/api/util/util.php on line 15
+[06-Oct-2017 19:39:32 America/Sao_Paulo] PHP Warning:  fwrite() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/api/util/util.php on line 16
+[06-Oct-2017 19:39:32 America/Sao_Paulo] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/api/util/util.php on line 17
+[06-Oct-2017 19:39:32 America/Sao_Paulo] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/api/repository/usuario-repository.php on line 34
+[06-Oct-2017 19:39:32 America/Sao_Paulo] PHP Warning:  fopen(/home/ubuntu/workspace/zeitgeist-web/api/_log/Log-2017_10_06.log): failed to open stream: No such file or directory in /home/ubuntu/workspace/api/util/util.php on line 15
+[06-Oct-2017 19:39:32 America/Sao_Paulo] PHP Warning:  fwrite() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/api/util/util.php on line 16
+[06-Oct-2017 19:39:32 America/Sao_Paulo] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/api/util/util.php on line 17
+[06-Oct-2017 19:39:32 America/Sao_Paulo] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/api/repository/jornal-repository.php on line 42
+[06-Oct-2017 19:39:32 America/Sao_Paulo] PHP Warning:  fopen(/home/ubuntu/workspace/zeitgeist-web/api/_log/Log-2017_10_06.log): failed to open stream: No such file or directory in /home/ubuntu/workspace/api/util/util.php on line 15
+[06-Oct-2017 19:39:32 America/Sao_Paulo] PHP Warning:  fwrite() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/api/util/util.php on line 16
+[06-Oct-2017 19:39:32 America/Sao_Paulo] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/api/util/util.php on line 17
+[06-Oct-2017 19:39:32 America/Sao_Paulo] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/api/repository/jornal-repository.php on line 42
+[06-Oct-2017 19:39:32 America/Sao_Paulo] PHP Warning:  fopen(/home/ubuntu/workspace/zeitgeist-web/api/_log/Log-2017_10_06.log): failed to open stream: No such file or directory in /home/ubuntu/workspace/api/util/util.php on line 15
+[06-Oct-2017 19:39:32 America/Sao_Paulo] PHP Warning:  fwrite() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/api/util/util.php on line 16
+[06-Oct-2017 19:39:32 America/Sao_Paulo] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/api/util/util.php on line 17
+[06-Oct-2017 19:39:32 America/Sao_Paulo] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/api/repository/jornal-repository.php on line 42
+[06-Oct-2017 19:39:35 America/Sao_Paulo] PHP Warning:  fopen(/home/ubuntu/workspace/zeitgeist-web/api/_log/Log-2017_10_06.log): failed to open stream: No such file or directory in /home/ubuntu/workspace/api/util/util.php on line 15
+[06-Oct-2017 19:39:35 America/Sao_Paulo] PHP Warning:  fwrite() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/api/util/util.php on line 16
+[06-Oct-2017 19:39:35 America/Sao_Paulo] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/api/util/util.php on line 17
+[06-Oct-2017 19:39:35 America/Sao_Paulo] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/api/repository/usuario-repository.php on line 34
