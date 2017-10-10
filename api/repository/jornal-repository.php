@@ -46,12 +46,22 @@ class JornalRepository extends BaseRepository
         $conn = $this->db->getConnection();
 
         $sql = 'SELECT 
-               id_jornal,S.id_situacao,S.desc_situacao,num_edicao_jornal,nom_titulo_jornal,dta_publicacao_jornal,dta_ultima_atualizacao_jornal
+               id_jornal,S.id_situacao,S.desc_situacao,num_edicao_jornal,nom_titulo_jornal, date_format(dta_publicacao_jornal, "%m/%Y") AS dta_publicacao_jornal, "%d/%m/%Y",dta_ultima_atualizacao_jornal,
+               (SELECT pi.valor_pagina_imagem
+            		FROM tb_pagina_imagem pi 
+            		INNER JOIN tb_pagina_dado pd ON (pi.id_pagina_dado = pd.id_pagina_dado)
+            		INNER JOIN tb_pagina p ON (pd.id_pagina = p.id_pagina)
+            		INNER JOIN tb_jornal jn ON (p.id_jornal = jn.id_jornal)
+            		WHERE 
+            		    p.num_pagina = 1 AND 
+            		    jn.id_jornal = J.id_jornal
+            	) as valor_pagina_imagem
             FROM 
                 tb_jornal J INNER JOIN tb_situacao S ON(J.id_situacao=S.id_situacao)
             WHERE
-                :id_situacao IS NULL OR J.id_situacao = :id_situacao';
-
+                :id_situacao IS NULL OR J.id_situacao = :id_situacao
+            ORDER BY 
+                num_edicao_jornal DESC';
 
       $stm = $conn->prepare($sql);
       $stm->bindParam(':id_situacao', $id_situacao);
