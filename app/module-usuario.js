@@ -51,6 +51,12 @@ var app = angular.module('ZeitGeistModule')
         }
 
         function insertUsuario() {
+            
+            if($scope.usuario.senhaUsuario != $scope.usuario.confirmacaoSenha){
+                alert("As senhas devem ser iguais!");
+                return;
+            }
+            
             $http.post('api/usuario/insert/', $scope.usuario).then(function(response) {
                 var result = response.data;
                 $scope.usuario = result.data;
@@ -65,6 +71,12 @@ var app = angular.module('ZeitGeistModule')
         }
 
         function updateUsuario() {
+            
+            if($scope.usuario.senhaUsuario != $scope.usuario.confirmacaoSenha){
+                alert("As senhas devem ser iguais!");
+                return;
+            }
+            
             $http.post('api/usuario/update/', $scope.usuario).then(function(response) {
                 var result = response.data;
                 $scope.usuario = result.data;
