@@ -3,19 +3,19 @@
 class UsuarioRepository extends BaseRepository
 {
 
-    function GetThis($codUsuario)
+    function GetThis($idUsuario)
     {
         $conn = $this->db->getConnection();
 
         $sql = 'SELECT 
-                cod_usuario, u.nome, endereco, telefone, email, login 
+                id_usuario, nom_usuario, email_usuario 
             FROM 
-                tb_usuario u
+                tb_usuario 
             WHERE 
-                cod_usuario = :cod_usuario';
+                id_usuario = :id_usuario';
 
         $stm = $conn->prepare($sql);
-        $stm->bindParam(':cod_usuario', $codUsuario);
+        $stm->bindParam(':id_usuario', $idUsuario);
         $stm->execute();
         $result = $stm->fetch(PDO::FETCH_ASSOC);
 
@@ -27,9 +27,9 @@ class UsuarioRepository extends BaseRepository
         $conn = $this->db->getConnection();
 
         $sql = 'SELECT 
-                cod_usuario, u.nome, telefone, email, login
+                id_usuario, nom_usuario, email_usuario 
             FROM 
-                tb_usuario u';
+                tb_usuario';
 
         $stm = $conn->prepare($sql);
         $stm->execute();
@@ -45,18 +45,15 @@ class UsuarioRepository extends BaseRepository
 
         $conn = $this->db->getConnection();
 
-        $sql = 'INSERT INTO tb_usuario (nome, endereco, telefone, email, login, senha) VALUES (:nome, :endereco, :telefone, :email, :login, SHA1(:senha))';
+        $sql = 'INSERT INTO tb_usuario (nom_usuario, email_usuario, senha_usuario) VALUES (:nomUsuario, :emailUsuario, SHA1(:senhaUsuario))';
 
         $stm = $conn->prepare($sql);
-        $stm->bindParam(':nome', $usuario->nome);
-        $stm->bindParam(':endereco', $usuario->endereco);
-        $stm->bindParam(':telefone', $usuario->telefone);
-        $stm->bindParam(':email', $usuario->email);
-        $stm->bindParam(':login', $usuario->login);
-        $stm->bindParam(':senha', $usuario->senha);
+        $stm->bindParam(':nomUsuario', $usuario->nomUsuario);
+        $stm->bindParam(':emailUsuario', $usuario->emailUsuario);
+        $stm->bindParam(':senhaUsuario', $usuario->senhaUsuario);
         $stm->execute();
 
-        $usuario->codUsuario = $conn->lastInsertId();
+        $usuario->idUsuario = $conn->lastInsertId();
 
         return $stm->rowCount() > 0;
     }
@@ -69,20 +66,16 @@ class UsuarioRepository extends BaseRepository
         $conn = $this->db->getConnection();
 
         $sql = 'UPDATE tb_usuario SET 
-            nome = :nome, 
-            endereco = :endereco, 
-            telefone = :telefone, 
-            email = :email,
-            login = :login
-        WHERE cod_usuario = :codUsuario';
+            nom_usuario = :nomUsuario, 
+            email_usuario = :emailUsuario, 
+            senha_usuario = SHA1(:senhaUsuario)
+        WHERE id_usuario = :idUsuario';
 
         $stm = $conn->prepare($sql);
-        $stm->bindParam(':codUsuario', $usuario->codUsuario);
-        $stm->bindParam(':nome', $usuario->nome);
-        $stm->bindParam(':endereco', $usuario->endereco);
-        $stm->bindParam(':telefone', $usuario->telefone);
-        $stm->bindParam(':email', $usuario->email);
-        $stm->bindParam(':login', $usuario->login);
+        $stm->bindParam(':nomUsuario', $usuario->nomUsuario);
+        $stm->bindParam(':emailUsuario', $usuario->emailUsuario);
+        $stm->bindParam(':senhaUsuario', $usuario->senhaUsuario);
+        $stm->bindParam(':idUsuario', $usuario->idUsuario);
         $stm->execute();
 
         return $stm->rowCount() > 0;
@@ -92,7 +85,7 @@ class UsuarioRepository extends BaseRepository
     {
         $conn = $this->db->getConnection();
 
-        $sql = 'SELECT cod_usuario, nome FROM tb_usuario WHERE login = :login && senha = SHA1(:senha)';
+        $sql = 'SELECT id_usuario, nom_usuario FROM tb_usuario WHERE email_usuario = :login && senha_usuario = SHA1(:senha)';
 
         $stm = $conn->prepare($sql);
         $stm->bindParam(':login', $usuario->login);
@@ -101,27 +94,27 @@ class UsuarioRepository extends BaseRepository
 
         $result = $stm->fetch(PDO::FETCH_ASSOC);
 
-        if (!$result['cod_usuario']) {
+        if (!$result['id_usuario']) {
             throw new Warning("Usuário ou senha inválidos");
         }
 
         $usuario->FillByDB($result);
     }
 
-    private function IsAvailableUser($login, $codUsuario = null)
+    private function IsAvailableUser($emailUsuario, $idUsuario = null)
     {
         $conn = $this->db->getConnection();
 
-        $sql = 'SELECT cod_usuario FROM tb_usuario WHERE login = :login';
+        $sql = 'SELECT id_usuario FROM tb_usuario WHERE email_usuario = :emailUsuario';
 
-        if ($codUsuario)
-            $sql .= ' AND cod_usuario <> :codUsuario';
+        if ($idUsuario)
+            $sql .= ' AND id_usuario <> :idUsuario';
 
         $stm = $conn->prepare($sql);
-        $stm->bindParam(':login', $login);
+        $stm->bindParam(':emailUsuario', $emailUsuario);
 
         if ($codUsuario)
-            $stm->bindParam(':codUsuario', $codUsuario);
+            $stm->bindParam(':idUsuario', $idUsuario);
 
         $stm->execute();
 

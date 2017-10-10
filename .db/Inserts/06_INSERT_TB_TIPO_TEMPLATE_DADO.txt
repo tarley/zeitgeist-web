@@ -1,0 +1,7 @@
+/*==============================================================*/
+/* 		CADASTRO TIPO_TEMPLATE_DADO                     */
+/*==============================================================*/
+
+INSERT INTO `tb_tipo_template_dado`(`desc_tipo_template_dado`) VALUES ("String");
+INSERT INTO `tb_tipo_template_dado`(`desc_tipo_template_dado`) VALUES ("Texto");
+INSERT INTO `tb_tipo_template_dado`(`desc_tipo_template_dado`) VALUES ("Imagem");

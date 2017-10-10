@@ -1,8 +1,10 @@
 <html>
 
 <head>
+  <base href="/" />
+  
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+   <link type="text/css" rel="stylesheet" href="assets/materialize/css/materialize.min.css" media="screen,projection" />
   <style>
     body {
       display: flex;
@@ -35,35 +37,36 @@
   </style>
 </head>
 
-<body>
+<body ng-app="ZeitGeist">
   <div class="section"></div>
   <main>
     <center>
-      <img class="responsive-img" style="width: 250px;"src="images/logo-zeitgeist.png" />
+      <img class="responsive-img" style="width: 250px;"src="assets/materialize/images/logo-zeitgeist.png" />
       <div class="section"></div>
 
       <h5 class="indigo-text">Insira o seu usuario</h5>
       <div class="section"></div>
 
-      <div class="container">
+      <div ng-controller="LoginCtrl as login" class="container">
         <div class="z-depth-1 grey lighten-4 row" style="display: inline-block; padding: 32px 48px 0px 48px; border: 1px solid #EEE;">
 
-          <form class="col s12" method="post">
+          <form class="col s12" ng-submit="login()">
             <div class='row'>
-              <div class='col s12'>
+              <div class='col s12' ng-if="hasError">
+                {{msg}}
               </div>
             </div>
 
             <div class='row'>
               <div class='input-field col s12'>
-                <input class='validate' type='email' name='email' id='email' />
+                <input class='validate' type='text' name='email' id='email'ng-model="usuario.login" />
                 <label for='email'>Insira o seu usuario</label>
               </div>
             </div>
 
             <div class='row'>
               <div class='input-field col s12'>
-                <input class='validate' type='password' name='password' id='password' />
+                <input class='validate' type='password' name='password' id='password' ng-model="usuario.senha"/>
                 <label for='password'>Insira sua senha</label>
               </div>
               <label style='float: right;'>
@@ -87,8 +90,22 @@
     <div class="section"></div>
   </main>
 
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+    <!-- Custom Scripts -->
+    <script src="assets/js/angular/angular.min.js"></script>
+    <script src="assets/js/angular/angular-route.min.js"></script>
+    <script src="assets/js/angular/angular-sanitize.min.js"></script>
+    <script src="assets/js/angular/angular-cookies.min.js"></script>
+    <script src="assets/js/angular/mask.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="assets/materialize/js/materialize.min.js"></script>
+    <script src="assets/js/custom/custom.js"></script>
+
+<script src="app/app.js"></script>
+<script src="app/module-main.js"></script>
+<script src="app/module-usuario.js"></script>
+<script src="app/module-jornal.js"></script>
+<script src="app/service.js"></script>
+
 </body>
 
 </html>
