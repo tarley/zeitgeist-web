@@ -1,0 +1,1124 @@
+[29-Sep-2017 20:05:55 America/Sao_Paulo] PHP Warning:  fopen(/home/ubuntu/workspace/zeitgeist-web/api/_log/Log-2017_09_29.log): failed to open stream: No such file or directory in /home/ubuntu/workspace/api/util/util.php on line 15
+[29-Sep-2017 20:05:55 America/Sao_Paulo] PHP Stack trace:
+[29-Sep-2017 20:05:55 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[29-Sep-2017 20:05:55 America/Sao_Paulo] PHP   2. UsuarioController->ProcessRequest() /home/ubuntu/workspace/api/index.php:34
+[29-Sep-2017 20:05:55 America/Sao_Paulo] PHP   3. UsuarioController->ActionGetList() /home/ubuntu/workspace/api/controller/usuario-controller.php:14
+[29-Sep-2017 20:05:55 America/Sao_Paulo] PHP   4. BaseRepository->__construct() /home/ubuntu/workspace/api/controller/usuario-controller.php:54
+[29-Sep-2017 20:05:55 America/Sao_Paulo] PHP   5. DBContext->__construct() /home/ubuntu/workspace/api/repository/base-repository.php:9
+[29-Sep-2017 20:05:55 America/Sao_Paulo] PHP   6. CreateLog() /home/ubuntu/workspace/api/util/db-context.php:20
+[29-Sep-2017 20:05:55 America/Sao_Paulo] PHP   7. fopen() /home/ubuntu/workspace/api/util/util.php:15
+[29-Sep-2017 20:05:55 America/Sao_Paulo] PHP Warning:  fwrite() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/api/util/util.php on line 16
+[29-Sep-2017 20:05:55 America/Sao_Paulo] PHP Stack trace:
+[29-Sep-2017 20:05:55 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[29-Sep-2017 20:05:55 America/Sao_Paulo] PHP   2. UsuarioController->ProcessRequest() /home/ubuntu/workspace/api/index.php:34
+[29-Sep-2017 20:05:55 America/Sao_Paulo] PHP   3. UsuarioController->ActionGetList() /home/ubuntu/workspace/api/controller/usuario-controller.php:14
+[29-Sep-2017 20:05:55 America/Sao_Paulo] PHP   4. BaseRepository->__construct() /home/ubuntu/workspace/api/controller/usuario-controller.php:54
+[29-Sep-2017 20:05:55 America/Sao_Paulo] PHP   5. DBContext->__construct() /home/ubuntu/workspace/api/repository/base-repository.php:9
+[29-Sep-2017 20:05:55 America/Sao_Paulo] PHP   6. CreateLog() /home/ubuntu/workspace/api/util/db-context.php:20
+[29-Sep-2017 20:05:55 America/Sao_Paulo] PHP   7. fwrite() /home/ubuntu/workspace/api/util/util.php:16
+[29-Sep-2017 20:05:55 America/Sao_Paulo] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/api/util/util.php on line 17
+[29-Sep-2017 20:05:55 America/Sao_Paulo] PHP Stack trace:
+[29-Sep-2017 20:05:55 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[29-Sep-2017 20:05:55 America/Sao_Paulo] PHP   2. UsuarioController->ProcessRequest() /home/ubuntu/workspace/api/index.php:34
+[29-Sep-2017 20:05:55 America/Sao_Paulo] PHP   3. UsuarioController->ActionGetList() /home/ubuntu/workspace/api/controller/usuario-controller.php:14
+[29-Sep-2017 20:05:55 America/Sao_Paulo] PHP   4. BaseRepository->__construct() /home/ubuntu/workspace/api/controller/usuario-controller.php:54
+[29-Sep-2017 20:05:55 America/Sao_Paulo] PHP   5. DBContext->__construct() /home/ubuntu/workspace/api/repository/base-repository.php:9
+[29-Sep-2017 20:05:55 America/Sao_Paulo] PHP   6. CreateLog() /home/ubuntu/workspace/api/util/db-context.php:20
+[29-Sep-2017 20:05:55 America/Sao_Paulo] PHP   7. fclose() /home/ubuntu/workspace/api/util/util.php:17
+[29-Sep-2017 20:05:55 America/Sao_Paulo] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/api/repository/usuario-repository.php on line 34
+[29-Sep-2017 20:05:55 America/Sao_Paulo] PHP Stack trace:
+[29-Sep-2017 20:05:55 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[29-Sep-2017 20:05:55 America/Sao_Paulo] PHP   2. UsuarioController->ProcessRequest() /home/ubuntu/workspace/api/index.php:34
+[29-Sep-2017 20:05:55 America/Sao_Paulo] PHP   3. UsuarioController->ActionGetList() /home/ubuntu/workspace/api/controller/usuario-controller.php:14
+[29-Sep-2017 20:05:55 America/Sao_Paulo] PHP   4. UsuarioRepository->GetList() /home/ubuntu/workspace/api/controller/usuario-controller.php:55
+[29-Sep-2017 20:05:56 America/Sao_Paulo] PHP Warning:  fopen(/home/ubuntu/workspace/zeitgeist-web/api/_log/Log-2017_09_29.log): failed to open stream: No such file or directory in /home/ubuntu/workspace/api/util/util.php on line 15
+[29-Sep-2017 20:05:56 America/Sao_Paulo] PHP Stack trace:
+[29-Sep-2017 20:05:56 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[29-Sep-2017 20:05:56 America/Sao_Paulo] PHP   2. UsuarioController->ProcessRequest() /home/ubuntu/workspace/api/index.php:34
+[29-Sep-2017 20:05:56 America/Sao_Paulo] PHP   3. UsuarioController->ActionGetList() /home/ubuntu/workspace/api/controller/usuario-controller.php:14
+[29-Sep-2017 20:05:56 America/Sao_Paulo] PHP   4. BaseRepository->__construct() /home/ubuntu/workspace/api/controller/usuario-controller.php:54
+[29-Sep-2017 20:05:56 America/Sao_Paulo] PHP   5. DBContext->__construct() /home/ubuntu/workspace/api/repository/base-repository.php:9
+[29-Sep-2017 20:05:56 America/Sao_Paulo] PHP   6. CreateLog() /home/ubuntu/workspace/api/util/db-context.php:20
+[29-Sep-2017 20:05:56 America/Sao_Paulo] PHP   7. fopen() /home/ubuntu/workspace/api/util/util.php:15
+[29-Sep-2017 20:05:56 America/Sao_Paulo] PHP Warning:  fwrite() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/api/util/util.php on line 16
+[29-Sep-2017 20:05:56 America/Sao_Paulo] PHP Stack trace:
+[29-Sep-2017 20:05:56 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[29-Sep-2017 20:05:56 America/Sao_Paulo] PHP   2. UsuarioController->ProcessRequest() /home/ubuntu/workspace/api/index.php:34
+[29-Sep-2017 20:05:56 America/Sao_Paulo] PHP   3. UsuarioController->ActionGetList() /home/ubuntu/workspace/api/controller/usuario-controller.php:14
+[29-Sep-2017 20:05:56 America/Sao_Paulo] PHP   4. BaseRepository->__construct() /home/ubuntu/workspace/api/controller/usuario-controller.php:54
+[29-Sep-2017 20:05:56 America/Sao_Paulo] PHP   5. DBContext->__construct() /home/ubuntu/workspace/api/repository/base-repository.php:9
+[29-Sep-2017 20:05:56 America/Sao_Paulo] PHP   6. CreateLog() /home/ubuntu/workspace/api/util/db-context.php:20
+[29-Sep-2017 20:05:56 America/Sao_Paulo] PHP   7. fwrite() /home/ubuntu/workspace/api/util/util.php:16
+[29-Sep-2017 20:05:56 America/Sao_Paulo] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/api/util/util.php on line 17
+[29-Sep-2017 20:05:56 America/Sao_Paulo] PHP Stack trace:
+[29-Sep-2017 20:05:56 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[29-Sep-2017 20:05:56 America/Sao_Paulo] PHP   2. UsuarioController->ProcessRequest() /home/ubuntu/workspace/api/index.php:34
+[29-Sep-2017 20:05:56 America/Sao_Paulo] PHP   3. UsuarioController->ActionGetList() /home/ubuntu/workspace/api/controller/usuario-controller.php:14
+[29-Sep-2017 20:05:56 America/Sao_Paulo] PHP   4. BaseRepository->__construct() /home/ubuntu/workspace/api/controller/usuario-controller.php:54
+[29-Sep-2017 20:05:56 America/Sao_Paulo] PHP   5. DBContext->__construct() /home/ubuntu/workspace/api/repository/base-repository.php:9
+[29-Sep-2017 20:05:56 America/Sao_Paulo] PHP   6. CreateLog() /home/ubuntu/workspace/api/util/db-context.php:20
+[29-Sep-2017 20:05:56 America/Sao_Paulo] PHP   7. fclose() /home/ubuntu/workspace/api/util/util.php:17
+[29-Sep-2017 20:05:56 America/Sao_Paulo] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/api/repository/usuario-repository.php on line 34
+[29-Sep-2017 20:05:56 America/Sao_Paulo] PHP Stack trace:
+[29-Sep-2017 20:05:56 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[29-Sep-2017 20:05:56 America/Sao_Paulo] PHP   2. UsuarioController->ProcessRequest() /home/ubuntu/workspace/api/index.php:34
+[29-Sep-2017 20:05:56 America/Sao_Paulo] PHP   3. UsuarioController->ActionGetList() /home/ubuntu/workspace/api/controller/usuario-controller.php:14
+[29-Sep-2017 20:05:56 America/Sao_Paulo] PHP   4. UsuarioRepository->GetList() /home/ubuntu/workspace/api/controller/usuario-controller.php:55
+[29-Sep-2017 20:06:29 America/Sao_Paulo] PHP Warning:  fopen(/home/ubuntu/workspace/zeitgeist-web/api/_log/Log-2017_09_29.log): failed to open stream: No such file or directory in /home/ubuntu/workspace/api/util/util.php on line 15
+[29-Sep-2017 20:06:29 America/Sao_Paulo] PHP Stack trace:
+[29-Sep-2017 20:06:29 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[29-Sep-2017 20:06:29 America/Sao_Paulo] PHP   2. UsuarioController->ProcessRequest() /home/ubuntu/workspace/api/index.php:34
+[29-Sep-2017 20:06:29 America/Sao_Paulo] PHP   3. UsuarioController->ActionGetList() /home/ubuntu/workspace/api/controller/usuario-controller.php:14
+[29-Sep-2017 20:06:29 America/Sao_Paulo] PHP   4. BaseRepository->__construct() /home/ubuntu/workspace/api/controller/usuario-controller.php:54
+[29-Sep-2017 20:06:29 America/Sao_Paulo] PHP   5. DBContext->__construct() /home/ubuntu/workspace/api/repository/base-repository.php:9
+[29-Sep-2017 20:06:29 America/Sao_Paulo] PHP   6. CreateLog() /home/ubuntu/workspace/api/util/db-context.php:20
+[29-Sep-2017 20:06:29 America/Sao_Paulo] PHP   7. fopen() /home/ubuntu/workspace/api/util/util.php:15
+[29-Sep-2017 20:06:29 America/Sao_Paulo] PHP Warning:  fwrite() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/api/util/util.php on line 16
+[29-Sep-2017 20:06:29 America/Sao_Paulo] PHP Stack trace:
+[29-Sep-2017 20:06:29 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[29-Sep-2017 20:06:29 America/Sao_Paulo] PHP   2. UsuarioController->ProcessRequest() /home/ubuntu/workspace/api/index.php:34
+[29-Sep-2017 20:06:29 America/Sao_Paulo] PHP   3. UsuarioController->ActionGetList() /home/ubuntu/workspace/api/controller/usuario-controller.php:14
+[29-Sep-2017 20:06:29 America/Sao_Paulo] PHP   4. BaseRepository->__construct() /home/ubuntu/workspace/api/controller/usuario-controller.php:54
+[29-Sep-2017 20:06:29 America/Sao_Paulo] PHP   5. DBContext->__construct() /home/ubuntu/workspace/api/repository/base-repository.php:9
+[29-Sep-2017 20:06:29 America/Sao_Paulo] PHP   6. CreateLog() /home/ubuntu/workspace/api/util/db-context.php:20
+[29-Sep-2017 20:06:29 America/Sao_Paulo] PHP   7. fwrite() /home/ubuntu/workspace/api/util/util.php:16
+[29-Sep-2017 20:06:29 America/Sao_Paulo] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/api/util/util.php on line 17
+[29-Sep-2017 20:06:29 America/Sao_Paulo] PHP Stack trace:
+[29-Sep-2017 20:06:29 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[29-Sep-2017 20:06:29 America/Sao_Paulo] PHP   2. UsuarioController->ProcessRequest() /home/ubuntu/workspace/api/index.php:34
+[29-Sep-2017 20:06:29 America/Sao_Paulo] PHP   3. UsuarioController->ActionGetList() /home/ubuntu/workspace/api/controller/usuario-controller.php:14
+[29-Sep-2017 20:06:29 America/Sao_Paulo] PHP   4. BaseRepository->__construct() /home/ubuntu/workspace/api/controller/usuario-controller.php:54
+[29-Sep-2017 20:06:29 America/Sao_Paulo] PHP   5. DBContext->__construct() /home/ubuntu/workspace/api/repository/base-repository.php:9
+[29-Sep-2017 20:06:29 America/Sao_Paulo] PHP   6. CreateLog() /home/ubuntu/workspace/api/util/db-context.php:20
+[29-Sep-2017 20:06:29 America/Sao_Paulo] PHP   7. fclose() /home/ubuntu/workspace/api/util/util.php:17
+[29-Sep-2017 20:06:29 America/Sao_Paulo] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/api/repository/usuario-repository.php on line 34
+[29-Sep-2017 20:06:29 America/Sao_Paulo] PHP Stack trace:
+[29-Sep-2017 20:06:29 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[29-Sep-2017 20:06:29 America/Sao_Paulo] PHP   2. UsuarioController->ProcessRequest() /home/ubuntu/workspace/api/index.php:34
+[29-Sep-2017 20:06:29 America/Sao_Paulo] PHP   3. UsuarioController->ActionGetList() /home/ubuntu/workspace/api/controller/usuario-controller.php:14
+[29-Sep-2017 20:06:29 America/Sao_Paulo] PHP   4. UsuarioRepository->GetList() /home/ubuntu/workspace/api/controller/usuario-controller.php:55
+[29-Sep-2017 20:06:31 America/Sao_Paulo] PHP Warning:  fopen(/home/ubuntu/workspace/zeitgeist-web/api/_log/Log-2017_09_29.log): failed to open stream: No such file or directory in /home/ubuntu/workspace/api/util/util.php on line 15
+[29-Sep-2017 20:06:31 America/Sao_Paulo] PHP Stack trace:
+[29-Sep-2017 20:06:31 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[29-Sep-2017 20:06:31 America/Sao_Paulo] PHP   2. UsuarioController->ProcessRequest() /home/ubuntu/workspace/api/index.php:34
+[29-Sep-2017 20:06:31 America/Sao_Paulo] PHP   3. UsuarioController->ActionGetList() /home/ubuntu/workspace/api/controller/usuario-controller.php:14
+[29-Sep-2017 20:06:31 America/Sao_Paulo] PHP   4. BaseRepository->__construct() /home/ubuntu/workspace/api/controller/usuario-controller.php:54
+[29-Sep-2017 20:06:31 America/Sao_Paulo] PHP   5. DBContext->__construct() /home/ubuntu/workspace/api/repository/base-repository.php:9
+[29-Sep-2017 20:06:31 America/Sao_Paulo] PHP   6. CreateLog() /home/ubuntu/workspace/api/util/db-context.php:20
+[29-Sep-2017 20:06:31 America/Sao_Paulo] PHP   7. fopen() /home/ubuntu/workspace/api/util/util.php:15
+[29-Sep-2017 20:06:31 America/Sao_Paulo] PHP Warning:  fwrite() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/api/util/util.php on line 16
+[29-Sep-2017 20:06:31 America/Sao_Paulo] PHP Stack trace:
+[29-Sep-2017 20:06:31 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[29-Sep-2017 20:06:31 America/Sao_Paulo] PHP   2. UsuarioController->ProcessRequest() /home/ubuntu/workspace/api/index.php:34
+[29-Sep-2017 20:06:31 America/Sao_Paulo] PHP   3. UsuarioController->ActionGetList() /home/ubuntu/workspace/api/controller/usuario-controller.php:14
+[29-Sep-2017 20:06:31 America/Sao_Paulo] PHP   4. BaseRepository->__construct() /home/ubuntu/workspace/api/controller/usuario-controller.php:54
+[29-Sep-2017 20:06:31 America/Sao_Paulo] PHP   5. DBContext->__construct() /home/ubuntu/workspace/api/repository/base-repository.php:9
+[29-Sep-2017 20:06:31 America/Sao_Paulo] PHP   6. CreateLog() /home/ubuntu/workspace/api/util/db-context.php:20
+[29-Sep-2017 20:06:31 America/Sao_Paulo] PHP   7. fwrite() /home/ubuntu/workspace/api/util/util.php:16
+[29-Sep-2017 20:06:31 America/Sao_Paulo] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/api/util/util.php on line 17
+[29-Sep-2017 20:06:31 America/Sao_Paulo] PHP Stack trace:
+[29-Sep-2017 20:06:31 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[29-Sep-2017 20:06:31 America/Sao_Paulo] PHP   2. UsuarioController->ProcessRequest() /home/ubuntu/workspace/api/index.php:34
+[29-Sep-2017 20:06:31 America/Sao_Paulo] PHP   3. UsuarioController->ActionGetList() /home/ubuntu/workspace/api/controller/usuario-controller.php:14
+[29-Sep-2017 20:06:31 America/Sao_Paulo] PHP   4. BaseRepository->__construct() /home/ubuntu/workspace/api/controller/usuario-controller.php:54
+[29-Sep-2017 20:06:31 America/Sao_Paulo] PHP   5. DBContext->__construct() /home/ubuntu/workspace/api/repository/base-repository.php:9
+[29-Sep-2017 20:06:31 America/Sao_Paulo] PHP   6. CreateLog() /home/ubuntu/workspace/api/util/db-context.php:20
+[29-Sep-2017 20:06:31 America/Sao_Paulo] PHP   7. fclose() /home/ubuntu/workspace/api/util/util.php:17
+[29-Sep-2017 20:06:31 America/Sao_Paulo] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/api/repository/usuario-repository.php on line 34
+[29-Sep-2017 20:06:31 America/Sao_Paulo] PHP Stack trace:
+[29-Sep-2017 20:06:31 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[29-Sep-2017 20:06:31 America/Sao_Paulo] PHP   2. UsuarioController->ProcessRequest() /home/ubuntu/workspace/api/index.php:34
+[29-Sep-2017 20:06:31 America/Sao_Paulo] PHP   3. UsuarioController->ActionGetList() /home/ubuntu/workspace/api/controller/usuario-controller.php:14
+[29-Sep-2017 20:06:31 America/Sao_Paulo] PHP   4. UsuarioRepository->GetList() /home/ubuntu/workspace/api/controller/usuario-controller.php:55
+[29-Sep-2017 20:06:32 America/Sao_Paulo] PHP Warning:  fopen(/home/ubuntu/workspace/zeitgeist-web/api/_log/Log-2017_09_29.log): failed to open stream: No such file or directory in /home/ubuntu/workspace/api/util/util.php on line 15
+[29-Sep-2017 20:06:32 America/Sao_Paulo] PHP Stack trace:
+[29-Sep-2017 20:06:32 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[29-Sep-2017 20:06:32 America/Sao_Paulo] PHP   2. JornalController->ProcessRequest() /home/ubuntu/workspace/api/index.php:62
+[29-Sep-2017 20:06:32 America/Sao_Paulo] PHP   3. JornalController->ActionGetList() /home/ubuntu/workspace/api/controller/jornal-controller.php:11
+[29-Sep-2017 20:06:32 America/Sao_Paulo] PHP   4. BaseRepository->__construct() /home/ubuntu/workspace/api/controller/jornal-controller.php:35
+[29-Sep-2017 20:06:32 America/Sao_Paulo] PHP   5. DBContext->__construct() /home/ubuntu/workspace/api/repository/base-repository.php:9
+[29-Sep-2017 20:06:32 America/Sao_Paulo] PHP   6. CreateLog() /home/ubuntu/workspace/api/util/db-context.php:20
+[29-Sep-2017 20:06:32 America/Sao_Paulo] PHP   7. fopen() /home/ubuntu/workspace/api/util/util.php:15
+[29-Sep-2017 20:06:32 America/Sao_Paulo] PHP Warning:  fwrite() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/api/util/util.php on line 16
+[29-Sep-2017 20:06:32 America/Sao_Paulo] PHP Stack trace:
+[29-Sep-2017 20:06:32 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[29-Sep-2017 20:06:32 America/Sao_Paulo] PHP   2. JornalController->ProcessRequest() /home/ubuntu/workspace/api/index.php:62
+[29-Sep-2017 20:06:32 America/Sao_Paulo] PHP   3. JornalController->ActionGetList() /home/ubuntu/workspace/api/controller/jornal-controller.php:11
+[29-Sep-2017 20:06:32 America/Sao_Paulo] PHP   4. BaseRepository->__construct() /home/ubuntu/workspace/api/controller/jornal-controller.php:35
+[29-Sep-2017 20:06:32 America/Sao_Paulo] PHP   5. DBContext->__construct() /home/ubuntu/workspace/api/repository/base-repository.php:9
+[29-Sep-2017 20:06:32 America/Sao_Paulo] PHP   6. CreateLog() /home/ubuntu/workspace/api/util/db-context.php:20
+[29-Sep-2017 20:06:32 America/Sao_Paulo] PHP   7. fwrite() /home/ubuntu/workspace/api/util/util.php:16
+[29-Sep-2017 20:06:32 America/Sao_Paulo] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/api/util/util.php on line 17
+[29-Sep-2017 20:06:32 America/Sao_Paulo] PHP Stack trace:
+[29-Sep-2017 20:06:32 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[29-Sep-2017 20:06:32 America/Sao_Paulo] PHP   2. JornalController->ProcessRequest() /home/ubuntu/workspace/api/index.php:62
+[29-Sep-2017 20:06:32 America/Sao_Paulo] PHP   3. JornalController->ActionGetList() /home/ubuntu/workspace/api/controller/jornal-controller.php:11
+[29-Sep-2017 20:06:32 America/Sao_Paulo] PHP   4. BaseRepository->__construct() /home/ubuntu/workspace/api/controller/jornal-controller.php:35
+[29-Sep-2017 20:06:32 America/Sao_Paulo] PHP   5. DBContext->__construct() /home/ubuntu/workspace/api/repository/base-repository.php:9
+[29-Sep-2017 20:06:32 America/Sao_Paulo] PHP   6. CreateLog() /home/ubuntu/workspace/api/util/db-context.php:20
+[29-Sep-2017 20:06:32 America/Sao_Paulo] PHP   7. fclose() /home/ubuntu/workspace/api/util/util.php:17
+[29-Sep-2017 20:06:32 America/Sao_Paulo] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/api/repository/jornal-repository.php on line 40
+[29-Sep-2017 20:06:32 America/Sao_Paulo] PHP Stack trace:
+[29-Sep-2017 20:06:32 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[29-Sep-2017 20:06:32 America/Sao_Paulo] PHP   2. JornalController->ProcessRequest() /home/ubuntu/workspace/api/index.php:62
+[29-Sep-2017 20:06:32 America/Sao_Paulo] PHP   3. JornalController->ActionGetList() /home/ubuntu/workspace/api/controller/jornal-controller.php:11
+[29-Sep-2017 20:06:32 America/Sao_Paulo] PHP   4. JornalRepository->GetList() /home/ubuntu/workspace/api/controller/jornal-controller.php:36
+[29-Sep-2017 20:06:32 America/Sao_Paulo] PHP Warning:  fopen(/home/ubuntu/workspace/zeitgeist-web/api/_log/Log-2017_09_29.log): failed to open stream: No such file or directory in /home/ubuntu/workspace/api/util/util.php on line 15
+[29-Sep-2017 20:06:32 America/Sao_Paulo] PHP Stack trace:
+[29-Sep-2017 20:06:32 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[29-Sep-2017 20:06:32 America/Sao_Paulo] PHP   2. JornalController->ProcessRequest() /home/ubuntu/workspace/api/index.php:62
+[29-Sep-2017 20:06:32 America/Sao_Paulo] PHP   3. JornalController->ActionGetList() /home/ubuntu/workspace/api/controller/jornal-controller.php:11
+[29-Sep-2017 20:06:32 America/Sao_Paulo] PHP   4. BaseRepository->__construct() /home/ubuntu/workspace/api/controller/jornal-controller.php:35
+[29-Sep-2017 20:06:32 America/Sao_Paulo] PHP   5. DBContext->__construct() /home/ubuntu/workspace/api/repository/base-repository.php:9
+[29-Sep-2017 20:06:32 America/Sao_Paulo] PHP   6. CreateLog() /home/ubuntu/workspace/api/util/db-context.php:20
+[29-Sep-2017 20:06:32 America/Sao_Paulo] PHP   7. fopen() /home/ubuntu/workspace/api/util/util.php:15
+[29-Sep-2017 20:06:32 America/Sao_Paulo] PHP Warning:  fwrite() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/api/util/util.php on line 16
+[29-Sep-2017 20:06:32 America/Sao_Paulo] PHP Stack trace:
+[29-Sep-2017 20:06:32 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[29-Sep-2017 20:06:32 America/Sao_Paulo] PHP   2. JornalController->ProcessRequest() /home/ubuntu/workspace/api/index.php:62
+[29-Sep-2017 20:06:32 America/Sao_Paulo] PHP   3. JornalController->ActionGetList() /home/ubuntu/workspace/api/controller/jornal-controller.php:11
+[29-Sep-2017 20:06:32 America/Sao_Paulo] PHP   4. BaseRepository->__construct() /home/ubuntu/workspace/api/controller/jornal-controller.php:35
+[29-Sep-2017 20:06:32 America/Sao_Paulo] PHP   5. DBContext->__construct() /home/ubuntu/workspace/api/repository/base-repository.php:9
+[29-Sep-2017 20:06:32 America/Sao_Paulo] PHP   6. CreateLog() /home/ubuntu/workspace/api/util/db-context.php:20
+[29-Sep-2017 20:06:32 America/Sao_Paulo] PHP   7. fwrite() /home/ubuntu/workspace/api/util/util.php:16
+[29-Sep-2017 20:06:32 America/Sao_Paulo] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/api/util/util.php on line 17
+[29-Sep-2017 20:06:32 America/Sao_Paulo] PHP Stack trace:
+[29-Sep-2017 20:06:32 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[29-Sep-2017 20:06:32 America/Sao_Paulo] PHP   2. JornalController->ProcessRequest() /home/ubuntu/workspace/api/index.php:62
+[29-Sep-2017 20:06:32 America/Sao_Paulo] PHP   3. JornalController->ActionGetList() /home/ubuntu/workspace/api/controller/jornal-controller.php:11
+[29-Sep-2017 20:06:32 America/Sao_Paulo] PHP   4. BaseRepository->__construct() /home/ubuntu/workspace/api/controller/jornal-controller.php:35
+[29-Sep-2017 20:06:32 America/Sao_Paulo] PHP   5. DBContext->__construct() /home/ubuntu/workspace/api/repository/base-repository.php:9
+[29-Sep-2017 20:06:32 America/Sao_Paulo] PHP   6. CreateLog() /home/ubuntu/workspace/api/util/db-context.php:20
+[29-Sep-2017 20:06:32 America/Sao_Paulo] PHP   7. fclose() /home/ubuntu/workspace/api/util/util.php:17
+[29-Sep-2017 20:06:32 America/Sao_Paulo] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/api/repository/jornal-repository.php on line 40
+[29-Sep-2017 20:06:32 America/Sao_Paulo] PHP Stack trace:
+[29-Sep-2017 20:06:32 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[29-Sep-2017 20:06:32 America/Sao_Paulo] PHP   2. JornalController->ProcessRequest() /home/ubuntu/workspace/api/index.php:62
+[29-Sep-2017 20:06:32 America/Sao_Paulo] PHP   3. JornalController->ActionGetList() /home/ubuntu/workspace/api/controller/jornal-controller.php:11
+[29-Sep-2017 20:06:32 America/Sao_Paulo] PHP   4. JornalRepository->GetList() /home/ubuntu/workspace/api/controller/jornal-controller.php:36
+[29-Sep-2017 20:06:32 America/Sao_Paulo] PHP Warning:  fopen(/home/ubuntu/workspace/zeitgeist-web/api/_log/Log-2017_09_29.log): failed to open stream: No such file or directory in /home/ubuntu/workspace/api/util/util.php on line 15
+[29-Sep-2017 20:06:32 America/Sao_Paulo] PHP Stack trace:
+[29-Sep-2017 20:06:32 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[29-Sep-2017 20:06:32 America/Sao_Paulo] PHP   2. UsuarioController->ProcessRequest() /home/ubuntu/workspace/api/index.php:34
+[29-Sep-2017 20:06:32 America/Sao_Paulo] PHP   3. UsuarioController->ActionGetList() /home/ubuntu/workspace/api/controller/usuario-controller.php:14
+[29-Sep-2017 20:06:32 America/Sao_Paulo] PHP   4. BaseRepository->__construct() /home/ubuntu/workspace/api/controller/usuario-controller.php:54
+[29-Sep-2017 20:06:32 America/Sao_Paulo] PHP   5. DBContext->__construct() /home/ubuntu/workspace/api/repository/base-repository.php:9
+[29-Sep-2017 20:06:32 America/Sao_Paulo] PHP   6. CreateLog() /home/ubuntu/workspace/api/util/db-context.php:20
+[29-Sep-2017 20:06:32 America/Sao_Paulo] PHP   7. fopen() /home/ubuntu/workspace/api/util/util.php:15
+[29-Sep-2017 20:06:32 America/Sao_Paulo] PHP Warning:  fwrite() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/api/util/util.php on line 16
+[29-Sep-2017 20:06:32 America/Sao_Paulo] PHP Stack trace:
+[29-Sep-2017 20:06:32 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[29-Sep-2017 20:06:32 America/Sao_Paulo] PHP   2. UsuarioController->ProcessRequest() /home/ubuntu/workspace/api/index.php:34
+[29-Sep-2017 20:06:32 America/Sao_Paulo] PHP   3. UsuarioController->ActionGetList() /home/ubuntu/workspace/api/controller/usuario-controller.php:14
+[29-Sep-2017 20:06:32 America/Sao_Paulo] PHP   4. BaseRepository->__construct() /home/ubuntu/workspace/api/controller/usuario-controller.php:54
+[29-Sep-2017 20:06:32 America/Sao_Paulo] PHP   5. DBContext->__construct() /home/ubuntu/workspace/api/repository/base-repository.php:9
+[29-Sep-2017 20:06:32 America/Sao_Paulo] PHP   6. CreateLog() /home/ubuntu/workspace/api/util/db-context.php:20
+[29-Sep-2017 20:06:32 America/Sao_Paulo] PHP   7. fwrite() /home/ubuntu/workspace/api/util/util.php:16
+[29-Sep-2017 20:06:32 America/Sao_Paulo] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/api/util/util.php on line 17
+[29-Sep-2017 20:06:32 America/Sao_Paulo] PHP Stack trace:
+[29-Sep-2017 20:06:32 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[29-Sep-2017 20:06:32 America/Sao_Paulo] PHP   2. UsuarioController->ProcessRequest() /home/ubuntu/workspace/api/index.php:34
+[29-Sep-2017 20:06:32 America/Sao_Paulo] PHP   3. UsuarioController->ActionGetList() /home/ubuntu/workspace/api/controller/usuario-controller.php:14
+[29-Sep-2017 20:06:32 America/Sao_Paulo] PHP   4. BaseRepository->__construct() /home/ubuntu/workspace/api/controller/usuario-controller.php:54
+[29-Sep-2017 20:06:32 America/Sao_Paulo] PHP   5. DBContext->__construct() /home/ubuntu/workspace/api/repository/base-repository.php:9
+[29-Sep-2017 20:06:32 America/Sao_Paulo] PHP   6. CreateLog() /home/ubuntu/workspace/api/util/db-context.php:20
+[29-Sep-2017 20:06:32 America/Sao_Paulo] PHP   7. fclose() /home/ubuntu/workspace/api/util/util.php:17
+[29-Sep-2017 20:06:32 America/Sao_Paulo] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/api/repository/usuario-repository.php on line 34
+[29-Sep-2017 20:06:32 America/Sao_Paulo] PHP Stack trace:
+[29-Sep-2017 20:06:32 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[29-Sep-2017 20:06:32 America/Sao_Paulo] PHP   2. UsuarioController->ProcessRequest() /home/ubuntu/workspace/api/index.php:34
+[29-Sep-2017 20:06:32 America/Sao_Paulo] PHP   3. UsuarioController->ActionGetList() /home/ubuntu/workspace/api/controller/usuario-controller.php:14
+[29-Sep-2017 20:06:32 America/Sao_Paulo] PHP   4. UsuarioRepository->GetList() /home/ubuntu/workspace/api/controller/usuario-controller.php:55
+[29-Sep-2017 20:06:33 America/Sao_Paulo] PHP Warning:  fopen(/home/ubuntu/workspace/zeitgeist-web/api/_log/Log-2017_09_29.log): failed to open stream: No such file or directory in /home/ubuntu/workspace/api/util/util.php on line 15
+[29-Sep-2017 20:06:33 America/Sao_Paulo] PHP Stack trace:
+[29-Sep-2017 20:06:33 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[29-Sep-2017 20:06:33 America/Sao_Paulo] PHP   2. UsuarioController->ProcessRequest() /home/ubuntu/workspace/api/index.php:34
+[29-Sep-2017 20:06:33 America/Sao_Paulo] PHP   3. UsuarioController->ActionGetList() /home/ubuntu/workspace/api/controller/usuario-controller.php:14
+[29-Sep-2017 20:06:33 America/Sao_Paulo] PHP   4. BaseRepository->__construct() /home/ubuntu/workspace/api/controller/usuario-controller.php:54
+[29-Sep-2017 20:06:33 America/Sao_Paulo] PHP   5. DBContext->__construct() /home/ubuntu/workspace/api/repository/base-repository.php:9
+[29-Sep-2017 20:06:33 America/Sao_Paulo] PHP   6. CreateLog() /home/ubuntu/workspace/api/util/db-context.php:20
+[29-Sep-2017 20:06:33 America/Sao_Paulo] PHP   7. fopen() /home/ubuntu/workspace/api/util/util.php:15
+[29-Sep-2017 20:06:33 America/Sao_Paulo] PHP Warning:  fwrite() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/api/util/util.php on line 16
+[29-Sep-2017 20:06:33 America/Sao_Paulo] PHP Stack trace:
+[29-Sep-2017 20:06:33 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[29-Sep-2017 20:06:33 America/Sao_Paulo] PHP   2. UsuarioController->ProcessRequest() /home/ubuntu/workspace/api/index.php:34
+[29-Sep-2017 20:06:33 America/Sao_Paulo] PHP   3. UsuarioController->ActionGetList() /home/ubuntu/workspace/api/controller/usuario-controller.php:14
+[29-Sep-2017 20:06:33 America/Sao_Paulo] PHP   4. BaseRepository->__construct() /home/ubuntu/workspace/api/controller/usuario-controller.php:54
+[29-Sep-2017 20:06:33 America/Sao_Paulo] PHP   5. DBContext->__construct() /home/ubuntu/workspace/api/repository/base-repository.php:9
+[29-Sep-2017 20:06:33 America/Sao_Paulo] PHP   6. CreateLog() /home/ubuntu/workspace/api/util/db-context.php:20
+[29-Sep-2017 20:06:33 America/Sao_Paulo] PHP   7. fwrite() /home/ubuntu/workspace/api/util/util.php:16
+[29-Sep-2017 20:06:33 America/Sao_Paulo] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/api/util/util.php on line 17
+[29-Sep-2017 20:06:33 America/Sao_Paulo] PHP Stack trace:
+[29-Sep-2017 20:06:33 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[29-Sep-2017 20:06:33 America/Sao_Paulo] PHP   2. UsuarioController->ProcessRequest() /home/ubuntu/workspace/api/index.php:34
+[29-Sep-2017 20:06:33 America/Sao_Paulo] PHP   3. UsuarioController->ActionGetList() /home/ubuntu/workspace/api/controller/usuario-controller.php:14
+[29-Sep-2017 20:06:33 America/Sao_Paulo] PHP   4. BaseRepository->__construct() /home/ubuntu/workspace/api/controller/usuario-controller.php:54
+[29-Sep-2017 20:06:33 America/Sao_Paulo] PHP   5. DBContext->__construct() /home/ubuntu/workspace/api/repository/base-repository.php:9
+[29-Sep-2017 20:06:33 America/Sao_Paulo] PHP   6. CreateLog() /home/ubuntu/workspace/api/util/db-context.php:20
+[29-Sep-2017 20:06:33 America/Sao_Paulo] PHP   7. fclose() /home/ubuntu/workspace/api/util/util.php:17
+[29-Sep-2017 20:06:33 America/Sao_Paulo] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/api/repository/usuario-repository.php on line 34
+[29-Sep-2017 20:06:33 America/Sao_Paulo] PHP Stack trace:
+[29-Sep-2017 20:06:33 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[29-Sep-2017 20:06:33 America/Sao_Paulo] PHP   2. UsuarioController->ProcessRequest() /home/ubuntu/workspace/api/index.php:34
+[29-Sep-2017 20:06:33 America/Sao_Paulo] PHP   3. UsuarioController->ActionGetList() /home/ubuntu/workspace/api/controller/usuario-controller.php:14
+[29-Sep-2017 20:06:33 America/Sao_Paulo] PHP   4. UsuarioRepository->GetList() /home/ubuntu/workspace/api/controller/usuario-controller.php:55
+[29-Sep-2017 20:07:02 America/Sao_Paulo] PHP Warning:  fopen(/home/ubuntu/workspace/zeitgeist-web/api/_log/Log-2017_09_29.log): failed to open stream: No such file or directory in /home/ubuntu/workspace/api/util/util.php on line 15
+[29-Sep-2017 20:07:02 America/Sao_Paulo] PHP Stack trace:
+[29-Sep-2017 20:07:02 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[29-Sep-2017 20:07:02 America/Sao_Paulo] PHP   2. UsuarioController->ProcessRequest() /home/ubuntu/workspace/api/index.php:34
+[29-Sep-2017 20:07:02 America/Sao_Paulo] PHP   3. UsuarioController->ActionInsert() /home/ubuntu/workspace/api/controller/usuario-controller.php:18
+[29-Sep-2017 20:07:02 America/Sao_Paulo] PHP   4. BaseRepository->__construct() /home/ubuntu/workspace/api/controller/usuario-controller.php:79
+[29-Sep-2017 20:07:02 America/Sao_Paulo] PHP   5. DBContext->__construct() /home/ubuntu/workspace/api/repository/base-repository.php:9
+[29-Sep-2017 20:07:02 America/Sao_Paulo] PHP   6. CreateLog() /home/ubuntu/workspace/api/util/db-context.php:20
+[29-Sep-2017 20:07:02 America/Sao_Paulo] PHP   7. fopen() /home/ubuntu/workspace/api/util/util.php:15
+[29-Sep-2017 20:07:02 America/Sao_Paulo] PHP Warning:  fwrite() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/api/util/util.php on line 16
+[29-Sep-2017 20:07:02 America/Sao_Paulo] PHP Stack trace:
+[29-Sep-2017 20:07:02 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[29-Sep-2017 20:07:02 America/Sao_Paulo] PHP   2. UsuarioController->ProcessRequest() /home/ubuntu/workspace/api/index.php:34
+[29-Sep-2017 20:07:02 America/Sao_Paulo] PHP   3. UsuarioController->ActionInsert() /home/ubuntu/workspace/api/controller/usuario-controller.php:18
+[29-Sep-2017 20:07:02 America/Sao_Paulo] PHP   4. BaseRepository->__construct() /home/ubuntu/workspace/api/controller/usuario-controller.php:79
+[29-Sep-2017 20:07:02 America/Sao_Paulo] PHP   5. DBContext->__construct() /home/ubuntu/workspace/api/repository/base-repository.php:9
+[29-Sep-2017 20:07:02 America/Sao_Paulo] PHP   6. CreateLog() /home/ubuntu/workspace/api/util/db-context.php:20
+[29-Sep-2017 20:07:02 America/Sao_Paulo] PHP   7. fwrite() /home/ubuntu/workspace/api/util/util.php:16
+[29-Sep-2017 20:07:02 America/Sao_Paulo] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/api/util/util.php on line 17
+[29-Sep-2017 20:07:02 America/Sao_Paulo] PHP Stack trace:
+[29-Sep-2017 20:07:02 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[29-Sep-2017 20:07:02 America/Sao_Paulo] PHP   2. UsuarioController->ProcessRequest() /home/ubuntu/workspace/api/index.php:34
+[29-Sep-2017 20:07:02 America/Sao_Paulo] PHP   3. UsuarioController->ActionInsert() /home/ubuntu/workspace/api/controller/usuario-controller.php:18
+[29-Sep-2017 20:07:02 America/Sao_Paulo] PHP   4. BaseRepository->__construct() /home/ubuntu/workspace/api/controller/usuario-controller.php:79
+[29-Sep-2017 20:07:02 America/Sao_Paulo] PHP   5. DBContext->__construct() /home/ubuntu/workspace/api/repository/base-repository.php:9
+[29-Sep-2017 20:07:02 America/Sao_Paulo] PHP   6. CreateLog() /home/ubuntu/workspace/api/util/db-context.php:20
+[29-Sep-2017 20:07:02 America/Sao_Paulo] PHP   7. fclose() /home/ubuntu/workspace/api/util/util.php:17
+[29-Sep-2017 20:07:02 America/Sao_Paulo] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/api/repository/usuario-repository.php on line 120
+[29-Sep-2017 20:07:02 America/Sao_Paulo] PHP Stack trace:
+[29-Sep-2017 20:07:02 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[29-Sep-2017 20:07:02 America/Sao_Paulo] PHP   2. UsuarioController->ProcessRequest() /home/ubuntu/workspace/api/index.php:34
+[29-Sep-2017 20:07:02 America/Sao_Paulo] PHP   3. UsuarioController->ActionInsert() /home/ubuntu/workspace/api/controller/usuario-controller.php:18
+[29-Sep-2017 20:07:02 America/Sao_Paulo] PHP   4. UsuarioRepository->Insert() /home/ubuntu/workspace/api/controller/usuario-controller.php:80
+[29-Sep-2017 20:07:02 America/Sao_Paulo] PHP   5. UsuarioRepository->IsAvailableUser() /home/ubuntu/workspace/api/repository/usuario-repository.php:43
+[29-Sep-2017 20:26:42 America/Sao_Paulo] PHP Warning:  fopen(/home/ubuntu/workspace/zeitgeist-web/api/_log/Log-2017_09_29.log): failed to open stream: No such file or directory in /home/ubuntu/workspace/api/util/util.php on line 15
+[29-Sep-2017 20:26:42 America/Sao_Paulo] PHP Stack trace:
+[29-Sep-2017 20:26:42 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[29-Sep-2017 20:26:42 America/Sao_Paulo] PHP   2. JornalController->ProcessRequest() /home/ubuntu/workspace/api/index.php:62
+[29-Sep-2017 20:26:42 America/Sao_Paulo] PHP   3. JornalController->ActionGetList() /home/ubuntu/workspace/api/controller/jornal-controller.php:11
+[29-Sep-2017 20:26:42 America/Sao_Paulo] PHP   4. BaseRepository->__construct() /home/ubuntu/workspace/api/controller/jornal-controller.php:35
+[29-Sep-2017 20:26:42 America/Sao_Paulo] PHP   5. DBContext->__construct() /home/ubuntu/workspace/api/repository/base-repository.php:9
+[29-Sep-2017 20:26:42 America/Sao_Paulo] PHP   6. CreateLog() /home/ubuntu/workspace/api/util/db-context.php:20
+[29-Sep-2017 20:26:42 America/Sao_Paulo] PHP   7. fopen() /home/ubuntu/workspace/api/util/util.php:15
+[29-Sep-2017 20:26:42 America/Sao_Paulo] PHP Warning:  fwrite() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/api/util/util.php on line 16
+[29-Sep-2017 20:26:42 America/Sao_Paulo] PHP Stack trace:
+[29-Sep-2017 20:26:42 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[29-Sep-2017 20:26:42 America/Sao_Paulo] PHP   2. JornalController->ProcessRequest() /home/ubuntu/workspace/api/index.php:62
+[29-Sep-2017 20:26:42 America/Sao_Paulo] PHP   3. JornalController->ActionGetList() /home/ubuntu/workspace/api/controller/jornal-controller.php:11
+[29-Sep-2017 20:26:42 America/Sao_Paulo] PHP   4. BaseRepository->__construct() /home/ubuntu/workspace/api/controller/jornal-controller.php:35
+[29-Sep-2017 20:26:42 America/Sao_Paulo] PHP   5. DBContext->__construct() /home/ubuntu/workspace/api/repository/base-repository.php:9
+[29-Sep-2017 20:26:42 America/Sao_Paulo] PHP   6. CreateLog() /home/ubuntu/workspace/api/util/db-context.php:20
+[29-Sep-2017 20:26:42 America/Sao_Paulo] PHP   7. fwrite() /home/ubuntu/workspace/api/util/util.php:16
+[29-Sep-2017 20:26:42 America/Sao_Paulo] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/api/util/util.php on line 17
+[29-Sep-2017 20:26:42 America/Sao_Paulo] PHP Stack trace:
+[29-Sep-2017 20:26:42 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[29-Sep-2017 20:26:42 America/Sao_Paulo] PHP   2. JornalController->ProcessRequest() /home/ubuntu/workspace/api/index.php:62
+[29-Sep-2017 20:26:42 America/Sao_Paulo] PHP   3. JornalController->ActionGetList() /home/ubuntu/workspace/api/controller/jornal-controller.php:11
+[29-Sep-2017 20:26:42 America/Sao_Paulo] PHP   4. BaseRepository->__construct() /home/ubuntu/workspace/api/controller/jornal-controller.php:35
+[29-Sep-2017 20:26:42 America/Sao_Paulo] PHP   5. DBContext->__construct() /home/ubuntu/workspace/api/repository/base-repository.php:9
+[29-Sep-2017 20:26:42 America/Sao_Paulo] PHP   6. CreateLog() /home/ubuntu/workspace/api/util/db-context.php:20
+[29-Sep-2017 20:26:42 America/Sao_Paulo] PHP   7. fclose() /home/ubuntu/workspace/api/util/util.php:17
+[29-Sep-2017 20:26:42 America/Sao_Paulo] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/api/repository/jornal-repository.php on line 40
+[29-Sep-2017 20:26:42 America/Sao_Paulo] PHP Stack trace:
+[29-Sep-2017 20:26:42 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[29-Sep-2017 20:26:42 America/Sao_Paulo] PHP   2. JornalController->ProcessRequest() /home/ubuntu/workspace/api/index.php:62
+[29-Sep-2017 20:26:42 America/Sao_Paulo] PHP   3. JornalController->ActionGetList() /home/ubuntu/workspace/api/controller/jornal-controller.php:11
+[29-Sep-2017 20:26:42 America/Sao_Paulo] PHP   4. JornalRepository->GetList() /home/ubuntu/workspace/api/controller/jornal-controller.php:36
+[29-Sep-2017 20:26:42 America/Sao_Paulo] PHP Warning:  fopen(/home/ubuntu/workspace/zeitgeist-web/api/_log/Log-2017_09_29.log): failed to open stream: No such file or directory in /home/ubuntu/workspace/api/util/util.php on line 15
+[29-Sep-2017 20:26:42 America/Sao_Paulo] PHP Stack trace:
+[29-Sep-2017 20:26:42 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[29-Sep-2017 20:26:42 America/Sao_Paulo] PHP   2. JornalController->ProcessRequest() /home/ubuntu/workspace/api/index.php:62
+[29-Sep-2017 20:26:42 America/Sao_Paulo] PHP   3. JornalController->ActionGetList() /home/ubuntu/workspace/api/controller/jornal-controller.php:11
+[29-Sep-2017 20:26:42 America/Sao_Paulo] PHP   4. BaseRepository->__construct() /home/ubuntu/workspace/api/controller/jornal-controller.php:35
+[29-Sep-2017 20:26:42 America/Sao_Paulo] PHP   5. DBContext->__construct() /home/ubuntu/workspace/api/repository/base-repository.php:9
+[29-Sep-2017 20:26:42 America/Sao_Paulo] PHP   6. CreateLog() /home/ubuntu/workspace/api/util/db-context.php:20
+[29-Sep-2017 20:26:42 America/Sao_Paulo] PHP   7. fopen() /home/ubuntu/workspace/api/util/util.php:15
+[29-Sep-2017 20:26:42 America/Sao_Paulo] PHP Warning:  fwrite() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/api/util/util.php on line 16
+[29-Sep-2017 20:26:42 America/Sao_Paulo] PHP Stack trace:
+[29-Sep-2017 20:26:42 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[29-Sep-2017 20:26:42 America/Sao_Paulo] PHP   2. JornalController->ProcessRequest() /home/ubuntu/workspace/api/index.php:62
+[29-Sep-2017 20:26:42 America/Sao_Paulo] PHP   3. JornalController->ActionGetList() /home/ubuntu/workspace/api/controller/jornal-controller.php:11
+[29-Sep-2017 20:26:42 America/Sao_Paulo] PHP   4. BaseRepository->__construct() /home/ubuntu/workspace/api/controller/jornal-controller.php:35
+[29-Sep-2017 20:26:42 America/Sao_Paulo] PHP   5. DBContext->__construct() /home/ubuntu/workspace/api/repository/base-repository.php:9
+[29-Sep-2017 20:26:42 America/Sao_Paulo] PHP   6. CreateLog() /home/ubuntu/workspace/api/util/db-context.php:20
+[29-Sep-2017 20:26:42 America/Sao_Paulo] PHP   7. fwrite() /home/ubuntu/workspace/api/util/util.php:16
+[29-Sep-2017 20:26:42 America/Sao_Paulo] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/api/util/util.php on line 17
+[29-Sep-2017 20:26:42 America/Sao_Paulo] PHP Stack trace:
+[29-Sep-2017 20:26:42 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[29-Sep-2017 20:26:42 America/Sao_Paulo] PHP   2. JornalController->ProcessRequest() /home/ubuntu/workspace/api/index.php:62
+[29-Sep-2017 20:26:42 America/Sao_Paulo] PHP   3. JornalController->ActionGetList() /home/ubuntu/workspace/api/controller/jornal-controller.php:11
+[29-Sep-2017 20:26:42 America/Sao_Paulo] PHP   4. BaseRepository->__construct() /home/ubuntu/workspace/api/controller/jornal-controller.php:35
+[29-Sep-2017 20:26:42 America/Sao_Paulo] PHP   5. DBContext->__construct() /home/ubuntu/workspace/api/repository/base-repository.php:9
+[29-Sep-2017 20:26:42 America/Sao_Paulo] PHP   6. CreateLog() /home/ubuntu/workspace/api/util/db-context.php:20
+[29-Sep-2017 20:26:42 America/Sao_Paulo] PHP   7. fclose() /home/ubuntu/workspace/api/util/util.php:17
+[29-Sep-2017 20:26:42 America/Sao_Paulo] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/api/repository/jornal-repository.php on line 40
+[29-Sep-2017 20:26:42 America/Sao_Paulo] PHP Stack trace:
+[29-Sep-2017 20:26:42 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[29-Sep-2017 20:26:42 America/Sao_Paulo] PHP   2. JornalController->ProcessRequest() /home/ubuntu/workspace/api/index.php:62
+[29-Sep-2017 20:26:42 America/Sao_Paulo] PHP   3. JornalController->ActionGetList() /home/ubuntu/workspace/api/controller/jornal-controller.php:11
+[29-Sep-2017 20:26:42 America/Sao_Paulo] PHP   4. JornalRepository->GetList() /home/ubuntu/workspace/api/controller/jornal-controller.php:36
+[29-Sep-2017 20:26:43 America/Sao_Paulo] PHP Warning:  fopen(/home/ubuntu/workspace/zeitgeist-web/api/_log/Log-2017_09_29.log): failed to open stream: No such file or directory in /home/ubuntu/workspace/api/util/util.php on line 15
+[29-Sep-2017 20:26:43 America/Sao_Paulo] PHP Stack trace:
+[29-Sep-2017 20:26:43 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[29-Sep-2017 20:26:43 America/Sao_Paulo] PHP   2. JornalController->ProcessRequest() /home/ubuntu/workspace/api/index.php:62
+[29-Sep-2017 20:26:43 America/Sao_Paulo] PHP   3. JornalController->ActionGetList() /home/ubuntu/workspace/api/controller/jornal-controller.php:11
+[29-Sep-2017 20:26:43 America/Sao_Paulo] PHP   4. BaseRepository->__construct() /home/ubuntu/workspace/api/controller/jornal-controller.php:35
+[29-Sep-2017 20:26:43 America/Sao_Paulo] PHP   5. DBContext->__construct() /home/ubuntu/workspace/api/repository/base-repository.php:9
+[29-Sep-2017 20:26:43 America/Sao_Paulo] PHP   6. CreateLog() /home/ubuntu/workspace/api/util/db-context.php:20
+[29-Sep-2017 20:26:43 America/Sao_Paulo] PHP   7. fopen() /home/ubuntu/workspace/api/util/util.php:15
+[29-Sep-2017 20:26:43 America/Sao_Paulo] PHP Warning:  fwrite() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/api/util/util.php on line 16
+[29-Sep-2017 20:26:43 America/Sao_Paulo] PHP Stack trace:
+[29-Sep-2017 20:26:43 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[29-Sep-2017 20:26:43 America/Sao_Paulo] PHP   2. JornalController->ProcessRequest() /home/ubuntu/workspace/api/index.php:62
+[29-Sep-2017 20:26:43 America/Sao_Paulo] PHP   3. JornalController->ActionGetList() /home/ubuntu/workspace/api/controller/jornal-controller.php:11
+[29-Sep-2017 20:26:43 America/Sao_Paulo] PHP   4. BaseRepository->__construct() /home/ubuntu/workspace/api/controller/jornal-controller.php:35
+[29-Sep-2017 20:26:43 America/Sao_Paulo] PHP   5. DBContext->__construct() /home/ubuntu/workspace/api/repository/base-repository.php:9
+[29-Sep-2017 20:26:43 America/Sao_Paulo] PHP   6. CreateLog() /home/ubuntu/workspace/api/util/db-context.php:20
+[29-Sep-2017 20:26:43 America/Sao_Paulo] PHP   7. fwrite() /home/ubuntu/workspace/api/util/util.php:16
+[29-Sep-2017 20:26:43 America/Sao_Paulo] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/api/util/util.php on line 17
+[29-Sep-2017 20:26:43 America/Sao_Paulo] PHP Stack trace:
+[29-Sep-2017 20:26:43 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[29-Sep-2017 20:26:43 America/Sao_Paulo] PHP   2. JornalController->ProcessRequest() /home/ubuntu/workspace/api/index.php:62
+[29-Sep-2017 20:26:43 America/Sao_Paulo] PHP   3. JornalController->ActionGetList() /home/ubuntu/workspace/api/controller/jornal-controller.php:11
+[29-Sep-2017 20:26:43 America/Sao_Paulo] PHP   4. BaseRepository->__construct() /home/ubuntu/workspace/api/controller/jornal-controller.php:35
+[29-Sep-2017 20:26:43 America/Sao_Paulo] PHP   5. DBContext->__construct() /home/ubuntu/workspace/api/repository/base-repository.php:9
+[29-Sep-2017 20:26:43 America/Sao_Paulo] PHP   6. CreateLog() /home/ubuntu/workspace/api/util/db-context.php:20
+[29-Sep-2017 20:26:43 America/Sao_Paulo] PHP   7. fclose() /home/ubuntu/workspace/api/util/util.php:17
+[29-Sep-2017 20:26:43 America/Sao_Paulo] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/api/repository/jornal-repository.php on line 40
+[29-Sep-2017 20:26:43 America/Sao_Paulo] PHP Stack trace:
+[29-Sep-2017 20:26:43 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[29-Sep-2017 20:26:43 America/Sao_Paulo] PHP   2. JornalController->ProcessRequest() /home/ubuntu/workspace/api/index.php:62
+[29-Sep-2017 20:26:43 America/Sao_Paulo] PHP   3. JornalController->ActionGetList() /home/ubuntu/workspace/api/controller/jornal-controller.php:11
+[29-Sep-2017 20:26:43 America/Sao_Paulo] PHP   4. JornalRepository->GetList() /home/ubuntu/workspace/api/controller/jornal-controller.php:36
+[29-Sep-2017 20:26:43 America/Sao_Paulo] PHP Warning:  fopen(/home/ubuntu/workspace/zeitgeist-web/api/_log/Log-2017_09_29.log): failed to open stream: No such file or directory in /home/ubuntu/workspace/api/util/util.php on line 15
+[29-Sep-2017 20:26:43 America/Sao_Paulo] PHP Stack trace:
+[29-Sep-2017 20:26:43 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[29-Sep-2017 20:26:43 America/Sao_Paulo] PHP   2. JornalController->ProcessRequest() /home/ubuntu/workspace/api/index.php:62
+[29-Sep-2017 20:26:43 America/Sao_Paulo] PHP   3. JornalController->ActionGetList() /home/ubuntu/workspace/api/controller/jornal-controller.php:11
+[29-Sep-2017 20:26:43 America/Sao_Paulo] PHP   4. BaseRepository->__construct() /home/ubuntu/workspace/api/controller/jornal-controller.php:35
+[29-Sep-2017 20:26:43 America/Sao_Paulo] PHP   5. DBContext->__construct() /home/ubuntu/workspace/api/repository/base-repository.php:9
+[29-Sep-2017 20:26:43 America/Sao_Paulo] PHP   6. CreateLog() /home/ubuntu/workspace/api/util/db-context.php:20
+[29-Sep-2017 20:26:43 America/Sao_Paulo] PHP   7. fopen() /home/ubuntu/workspace/api/util/util.php:15
+[29-Sep-2017 20:26:43 America/Sao_Paulo] PHP Warning:  fwrite() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/api/util/util.php on line 16
+[29-Sep-2017 20:26:43 America/Sao_Paulo] PHP Stack trace:
+[29-Sep-2017 20:26:43 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[29-Sep-2017 20:26:43 America/Sao_Paulo] PHP   2. JornalController->ProcessRequest() /home/ubuntu/workspace/api/index.php:62
+[29-Sep-2017 20:26:43 America/Sao_Paulo] PHP   3. JornalController->ActionGetList() /home/ubuntu/workspace/api/controller/jornal-controller.php:11
+[29-Sep-2017 20:26:43 America/Sao_Paulo] PHP   4. BaseRepository->__construct() /home/ubuntu/workspace/api/controller/jornal-controller.php:35
+[29-Sep-2017 20:26:43 America/Sao_Paulo] PHP   5. DBContext->__construct() /home/ubuntu/workspace/api/repository/base-repository.php:9
+[29-Sep-2017 20:26:43 America/Sao_Paulo] PHP   6. CreateLog() /home/ubuntu/workspace/api/util/db-context.php:20
+[29-Sep-2017 20:26:43 America/Sao_Paulo] PHP   7. fwrite() /home/ubuntu/workspace/api/util/util.php:16
+[29-Sep-2017 20:26:43 America/Sao_Paulo] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/api/util/util.php on line 17
+[29-Sep-2017 20:26:43 America/Sao_Paulo] PHP Stack trace:
+[29-Sep-2017 20:26:43 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[29-Sep-2017 20:26:43 America/Sao_Paulo] PHP   2. JornalController->ProcessRequest() /home/ubuntu/workspace/api/index.php:62
+[29-Sep-2017 20:26:43 America/Sao_Paulo] PHP   3. JornalController->ActionGetList() /home/ubuntu/workspace/api/controller/jornal-controller.php:11
+[29-Sep-2017 20:26:43 America/Sao_Paulo] PHP   4. BaseRepository->__construct() /home/ubuntu/workspace/api/controller/jornal-controller.php:35
+[29-Sep-2017 20:26:43 America/Sao_Paulo] PHP   5. DBContext->__construct() /home/ubuntu/workspace/api/repository/base-repository.php:9
+[29-Sep-2017 20:26:43 America/Sao_Paulo] PHP   6. CreateLog() /home/ubuntu/workspace/api/util/db-context.php:20
+[29-Sep-2017 20:26:43 America/Sao_Paulo] PHP   7. fclose() /home/ubuntu/workspace/api/util/util.php:17
+[29-Sep-2017 20:26:43 America/Sao_Paulo] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/api/repository/jornal-repository.php on line 40
+[29-Sep-2017 20:26:43 America/Sao_Paulo] PHP Stack trace:
+[29-Sep-2017 20:26:43 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[29-Sep-2017 20:26:43 America/Sao_Paulo] PHP   2. JornalController->ProcessRequest() /home/ubuntu/workspace/api/index.php:62
+[29-Sep-2017 20:26:43 America/Sao_Paulo] PHP   3. JornalController->ActionGetList() /home/ubuntu/workspace/api/controller/jornal-controller.php:11
+[29-Sep-2017 20:26:43 America/Sao_Paulo] PHP   4. JornalRepository->GetList() /home/ubuntu/workspace/api/controller/jornal-controller.php:36
+[29-Sep-2017 20:31:17 America/Sao_Paulo] PHP Warning:  fopen(/home/ubuntu/workspace/zeitgeist-web/api/_log/Log-2017_09_29.log): failed to open stream: No such file or directory in /home/ubuntu/workspace/api/util/util.php on line 15
+[29-Sep-2017 20:31:17 America/Sao_Paulo] PHP Stack trace:
+[29-Sep-2017 20:31:17 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[29-Sep-2017 20:31:17 America/Sao_Paulo] PHP   2. UsuarioController->ProcessRequest() /home/ubuntu/workspace/api/index.php:34
+[29-Sep-2017 20:31:17 America/Sao_Paulo] PHP   3. UsuarioController->ActionGetList() /home/ubuntu/workspace/api/controller/usuario-controller.php:14
+[29-Sep-2017 20:31:17 America/Sao_Paulo] PHP   4. BaseRepository->__construct() /home/ubuntu/workspace/api/controller/usuario-controller.php:54
+[29-Sep-2017 20:31:17 America/Sao_Paulo] PHP   5. DBContext->__construct() /home/ubuntu/workspace/api/repository/base-repository.php:9
+[29-Sep-2017 20:31:17 America/Sao_Paulo] PHP   6. CreateLog() /home/ubuntu/workspace/api/util/db-context.php:20
+[29-Sep-2017 20:31:17 America/Sao_Paulo] PHP   7. fopen() /home/ubuntu/workspace/api/util/util.php:15
+[29-Sep-2017 20:31:17 America/Sao_Paulo] PHP Warning:  fwrite() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/api/util/util.php on line 16
+[29-Sep-2017 20:31:17 America/Sao_Paulo] PHP Stack trace:
+[29-Sep-2017 20:31:17 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[29-Sep-2017 20:31:17 America/Sao_Paulo] PHP   2. UsuarioController->ProcessRequest() /home/ubuntu/workspace/api/index.php:34
+[29-Sep-2017 20:31:17 America/Sao_Paulo] PHP   3. UsuarioController->ActionGetList() /home/ubuntu/workspace/api/controller/usuario-controller.php:14
+[29-Sep-2017 20:31:17 America/Sao_Paulo] PHP   4. BaseRepository->__construct() /home/ubuntu/workspace/api/controller/usuario-controller.php:54
+[29-Sep-2017 20:31:17 America/Sao_Paulo] PHP   5. DBContext->__construct() /home/ubuntu/workspace/api/repository/base-repository.php:9
+[29-Sep-2017 20:31:17 America/Sao_Paulo] PHP   6. CreateLog() /home/ubuntu/workspace/api/util/db-context.php:20
+[29-Sep-2017 20:31:17 America/Sao_Paulo] PHP   7. fwrite() /home/ubuntu/workspace/api/util/util.php:16
+[29-Sep-2017 20:31:17 America/Sao_Paulo] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/api/util/util.php on line 17
+[29-Sep-2017 20:31:17 America/Sao_Paulo] PHP Stack trace:
+[29-Sep-2017 20:31:17 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[29-Sep-2017 20:31:17 America/Sao_Paulo] PHP   2. UsuarioController->ProcessRequest() /home/ubuntu/workspace/api/index.php:34
+[29-Sep-2017 20:31:17 America/Sao_Paulo] PHP   3. UsuarioController->ActionGetList() /home/ubuntu/workspace/api/controller/usuario-controller.php:14
+[29-Sep-2017 20:31:17 America/Sao_Paulo] PHP   4. BaseRepository->__construct() /home/ubuntu/workspace/api/controller/usuario-controller.php:54
+[29-Sep-2017 20:31:17 America/Sao_Paulo] PHP   5. DBContext->__construct() /home/ubuntu/workspace/api/repository/base-repository.php:9
+[29-Sep-2017 20:31:17 America/Sao_Paulo] PHP   6. CreateLog() /home/ubuntu/workspace/api/util/db-context.php:20
+[29-Sep-2017 20:31:17 America/Sao_Paulo] PHP   7. fclose() /home/ubuntu/workspace/api/util/util.php:17
+[29-Sep-2017 20:31:17 America/Sao_Paulo] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/api/repository/usuario-repository.php on line 34
+[29-Sep-2017 20:31:17 America/Sao_Paulo] PHP Stack trace:
+[29-Sep-2017 20:31:17 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[29-Sep-2017 20:31:17 America/Sao_Paulo] PHP   2. UsuarioController->ProcessRequest() /home/ubuntu/workspace/api/index.php:34
+[29-Sep-2017 20:31:17 America/Sao_Paulo] PHP   3. UsuarioController->ActionGetList() /home/ubuntu/workspace/api/controller/usuario-controller.php:14
+[29-Sep-2017 20:31:17 America/Sao_Paulo] PHP   4. UsuarioRepository->GetList() /home/ubuntu/workspace/api/controller/usuario-controller.php:55
+[29-Sep-2017 20:31:19 America/Sao_Paulo] PHP Warning:  fopen(/home/ubuntu/workspace/zeitgeist-web/api/_log/Log-2017_09_29.log): failed to open stream: No such file or directory in /home/ubuntu/workspace/api/util/util.php on line 15
+[29-Sep-2017 20:31:19 America/Sao_Paulo] PHP Stack trace:
+[29-Sep-2017 20:31:19 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[29-Sep-2017 20:31:19 America/Sao_Paulo] PHP   2. UsuarioController->ProcessRequest() /home/ubuntu/workspace/api/index.php:34
+[29-Sep-2017 20:31:19 America/Sao_Paulo] PHP   3. UsuarioController->ActionGetList() /home/ubuntu/workspace/api/controller/usuario-controller.php:14
+[29-Sep-2017 20:31:19 America/Sao_Paulo] PHP   4. BaseRepository->__construct() /home/ubuntu/workspace/api/controller/usuario-controller.php:54
+[29-Sep-2017 20:31:19 America/Sao_Paulo] PHP   5. DBContext->__construct() /home/ubuntu/workspace/api/repository/base-repository.php:9
+[29-Sep-2017 20:31:19 America/Sao_Paulo] PHP   6. CreateLog() /home/ubuntu/workspace/api/util/db-context.php:20
+[29-Sep-2017 20:31:19 America/Sao_Paulo] PHP   7. fopen() /home/ubuntu/workspace/api/util/util.php:15
+[29-Sep-2017 20:31:19 America/Sao_Paulo] PHP Warning:  fwrite() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/api/util/util.php on line 16
+[29-Sep-2017 20:31:19 America/Sao_Paulo] PHP Stack trace:
+[29-Sep-2017 20:31:19 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[29-Sep-2017 20:31:19 America/Sao_Paulo] PHP   2. UsuarioController->ProcessRequest() /home/ubuntu/workspace/api/index.php:34
+[29-Sep-2017 20:31:19 America/Sao_Paulo] PHP   3. UsuarioController->ActionGetList() /home/ubuntu/workspace/api/controller/usuario-controller.php:14
+[29-Sep-2017 20:31:19 America/Sao_Paulo] PHP   4. BaseRepository->__construct() /home/ubuntu/workspace/api/controller/usuario-controller.php:54
+[29-Sep-2017 20:31:19 America/Sao_Paulo] PHP   5. DBContext->__construct() /home/ubuntu/workspace/api/repository/base-repository.php:9
+[29-Sep-2017 20:31:19 America/Sao_Paulo] PHP   6. CreateLog() /home/ubuntu/workspace/api/util/db-context.php:20
+[29-Sep-2017 20:31:19 America/Sao_Paulo] PHP   7. fwrite() /home/ubuntu/workspace/api/util/util.php:16
+[29-Sep-2017 20:31:19 America/Sao_Paulo] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/api/util/util.php on line 17
+[29-Sep-2017 20:31:19 America/Sao_Paulo] PHP Stack trace:
+[29-Sep-2017 20:31:19 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[29-Sep-2017 20:31:19 America/Sao_Paulo] PHP   2. UsuarioController->ProcessRequest() /home/ubuntu/workspace/api/index.php:34
+[29-Sep-2017 20:31:19 America/Sao_Paulo] PHP   3. UsuarioController->ActionGetList() /home/ubuntu/workspace/api/controller/usuario-controller.php:14
+[29-Sep-2017 20:31:19 America/Sao_Paulo] PHP   4. BaseRepository->__construct() /home/ubuntu/workspace/api/controller/usuario-controller.php:54
+[29-Sep-2017 20:31:19 America/Sao_Paulo] PHP   5. DBContext->__construct() /home/ubuntu/workspace/api/repository/base-repository.php:9
+[29-Sep-2017 20:31:19 America/Sao_Paulo] PHP   6. CreateLog() /home/ubuntu/workspace/api/util/db-context.php:20
+[29-Sep-2017 20:31:19 America/Sao_Paulo] PHP   7. fclose() /home/ubuntu/workspace/api/util/util.php:17
+[29-Sep-2017 20:31:19 America/Sao_Paulo] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/api/repository/usuario-repository.php on line 34
+[29-Sep-2017 20:31:19 America/Sao_Paulo] PHP Stack trace:
+[29-Sep-2017 20:31:19 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[29-Sep-2017 20:31:19 America/Sao_Paulo] PHP   2. UsuarioController->ProcessRequest() /home/ubuntu/workspace/api/index.php:34
+[29-Sep-2017 20:31:19 America/Sao_Paulo] PHP   3. UsuarioController->ActionGetList() /home/ubuntu/workspace/api/controller/usuario-controller.php:14
+[29-Sep-2017 20:31:19 America/Sao_Paulo] PHP   4. UsuarioRepository->GetList() /home/ubuntu/workspace/api/controller/usuario-controller.php:55
+[29-Sep-2017 20:31:26 America/Sao_Paulo] PHP Warning:  fopen(/home/ubuntu/workspace/zeitgeist-web/api/_log/Log-2017_09_29.log): failed to open stream: No such file or directory in /home/ubuntu/workspace/api/util/util.php on line 15
+[29-Sep-2017 20:31:26 America/Sao_Paulo] PHP Stack trace:
+[29-Sep-2017 20:31:26 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[29-Sep-2017 20:31:26 America/Sao_Paulo] PHP   2. UsuarioController->ProcessRequest() /home/ubuntu/workspace/api/index.php:34
+[29-Sep-2017 20:31:26 America/Sao_Paulo] PHP   3. UsuarioController->ActionGetList() /home/ubuntu/workspace/api/controller/usuario-controller.php:14
+[29-Sep-2017 20:31:26 America/Sao_Paulo] PHP   4. BaseRepository->__construct() /home/ubuntu/workspace/api/controller/usuario-controller.php:54
+[29-Sep-2017 20:31:26 America/Sao_Paulo] PHP   5. DBContext->__construct() /home/ubuntu/workspace/api/repository/base-repository.php:9
+[29-Sep-2017 20:31:26 America/Sao_Paulo] PHP   6. CreateLog() /home/ubuntu/workspace/api/util/db-context.php:20
+[29-Sep-2017 20:31:26 America/Sao_Paulo] PHP   7. fopen() /home/ubuntu/workspace/api/util/util.php:15
+[29-Sep-2017 20:31:26 America/Sao_Paulo] PHP Warning:  fwrite() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/api/util/util.php on line 16
+[29-Sep-2017 20:31:26 America/Sao_Paulo] PHP Stack trace:
+[29-Sep-2017 20:31:26 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[29-Sep-2017 20:31:26 America/Sao_Paulo] PHP   2. UsuarioController->ProcessRequest() /home/ubuntu/workspace/api/index.php:34
+[29-Sep-2017 20:31:26 America/Sao_Paulo] PHP   3. UsuarioController->ActionGetList() /home/ubuntu/workspace/api/controller/usuario-controller.php:14
+[29-Sep-2017 20:31:26 America/Sao_Paulo] PHP   4. BaseRepository->__construct() /home/ubuntu/workspace/api/controller/usuario-controller.php:54
+[29-Sep-2017 20:31:26 America/Sao_Paulo] PHP   5. DBContext->__construct() /home/ubuntu/workspace/api/repository/base-repository.php:9
+[29-Sep-2017 20:31:26 America/Sao_Paulo] PHP   6. CreateLog() /home/ubuntu/workspace/api/util/db-context.php:20
+[29-Sep-2017 20:31:26 America/Sao_Paulo] PHP   7. fwrite() /home/ubuntu/workspace/api/util/util.php:16
+[29-Sep-2017 20:31:26 America/Sao_Paulo] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/api/util/util.php on line 17
+[29-Sep-2017 20:31:26 America/Sao_Paulo] PHP Stack trace:
+[29-Sep-2017 20:31:26 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[29-Sep-2017 20:31:26 America/Sao_Paulo] PHP   2. UsuarioController->ProcessRequest() /home/ubuntu/workspace/api/index.php:34
+[29-Sep-2017 20:31:26 America/Sao_Paulo] PHP   3. UsuarioController->ActionGetList() /home/ubuntu/workspace/api/controller/usuario-controller.php:14
+[29-Sep-2017 20:31:26 America/Sao_Paulo] PHP   4. BaseRepository->__construct() /home/ubuntu/workspace/api/controller/usuario-controller.php:54
+[29-Sep-2017 20:31:26 America/Sao_Paulo] PHP   5. DBContext->__construct() /home/ubuntu/workspace/api/repository/base-repository.php:9
+[29-Sep-2017 20:31:26 America/Sao_Paulo] PHP   6. CreateLog() /home/ubuntu/workspace/api/util/db-context.php:20
+[29-Sep-2017 20:31:26 America/Sao_Paulo] PHP   7. fclose() /home/ubuntu/workspace/api/util/util.php:17
+[29-Sep-2017 20:31:26 America/Sao_Paulo] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/api/repository/usuario-repository.php on line 34
+[29-Sep-2017 20:31:26 America/Sao_Paulo] PHP Stack trace:
+[29-Sep-2017 20:31:26 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[29-Sep-2017 20:31:26 America/Sao_Paulo] PHP   2. UsuarioController->ProcessRequest() /home/ubuntu/workspace/api/index.php:34
+[29-Sep-2017 20:31:26 America/Sao_Paulo] PHP   3. UsuarioController->ActionGetList() /home/ubuntu/workspace/api/controller/usuario-controller.php:14
+[29-Sep-2017 20:31:26 America/Sao_Paulo] PHP   4. UsuarioRepository->GetList() /home/ubuntu/workspace/api/controller/usuario-controller.php:55
+[29-Sep-2017 20:31:48 America/Sao_Paulo] PHP Warning:  fopen(/home/ubuntu/workspace/zeitgeist-web/api/_log/Log-2017_09_29.log): failed to open stream: No such file or directory in /home/ubuntu/workspace/api/util/util.php on line 15
+[29-Sep-2017 20:31:48 America/Sao_Paulo] PHP Stack trace:
+[29-Sep-2017 20:31:48 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[29-Sep-2017 20:31:48 America/Sao_Paulo] PHP   2. UsuarioController->ProcessRequest() /home/ubuntu/workspace/api/index.php:34
+[29-Sep-2017 20:31:48 America/Sao_Paulo] PHP   3. UsuarioController->ActionGetList() /home/ubuntu/workspace/api/controller/usuario-controller.php:14
+[29-Sep-2017 20:31:48 America/Sao_Paulo] PHP   4. BaseRepository->__construct() /home/ubuntu/workspace/api/controller/usuario-controller.php:54
+[29-Sep-2017 20:31:48 America/Sao_Paulo] PHP   5. DBContext->__construct() /home/ubuntu/workspace/api/repository/base-repository.php:9
+[29-Sep-2017 20:31:48 America/Sao_Paulo] PHP   6. CreateLog() /home/ubuntu/workspace/api/util/db-context.php:20
+[29-Sep-2017 20:31:48 America/Sao_Paulo] PHP   7. fopen() /home/ubuntu/workspace/api/util/util.php:15
+[29-Sep-2017 20:31:48 America/Sao_Paulo] PHP Warning:  fwrite() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/api/util/util.php on line 16
+[29-Sep-2017 20:31:48 America/Sao_Paulo] PHP Stack trace:
+[29-Sep-2017 20:31:48 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[29-Sep-2017 20:31:48 America/Sao_Paulo] PHP   2. UsuarioController->ProcessRequest() /home/ubuntu/workspace/api/index.php:34
+[29-Sep-2017 20:31:48 America/Sao_Paulo] PHP   3. UsuarioController->ActionGetList() /home/ubuntu/workspace/api/controller/usuario-controller.php:14
+[29-Sep-2017 20:31:48 America/Sao_Paulo] PHP   4. BaseRepository->__construct() /home/ubuntu/workspace/api/controller/usuario-controller.php:54
+[29-Sep-2017 20:31:48 America/Sao_Paulo] PHP   5. DBContext->__construct() /home/ubuntu/workspace/api/repository/base-repository.php:9
+[29-Sep-2017 20:31:48 America/Sao_Paulo] PHP   6. CreateLog() /home/ubuntu/workspace/api/util/db-context.php:20
+[29-Sep-2017 20:31:48 America/Sao_Paulo] PHP   7. fwrite() /home/ubuntu/workspace/api/util/util.php:16
+[29-Sep-2017 20:31:48 America/Sao_Paulo] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/api/util/util.php on line 17
+[29-Sep-2017 20:31:48 America/Sao_Paulo] PHP Stack trace:
+[29-Sep-2017 20:31:48 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[29-Sep-2017 20:31:48 America/Sao_Paulo] PHP   2. UsuarioController->ProcessRequest() /home/ubuntu/workspace/api/index.php:34
+[29-Sep-2017 20:31:48 America/Sao_Paulo] PHP   3. UsuarioController->ActionGetList() /home/ubuntu/workspace/api/controller/usuario-controller.php:14
+[29-Sep-2017 20:31:48 America/Sao_Paulo] PHP   4. BaseRepository->__construct() /home/ubuntu/workspace/api/controller/usuario-controller.php:54
+[29-Sep-2017 20:31:48 America/Sao_Paulo] PHP   5. DBContext->__construct() /home/ubuntu/workspace/api/repository/base-repository.php:9
+[29-Sep-2017 20:31:48 America/Sao_Paulo] PHP   6. CreateLog() /home/ubuntu/workspace/api/util/db-context.php:20
+[29-Sep-2017 20:31:48 America/Sao_Paulo] PHP   7. fclose() /home/ubuntu/workspace/api/util/util.php:17
+[29-Sep-2017 20:31:48 America/Sao_Paulo] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/api/repository/usuario-repository.php on line 34
+[29-Sep-2017 20:31:48 America/Sao_Paulo] PHP Stack trace:
+[29-Sep-2017 20:31:48 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[29-Sep-2017 20:31:48 America/Sao_Paulo] PHP   2. UsuarioController->ProcessRequest() /home/ubuntu/workspace/api/index.php:34
+[29-Sep-2017 20:31:48 America/Sao_Paulo] PHP   3. UsuarioController->ActionGetList() /home/ubuntu/workspace/api/controller/usuario-controller.php:14
+[29-Sep-2017 20:31:48 America/Sao_Paulo] PHP   4. UsuarioRepository->GetList() /home/ubuntu/workspace/api/controller/usuario-controller.php:55
+[29-Sep-2017 20:32:18 America/Sao_Paulo] PHP Warning:  fopen(/home/ubuntu/workspace/zeitgeist-web/api/_log/Log-2017_09_29.log): failed to open stream: No such file or directory in /home/ubuntu/workspace/api/util/util.php on line 15
+[29-Sep-2017 20:32:18 America/Sao_Paulo] PHP Stack trace:
+[29-Sep-2017 20:32:18 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[29-Sep-2017 20:32:18 America/Sao_Paulo] PHP   2. UsuarioController->ProcessRequest() /home/ubuntu/workspace/api/index.php:34
+[29-Sep-2017 20:32:18 America/Sao_Paulo] PHP   3. UsuarioController->ActionInsert() /home/ubuntu/workspace/api/controller/usuario-controller.php:18
+[29-Sep-2017 20:32:18 America/Sao_Paulo] PHP   4. BaseRepository->__construct() /home/ubuntu/workspace/api/controller/usuario-controller.php:79
+[29-Sep-2017 20:32:18 America/Sao_Paulo] PHP   5. DBContext->__construct() /home/ubuntu/workspace/api/repository/base-repository.php:9
+[29-Sep-2017 20:32:18 America/Sao_Paulo] PHP   6. CreateLog() /home/ubuntu/workspace/api/util/db-context.php:20
+[29-Sep-2017 20:32:18 America/Sao_Paulo] PHP   7. fopen() /home/ubuntu/workspace/api/util/util.php:15
+[29-Sep-2017 20:32:18 America/Sao_Paulo] PHP Warning:  fwrite() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/api/util/util.php on line 16
+[29-Sep-2017 20:32:18 America/Sao_Paulo] PHP Stack trace:
+[29-Sep-2017 20:32:18 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[29-Sep-2017 20:32:18 America/Sao_Paulo] PHP   2. UsuarioController->ProcessRequest() /home/ubuntu/workspace/api/index.php:34
+[29-Sep-2017 20:32:18 America/Sao_Paulo] PHP   3. UsuarioController->ActionInsert() /home/ubuntu/workspace/api/controller/usuario-controller.php:18
+[29-Sep-2017 20:32:18 America/Sao_Paulo] PHP   4. BaseRepository->__construct() /home/ubuntu/workspace/api/controller/usuario-controller.php:79
+[29-Sep-2017 20:32:18 America/Sao_Paulo] PHP   5. DBContext->__construct() /home/ubuntu/workspace/api/repository/base-repository.php:9
+[29-Sep-2017 20:32:18 America/Sao_Paulo] PHP   6. CreateLog() /home/ubuntu/workspace/api/util/db-context.php:20
+[29-Sep-2017 20:32:18 America/Sao_Paulo] PHP   7. fwrite() /home/ubuntu/workspace/api/util/util.php:16
+[29-Sep-2017 20:32:18 America/Sao_Paulo] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/api/util/util.php on line 17
+[29-Sep-2017 20:32:18 America/Sao_Paulo] PHP Stack trace:
+[29-Sep-2017 20:32:18 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[29-Sep-2017 20:32:18 America/Sao_Paulo] PHP   2. UsuarioController->ProcessRequest() /home/ubuntu/workspace/api/index.php:34
+[29-Sep-2017 20:32:18 America/Sao_Paulo] PHP   3. UsuarioController->ActionInsert() /home/ubuntu/workspace/api/controller/usuario-controller.php:18
+[29-Sep-2017 20:32:18 America/Sao_Paulo] PHP   4. BaseRepository->__construct() /home/ubuntu/workspace/api/controller/usuario-controller.php:79
+[29-Sep-2017 20:32:18 America/Sao_Paulo] PHP   5. DBContext->__construct() /home/ubuntu/workspace/api/repository/base-repository.php:9
+[29-Sep-2017 20:32:18 America/Sao_Paulo] PHP   6. CreateLog() /home/ubuntu/workspace/api/util/db-context.php:20
+[29-Sep-2017 20:32:18 America/Sao_Paulo] PHP   7. fclose() /home/ubuntu/workspace/api/util/util.php:17
+[29-Sep-2017 20:32:18 America/Sao_Paulo] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/api/repository/usuario-repository.php on line 120
+[29-Sep-2017 20:32:18 America/Sao_Paulo] PHP Stack trace:
+[29-Sep-2017 20:32:18 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[29-Sep-2017 20:32:18 America/Sao_Paulo] PHP   2. UsuarioController->ProcessRequest() /home/ubuntu/workspace/api/index.php:34
+[29-Sep-2017 20:32:18 America/Sao_Paulo] PHP   3. UsuarioController->ActionInsert() /home/ubuntu/workspace/api/controller/usuario-controller.php:18
+[29-Sep-2017 20:32:18 America/Sao_Paulo] PHP   4. UsuarioRepository->Insert() /home/ubuntu/workspace/api/controller/usuario-controller.php:80
+[29-Sep-2017 20:32:18 America/Sao_Paulo] PHP   5. UsuarioRepository->IsAvailableUser() /home/ubuntu/workspace/api/repository/usuario-repository.php:43
+[29-Sep-2017 20:32:22 America/Sao_Paulo] PHP Warning:  fopen(/home/ubuntu/workspace/zeitgeist-web/api/_log/Log-2017_09_29.log): failed to open stream: No such file or directory in /home/ubuntu/workspace/api/util/util.php on line 15
+[29-Sep-2017 20:32:22 America/Sao_Paulo] PHP Stack trace:
+[29-Sep-2017 20:32:22 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[29-Sep-2017 20:32:22 America/Sao_Paulo] PHP   2. UsuarioController->ProcessRequest() /home/ubuntu/workspace/api/index.php:34
+[29-Sep-2017 20:32:22 America/Sao_Paulo] PHP   3. UsuarioController->ActionGetList() /home/ubuntu/workspace/api/controller/usuario-controller.php:14
+[29-Sep-2017 20:32:22 America/Sao_Paulo] PHP   4. BaseRepository->__construct() /home/ubuntu/workspace/api/controller/usuario-controller.php:54
+[29-Sep-2017 20:32:22 America/Sao_Paulo] PHP   5. DBContext->__construct() /home/ubuntu/workspace/api/repository/base-repository.php:9
+[29-Sep-2017 20:32:22 America/Sao_Paulo] PHP   6. CreateLog() /home/ubuntu/workspace/api/util/db-context.php:20
+[29-Sep-2017 20:32:22 America/Sao_Paulo] PHP   7. fopen() /home/ubuntu/workspace/api/util/util.php:15
+[29-Sep-2017 20:32:22 America/Sao_Paulo] PHP Warning:  fwrite() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/api/util/util.php on line 16
+[29-Sep-2017 20:32:22 America/Sao_Paulo] PHP Stack trace:
+[29-Sep-2017 20:32:22 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[29-Sep-2017 20:32:22 America/Sao_Paulo] PHP   2. UsuarioController->ProcessRequest() /home/ubuntu/workspace/api/index.php:34
+[29-Sep-2017 20:32:22 America/Sao_Paulo] PHP   3. UsuarioController->ActionGetList() /home/ubuntu/workspace/api/controller/usuario-controller.php:14
+[29-Sep-2017 20:32:22 America/Sao_Paulo] PHP   4. BaseRepository->__construct() /home/ubuntu/workspace/api/controller/usuario-controller.php:54
+[29-Sep-2017 20:32:22 America/Sao_Paulo] PHP   5. DBContext->__construct() /home/ubuntu/workspace/api/repository/base-repository.php:9
+[29-Sep-2017 20:32:22 America/Sao_Paulo] PHP   6. CreateLog() /home/ubuntu/workspace/api/util/db-context.php:20
+[29-Sep-2017 20:32:22 America/Sao_Paulo] PHP   7. fwrite() /home/ubuntu/workspace/api/util/util.php:16
+[29-Sep-2017 20:32:22 America/Sao_Paulo] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/api/util/util.php on line 17
+[29-Sep-2017 20:32:22 America/Sao_Paulo] PHP Stack trace:
+[29-Sep-2017 20:32:22 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[29-Sep-2017 20:32:22 America/Sao_Paulo] PHP   2. UsuarioController->ProcessRequest() /home/ubuntu/workspace/api/index.php:34
+[29-Sep-2017 20:32:22 America/Sao_Paulo] PHP   3. UsuarioController->ActionGetList() /home/ubuntu/workspace/api/controller/usuario-controller.php:14
+[29-Sep-2017 20:32:22 America/Sao_Paulo] PHP   4. BaseRepository->__construct() /home/ubuntu/workspace/api/controller/usuario-controller.php:54
+[29-Sep-2017 20:32:22 America/Sao_Paulo] PHP   5. DBContext->__construct() /home/ubuntu/workspace/api/repository/base-repository.php:9
+[29-Sep-2017 20:32:22 America/Sao_Paulo] PHP   6. CreateLog() /home/ubuntu/workspace/api/util/db-context.php:20
+[29-Sep-2017 20:32:22 America/Sao_Paulo] PHP   7. fclose() /home/ubuntu/workspace/api/util/util.php:17
+[29-Sep-2017 20:32:22 America/Sao_Paulo] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/api/repository/usuario-repository.php on line 34
+[29-Sep-2017 20:32:22 America/Sao_Paulo] PHP Stack trace:
+[29-Sep-2017 20:32:22 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[29-Sep-2017 20:32:22 America/Sao_Paulo] PHP   2. UsuarioController->ProcessRequest() /home/ubuntu/workspace/api/index.php:34
+[29-Sep-2017 20:32:22 America/Sao_Paulo] PHP   3. UsuarioController->ActionGetList() /home/ubuntu/workspace/api/controller/usuario-controller.php:14
+[29-Sep-2017 20:32:22 America/Sao_Paulo] PHP   4. UsuarioRepository->GetList() /home/ubuntu/workspace/api/controller/usuario-controller.php:55
+[29-Sep-2017 21:24:52 America/Sao_Paulo] PHP Warning:  fopen(/home/ubuntu/workspace/zeitgeist-web/api/_log/Log-2017_09_29.log): failed to open stream: No such file or directory in /home/ubuntu/workspace/api/util/util.php on line 15
+[29-Sep-2017 21:24:52 America/Sao_Paulo] PHP Stack trace:
+[29-Sep-2017 21:24:52 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[29-Sep-2017 21:24:52 America/Sao_Paulo] PHP   2. UsuarioController->ProcessRequest() /home/ubuntu/workspace/api/index.php:34
+[29-Sep-2017 21:24:52 America/Sao_Paulo] PHP   3. UsuarioController->ActionGetList() /home/ubuntu/workspace/api/controller/usuario-controller.php:14
+[29-Sep-2017 21:24:52 America/Sao_Paulo] PHP   4. BaseRepository->__construct() /home/ubuntu/workspace/api/controller/usuario-controller.php:54
+[29-Sep-2017 21:24:52 America/Sao_Paulo] PHP   5. DBContext->__construct() /home/ubuntu/workspace/api/repository/base-repository.php:9
+[29-Sep-2017 21:24:52 America/Sao_Paulo] PHP   6. CreateLog() /home/ubuntu/workspace/api/util/db-context.php:20
+[29-Sep-2017 21:24:52 America/Sao_Paulo] PHP   7. fopen() /home/ubuntu/workspace/api/util/util.php:15
+[29-Sep-2017 21:24:52 America/Sao_Paulo] PHP Warning:  fwrite() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/api/util/util.php on line 16
+[29-Sep-2017 21:24:52 America/Sao_Paulo] PHP Stack trace:
+[29-Sep-2017 21:24:52 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[29-Sep-2017 21:24:52 America/Sao_Paulo] PHP   2. UsuarioController->ProcessRequest() /home/ubuntu/workspace/api/index.php:34
+[29-Sep-2017 21:24:52 America/Sao_Paulo] PHP   3. UsuarioController->ActionGetList() /home/ubuntu/workspace/api/controller/usuario-controller.php:14
+[29-Sep-2017 21:24:52 America/Sao_Paulo] PHP   4. BaseRepository->__construct() /home/ubuntu/workspace/api/controller/usuario-controller.php:54
+[29-Sep-2017 21:24:52 America/Sao_Paulo] PHP   5. DBContext->__construct() /home/ubuntu/workspace/api/repository/base-repository.php:9
+[29-Sep-2017 21:24:52 America/Sao_Paulo] PHP   6. CreateLog() /home/ubuntu/workspace/api/util/db-context.php:20
+[29-Sep-2017 21:24:52 America/Sao_Paulo] PHP   7. fwrite() /home/ubuntu/workspace/api/util/util.php:16
+[29-Sep-2017 21:24:52 America/Sao_Paulo] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/api/util/util.php on line 17
+[29-Sep-2017 21:24:52 America/Sao_Paulo] PHP Stack trace:
+[29-Sep-2017 21:24:52 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[29-Sep-2017 21:24:52 America/Sao_Paulo] PHP   2. UsuarioController->ProcessRequest() /home/ubuntu/workspace/api/index.php:34
+[29-Sep-2017 21:24:52 America/Sao_Paulo] PHP   3. UsuarioController->ActionGetList() /home/ubuntu/workspace/api/controller/usuario-controller.php:14
+[29-Sep-2017 21:24:52 America/Sao_Paulo] PHP   4. BaseRepository->__construct() /home/ubuntu/workspace/api/controller/usuario-controller.php:54
+[29-Sep-2017 21:24:52 America/Sao_Paulo] PHP   5. DBContext->__construct() /home/ubuntu/workspace/api/repository/base-repository.php:9
+[29-Sep-2017 21:24:52 America/Sao_Paulo] PHP   6. CreateLog() /home/ubuntu/workspace/api/util/db-context.php:20
+[29-Sep-2017 21:24:52 America/Sao_Paulo] PHP   7. fclose() /home/ubuntu/workspace/api/util/util.php:17
+[29-Sep-2017 21:24:52 America/Sao_Paulo] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/api/repository/usuario-repository.php on line 34
+[29-Sep-2017 21:24:52 America/Sao_Paulo] PHP Stack trace:
+[29-Sep-2017 21:24:52 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[29-Sep-2017 21:24:52 America/Sao_Paulo] PHP   2. UsuarioController->ProcessRequest() /home/ubuntu/workspace/api/index.php:34
+[29-Sep-2017 21:24:52 America/Sao_Paulo] PHP   3. UsuarioController->ActionGetList() /home/ubuntu/workspace/api/controller/usuario-controller.php:14
+[29-Sep-2017 21:24:52 America/Sao_Paulo] PHP   4. UsuarioRepository->GetList() /home/ubuntu/workspace/api/controller/usuario-controller.php:55
+[29-Sep-2017 21:24:52 America/Sao_Paulo] PHP Warning:  fopen(/home/ubuntu/workspace/zeitgeist-web/api/_log/Log-2017_09_29.log): failed to open stream: No such file or directory in /home/ubuntu/workspace/api/util/util.php on line 15
+[29-Sep-2017 21:24:52 America/Sao_Paulo] PHP Stack trace:
+[29-Sep-2017 21:24:52 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[29-Sep-2017 21:24:52 America/Sao_Paulo] PHP   2. UsuarioController->ProcessRequest() /home/ubuntu/workspace/api/index.php:34
+[29-Sep-2017 21:24:52 America/Sao_Paulo] PHP   3. UsuarioController->ActionGetList() /home/ubuntu/workspace/api/controller/usuario-controller.php:14
+[29-Sep-2017 21:24:52 America/Sao_Paulo] PHP   4. BaseRepository->__construct() /home/ubuntu/workspace/api/controller/usuario-controller.php:54
+[29-Sep-2017 21:24:52 America/Sao_Paulo] PHP   5. DBContext->__construct() /home/ubuntu/workspace/api/repository/base-repository.php:9
+[29-Sep-2017 21:24:52 America/Sao_Paulo] PHP   6. CreateLog() /home/ubuntu/workspace/api/util/db-context.php:20
+[29-Sep-2017 21:24:52 America/Sao_Paulo] PHP   7. fopen() /home/ubuntu/workspace/api/util/util.php:15
+[29-Sep-2017 21:24:52 America/Sao_Paulo] PHP Warning:  fwrite() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/api/util/util.php on line 16
+[29-Sep-2017 21:24:52 America/Sao_Paulo] PHP Stack trace:
+[29-Sep-2017 21:24:52 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[29-Sep-2017 21:24:52 America/Sao_Paulo] PHP   2. UsuarioController->ProcessRequest() /home/ubuntu/workspace/api/index.php:34
+[29-Sep-2017 21:24:52 America/Sao_Paulo] PHP   3. UsuarioController->ActionGetList() /home/ubuntu/workspace/api/controller/usuario-controller.php:14
+[29-Sep-2017 21:24:52 America/Sao_Paulo] PHP   4. BaseRepository->__construct() /home/ubuntu/workspace/api/controller/usuario-controller.php:54
+[29-Sep-2017 21:24:52 America/Sao_Paulo] PHP   5. DBContext->__construct() /home/ubuntu/workspace/api/repository/base-repository.php:9
+[29-Sep-2017 21:24:52 America/Sao_Paulo] PHP   6. CreateLog() /home/ubuntu/workspace/api/util/db-context.php:20
+[29-Sep-2017 21:24:52 America/Sao_Paulo] PHP   7. fwrite() /home/ubuntu/workspace/api/util/util.php:16
+[29-Sep-2017 21:24:52 America/Sao_Paulo] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/api/util/util.php on line 17
+[29-Sep-2017 21:24:52 America/Sao_Paulo] PHP Stack trace:
+[29-Sep-2017 21:24:52 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[29-Sep-2017 21:24:52 America/Sao_Paulo] PHP   2. UsuarioController->ProcessRequest() /home/ubuntu/workspace/api/index.php:34
+[29-Sep-2017 21:24:52 America/Sao_Paulo] PHP   3. UsuarioController->ActionGetList() /home/ubuntu/workspace/api/controller/usuario-controller.php:14
+[29-Sep-2017 21:24:52 America/Sao_Paulo] PHP   4. BaseRepository->__construct() /home/ubuntu/workspace/api/controller/usuario-controller.php:54
+[29-Sep-2017 21:24:52 America/Sao_Paulo] PHP   5. DBContext->__construct() /home/ubuntu/workspace/api/repository/base-repository.php:9
+[29-Sep-2017 21:24:52 America/Sao_Paulo] PHP   6. CreateLog() /home/ubuntu/workspace/api/util/db-context.php:20
+[29-Sep-2017 21:24:52 America/Sao_Paulo] PHP   7. fclose() /home/ubuntu/workspace/api/util/util.php:17
+[29-Sep-2017 21:24:52 America/Sao_Paulo] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/api/repository/usuario-repository.php on line 34
+[29-Sep-2017 21:24:52 America/Sao_Paulo] PHP Stack trace:
+[29-Sep-2017 21:24:52 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[29-Sep-2017 21:24:52 America/Sao_Paulo] PHP   2. UsuarioController->ProcessRequest() /home/ubuntu/workspace/api/index.php:34
+[29-Sep-2017 21:24:52 America/Sao_Paulo] PHP   3. UsuarioController->ActionGetList() /home/ubuntu/workspace/api/controller/usuario-controller.php:14
+[29-Sep-2017 21:24:52 America/Sao_Paulo] PHP   4. UsuarioRepository->GetList() /home/ubuntu/workspace/api/controller/usuario-controller.php:55
+[29-Sep-2017 21:25:03 America/Sao_Paulo] PHP Warning:  fopen(/home/ubuntu/workspace/zeitgeist-web/api/_log/Log-2017_09_29.log): failed to open stream: No such file or directory in /home/ubuntu/workspace/api/util/util.php on line 15
+[29-Sep-2017 21:25:03 America/Sao_Paulo] PHP Stack trace:
+[29-Sep-2017 21:25:03 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[29-Sep-2017 21:25:03 America/Sao_Paulo] PHP   2. UsuarioController->ProcessRequest() /home/ubuntu/workspace/api/index.php:34
+[29-Sep-2017 21:25:03 America/Sao_Paulo] PHP   3. UsuarioController->ActionGetList() /home/ubuntu/workspace/api/controller/usuario-controller.php:14
+[29-Sep-2017 21:25:03 America/Sao_Paulo] PHP   4. BaseRepository->__construct() /home/ubuntu/workspace/api/controller/usuario-controller.php:54
+[29-Sep-2017 21:25:03 America/Sao_Paulo] PHP   5. DBContext->__construct() /home/ubuntu/workspace/api/repository/base-repository.php:9
+[29-Sep-2017 21:25:03 America/Sao_Paulo] PHP   6. CreateLog() /home/ubuntu/workspace/api/util/db-context.php:20
+[29-Sep-2017 21:25:03 America/Sao_Paulo] PHP   7. fopen() /home/ubuntu/workspace/api/util/util.php:15
+[29-Sep-2017 21:25:03 America/Sao_Paulo] PHP Warning:  fwrite() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/api/util/util.php on line 16
+[29-Sep-2017 21:25:03 America/Sao_Paulo] PHP Stack trace:
+[29-Sep-2017 21:25:03 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[29-Sep-2017 21:25:03 America/Sao_Paulo] PHP   2. UsuarioController->ProcessRequest() /home/ubuntu/workspace/api/index.php:34
+[29-Sep-2017 21:25:03 America/Sao_Paulo] PHP   3. UsuarioController->ActionGetList() /home/ubuntu/workspace/api/controller/usuario-controller.php:14
+[29-Sep-2017 21:25:03 America/Sao_Paulo] PHP   4. BaseRepository->__construct() /home/ubuntu/workspace/api/controller/usuario-controller.php:54
+[29-Sep-2017 21:25:03 America/Sao_Paulo] PHP   5. DBContext->__construct() /home/ubuntu/workspace/api/repository/base-repository.php:9
+[29-Sep-2017 21:25:03 America/Sao_Paulo] PHP   6. CreateLog() /home/ubuntu/workspace/api/util/db-context.php:20
+[29-Sep-2017 21:25:03 America/Sao_Paulo] PHP   7. fwrite() /home/ubuntu/workspace/api/util/util.php:16
+[29-Sep-2017 21:25:03 America/Sao_Paulo] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/api/util/util.php on line 17
+[29-Sep-2017 21:25:03 America/Sao_Paulo] PHP Stack trace:
+[29-Sep-2017 21:25:03 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[29-Sep-2017 21:25:03 America/Sao_Paulo] PHP   2. UsuarioController->ProcessRequest() /home/ubuntu/workspace/api/index.php:34
+[29-Sep-2017 21:25:03 America/Sao_Paulo] PHP   3. UsuarioController->ActionGetList() /home/ubuntu/workspace/api/controller/usuario-controller.php:14
+[29-Sep-2017 21:25:03 America/Sao_Paulo] PHP   4. BaseRepository->__construct() /home/ubuntu/workspace/api/controller/usuario-controller.php:54
+[29-Sep-2017 21:25:03 America/Sao_Paulo] PHP   5. DBContext->__construct() /home/ubuntu/workspace/api/repository/base-repository.php:9
+[29-Sep-2017 21:25:03 America/Sao_Paulo] PHP   6. CreateLog() /home/ubuntu/workspace/api/util/db-context.php:20
+[29-Sep-2017 21:25:03 America/Sao_Paulo] PHP   7. fclose() /home/ubuntu/workspace/api/util/util.php:17
+[29-Sep-2017 21:25:03 America/Sao_Paulo] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/api/repository/usuario-repository.php on line 34
+[29-Sep-2017 21:25:03 America/Sao_Paulo] PHP Stack trace:
+[29-Sep-2017 21:25:03 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[29-Sep-2017 21:25:03 America/Sao_Paulo] PHP   2. UsuarioController->ProcessRequest() /home/ubuntu/workspace/api/index.php:34
+[29-Sep-2017 21:25:03 America/Sao_Paulo] PHP   3. UsuarioController->ActionGetList() /home/ubuntu/workspace/api/controller/usuario-controller.php:14
+[29-Sep-2017 21:25:03 America/Sao_Paulo] PHP   4. UsuarioRepository->GetList() /home/ubuntu/workspace/api/controller/usuario-controller.php:55
+[29-Sep-2017 21:26:07 America/Sao_Paulo] PHP Warning:  fopen(/home/ubuntu/workspace/zeitgeist-web/api/_log/Log-2017_09_29.log): failed to open stream: No such file or directory in /home/ubuntu/workspace/api/util/util.php on line 15
+[29-Sep-2017 21:26:07 America/Sao_Paulo] PHP Stack trace:
+[29-Sep-2017 21:26:07 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[29-Sep-2017 21:26:07 America/Sao_Paulo] PHP   2. UsuarioController->ProcessRequest() /home/ubuntu/workspace/api/index.php:34
+[29-Sep-2017 21:26:07 America/Sao_Paulo] PHP   3. UsuarioController->ActionGetList() /home/ubuntu/workspace/api/controller/usuario-controller.php:14
+[29-Sep-2017 21:26:07 America/Sao_Paulo] PHP   4. BaseRepository->__construct() /home/ubuntu/workspace/api/controller/usuario-controller.php:54
+[29-Sep-2017 21:26:07 America/Sao_Paulo] PHP   5. DBContext->__construct() /home/ubuntu/workspace/api/repository/base-repository.php:9
+[29-Sep-2017 21:26:07 America/Sao_Paulo] PHP   6. CreateLog() /home/ubuntu/workspace/api/util/db-context.php:20
+[29-Sep-2017 21:26:07 America/Sao_Paulo] PHP   7. fopen() /home/ubuntu/workspace/api/util/util.php:15
+[29-Sep-2017 21:26:07 America/Sao_Paulo] PHP Warning:  fwrite() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/api/util/util.php on line 16
+[29-Sep-2017 21:26:07 America/Sao_Paulo] PHP Stack trace:
+[29-Sep-2017 21:26:07 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[29-Sep-2017 21:26:07 America/Sao_Paulo] PHP   2. UsuarioController->ProcessRequest() /home/ubuntu/workspace/api/index.php:34
+[29-Sep-2017 21:26:07 America/Sao_Paulo] PHP   3. UsuarioController->ActionGetList() /home/ubuntu/workspace/api/controller/usuario-controller.php:14
+[29-Sep-2017 21:26:07 America/Sao_Paulo] PHP   4. BaseRepository->__construct() /home/ubuntu/workspace/api/controller/usuario-controller.php:54
+[29-Sep-2017 21:26:07 America/Sao_Paulo] PHP   5. DBContext->__construct() /home/ubuntu/workspace/api/repository/base-repository.php:9
+[29-Sep-2017 21:26:07 America/Sao_Paulo] PHP   6. CreateLog() /home/ubuntu/workspace/api/util/db-context.php:20
+[29-Sep-2017 21:26:07 America/Sao_Paulo] PHP   7. fwrite() /home/ubuntu/workspace/api/util/util.php:16
+[29-Sep-2017 21:26:07 America/Sao_Paulo] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/api/util/util.php on line 17
+[29-Sep-2017 21:26:07 America/Sao_Paulo] PHP Stack trace:
+[29-Sep-2017 21:26:07 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[29-Sep-2017 21:26:07 America/Sao_Paulo] PHP   2. UsuarioController->ProcessRequest() /home/ubuntu/workspace/api/index.php:34
+[29-Sep-2017 21:26:07 America/Sao_Paulo] PHP   3. UsuarioController->ActionGetList() /home/ubuntu/workspace/api/controller/usuario-controller.php:14
+[29-Sep-2017 21:26:07 America/Sao_Paulo] PHP   4. BaseRepository->__construct() /home/ubuntu/workspace/api/controller/usuario-controller.php:54
+[29-Sep-2017 21:26:07 America/Sao_Paulo] PHP   5. DBContext->__construct() /home/ubuntu/workspace/api/repository/base-repository.php:9
+[29-Sep-2017 21:26:07 America/Sao_Paulo] PHP   6. CreateLog() /home/ubuntu/workspace/api/util/db-context.php:20
+[29-Sep-2017 21:26:07 America/Sao_Paulo] PHP   7. fclose() /home/ubuntu/workspace/api/util/util.php:17
+[29-Sep-2017 21:26:07 America/Sao_Paulo] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/api/repository/usuario-repository.php on line 34
+[29-Sep-2017 21:26:07 America/Sao_Paulo] PHP Stack trace:
+[29-Sep-2017 21:26:07 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[29-Sep-2017 21:26:07 America/Sao_Paulo] PHP   2. UsuarioController->ProcessRequest() /home/ubuntu/workspace/api/index.php:34
+[29-Sep-2017 21:26:07 America/Sao_Paulo] PHP   3. UsuarioController->ActionGetList() /home/ubuntu/workspace/api/controller/usuario-controller.php:14
+[29-Sep-2017 21:26:07 America/Sao_Paulo] PHP   4. UsuarioRepository->GetList() /home/ubuntu/workspace/api/controller/usuario-controller.php:55
+[06-Oct-2017 18:54:53 America/Sao_Paulo] PHP Warning:  fopen(/home/ubuntu/workspace/zeitgeist-web/api/_log/Log-2017_10_06.log): failed to open stream: No such file or directory in /home/ubuntu/workspace/api/util/util.php on line 15
+[06-Oct-2017 18:54:53 America/Sao_Paulo] PHP Stack trace:
+[06-Oct-2017 18:54:53 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[06-Oct-2017 18:54:53 America/Sao_Paulo] PHP   2. UsuarioController->ProcessRequest() /home/ubuntu/workspace/api/index.php:34
+[06-Oct-2017 18:54:53 America/Sao_Paulo] PHP   3. UsuarioController->ActionGetList() /home/ubuntu/workspace/api/controller/usuario-controller.php:14
+[06-Oct-2017 18:54:53 America/Sao_Paulo] PHP   4. BaseRepository->__construct() /home/ubuntu/workspace/api/controller/usuario-controller.php:54
+[06-Oct-2017 18:54:53 America/Sao_Paulo] PHP   5. DBContext->__construct() /home/ubuntu/workspace/api/repository/base-repository.php:9
+[06-Oct-2017 18:54:53 America/Sao_Paulo] PHP   6. CreateLog() /home/ubuntu/workspace/api/util/db-context.php:20
+[06-Oct-2017 18:54:53 America/Sao_Paulo] PHP   7. fopen() /home/ubuntu/workspace/api/util/util.php:15
+[06-Oct-2017 18:54:53 America/Sao_Paulo] PHP Warning:  fwrite() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/api/util/util.php on line 16
+[06-Oct-2017 18:54:53 America/Sao_Paulo] PHP Stack trace:
+[06-Oct-2017 18:54:53 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[06-Oct-2017 18:54:53 America/Sao_Paulo] PHP   2. UsuarioController->ProcessRequest() /home/ubuntu/workspace/api/index.php:34
+[06-Oct-2017 18:54:53 America/Sao_Paulo] PHP   3. UsuarioController->ActionGetList() /home/ubuntu/workspace/api/controller/usuario-controller.php:14
+[06-Oct-2017 18:54:53 America/Sao_Paulo] PHP   4. BaseRepository->__construct() /home/ubuntu/workspace/api/controller/usuario-controller.php:54
+[06-Oct-2017 18:54:53 America/Sao_Paulo] PHP   5. DBContext->__construct() /home/ubuntu/workspace/api/repository/base-repository.php:9
+[06-Oct-2017 18:54:53 America/Sao_Paulo] PHP   6. CreateLog() /home/ubuntu/workspace/api/util/db-context.php:20
+[06-Oct-2017 18:54:53 America/Sao_Paulo] PHP   7. fwrite() /home/ubuntu/workspace/api/util/util.php:16
+[06-Oct-2017 18:54:53 America/Sao_Paulo] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/api/util/util.php on line 17
+[06-Oct-2017 18:54:53 America/Sao_Paulo] PHP Stack trace:
+[06-Oct-2017 18:54:53 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[06-Oct-2017 18:54:53 America/Sao_Paulo] PHP   2. UsuarioController->ProcessRequest() /home/ubuntu/workspace/api/index.php:34
+[06-Oct-2017 18:54:53 America/Sao_Paulo] PHP   3. UsuarioController->ActionGetList() /home/ubuntu/workspace/api/controller/usuario-controller.php:14
+[06-Oct-2017 18:54:53 America/Sao_Paulo] PHP   4. BaseRepository->__construct() /home/ubuntu/workspace/api/controller/usuario-controller.php:54
+[06-Oct-2017 18:54:53 America/Sao_Paulo] PHP   5. DBContext->__construct() /home/ubuntu/workspace/api/repository/base-repository.php:9
+[06-Oct-2017 18:54:53 America/Sao_Paulo] PHP   6. CreateLog() /home/ubuntu/workspace/api/util/db-context.php:20
+[06-Oct-2017 18:54:53 America/Sao_Paulo] PHP   7. fclose() /home/ubuntu/workspace/api/util/util.php:17
+[06-Oct-2017 18:54:53 America/Sao_Paulo] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/api/repository/usuario-repository.php on line 34
+[06-Oct-2017 18:54:53 America/Sao_Paulo] PHP Stack trace:
+[06-Oct-2017 18:54:53 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[06-Oct-2017 18:54:53 America/Sao_Paulo] PHP   2. UsuarioController->ProcessRequest() /home/ubuntu/workspace/api/index.php:34
+[06-Oct-2017 18:54:53 America/Sao_Paulo] PHP   3. UsuarioController->ActionGetList() /home/ubuntu/workspace/api/controller/usuario-controller.php:14
+[06-Oct-2017 18:54:53 America/Sao_Paulo] PHP   4. UsuarioRepository->GetList() /home/ubuntu/workspace/api/controller/usuario-controller.php:55
+[06-Oct-2017 18:54:55 America/Sao_Paulo] PHP Warning:  fopen(/home/ubuntu/workspace/zeitgeist-web/api/_log/Log-2017_10_06.log): failed to open stream: No such file or directory in /home/ubuntu/workspace/api/util/util.php on line 15
+[06-Oct-2017 18:54:55 America/Sao_Paulo] PHP Stack trace:
+[06-Oct-2017 18:54:55 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[06-Oct-2017 18:54:55 America/Sao_Paulo] PHP   2. JornalController->ProcessRequest() /home/ubuntu/workspace/api/index.php:62
+[06-Oct-2017 18:54:55 America/Sao_Paulo] PHP   3. JornalController->ActionGetList() /home/ubuntu/workspace/api/controller/jornal-controller.php:11
+[06-Oct-2017 18:54:55 America/Sao_Paulo] PHP   4. BaseRepository->__construct() /home/ubuntu/workspace/api/controller/jornal-controller.php:35
+[06-Oct-2017 18:54:55 America/Sao_Paulo] PHP   5. DBContext->__construct() /home/ubuntu/workspace/api/repository/base-repository.php:9
+[06-Oct-2017 18:54:55 America/Sao_Paulo] PHP   6. CreateLog() /home/ubuntu/workspace/api/util/db-context.php:20
+[06-Oct-2017 18:54:55 America/Sao_Paulo] PHP   7. fopen() /home/ubuntu/workspace/api/util/util.php:15
+[06-Oct-2017 18:54:55 America/Sao_Paulo] PHP Warning:  fwrite() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/api/util/util.php on line 16
+[06-Oct-2017 18:54:55 America/Sao_Paulo] PHP Stack trace:
+[06-Oct-2017 18:54:55 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[06-Oct-2017 18:54:55 America/Sao_Paulo] PHP   2. JornalController->ProcessRequest() /home/ubuntu/workspace/api/index.php:62
+[06-Oct-2017 18:54:55 America/Sao_Paulo] PHP   3. JornalController->ActionGetList() /home/ubuntu/workspace/api/controller/jornal-controller.php:11
+[06-Oct-2017 18:54:55 America/Sao_Paulo] PHP   4. BaseRepository->__construct() /home/ubuntu/workspace/api/controller/jornal-controller.php:35
+[06-Oct-2017 18:54:55 America/Sao_Paulo] PHP   5. DBContext->__construct() /home/ubuntu/workspace/api/repository/base-repository.php:9
+[06-Oct-2017 18:54:55 America/Sao_Paulo] PHP   6. CreateLog() /home/ubuntu/workspace/api/util/db-context.php:20
+[06-Oct-2017 18:54:55 America/Sao_Paulo] PHP   7. fwrite() /home/ubuntu/workspace/api/util/util.php:16
+[06-Oct-2017 18:54:55 America/Sao_Paulo] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/api/util/util.php on line 17
+[06-Oct-2017 18:54:55 America/Sao_Paulo] PHP Stack trace:
+[06-Oct-2017 18:54:55 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[06-Oct-2017 18:54:55 America/Sao_Paulo] PHP   2. JornalController->ProcessRequest() /home/ubuntu/workspace/api/index.php:62
+[06-Oct-2017 18:54:55 America/Sao_Paulo] PHP   3. JornalController->ActionGetList() /home/ubuntu/workspace/api/controller/jornal-controller.php:11
+[06-Oct-2017 18:54:55 America/Sao_Paulo] PHP   4. BaseRepository->__construct() /home/ubuntu/workspace/api/controller/jornal-controller.php:35
+[06-Oct-2017 18:54:55 America/Sao_Paulo] PHP   5. DBContext->__construct() /home/ubuntu/workspace/api/repository/base-repository.php:9
+[06-Oct-2017 18:54:55 America/Sao_Paulo] PHP   6. CreateLog() /home/ubuntu/workspace/api/util/db-context.php:20
+[06-Oct-2017 18:54:55 America/Sao_Paulo] PHP   7. fclose() /home/ubuntu/workspace/api/util/util.php:17
+[06-Oct-2017 18:54:55 America/Sao_Paulo] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/api/repository/jornal-repository.php on line 40
+[06-Oct-2017 18:54:55 America/Sao_Paulo] PHP Stack trace:
+[06-Oct-2017 18:54:55 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[06-Oct-2017 18:54:55 America/Sao_Paulo] PHP   2. JornalController->ProcessRequest() /home/ubuntu/workspace/api/index.php:62
+[06-Oct-2017 18:54:55 America/Sao_Paulo] PHP   3. JornalController->ActionGetList() /home/ubuntu/workspace/api/controller/jornal-controller.php:11
+[06-Oct-2017 18:54:55 America/Sao_Paulo] PHP   4. JornalRepository->GetList() /home/ubuntu/workspace/api/controller/jornal-controller.php:36
+[06-Oct-2017 18:54:55 America/Sao_Paulo] PHP Warning:  fopen(/home/ubuntu/workspace/zeitgeist-web/api/_log/Log-2017_10_06.log): failed to open stream: No such file or directory in /home/ubuntu/workspace/api/util/util.php on line 15
+[06-Oct-2017 18:54:55 America/Sao_Paulo] PHP Stack trace:
+[06-Oct-2017 18:54:55 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[06-Oct-2017 18:54:55 America/Sao_Paulo] PHP   2. JornalController->ProcessRequest() /home/ubuntu/workspace/api/index.php:62
+[06-Oct-2017 18:54:55 America/Sao_Paulo] PHP   3. JornalController->ActionGetList() /home/ubuntu/workspace/api/controller/jornal-controller.php:11
+[06-Oct-2017 18:54:55 America/Sao_Paulo] PHP   4. BaseRepository->__construct() /home/ubuntu/workspace/api/controller/jornal-controller.php:35
+[06-Oct-2017 18:54:55 America/Sao_Paulo] PHP   5. DBContext->__construct() /home/ubuntu/workspace/api/repository/base-repository.php:9
+[06-Oct-2017 18:54:55 America/Sao_Paulo] PHP   6. CreateLog() /home/ubuntu/workspace/api/util/db-context.php:20
+[06-Oct-2017 18:54:55 America/Sao_Paulo] PHP   7. fopen() /home/ubuntu/workspace/api/util/util.php:15
+[06-Oct-2017 18:54:55 America/Sao_Paulo] PHP Warning:  fwrite() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/api/util/util.php on line 16
+[06-Oct-2017 18:54:55 America/Sao_Paulo] PHP Stack trace:
+[06-Oct-2017 18:54:55 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[06-Oct-2017 18:54:55 America/Sao_Paulo] PHP   2. JornalController->ProcessRequest() /home/ubuntu/workspace/api/index.php:62
+[06-Oct-2017 18:54:55 America/Sao_Paulo] PHP   3. JornalController->ActionGetList() /home/ubuntu/workspace/api/controller/jornal-controller.php:11
+[06-Oct-2017 18:54:55 America/Sao_Paulo] PHP   4. BaseRepository->__construct() /home/ubuntu/workspace/api/controller/jornal-controller.php:35
+[06-Oct-2017 18:54:55 America/Sao_Paulo] PHP   5. DBContext->__construct() /home/ubuntu/workspace/api/repository/base-repository.php:9
+[06-Oct-2017 18:54:55 America/Sao_Paulo] PHP   6. CreateLog() /home/ubuntu/workspace/api/util/db-context.php:20
+[06-Oct-2017 18:54:55 America/Sao_Paulo] PHP   7. fwrite() /home/ubuntu/workspace/api/util/util.php:16
+[06-Oct-2017 18:54:55 America/Sao_Paulo] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/api/util/util.php on line 17
+[06-Oct-2017 18:54:55 America/Sao_Paulo] PHP Stack trace:
+[06-Oct-2017 18:54:55 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[06-Oct-2017 18:54:55 America/Sao_Paulo] PHP   2. JornalController->ProcessRequest() /home/ubuntu/workspace/api/index.php:62
+[06-Oct-2017 18:54:55 America/Sao_Paulo] PHP   3. JornalController->ActionGetList() /home/ubuntu/workspace/api/controller/jornal-controller.php:11
+[06-Oct-2017 18:54:55 America/Sao_Paulo] PHP   4. BaseRepository->__construct() /home/ubuntu/workspace/api/controller/jornal-controller.php:35
+[06-Oct-2017 18:54:55 America/Sao_Paulo] PHP   5. DBContext->__construct() /home/ubuntu/workspace/api/repository/base-repository.php:9
+[06-Oct-2017 18:54:55 America/Sao_Paulo] PHP   6. CreateLog() /home/ubuntu/workspace/api/util/db-context.php:20
+[06-Oct-2017 18:54:55 America/Sao_Paulo] PHP   7. fclose() /home/ubuntu/workspace/api/util/util.php:17
+[06-Oct-2017 18:54:55 America/Sao_Paulo] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/api/repository/jornal-repository.php on line 40
+[06-Oct-2017 18:54:55 America/Sao_Paulo] PHP Stack trace:
+[06-Oct-2017 18:54:55 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[06-Oct-2017 18:54:55 America/Sao_Paulo] PHP   2. JornalController->ProcessRequest() /home/ubuntu/workspace/api/index.php:62
+[06-Oct-2017 18:54:55 America/Sao_Paulo] PHP   3. JornalController->ActionGetList() /home/ubuntu/workspace/api/controller/jornal-controller.php:11
+[06-Oct-2017 18:54:55 America/Sao_Paulo] PHP   4. JornalRepository->GetList() /home/ubuntu/workspace/api/controller/jornal-controller.php:36
+[06-Oct-2017 18:54:57 America/Sao_Paulo] PHP Warning:  fopen(/home/ubuntu/workspace/zeitgeist-web/api/_log/Log-2017_10_06.log): failed to open stream: No such file or directory in /home/ubuntu/workspace/api/util/util.php on line 15
+[06-Oct-2017 18:54:57 America/Sao_Paulo] PHP Stack trace:
+[06-Oct-2017 18:54:57 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[06-Oct-2017 18:54:57 America/Sao_Paulo] PHP   2. JornalController->ProcessRequest() /home/ubuntu/workspace/api/index.php:62
+[06-Oct-2017 18:54:57 America/Sao_Paulo] PHP   3. JornalController->ActionGetList() /home/ubuntu/workspace/api/controller/jornal-controller.php:11
+[06-Oct-2017 18:54:57 America/Sao_Paulo] PHP   4. BaseRepository->__construct() /home/ubuntu/workspace/api/controller/jornal-controller.php:35
+[06-Oct-2017 18:54:57 America/Sao_Paulo] PHP   5. DBContext->__construct() /home/ubuntu/workspace/api/repository/base-repository.php:9
+[06-Oct-2017 18:54:57 America/Sao_Paulo] PHP   6. CreateLog() /home/ubuntu/workspace/api/util/db-context.php:20
+[06-Oct-2017 18:54:57 America/Sao_Paulo] PHP   7. fopen() /home/ubuntu/workspace/api/util/util.php:15
+[06-Oct-2017 18:54:57 America/Sao_Paulo] PHP Warning:  fwrite() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/api/util/util.php on line 16
+[06-Oct-2017 18:54:57 America/Sao_Paulo] PHP Stack trace:
+[06-Oct-2017 18:54:57 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[06-Oct-2017 18:54:57 America/Sao_Paulo] PHP   2. JornalController->ProcessRequest() /home/ubuntu/workspace/api/index.php:62
+[06-Oct-2017 18:54:57 America/Sao_Paulo] PHP   3. JornalController->ActionGetList() /home/ubuntu/workspace/api/controller/jornal-controller.php:11
+[06-Oct-2017 18:54:57 America/Sao_Paulo] PHP   4. BaseRepository->__construct() /home/ubuntu/workspace/api/controller/jornal-controller.php:35
+[06-Oct-2017 18:54:57 America/Sao_Paulo] PHP   5. DBContext->__construct() /home/ubuntu/workspace/api/repository/base-repository.php:9
+[06-Oct-2017 18:54:57 America/Sao_Paulo] PHP   6. CreateLog() /home/ubuntu/workspace/api/util/db-context.php:20
+[06-Oct-2017 18:54:57 America/Sao_Paulo] PHP   7. fwrite() /home/ubuntu/workspace/api/util/util.php:16
+[06-Oct-2017 18:54:57 America/Sao_Paulo] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/api/util/util.php on line 17
+[06-Oct-2017 18:54:57 America/Sao_Paulo] PHP Stack trace:
+[06-Oct-2017 18:54:57 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[06-Oct-2017 18:54:57 America/Sao_Paulo] PHP   2. JornalController->ProcessRequest() /home/ubuntu/workspace/api/index.php:62
+[06-Oct-2017 18:54:57 America/Sao_Paulo] PHP   3. JornalController->ActionGetList() /home/ubuntu/workspace/api/controller/jornal-controller.php:11
+[06-Oct-2017 18:54:57 America/Sao_Paulo] PHP   4. BaseRepository->__construct() /home/ubuntu/workspace/api/controller/jornal-controller.php:35
+[06-Oct-2017 18:54:57 America/Sao_Paulo] PHP   5. DBContext->__construct() /home/ubuntu/workspace/api/repository/base-repository.php:9
+[06-Oct-2017 18:54:57 America/Sao_Paulo] PHP   6. CreateLog() /home/ubuntu/workspace/api/util/db-context.php:20
+[06-Oct-2017 18:54:57 America/Sao_Paulo] PHP   7. fclose() /home/ubuntu/workspace/api/util/util.php:17
+[06-Oct-2017 18:54:57 America/Sao_Paulo] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/api/repository/jornal-repository.php on line 40
+[06-Oct-2017 18:54:57 America/Sao_Paulo] PHP Stack trace:
+[06-Oct-2017 18:54:57 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[06-Oct-2017 18:54:57 America/Sao_Paulo] PHP   2. JornalController->ProcessRequest() /home/ubuntu/workspace/api/index.php:62
+[06-Oct-2017 18:54:57 America/Sao_Paulo] PHP   3. JornalController->ActionGetList() /home/ubuntu/workspace/api/controller/jornal-controller.php:11
+[06-Oct-2017 18:54:57 America/Sao_Paulo] PHP   4. JornalRepository->GetList() /home/ubuntu/workspace/api/controller/jornal-controller.php:36
+[06-Oct-2017 18:54:57 America/Sao_Paulo] PHP Warning:  fopen(/home/ubuntu/workspace/zeitgeist-web/api/_log/Log-2017_10_06.log): failed to open stream: No such file or directory in /home/ubuntu/workspace/api/util/util.php on line 15
+[06-Oct-2017 18:54:57 America/Sao_Paulo] PHP Stack trace:
+[06-Oct-2017 18:54:57 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[06-Oct-2017 18:54:57 America/Sao_Paulo] PHP   2. JornalController->ProcessRequest() /home/ubuntu/workspace/api/index.php:62
+[06-Oct-2017 18:54:57 America/Sao_Paulo] PHP   3. JornalController->ActionGetList() /home/ubuntu/workspace/api/controller/jornal-controller.php:11
+[06-Oct-2017 18:54:57 America/Sao_Paulo] PHP   4. BaseRepository->__construct() /home/ubuntu/workspace/api/controller/jornal-controller.php:35
+[06-Oct-2017 18:54:57 America/Sao_Paulo] PHP   5. DBContext->__construct() /home/ubuntu/workspace/api/repository/base-repository.php:9
+[06-Oct-2017 18:54:57 America/Sao_Paulo] PHP   6. CreateLog() /home/ubuntu/workspace/api/util/db-context.php:20
+[06-Oct-2017 18:54:57 America/Sao_Paulo] PHP   7. fopen() /home/ubuntu/workspace/api/util/util.php:15
+[06-Oct-2017 18:54:57 America/Sao_Paulo] PHP Warning:  fwrite() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/api/util/util.php on line 16
+[06-Oct-2017 18:54:57 America/Sao_Paulo] PHP Stack trace:
+[06-Oct-2017 18:54:57 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[06-Oct-2017 18:54:57 America/Sao_Paulo] PHP   2. JornalController->ProcessRequest() /home/ubuntu/workspace/api/index.php:62
+[06-Oct-2017 18:54:57 America/Sao_Paulo] PHP   3. JornalController->ActionGetList() /home/ubuntu/workspace/api/controller/jornal-controller.php:11
+[06-Oct-2017 18:54:57 America/Sao_Paulo] PHP   4. BaseRepository->__construct() /home/ubuntu/workspace/api/controller/jornal-controller.php:35
+[06-Oct-2017 18:54:57 America/Sao_Paulo] PHP   5. DBContext->__construct() /home/ubuntu/workspace/api/repository/base-repository.php:9
+[06-Oct-2017 18:54:57 America/Sao_Paulo] PHP   6. CreateLog() /home/ubuntu/workspace/api/util/db-context.php:20
+[06-Oct-2017 18:54:57 America/Sao_Paulo] PHP   7. fwrite() /home/ubuntu/workspace/api/util/util.php:16
+[06-Oct-2017 18:54:57 America/Sao_Paulo] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/api/util/util.php on line 17
+[06-Oct-2017 18:54:57 America/Sao_Paulo] PHP Stack trace:
+[06-Oct-2017 18:54:57 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[06-Oct-2017 18:54:57 America/Sao_Paulo] PHP   2. JornalController->ProcessRequest() /home/ubuntu/workspace/api/index.php:62
+[06-Oct-2017 18:54:57 America/Sao_Paulo] PHP   3. JornalController->ActionGetList() /home/ubuntu/workspace/api/controller/jornal-controller.php:11
+[06-Oct-2017 18:54:57 America/Sao_Paulo] PHP   4. BaseRepository->__construct() /home/ubuntu/workspace/api/controller/jornal-controller.php:35
+[06-Oct-2017 18:54:57 America/Sao_Paulo] PHP   5. DBContext->__construct() /home/ubuntu/workspace/api/repository/base-repository.php:9
+[06-Oct-2017 18:54:57 America/Sao_Paulo] PHP   6. CreateLog() /home/ubuntu/workspace/api/util/db-context.php:20
+[06-Oct-2017 18:54:57 America/Sao_Paulo] PHP   7. fclose() /home/ubuntu/workspace/api/util/util.php:17
+[06-Oct-2017 18:54:57 America/Sao_Paulo] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/api/repository/jornal-repository.php on line 40
+[06-Oct-2017 18:54:57 America/Sao_Paulo] PHP Stack trace:
+[06-Oct-2017 18:54:57 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[06-Oct-2017 18:54:57 America/Sao_Paulo] PHP   2. JornalController->ProcessRequest() /home/ubuntu/workspace/api/index.php:62
+[06-Oct-2017 18:54:57 America/Sao_Paulo] PHP   3. JornalController->ActionGetList() /home/ubuntu/workspace/api/controller/jornal-controller.php:11
+[06-Oct-2017 18:54:57 America/Sao_Paulo] PHP   4. JornalRepository->GetList() /home/ubuntu/workspace/api/controller/jornal-controller.php:36
+[06-Oct-2017 18:55:03 America/Sao_Paulo] PHP Warning:  fopen(/home/ubuntu/workspace/zeitgeist-web/api/_log/Log-2017_10_06.log): failed to open stream: No such file or directory in /home/ubuntu/workspace/api/util/util.php on line 15
+[06-Oct-2017 18:55:03 America/Sao_Paulo] PHP Stack trace:
+[06-Oct-2017 18:55:03 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[06-Oct-2017 18:55:03 America/Sao_Paulo] PHP   2. JornalController->ProcessRequest() /home/ubuntu/workspace/api/index.php:62
+[06-Oct-2017 18:55:03 America/Sao_Paulo] PHP   3. JornalController->ActionGetList() /home/ubuntu/workspace/api/controller/jornal-controller.php:11
+[06-Oct-2017 18:55:03 America/Sao_Paulo] PHP   4. BaseRepository->__construct() /home/ubuntu/workspace/api/controller/jornal-controller.php:35
+[06-Oct-2017 18:55:03 America/Sao_Paulo] PHP   5. DBContext->__construct() /home/ubuntu/workspace/api/repository/base-repository.php:9
+[06-Oct-2017 18:55:03 America/Sao_Paulo] PHP   6. CreateLog() /home/ubuntu/workspace/api/util/db-context.php:20
+[06-Oct-2017 18:55:03 America/Sao_Paulo] PHP   7. fopen() /home/ubuntu/workspace/api/util/util.php:15
+[06-Oct-2017 18:55:03 America/Sao_Paulo] PHP Warning:  fwrite() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/api/util/util.php on line 16
+[06-Oct-2017 18:55:03 America/Sao_Paulo] PHP Stack trace:
+[06-Oct-2017 18:55:03 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[06-Oct-2017 18:55:03 America/Sao_Paulo] PHP   2. JornalController->ProcessRequest() /home/ubuntu/workspace/api/index.php:62
+[06-Oct-2017 18:55:03 America/Sao_Paulo] PHP   3. JornalController->ActionGetList() /home/ubuntu/workspace/api/controller/jornal-controller.php:11
+[06-Oct-2017 18:55:03 America/Sao_Paulo] PHP   4. BaseRepository->__construct() /home/ubuntu/workspace/api/controller/jornal-controller.php:35
+[06-Oct-2017 18:55:03 America/Sao_Paulo] PHP   5. DBContext->__construct() /home/ubuntu/workspace/api/repository/base-repository.php:9
+[06-Oct-2017 18:55:03 America/Sao_Paulo] PHP   6. CreateLog() /home/ubuntu/workspace/api/util/db-context.php:20
+[06-Oct-2017 18:55:03 America/Sao_Paulo] PHP   7. fwrite() /home/ubuntu/workspace/api/util/util.php:16
+[06-Oct-2017 18:55:03 America/Sao_Paulo] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/api/util/util.php on line 17
+[06-Oct-2017 18:55:03 America/Sao_Paulo] PHP Stack trace:
+[06-Oct-2017 18:55:03 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[06-Oct-2017 18:55:03 America/Sao_Paulo] PHP   2. JornalController->ProcessRequest() /home/ubuntu/workspace/api/index.php:62
+[06-Oct-2017 18:55:03 America/Sao_Paulo] PHP   3. JornalController->ActionGetList() /home/ubuntu/workspace/api/controller/jornal-controller.php:11
+[06-Oct-2017 18:55:03 America/Sao_Paulo] PHP   4. BaseRepository->__construct() /home/ubuntu/workspace/api/controller/jornal-controller.php:35
+[06-Oct-2017 18:55:03 America/Sao_Paulo] PHP   5. DBContext->__construct() /home/ubuntu/workspace/api/repository/base-repository.php:9
+[06-Oct-2017 18:55:03 America/Sao_Paulo] PHP   6. CreateLog() /home/ubuntu/workspace/api/util/db-context.php:20
+[06-Oct-2017 18:55:03 America/Sao_Paulo] PHP   7. fclose() /home/ubuntu/workspace/api/util/util.php:17
+[06-Oct-2017 18:55:03 America/Sao_Paulo] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/api/repository/jornal-repository.php on line 40
+[06-Oct-2017 18:55:03 America/Sao_Paulo] PHP Stack trace:
+[06-Oct-2017 18:55:03 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[06-Oct-2017 18:55:03 America/Sao_Paulo] PHP   2. JornalController->ProcessRequest() /home/ubuntu/workspace/api/index.php:62
+[06-Oct-2017 18:55:03 America/Sao_Paulo] PHP   3. JornalController->ActionGetList() /home/ubuntu/workspace/api/controller/jornal-controller.php:11
+[06-Oct-2017 18:55:03 America/Sao_Paulo] PHP   4. JornalRepository->GetList() /home/ubuntu/workspace/api/controller/jornal-controller.php:36
+[06-Oct-2017 18:55:03 America/Sao_Paulo] PHP Warning:  fopen(/home/ubuntu/workspace/zeitgeist-web/api/_log/Log-2017_10_06.log): failed to open stream: No such file or directory in /home/ubuntu/workspace/api/util/util.php on line 15
+[06-Oct-2017 18:55:03 America/Sao_Paulo] PHP Stack trace:
+[06-Oct-2017 18:55:03 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[06-Oct-2017 18:55:03 America/Sao_Paulo] PHP   2. JornalController->ProcessRequest() /home/ubuntu/workspace/api/index.php:62
+[06-Oct-2017 18:55:03 America/Sao_Paulo] PHP   3. JornalController->ActionGetList() /home/ubuntu/workspace/api/controller/jornal-controller.php:11
+[06-Oct-2017 18:55:03 America/Sao_Paulo] PHP   4. BaseRepository->__construct() /home/ubuntu/workspace/api/controller/jornal-controller.php:35
+[06-Oct-2017 18:55:03 America/Sao_Paulo] PHP   5. DBContext->__construct() /home/ubuntu/workspace/api/repository/base-repository.php:9
+[06-Oct-2017 18:55:03 America/Sao_Paulo] PHP   6. CreateLog() /home/ubuntu/workspace/api/util/db-context.php:20
+[06-Oct-2017 18:55:03 America/Sao_Paulo] PHP   7. fopen() /home/ubuntu/workspace/api/util/util.php:15
+[06-Oct-2017 18:55:03 America/Sao_Paulo] PHP Warning:  fwrite() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/api/util/util.php on line 16
+[06-Oct-2017 18:55:03 America/Sao_Paulo] PHP Stack trace:
+[06-Oct-2017 18:55:03 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[06-Oct-2017 18:55:03 America/Sao_Paulo] PHP   2. JornalController->ProcessRequest() /home/ubuntu/workspace/api/index.php:62
+[06-Oct-2017 18:55:03 America/Sao_Paulo] PHP   3. JornalController->ActionGetList() /home/ubuntu/workspace/api/controller/jornal-controller.php:11
+[06-Oct-2017 18:55:03 America/Sao_Paulo] PHP   4. BaseRepository->__construct() /home/ubuntu/workspace/api/controller/jornal-controller.php:35
+[06-Oct-2017 18:55:03 America/Sao_Paulo] PHP   5. DBContext->__construct() /home/ubuntu/workspace/api/repository/base-repository.php:9
+[06-Oct-2017 18:55:03 America/Sao_Paulo] PHP   6. CreateLog() /home/ubuntu/workspace/api/util/db-context.php:20
+[06-Oct-2017 18:55:03 America/Sao_Paulo] PHP   7. fwrite() /home/ubuntu/workspace/api/util/util.php:16
+[06-Oct-2017 18:55:03 America/Sao_Paulo] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/api/util/util.php on line 17
+[06-Oct-2017 18:55:03 America/Sao_Paulo] PHP Stack trace:
+[06-Oct-2017 18:55:03 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[06-Oct-2017 18:55:03 America/Sao_Paulo] PHP   2. JornalController->ProcessRequest() /home/ubuntu/workspace/api/index.php:62
+[06-Oct-2017 18:55:03 America/Sao_Paulo] PHP   3. JornalController->ActionGetList() /home/ubuntu/workspace/api/controller/jornal-controller.php:11
+[06-Oct-2017 18:55:03 America/Sao_Paulo] PHP   4. BaseRepository->__construct() /home/ubuntu/workspace/api/controller/jornal-controller.php:35
+[06-Oct-2017 18:55:03 America/Sao_Paulo] PHP   5. DBContext->__construct() /home/ubuntu/workspace/api/repository/base-repository.php:9
+[06-Oct-2017 18:55:03 America/Sao_Paulo] PHP   6. CreateLog() /home/ubuntu/workspace/api/util/db-context.php:20
+[06-Oct-2017 18:55:03 America/Sao_Paulo] PHP   7. fclose() /home/ubuntu/workspace/api/util/util.php:17
+[06-Oct-2017 18:55:03 America/Sao_Paulo] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/api/repository/jornal-repository.php on line 40
+[06-Oct-2017 18:55:03 America/Sao_Paulo] PHP Stack trace:
+[06-Oct-2017 18:55:03 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[06-Oct-2017 18:55:03 America/Sao_Paulo] PHP   2. JornalController->ProcessRequest() /home/ubuntu/workspace/api/index.php:62
+[06-Oct-2017 18:55:03 America/Sao_Paulo] PHP   3. JornalController->ActionGetList() /home/ubuntu/workspace/api/controller/jornal-controller.php:11
+[06-Oct-2017 18:55:03 America/Sao_Paulo] PHP   4. JornalRepository->GetList() /home/ubuntu/workspace/api/controller/jornal-controller.php:36
+[06-Oct-2017 18:55:03 America/Sao_Paulo] PHP Warning:  fopen(/home/ubuntu/workspace/zeitgeist-web/api/_log/Log-2017_10_06.log): failed to open stream: No such file or directory in /home/ubuntu/workspace/api/util/util.php on line 15
+[06-Oct-2017 18:55:03 America/Sao_Paulo] PHP Stack trace:
+[06-Oct-2017 18:55:03 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[06-Oct-2017 18:55:03 America/Sao_Paulo] PHP   2. JornalController->ProcessRequest() /home/ubuntu/workspace/api/index.php:62
+[06-Oct-2017 18:55:03 America/Sao_Paulo] PHP   3. JornalController->ActionGetList() /home/ubuntu/workspace/api/controller/jornal-controller.php:11
+[06-Oct-2017 18:55:03 America/Sao_Paulo] PHP   4. BaseRepository->__construct() /home/ubuntu/workspace/api/controller/jornal-controller.php:35
+[06-Oct-2017 18:55:03 America/Sao_Paulo] PHP   5. DBContext->__construct() /home/ubuntu/workspace/api/repository/base-repository.php:9
+[06-Oct-2017 18:55:03 America/Sao_Paulo] PHP   6. CreateLog() /home/ubuntu/workspace/api/util/db-context.php:20
+[06-Oct-2017 18:55:03 America/Sao_Paulo] PHP   7. fopen() /home/ubuntu/workspace/api/util/util.php:15
+[06-Oct-2017 18:55:03 America/Sao_Paulo] PHP Warning:  fwrite() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/api/util/util.php on line 16
+[06-Oct-2017 18:55:03 America/Sao_Paulo] PHP Stack trace:
+[06-Oct-2017 18:55:03 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[06-Oct-2017 18:55:03 America/Sao_Paulo] PHP   2. JornalController->ProcessRequest() /home/ubuntu/workspace/api/index.php:62
+[06-Oct-2017 18:55:03 America/Sao_Paulo] PHP   3. JornalController->ActionGetList() /home/ubuntu/workspace/api/controller/jornal-controller.php:11
+[06-Oct-2017 18:55:03 America/Sao_Paulo] PHP   4. BaseRepository->__construct() /home/ubuntu/workspace/api/controller/jornal-controller.php:35
+[06-Oct-2017 18:55:03 America/Sao_Paulo] PHP   5. DBContext->__construct() /home/ubuntu/workspace/api/repository/base-repository.php:9
+[06-Oct-2017 18:55:03 America/Sao_Paulo] PHP   6. CreateLog() /home/ubuntu/workspace/api/util/db-context.php:20
+[06-Oct-2017 18:55:03 America/Sao_Paulo] PHP   7. fwrite() /home/ubuntu/workspace/api/util/util.php:16
+[06-Oct-2017 18:55:03 America/Sao_Paulo] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/api/util/util.php on line 17
+[06-Oct-2017 18:55:03 America/Sao_Paulo] PHP Stack trace:
+[06-Oct-2017 18:55:03 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[06-Oct-2017 18:55:03 America/Sao_Paulo] PHP   2. JornalController->ProcessRequest() /home/ubuntu/workspace/api/index.php:62
+[06-Oct-2017 18:55:03 America/Sao_Paulo] PHP   3. JornalController->ActionGetList() /home/ubuntu/workspace/api/controller/jornal-controller.php:11
+[06-Oct-2017 18:55:03 America/Sao_Paulo] PHP   4. BaseRepository->__construct() /home/ubuntu/workspace/api/controller/jornal-controller.php:35
+[06-Oct-2017 18:55:03 America/Sao_Paulo] PHP   5. DBContext->__construct() /home/ubuntu/workspace/api/repository/base-repository.php:9
+[06-Oct-2017 18:55:03 America/Sao_Paulo] PHP   6. CreateLog() /home/ubuntu/workspace/api/util/db-context.php:20
+[06-Oct-2017 18:55:03 America/Sao_Paulo] PHP   7. fclose() /home/ubuntu/workspace/api/util/util.php:17
+[06-Oct-2017 18:55:03 America/Sao_Paulo] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/api/repository/jornal-repository.php on line 40
+[06-Oct-2017 18:55:03 America/Sao_Paulo] PHP Stack trace:
+[06-Oct-2017 18:55:03 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[06-Oct-2017 18:55:03 America/Sao_Paulo] PHP   2. JornalController->ProcessRequest() /home/ubuntu/workspace/api/index.php:62
+[06-Oct-2017 18:55:03 America/Sao_Paulo] PHP   3. JornalController->ActionGetList() /home/ubuntu/workspace/api/controller/jornal-controller.php:11
+[06-Oct-2017 18:55:03 America/Sao_Paulo] PHP   4. JornalRepository->GetList() /home/ubuntu/workspace/api/controller/jornal-controller.php:36
+[06-Oct-2017 18:55:03 America/Sao_Paulo] PHP Warning:  fopen(/home/ubuntu/workspace/zeitgeist-web/api/_log/Log-2017_10_06.log): failed to open stream: No such file or directory in /home/ubuntu/workspace/api/util/util.php on line 15
+[06-Oct-2017 18:55:03 America/Sao_Paulo] PHP Stack trace:
+[06-Oct-2017 18:55:03 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[06-Oct-2017 18:55:03 America/Sao_Paulo] PHP   2. JornalController->ProcessRequest() /home/ubuntu/workspace/api/index.php:62
+[06-Oct-2017 18:55:03 America/Sao_Paulo] PHP   3. JornalController->ActionGetList() /home/ubuntu/workspace/api/controller/jornal-controller.php:11
+[06-Oct-2017 18:55:03 America/Sao_Paulo] PHP   4. BaseRepository->__construct() /home/ubuntu/workspace/api/controller/jornal-controller.php:35
+[06-Oct-2017 18:55:03 America/Sao_Paulo] PHP   5. DBContext->__construct() /home/ubuntu/workspace/api/repository/base-repository.php:9
+[06-Oct-2017 18:55:03 America/Sao_Paulo] PHP   6. CreateLog() /home/ubuntu/workspace/api/util/db-context.php:20
+[06-Oct-2017 18:55:03 America/Sao_Paulo] PHP   7. fopen() /home/ubuntu/workspace/api/util/util.php:15
+[06-Oct-2017 18:55:03 America/Sao_Paulo] PHP Warning:  fwrite() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/api/util/util.php on line 16
+[06-Oct-2017 18:55:03 America/Sao_Paulo] PHP Stack trace:
+[06-Oct-2017 18:55:03 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[06-Oct-2017 18:55:03 America/Sao_Paulo] PHP   2. JornalController->ProcessRequest() /home/ubuntu/workspace/api/index.php:62
+[06-Oct-2017 18:55:03 America/Sao_Paulo] PHP   3. JornalController->ActionGetList() /home/ubuntu/workspace/api/controller/jornal-controller.php:11
+[06-Oct-2017 18:55:03 America/Sao_Paulo] PHP   4. BaseRepository->__construct() /home/ubuntu/workspace/api/controller/jornal-controller.php:35
+[06-Oct-2017 18:55:03 America/Sao_Paulo] PHP   5. DBContext->__construct() /home/ubuntu/workspace/api/repository/base-repository.php:9
+[06-Oct-2017 18:55:03 America/Sao_Paulo] PHP   6. CreateLog() /home/ubuntu/workspace/api/util/db-context.php:20
+[06-Oct-2017 18:55:03 America/Sao_Paulo] PHP   7. fwrite() /home/ubuntu/workspace/api/util/util.php:16
+[06-Oct-2017 18:55:03 America/Sao_Paulo] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/api/util/util.php on line 17
+[06-Oct-2017 18:55:03 America/Sao_Paulo] PHP Stack trace:
+[06-Oct-2017 18:55:03 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[06-Oct-2017 18:55:03 America/Sao_Paulo] PHP   2. JornalController->ProcessRequest() /home/ubuntu/workspace/api/index.php:62
+[06-Oct-2017 18:55:03 America/Sao_Paulo] PHP   3. JornalController->ActionGetList() /home/ubuntu/workspace/api/controller/jornal-controller.php:11
+[06-Oct-2017 18:55:03 America/Sao_Paulo] PHP   4. BaseRepository->__construct() /home/ubuntu/workspace/api/controller/jornal-controller.php:35
+[06-Oct-2017 18:55:03 America/Sao_Paulo] PHP   5. DBContext->__construct() /home/ubuntu/workspace/api/repository/base-repository.php:9
+[06-Oct-2017 18:55:03 America/Sao_Paulo] PHP   6. CreateLog() /home/ubuntu/workspace/api/util/db-context.php:20
+[06-Oct-2017 18:55:03 America/Sao_Paulo] PHP   7. fclose() /home/ubuntu/workspace/api/util/util.php:17
+[06-Oct-2017 18:55:03 America/Sao_Paulo] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/api/repository/jornal-repository.php on line 40
+[06-Oct-2017 18:55:03 America/Sao_Paulo] PHP Stack trace:
+[06-Oct-2017 18:55:03 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[06-Oct-2017 18:55:03 America/Sao_Paulo] PHP   2. JornalController->ProcessRequest() /home/ubuntu/workspace/api/index.php:62
+[06-Oct-2017 18:55:03 America/Sao_Paulo] PHP   3. JornalController->ActionGetList() /home/ubuntu/workspace/api/controller/jornal-controller.php:11
+[06-Oct-2017 18:55:03 America/Sao_Paulo] PHP   4. JornalRepository->GetList() /home/ubuntu/workspace/api/controller/jornal-controller.php:36
+[09-Oct-2017 21:50:31 America/Sao_Paulo] PHP Warning:  fopen(/home/ubuntu/workspace/zeitgeist-web/api/_log/Log-2017_10_09.log): failed to open stream: No such file or directory in /home/ubuntu/workspace/api/util/util.php on line 15
+[09-Oct-2017 21:50:31 America/Sao_Paulo] PHP Stack trace:
+[09-Oct-2017 21:50:31 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[09-Oct-2017 21:50:31 America/Sao_Paulo] PHP   2. UsuarioController->ProcessRequest() /home/ubuntu/workspace/api/index.php:34
+[09-Oct-2017 21:50:31 America/Sao_Paulo] PHP   3. UsuarioController->ActionGetList() /home/ubuntu/workspace/api/controller/usuario-controller.php:14
+[09-Oct-2017 21:50:31 America/Sao_Paulo] PHP   4. BaseRepository->__construct() /home/ubuntu/workspace/api/controller/usuario-controller.php:54
+[09-Oct-2017 21:50:31 America/Sao_Paulo] PHP   5. DBContext->__construct() /home/ubuntu/workspace/api/repository/base-repository.php:9
+[09-Oct-2017 21:50:31 America/Sao_Paulo] PHP   6. CreateLog() /home/ubuntu/workspace/api/util/db-context.php:20
+[09-Oct-2017 21:50:31 America/Sao_Paulo] PHP   7. fopen() /home/ubuntu/workspace/api/util/util.php:15
+[09-Oct-2017 21:50:31 America/Sao_Paulo] PHP Warning:  fwrite() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/api/util/util.php on line 16
+[09-Oct-2017 21:50:31 America/Sao_Paulo] PHP Stack trace:
+[09-Oct-2017 21:50:31 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[09-Oct-2017 21:50:31 America/Sao_Paulo] PHP   2. UsuarioController->ProcessRequest() /home/ubuntu/workspace/api/index.php:34
+[09-Oct-2017 21:50:31 America/Sao_Paulo] PHP   3. UsuarioController->ActionGetList() /home/ubuntu/workspace/api/controller/usuario-controller.php:14
+[09-Oct-2017 21:50:31 America/Sao_Paulo] PHP   4. BaseRepository->__construct() /home/ubuntu/workspace/api/controller/usuario-controller.php:54
+[09-Oct-2017 21:50:31 America/Sao_Paulo] PHP   5. DBContext->__construct() /home/ubuntu/workspace/api/repository/base-repository.php:9
+[09-Oct-2017 21:50:31 America/Sao_Paulo] PHP   6. CreateLog() /home/ubuntu/workspace/api/util/db-context.php:20
+[09-Oct-2017 21:50:31 America/Sao_Paulo] PHP   7. fwrite() /home/ubuntu/workspace/api/util/util.php:16
+[09-Oct-2017 21:50:31 America/Sao_Paulo] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/api/util/util.php on line 17
+[09-Oct-2017 21:50:31 America/Sao_Paulo] PHP Stack trace:
+[09-Oct-2017 21:50:31 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[09-Oct-2017 21:50:31 America/Sao_Paulo] PHP   2. UsuarioController->ProcessRequest() /home/ubuntu/workspace/api/index.php:34
+[09-Oct-2017 21:50:31 America/Sao_Paulo] PHP   3. UsuarioController->ActionGetList() /home/ubuntu/workspace/api/controller/usuario-controller.php:14
+[09-Oct-2017 21:50:31 America/Sao_Paulo] PHP   4. BaseRepository->__construct() /home/ubuntu/workspace/api/controller/usuario-controller.php:54
+[09-Oct-2017 21:50:31 America/Sao_Paulo] PHP   5. DBContext->__construct() /home/ubuntu/workspace/api/repository/base-repository.php:9
+[09-Oct-2017 21:50:31 America/Sao_Paulo] PHP   6. CreateLog() /home/ubuntu/workspace/api/util/db-context.php:20
+[09-Oct-2017 21:50:31 America/Sao_Paulo] PHP   7. fclose() /home/ubuntu/workspace/api/util/util.php:17
+[09-Oct-2017 21:50:31 America/Sao_Paulo] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/api/repository/usuario-repository.php on line 34
+[09-Oct-2017 21:50:31 America/Sao_Paulo] PHP Stack trace:
+[09-Oct-2017 21:50:31 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[09-Oct-2017 21:50:31 America/Sao_Paulo] PHP   2. UsuarioController->ProcessRequest() /home/ubuntu/workspace/api/index.php:34
+[09-Oct-2017 21:50:31 America/Sao_Paulo] PHP   3. UsuarioController->ActionGetList() /home/ubuntu/workspace/api/controller/usuario-controller.php:14
+[09-Oct-2017 21:50:31 America/Sao_Paulo] PHP   4. UsuarioRepository->GetList() /home/ubuntu/workspace/api/controller/usuario-controller.php:55
+[09-Oct-2017 21:50:32 America/Sao_Paulo] PHP Warning:  fopen(/home/ubuntu/workspace/zeitgeist-web/api/_log/Log-2017_10_09.log): failed to open stream: No such file or directory in /home/ubuntu/workspace/api/util/util.php on line 15
+[09-Oct-2017 21:50:32 America/Sao_Paulo] PHP Stack trace:
+[09-Oct-2017 21:50:32 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[09-Oct-2017 21:50:32 America/Sao_Paulo] PHP   2. UsuarioController->ProcessRequest() /home/ubuntu/workspace/api/index.php:34
+[09-Oct-2017 21:50:32 America/Sao_Paulo] PHP   3. UsuarioController->ActionGetList() /home/ubuntu/workspace/api/controller/usuario-controller.php:14
+[09-Oct-2017 21:50:32 America/Sao_Paulo] PHP   4. BaseRepository->__construct() /home/ubuntu/workspace/api/controller/usuario-controller.php:54
+[09-Oct-2017 21:50:32 America/Sao_Paulo] PHP   5. DBContext->__construct() /home/ubuntu/workspace/api/repository/base-repository.php:9
+[09-Oct-2017 21:50:32 America/Sao_Paulo] PHP   6. CreateLog() /home/ubuntu/workspace/api/util/db-context.php:20
+[09-Oct-2017 21:50:32 America/Sao_Paulo] PHP   7. fopen() /home/ubuntu/workspace/api/util/util.php:15
+[09-Oct-2017 21:50:32 America/Sao_Paulo] PHP Warning:  fwrite() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/api/util/util.php on line 16
+[09-Oct-2017 21:50:32 America/Sao_Paulo] PHP Stack trace:
+[09-Oct-2017 21:50:32 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[09-Oct-2017 21:50:32 America/Sao_Paulo] PHP   2. UsuarioController->ProcessRequest() /home/ubuntu/workspace/api/index.php:34
+[09-Oct-2017 21:50:32 America/Sao_Paulo] PHP   3. UsuarioController->ActionGetList() /home/ubuntu/workspace/api/controller/usuario-controller.php:14
+[09-Oct-2017 21:50:32 America/Sao_Paulo] PHP   4. BaseRepository->__construct() /home/ubuntu/workspace/api/controller/usuario-controller.php:54
+[09-Oct-2017 21:50:32 America/Sao_Paulo] PHP   5. DBContext->__construct() /home/ubuntu/workspace/api/repository/base-repository.php:9
+[09-Oct-2017 21:50:32 America/Sao_Paulo] PHP   6. CreateLog() /home/ubuntu/workspace/api/util/db-context.php:20
+[09-Oct-2017 21:50:32 America/Sao_Paulo] PHP   7. fwrite() /home/ubuntu/workspace/api/util/util.php:16
+[09-Oct-2017 21:50:32 America/Sao_Paulo] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/api/util/util.php on line 17
+[09-Oct-2017 21:50:32 America/Sao_Paulo] PHP Stack trace:
+[09-Oct-2017 21:50:32 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[09-Oct-2017 21:50:32 America/Sao_Paulo] PHP   2. UsuarioController->ProcessRequest() /home/ubuntu/workspace/api/index.php:34
+[09-Oct-2017 21:50:32 America/Sao_Paulo] PHP   3. UsuarioController->ActionGetList() /home/ubuntu/workspace/api/controller/usuario-controller.php:14
+[09-Oct-2017 21:50:32 America/Sao_Paulo] PHP   4. BaseRepository->__construct() /home/ubuntu/workspace/api/controller/usuario-controller.php:54
+[09-Oct-2017 21:50:32 America/Sao_Paulo] PHP   5. DBContext->__construct() /home/ubuntu/workspace/api/repository/base-repository.php:9
+[09-Oct-2017 21:50:32 America/Sao_Paulo] PHP   6. CreateLog() /home/ubuntu/workspace/api/util/db-context.php:20
+[09-Oct-2017 21:50:32 America/Sao_Paulo] PHP   7. fclose() /home/ubuntu/workspace/api/util/util.php:17
+[09-Oct-2017 21:50:32 America/Sao_Paulo] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/api/repository/usuario-repository.php on line 34
+[09-Oct-2017 21:50:32 America/Sao_Paulo] PHP Stack trace:
+[09-Oct-2017 21:50:32 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[09-Oct-2017 21:50:32 America/Sao_Paulo] PHP   2. UsuarioController->ProcessRequest() /home/ubuntu/workspace/api/index.php:34
+[09-Oct-2017 21:50:32 America/Sao_Paulo] PHP   3. UsuarioController->ActionGetList() /home/ubuntu/workspace/api/controller/usuario-controller.php:14
+[09-Oct-2017 21:50:32 America/Sao_Paulo] PHP   4. UsuarioRepository->GetList() /home/ubuntu/workspace/api/controller/usuario-controller.php:55
