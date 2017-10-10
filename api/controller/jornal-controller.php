@@ -18,6 +18,9 @@ class JornalController extends BaseController
                     $idJornal = isset($_GET['key']) ? $_GET['key'] : null;
                     $this->ActionGetThis($idJornal);
                     break;
+                case "getMobile":
+                    $this->ActionGetMobileVersion();
+                    break;
                 default:
                     ToErrorJson("Action not found");
             }
@@ -60,6 +63,39 @@ class JornalController extends BaseController
         ToWrappedJson($jornal);
     }
 
+    function ActionGetMobileVersion()
+    {
+        $jornalRepository = new JornalRepository();
+        $result = $jornalRepository->GetThisMobile();
+
+        $jornal = new JornalMobile();
+        $jornal->FillByDB($result);
+    
+        if (!$jornal->idJornal)
+            throw new Warning("Jornal não encontrado");
+            
+         $jornalArray = (array)$jornal;
+         
+        foreach ($jornalArray['listaPaginas'] as $value){
+            
+            $paginaDadoRepository = new PaginaDadoRepository();
+            $listaPaginaDado = $paginaDadoRepository->GetListMobile($value['idPagina']);
+        
+            $listPaginaDado = array();
+    
+            foreach ($listaPaginaDado as $dbPaginaDado) {
+                $modelPaginaDado = new PaginaDado();
+                $modelPaginaDado->FillByDB($dbPaginaDado);
+                $listPaginaDado[] = $modelPaginaDado;
+            }
+        
+            foreach ($listPaginaDado as $value1){
+                $jornalArray[$value][$value1['chave_template_dado']] = [$value1['ValorMetadado']];
+            }
+        }
+        
+        echo $jornalArray;
+    }
 
 
     function ActionInsert($data)

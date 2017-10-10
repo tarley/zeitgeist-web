@@ -23,7 +23,23 @@ class JornalRepository extends BaseRepository
         return $result;
     }
   
-  
+    function GetThisMobile()
+    {
+        $conn = $this->db->getConnection();
+
+        $sql = 'SELECT 
+               id_jornal,num_edicao_jornal,nom_titulo_jornal,dta_publicacao_jornal,dta_ultima_atualizacao_jornal
+            FROM 
+                tb_jornal J
+            WHERE 
+                id_jornal = (SELECT MAX(id_jornal) FROM tb_jornal)';
+
+        $stm = $conn->prepare($sql);
+        $stm->execute();
+        $result = $stm->fetch(PDO::FETCH_ASSOC);
+
+        return $result;
+    }
 
     function GetList($id_situacao)
     {
