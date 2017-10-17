@@ -17,7 +17,7 @@
 		 	</select>
             </div>
         </div>
-    </div>         
+    </div>
 
     <div class="valign-wrapper" class="col s2">
         <div class="fixed-action-btn">
@@ -25,11 +25,14 @@
         </div>
     </div>
 
-    <div class="row" ng-repeat="j in jornalList">
-        <div class="col l4">
+    <div class="row">
+        <div class="col l4" ng-repeat="j in jornalList">
             <div class="card horizontal">
-                <div class="card-image">
+                <div ng-if="j.valorPaginaImagem != '' " class="card-image">
                     <img src='data:image/jpg;base64,{{j.valorPaginaImagem}}'></img>
+                </div>
+                <div ng-if="j.valorPaginaImagem == '' " class="card-image">
+                    <img src= '../assets/images/sem-imagem.png'></img>
                 </div>
                 <div class="card-stacked">
                     <div class="card-content">
@@ -45,3 +48,4 @@
         </div>
     </div>
 </div>
+
