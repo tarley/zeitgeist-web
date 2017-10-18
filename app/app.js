@@ -49,7 +49,7 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
         })
         
         .when('/team', {
-            templateUrl: 'view/team.html',
+            templateUrl: 'team.html',
             controller: 'MainCtrl'
         })
         
