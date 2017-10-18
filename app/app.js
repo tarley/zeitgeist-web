@@ -37,6 +37,11 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
             templateUrl: 'view/jornal-list.html',
             controller: 'JornalCtrl'
         })
+        
+        .when('/jornal/:codJornal', {
+            templateUrl: 'view/jornal-edit.html',
+            controller: 'JornalCtrl'
+        })
 
         .when('/pagina/', {
             templateUrl: 'view/pagina-edit.html',

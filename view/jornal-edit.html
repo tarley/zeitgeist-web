@@ -1,0 +1,30 @@
+<div>
+    <h2>Jornal</h2>
+    <hr>
+    <form role="form" class="form-horizontal" ng-submit="save()">
+        <div class="form-group">
+            <label for="numero" class="col-sm-4 col-md-4 control-label">Número da edição</label>
+            <div class="col-sm-3 col-md-3">
+                <input type="text" class="form-control" id="numero" placeholder="Número da edição" required ng-model="jornal.numEdicaoJornal">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="titulo" class="col-sm-4 col-md-4 control-label">Titulo do jornal</label>
+            <div class="col-sm-3 col-md-3">
+                <input type="text" class="form-control" id="titulo" placeholder="Titulo do jornal" required ng-model="jornal.nomTituloJornal">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="publicacao" class="col-sm-4 col-md-4 control-label">Data da publicação</label>
+            <div class="col-sm-3 col-md-3">
+                <input type="text" class="form-control" id="publicacao" placeholder="Data da publicação" required ng-model="jornal.dtaPublicacaoJornal">
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-offset-4 col-md-offset-4 col-sm-3 col-md-3">
+                <button type="submit" class="btn btn-blue">Salvar</button>
+                <button type="button" class="btn btn-default" ng-click="go('jornal/')">Voltar</button>
+            </div>
+        </div>
+    </form>
+</div>

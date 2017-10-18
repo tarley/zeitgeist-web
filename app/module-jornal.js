@@ -40,7 +40,7 @@ var app = angular.module('ZeitGeistModule')
             toastr.error($scope.msg);
 
         $scope.save = function() {
-            if($routeParams.codJornal == 0) {
+            if($routeParams.idJornal == 0) {
                 insertJornal();
             } else {
                 updateJornal();
@@ -66,6 +66,7 @@ var app = angular.module('ZeitGeistModule')
         }
 
         function insertJornal() {
+            $scope.jornal.codSituacao = 3;
             $http.post('api/jornal/insert/', $scope.jornal).then(function (response) {
                 var result = response.data;
                 $scope.jornal = result.data;
