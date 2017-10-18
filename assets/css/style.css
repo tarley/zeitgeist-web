@@ -63,3 +63,17 @@ ul.side-bar li a {
 ul.side-bar li a:hover {
     background-color: #c5cae9;
 }
+
+
+
+div.card.horizontal.tamanhoCard{
+    width:80%;    
+}
+
+.card.horizontal, img.tamanhoImagem {
+    height: 100%;
+}    
+
+#selectDefault{
+    width: 115%;
+}
