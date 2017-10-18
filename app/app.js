@@ -1,4 +1,4 @@
-angular.module('ZeitGeistModule', ['ngRoute',]);
+angular.module('ZeitGeistModule', ['ngRoute', ]);
 angular.module('ZeitGeistService', []);
 
 var app = angular.module('ZeitGeist', [
@@ -38,6 +38,11 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
             controller: 'JornalCtrl'
         })
         
+        .when('/jornal-view/:codJornal', {
+            templateUrl: 'view/jornal-view.html',
+            controller: 'PaginaPreviewCtrl'
+        })
+        
         .when('/jornal/:codJornal', {
             templateUrl: 'view/jornal-edit.html',
             controller: 'JornalCtrl'
@@ -47,14 +52,19 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
             templateUrl: 'view/pagina-edit.html',
             controller: 'PaginaCtrl'
         })
-
+        
+        .when('/team', {
+            templateUrl: 'team.html',
+            controller: 'MainCtrl'
+        })
+        
         .when('/login', {})
         .otherwise({ templateUrl: 'view/page-404.html' });
 
     $locationProvider.html5Mode(true);
 }]);
 
-app.run(['$rootScope', '$location', '$cookies', '$http', function ($rootScope, $location, $cookies, $http) {
+app.run(['$rootScope', '$location', '$cookies', '$http', function($rootScope, $location, $cookies, $http) {
     $rootScope.globals = $cookies.getObject('globals') || {};
 
     if ($rootScope.globals.currentUser) {
