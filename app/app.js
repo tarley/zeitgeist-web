@@ -58,6 +58,11 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
             controller: 'MainCtrl'
         })
         
+         .when('/contato', {
+            templateUrl: 'contato.php',
+            controller: 'MainCtrl'
+        })
+        
         .when('/login', {})
         .otherwise({ templateUrl: 'view/page-404.html' });
 
