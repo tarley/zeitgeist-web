@@ -6,16 +6,26 @@ var app = angular.module('ZeitGeistModule')
         $scope.initListage = function() {
             $scope.jornal= {};
             getListEdicoes();
-           
-        }
+        };
         
         function getListEdicoes(codStatus) {
-            $http.get('api/jornal/list/' + codStatus).then(function(response) {
-                var result = response.data;
-                $scope.jornalList = result.data;
-                $scope.hasError = result.hasError;
-                $scope.msg = result.msg;
-            });
+            
+            if(codStatus != undefined){
+                $http.get('api/jornal/list/' + codStatus).then(function(response) {
+                    var result = response.data;
+                    $scope.jornalList = result.data;
+                    $scope.hasError = result.hasError;
+                    $scope.msg = result.msg;
+                });
+            }
+            else{
+                $http.get('api/jornal/list/').then(function(response) {
+                    var result = response.data;
+                    $scope.jornalList = result.data;
+                    $scope.hasError = result.hasError;
+                    $scope.msg = result.msg;
+                });
+            }
         }
         
         $scope.DropDownChanged = function () {
@@ -26,17 +36,14 @@ var app = angular.module('ZeitGeistModule')
         $scope.initCadastro = function() {
             $scope.jornal = {};
             $scope.isEdit = false;
-        }
+        };
 
         if ($routeParams.codJornal && $routeParams.codJornal != 0) {
             $scope.isEdit = true;
             getJornal($routeParams.codJornal);
-        } else {
-            getListJornal();
-        }
-
-        getListJornal();
-
+            getListPagina();
+        } 
+        
         if($scope.hasError)
             alert($scope.msg);
 
@@ -63,6 +70,17 @@ var app = angular.module('ZeitGeistModule')
                 $scope.jornalList = result.data;
                 $scope.hasError = result.hasError;
                 $scope.msg = result.msg;
+            });
+        }
+        
+        function getListPagina() {
+            $http.get('api/pagina/list/' + $routeParams.codJornal).then(function(response) {
+                var result = response.data;
+                $scope.paginaList = result.data;
+                $scope.hasError = result.hasError;
+                $scope.msg = result.msg;
+                
+                
             });
         }
 
@@ -94,4 +112,8 @@ var app = angular.module('ZeitGeistModule')
                     alert(result.msg);
             });
         }
+        
+        $scope.goJornal = function(idJornal) {
+            $location.path("jornal/" + idJornal);
+        };
     });

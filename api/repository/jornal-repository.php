@@ -46,7 +46,7 @@ class JornalRepository extends BaseRepository
         $conn = $this->db->getConnection();
 
         $sql = 'SELECT 
-               id_jornal,S.id_situacao,S.desc_situacao,num_edicao_jornal,nom_titulo_jornal, date_format(dta_publicacao_jornal, "%m/%Y") AS dta_publicacao_jornal, "%d/%m/%Y",dta_ultima_atualizacao_jornal,
+               id_jornal,S.id_situacao,S.desc_situacao,num_edicao_jornal,nom_titulo_jornal, dta_publicacao_jornal, date_format(dta_publicacao_jornal, "%m/%Y") AS dta_publicacao_jornal_reduzida, "%d/%m/%Y",dta_ultima_atualizacao_jornal,
                (SELECT pi.valor_pagina_imagem
             		FROM tb_pagina_imagem pi 
             		INNER JOIN tb_pagina_dado pd ON (pi.id_pagina_dado = pd.id_pagina_dado)

@@ -29,15 +29,15 @@
         <div class="col l4" ng-repeat="j in jornalList">
             <div class="card horizontal tamanhoCard">
                 <div ng-if="j.valorPaginaImagem != '' " class="card-image">
-                    <img class="tamanhoImagem" src='data:image/jpg;base64,{{j.valorPaginaImagem}}'></img>
+                    <img class="tamanhoImagem" src='data:image/jpg;base64,{{j.valorPaginaImagem}}' ng-click="goJornal(j.idJornal)"></img>
                 </div>
                 <div ng-if="j.valorPaginaImagem == '' " class="card-image">
-                    <img class="tamanhoImagem" src= '../assets/images/sem-imagem.png'></img>
+                    <img class="tamanhoImagem" src= '../assets/images/sem-imagem.png' ng-click="goJornal(j.idJornal)"></img>
                 </div>
                 <div class="card-stacked">
                     <div class="card-content">
                         <h6>N° {{j.numEdicaoJornal}}</h6>
-                        <h6>{{j.dtaPublicacaoJornal}}</h6>
+                        <h6>{{j.dtaPublicacaoJornalReduzida}}</h6>
                         <h6>{{j.descSituacao}}</h6>
                     </div>
                     <div class="card-action">

@@ -8,6 +8,7 @@ class Jornal
     var $nomTituloJornal;
     var $numEdicaoJornal;
     var $dtaPublicacaoJornal;
+    var $dtaPublicacaoJornalReduzida;
     var $dtaUltimaAtualizacaoJornal;
     var $descSituacao;
     var $valorPaginaImagem;
@@ -71,11 +72,23 @@ class Jornal
          if (array_key_exists("num_edicao_jornal", $dbArray))
             $this->numEdicaoJornal = $dbArray['num_edicao_jornal'];
             
-         if (array_key_exists("dta_publicacao_jornal", $dbArray))
-            $this->dtaPublicacaoJornal = $dbArray['dta_publicacao_jornal'];
+         if (array_key_exists("dta_publicacao_jornal", $dbArray)){
+            $data = $dbArray['dta_publicacao_jornal'];
+            $Dta_Publicacao = DateTime::createFromFormat("Y-m-d", $data);
+            $this->dtaPublicacaoJornal = date_format($Dta_Publicacao, "d/m/Y");
+         }
         
-        if (array_key_exists("dta_ultima_atualizacao_jornal", $dbArray))
-            $this->dtaUltimaAtualizacaoJornal = $dbArray['dta_ultima_atualizacao_jornal'];
+        if (array_key_exists("dta_publicacao_jornal_reduzida", $dbArray))
+            $this->dtaPublicacaoJornalReduzida = $dbArray['dta_publicacao_jornal_reduzida'];
+            
+        if (array_key_exists("dta_ultima_atualizacao_jornal", $dbArray)){
+            $data = $dbArray['dta_ultima_atualizacao_jornal'];
+            
+            if($data != null){
+                $Dta_Atualizacao = DateTime::createFromFormat("Y-m-d", $data);
+                $this->dtaUltimaAtualizacaoJornal = date_format($Dta_Atualizacao, "d/m/Y");
+            }
+        }
         
         if (array_key_exists("desc_situacao", $dbArray))
             $this->descSituacao = $dbArray['desc_situacao'];

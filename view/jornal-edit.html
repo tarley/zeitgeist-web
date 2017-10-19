@@ -26,5 +26,21 @@
                 <button type="button" class="btn btn-default" ng-click="go('jornal/')">Voltar</button>
             </div>
         </div>
+        <table class="bordered">
+        <tr>
+            <th>Nome</th>
+            <th class="text-center col-sm-1 col-md 1">Número da página</th>
+            <th class="col-sm-3 col-md-3"></th>
+        </tr>
+        <tr ng-repeat="pagina in paginaList">
+            <td>{{pagina.nomPagina}}</td>
+            <td class="text-center">{{pagina.numPagina}}</td>
+            <td class="text-center">
+                <a ng-href="jornal/{{pagina.idPagina}}" class="btn btn-default btn-sm btn-icon icon-left">
+                    <i class="entypo-pencil"></i>Editar
+                </a>
+            </td>
+        </tr>
+    </table>
     </form>
 </div>
