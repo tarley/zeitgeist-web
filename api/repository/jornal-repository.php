@@ -74,19 +74,20 @@ class JornalRepository extends BaseRepository
     function Insert(Jornal &$jornal)
     {
       
-          $conn = $this->db->getConnection();
+        $conn = $this->db->getConnection();
 
-        $sql = 'INSERT INTO tb_jornal (idUsuario,idSituacao,nomTituloJornal,numEdicaoJornal,dtaPublicacaoJornal,dtaUltimaAtualizacaoJornal) 
-        VALUES (:nome, :endereco, :telefone, :email, :login, SHA1(:senha))';
+        $sql = 'INSERT INTO tb_jornal (id_usuario, id_situacao, num_edicao_jornal, nom_titulo_jornal, dta_publicacao_jornal, dta_ultima_atualizacao_jornal) 
+        VALUES (:id_usuario, :id_situacao, :num_edicao_jornal, :nom_titulo_jornal, :dta_publicacao_jornal, NOW())';
 
+        $dataPublicacao = DateTime::createFromFormat("d/m/Y", $jornal->dtaPublicacaoJornal);
+        $dataPublicacao = date_format($dataPublicacao, "Y-m-d");
+        
         $stm = $conn->prepare($sql);
-        $stm->bindParam(':id_jornal', $jornal->idJornal);
         $stm->bindParam(':id_usuario', $jornal->idUsuario);
         $stm->bindParam(':id_situacao', $jornal->idSituacao);
-        $stm->bindParam(':num_edicao_jornal', $jornal->nomTituloJornal);
-        $stm->bindParam(':num_titulo_jornal', $jornal->numEdicaoJornal);
-        $stm->bindParam(':dta_publicacao_jornal', $jornal->dtaPublicacaoJornal);
-        $stm->bindParam(':dta_ultima_atualizacao_jornal', $jornal->dtaUltimaAtualizacaoJornal);
+        $stm->bindParam(':num_edicao_jornal', $jornal->numEdicaoJornal);
+        $stm->bindParam(':nom_titulo_jornal', $jornal->nomTituloJornal);
+        $stm->bindParam(':dta_publicacao_jornal', $dataPublicacao);
   
         $stm->execute();
 
@@ -94,13 +95,6 @@ class JornalRepository extends BaseRepository
 
         return $stm->rowCount() > 0;
     }
-
-
- 
-
-
-
-
 
 
  /*    function Update(Jornal &$jornal)
