@@ -38,7 +38,7 @@ var app = angular.module('ZeitGeistModule')
         getListJornal();
 
         if($scope.hasError)
-            toastr.error($scope.msg);
+            alert($scope.msg);
 
         $scope.save = function() {
             if($routeParams.codJornal == 0) {
@@ -77,7 +77,7 @@ var app = angular.module('ZeitGeistModule')
                 $scope.msg = result.msg;
 
                 if(!$scope.hasError)
-                    toastr.success(result.msg);
+                    alert(result.msg);
 
                 $location.path('jornal/' + $scope.jornal.codJornal);
             });
@@ -91,7 +91,7 @@ var app = angular.module('ZeitGeistModule')
                 $scope.msg = result.msg;
 
                 if(!$scope.hasError)
-                    toastr.success(result.msg);
+                    alert(result.msg);
             });
         }
     });
