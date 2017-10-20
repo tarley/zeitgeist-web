@@ -42,6 +42,11 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
             templateUrl: 'view/jornal-view.html',
             controller: 'PaginaPreviewCtrl'
         })
+        
+        .when('/jornal/:codJornal', {
+            templateUrl: 'view/jornal-edit.html',
+            controller: 'JornalCtrl'
+        })
 
         .when('/pagina/:codJornal', {
             templateUrl: 'view/pagina-edit.html',
@@ -49,7 +54,12 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
         })
         
         .when('/team', {
-            templateUrl: 'view/team.html',
+            templateUrl: 'team.html',
+            controller: 'MainCtrl'
+        })
+        
+         .when('/contato', {
+            templateUrl: 'contato.php',
             controller: 'MainCtrl'
         })
         

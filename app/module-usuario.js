@@ -4,8 +4,8 @@ var app = angular.module('ZeitGeistModule')
 
         $scope.init = function() {
             $(document).ready(function() {
-                $('#senha').mask('00000000');
-                $('#confirmacaoSenha').mask('00000000');
+                $('#senha').mask('AAAAAAAA');
+                $('#confirmacaoSenha').mask('AAAAAAAA');
             });
         }
 

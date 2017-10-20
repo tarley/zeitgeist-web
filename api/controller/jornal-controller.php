@@ -14,9 +14,16 @@ class JornalController extends BaseController
                     $data = file_get_contents("php://input");
                     $this->ActionInsert($data);
                     break;
+                case "update":
+                    $data = file_get_contents("php://input");
+                    $this->ActionUpdate($data);
+                    break;
                  case "get":
                     $idJornal = isset($_GET['key']) ? $_GET['key'] : null;
                     $this->ActionGetThis($idJornal);
+                    break;
+                case "getUltimaEdicao":
+                    $this->ActionGetThisUltimaEdicao();
                     break;
                 case "getMobile":
                     $this->ActionGetMobileVersion();
@@ -59,6 +66,17 @@ class JornalController extends BaseController
 
         if (!$jornal->idJornal)
             throw new Warning("Jornal não encontrado");
+
+        ToWrappedJson($jornal);
+    }
+    
+    function ActionGetThisUltimaEdicao()
+    {
+        $jornalRepository = new JornalRepository();
+        $result = $jornalRepository->GetThisUltimaEdicao();
+
+        $jornal = new Jornal();
+        $jornal->FillByDB($result);
 
         ToWrappedJson($jornal);
     }
@@ -114,8 +132,22 @@ class JornalController extends BaseController
 
         ToWrappedJson($jornal, "Jornal inserido com sucesso");
     }
-            //CREATE UPDATE
-            //IN PROGRESS.....
+    
+    function ActionUpdate($data)
+    {
+        if (!$data) {
+            throw new Warning("Os dados enviados são inválidos");
+        }
 
+        $obj = json_decode($data);
+
+        $jornal = new Jornal();
+        $jornal->FillByObject($obj);
+
+        $jornalRepository = new JornalRepository();
+        $jornalRepository->Update($jornal);
+
+        ToWrappedJson($jornal, "Dados atualizados com sucesso");
+    }
    
 }

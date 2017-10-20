@@ -9,7 +9,7 @@
 
     <div class="row">
         <div class="col s12">
-            <div class="col s3 offset-s7">
+            <div class="col s3 offset-s8">
                 <select select-name="dropChange" id="selectDefault" ng-model="ZeitGeistModule" class="browser-default" ng-change="DropDownChanged()">
 					<option value="" selected="selected">Todas</option>
 					<option value="2">Publicadas</option>
@@ -21,23 +21,23 @@
 
     <div class="valign-wrapper" class="col s2">
         <div class="fixed-action-btn">
-            <a class="btn-floating btn-large waves-effect waves-light red" ng-href=""><i class="material-icons">add</i></a>
+            <a class="btn-floating btn-large waves-effect waves-light red" ng-href="jornal/0" ><i class="material-icons">add</i></a>
         </div>
     </div>
 
     <div class="row">
         <div class="col l4" ng-repeat="j in jornalList">
-            <div class="card horizontal">
+            <div class="card horizontal tamanhoCard">
                 <div ng-if="j.valorPaginaImagem != '' " class="card-image">
-                    <img src='data:image/jpg;base64,{{j.valorPaginaImagem}}'></img>
+                    <img class="tamanhoImagem" src='data:image/jpg;base64,{{j.valorPaginaImagem}}' ng-click="goJornal(j.idJornal)"></img>
                 </div>
                 <div ng-if="j.valorPaginaImagem == '' " class="card-image">
-                    <img src= '../assets/images/sem-imagem.png'></img>
+                    <img class="tamanhoImagem" src= '../assets/images/sem-imagem.png' ng-click="goJornal(j.idJornal)"></img>
                 </div>
                 <div class="card-stacked">
                     <div class="card-content">
                         <h6>N° {{j.numEdicaoJornal}}</h6>
-                        <h6>{{j.dtaPublicacaoJornal}}</h6>
+                        <h6>{{j.dtaPublicacaoJornalReduzida}}</h6>
                         <h6>{{j.descSituacao}}</h6>
                     </div>
                     <div class="card-action">
