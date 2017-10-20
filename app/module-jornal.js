@@ -125,4 +125,8 @@ var app = angular.module('ZeitGeistModule')
         $scope.goJornal = function(idJornal) {
             $location.path("jornal/" + idJornal);
         };
+        
+        $scope.goPagina = function() {
+            $location.path('pagina/' + $scope.jornal.idJornal);
+        };
     });

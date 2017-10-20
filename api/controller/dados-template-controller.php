@@ -53,7 +53,7 @@ class DadosTemplateController extends BaseController
             $listDadosTemplate[] = $modelDadosTemplate;
         }
 
-        ToWrappedJson($listUsuario);
+        ToWrappedJson($listDadosTemplate);
     }
 
     

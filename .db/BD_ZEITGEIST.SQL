@@ -34,7 +34,7 @@ CREATE TABLE tb_pagina
 /*==============================================================*/
 CREATE TABLE tb_pagina_dado
 (
-   id_pagina_dado       smallint not null PRIMARY KEY,
+   id_pagina_dado       smallint not null PRIMARY KEY AUTO_INCREMENT,
    id_pagina            smallint not null,
    id_template_dado     smallint not null
 );
@@ -44,7 +44,7 @@ CREATE TABLE tb_pagina_dado
 /*==============================================================*/
 CREATE TABLE tb_pagina_imagem
 (
-   id_pagina_imagem     smallint not null PRIMARY KEY,
+   id_pagina_imagem     smallint not null PRIMARY KEY AUTO_INCREMENT,
    id_pagina_dado       smallint not null,
    valor_pagina_imagem  longblob
 );
@@ -54,7 +54,7 @@ CREATE TABLE tb_pagina_imagem
 /*==============================================================*/
 CREATE TABLE tb_pagina_string
 (
-   id_pagina_string     smallint not null PRIMARY KEY,
+   id_pagina_string     smallint not null PRIMARY KEY AUTO_INCREMENT,
    id_pagina_dado       smallint not null,
    valor_pagina_string  varchar(255)
 );
@@ -93,7 +93,7 @@ CREATE TABLE tb_template
 /*==============================================================*/
 CREATE TABLE tb_template_dado
 (
-   id_template_dado     smallint not null PRIMARY KEY,
+   id_template_dado     smallint not null PRIMARY KEY AUTO_INCREMENT,
    id_template          smallint not null,
    id_tipo_template_dado tinyint not null,
    chave_template_dado  varchar(50),

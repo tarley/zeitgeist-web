@@ -77,11 +77,11 @@ class PaginaDadoRepository extends BaseRepository
         $sql = 'INSERT INTO tb_pagina_dado (id_pagina, id_template_dado) VALUES (:id_pagina, :id_template_dado)';
 
         $stm = $conn->prepare($sql);
-        $stm->bindParam(':id_pagina', $pagina->idPagina);
-        $stm->bindParam(':id_template_dado', $pagina->idTemplateDado);
+        $stm->bindParam(':id_pagina', $paginaDado->idPagina);
+        $stm->bindParam(':id_template_dado', $paginaDado->idTemplateDado);
         $stm->execute();
 
-        $pagina->idPaginaDado = $conn->lastInsertId();
+        $paginaDado->idPaginaDado = $conn->lastInsertId();
 
         return $stm->rowCount() > 0;
     }

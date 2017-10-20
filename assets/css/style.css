@@ -77,3 +77,16 @@ div.card.horizontal.tamanhoCard{
 #selectDefault{
     width: 115%;
 }
+
+#divDadosTemplate {
+    padding-top: 50px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-left: 30px;    
+}
+
+#divButtonSaveBack {
+    padding-top: 20px;
+    padding-bottom: 50px;
+    padding-left: 30px;    
+}
