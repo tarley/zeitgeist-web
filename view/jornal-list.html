@@ -26,7 +26,7 @@
     </div>
 
     <div class="row">
-        <div class="col l4" ng-repeat="j in jornalList">
+        <div class="col l4 m6" ng-repeat="j in jornalList">
             <div class="card horizontal tamanhoCard">
                 <div ng-if="j.valorPaginaImagem != '' " class="card-image">
                     <img class="tamanhoImagem" src='data:image/jpg;base64,{{j.valorPaginaImagem}}' ng-click="goJornal(j.idJornal)"></img>
