@@ -23,6 +23,21 @@ class JornalRepository extends BaseRepository
         return $result;
     }
   
+    function GetThisUltimaEdicao()
+    {
+        $conn = $this->db->getConnection();
+
+        $sql = 'SELECT MAX(num_edicao_jornal) + 1 as num_edicao_jornal
+            FROM 
+                tb_jornal';
+
+        $stm = $conn->prepare($sql);
+        $stm->execute();
+        $result = $stm->fetch(PDO::FETCH_ASSOC);
+
+        return $result;
+    }
+    
     function GetThisMobile()
     {
         $conn = $this->db->getConnection();
@@ -97,31 +112,30 @@ class JornalRepository extends BaseRepository
     }
 
 
- /*    function Update(Jornal &$jornal)
+    function Update(Jornal &$jornal)
     {
-        if (!$this->IsAvailableUser($usuario->login, $usuario->codUsuario))
-            throw new Warning("Login já cadastrado");
-
         $conn = $this->db->getConnection();
 
-        $sql = 'UPDATE tb_usuario SET 
-            nome = :nome, 
-            endereco = :endereco, 
-            telefone = :telefone, 
-            email = :email,
-            login = :login
-        WHERE cod_usuario = :codUsuario';
+        $sql = 'UPDATE tb_jornal SET 
+            id_situacao = :id_situacao, 
+            num_edicao_jornal = :num_edicao_jornal, 
+            nom_titulo_jornal = :nom_titulo_jornal, 
+            dta_publicacao_jornal = :dta_publicacao_jornal,
+            dta_ultima_atualizacao_jornal = NOW()
+        WHERE id_jornal = :id_jornal';
 
+        $dataPublicacao = DateTime::createFromFormat("d/m/Y", $jornal->dtaPublicacaoJornal);
+        $dataPublicacao = date_format($dataPublicacao, "Y-m-d");
+        
         $stm = $conn->prepare($sql);
-        $stm->bindParam(':codUsuario', $usuario->codUsuario);
-        $stm->bindParam(':nome', $usuario->nome);
-        $stm->bindParam(':endereco', $usuario->endereco);
-        $stm->bindParam(':telefone', $usuario->telefone);
-        $stm->bindParam(':email', $usuario->email);
-        $stm->bindParam(':login', $usuario->login);
+        $stm->bindParam(':id_situacao', $jornal->idSituacao);
+        $stm->bindParam(':num_edicao_jornal', $jornal->numEdicaoJornal);
+        $stm->bindParam(':nom_titulo_jornal', $jornal->nomTituloJornal);
+        $stm->bindParam(':dta_publicacao_jornal', $dataPublicacao);
+        $stm->bindParam(':id_jornal', $jornal->idJornal);
         $stm->execute();
 
         return $stm->rowCount() > 0;
-    }*/
+    }
 
 }
