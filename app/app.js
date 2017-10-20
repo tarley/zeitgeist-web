@@ -43,7 +43,7 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
             controller: 'PaginaPreviewCtrl'
         })
 
-        .when('/pagina/', {
+        .when('/pagina/:codJornal', {
             templateUrl: 'view/pagina-edit.html',
             controller: 'PaginaCtrl'
         })
