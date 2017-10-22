@@ -8,7 +8,8 @@ function WrapData($data, $msg = "", $hasError = false)
 
 function ToJson($data)
 {
-    header("Content-type: application/json");
+    header("Access-Control-Allow-Origin: *");
+    header("Content-Type: application/json; charset=UTF-8");
     
     $response = json_encode($data);
     

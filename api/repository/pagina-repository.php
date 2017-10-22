@@ -27,11 +27,14 @@ class PaginaRepository extends BaseRepository
         $conn = $this->db->getConnection();
 
         $sql = 'SELECT 
-                id_pagina, id_jornal, id_template, num_pagina, nom_pagina 
+                p.id_pagina, p.id_jornal, p.id_template, p.num_pagina, p.nom_pagina,
+                t.desc_template
             FROM 
-                tb_pagina
+                tb_pagina p
+          INNER JOIN tb_template t ON t.id_template = p.id_template  
             WHERE
-                 id_jornal = :id_jornal';
+                 p.id_jornal = :id_jornal
+            ORDER BY p.num_pagina';
 
         $stm = $conn->prepare($sql);
         $stm->bindParam(':id_jornal', $idJornal);

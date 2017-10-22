@@ -8,7 +8,7 @@ define('LOG_DIR', $_SERVER['DOCUMENT_ROOT'] . CONTEXT_NAME . '_log/');
 define('SERVERNAME', "localhost");
 define('USERNAME', 'root');
 define('PASSWORD', '');
-define('DBNAME', 'BD_ZEITGEIST');
+define('DBNAME', 'bd_zeitgeist');
 
 define('ENV', 'Dev');
 

@@ -14,6 +14,7 @@ class DBContext
 
             $c = new PDO("mysql:host=" . SERVERNAME . ";dbname=" . DBNAME . ";charset=utf8;", USERNAME, PASSWORD, $options);
             $c->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+            $c->exec("set names utf8");
             $this->conn = $c;
         } catch (PDOException $e) {
             $conn = NULL;

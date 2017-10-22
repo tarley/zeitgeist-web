@@ -148,3 +148,22 @@
 [06-Oct-2017 20:20:59 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
 [06-Oct-2017 20:20:59 America/Sao_Paulo] PHP   2. require_once() /home/ubuntu/workspace/api/index.php:6
 [06-Oct-2017 20:20:59 America/Sao_Paulo] PHP   3. require_once() /home/ubuntu/workspace/api/includes.php:3
+[15-Oct-2017 22:05:31 America/Sao_Paulo] PHP Fatal error:  Call to undefined method JornalRepository::GetListToApp() in /home/ubuntu/workspace/api/controller/jornal-controller.php on line 88
+[15-Oct-2017 22:05:31 America/Sao_Paulo] PHP Stack trace:
+[15-Oct-2017 22:05:31 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[15-Oct-2017 22:05:31 America/Sao_Paulo] PHP   2. JornalController->ProcessRequest() /home/ubuntu/workspace/api/index.php:62
+[15-Oct-2017 22:05:31 America/Sao_Paulo] PHP   3. JornalController->ActionGetListToApp() /home/ubuntu/workspace/api/controller/jornal-controller.php:14
+[15-Oct-2017 22:47:34 America/Sao_Paulo] PHP Fatal error:  Call to undefined function GetList() in /home/ubuntu/workspace/api/controller/jornal-controller.php on line 90
+[15-Oct-2017 22:47:34 America/Sao_Paulo] PHP Stack trace:
+[15-Oct-2017 22:47:34 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[15-Oct-2017 22:47:34 America/Sao_Paulo] PHP   2. JornalController->ProcessRequest() /home/ubuntu/workspace/api/index.php:62
+[15-Oct-2017 22:47:34 America/Sao_Paulo] PHP   3. JornalController->ActionGetListToApp() /home/ubuntu/workspace/api/controller/jornal-controller.php:14
+[15-Oct-2017 22:48:30 America/Sao_Paulo] PHP Fatal error:  Call to undefined function GetList() in /home/ubuntu/workspace/api/controller/jornal-controller.php on line 92
+[15-Oct-2017 22:48:30 America/Sao_Paulo] PHP Stack trace:
+[15-Oct-2017 22:48:30 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[15-Oct-2017 22:48:30 America/Sao_Paulo] PHP   2. JornalController->ProcessRequest() /home/ubuntu/workspace/api/index.php:62
+[15-Oct-2017 22:48:30 America/Sao_Paulo] PHP   3. JornalController->ActionGetListToApp() /home/ubuntu/workspace/api/controller/jornal-controller.php:14
+[15-Oct-2017 23:47:51 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected '}' in /home/ubuntu/workspace/api/controller/jornal-controller.php on line 100
+[15-Oct-2017 23:47:51 America/Sao_Paulo] PHP Stack trace:
+[15-Oct-2017 23:47:51 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[15-Oct-2017 23:47:51 America/Sao_Paulo] PHP   2. require_once() /home/ubuntu/workspace/api/index.php:9

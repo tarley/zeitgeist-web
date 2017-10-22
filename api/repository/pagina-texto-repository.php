@@ -22,7 +22,7 @@ class PaginaTextoRepository extends BaseRepository
         return $result;
     }
 
-    function GetList($idPaginaDado)
+    function Get($idPaginaDado)
     {
         $conn = $this->db->getConnection();
 
@@ -36,7 +36,7 @@ class PaginaTextoRepository extends BaseRepository
         $stm = $conn->prepare($sql);
         $stm->bindParam(':id_pagina_dado', $idPaginaDado);
         $stm->execute();
-        $result = $stm->fetchAll(PDO::FETCH_ASSOC);
+        $result = $stm->fetch(PDO::FETCH_ASSOC);
 
         return $result;
     }

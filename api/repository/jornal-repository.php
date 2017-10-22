@@ -71,7 +71,29 @@ class JornalRepository extends BaseRepository
         return $stm->rowCount() > 0;
     }
 
+    function GetLastPublish()
+    {
+        $conn = $this->db->getConnection();
 
+        $sql = '
+            SELECT j.id_jornal,
+                   j.num_edicao_jornal,
+                   j.nom_titulo_jornal,
+                   j.dta_publicacao_jornal,
+                   j.dta_ultima_atualizacao_jornal,
+                   u.nom_usuario,
+                   u.email_usuario
+              FROM tb_jornal j 
+        INNER JOIN tb_usuario u ON u.id_usuario = j.id_usuario
+             WHERE j.dta_publicacao_jornal = (SELECT max(j1.dta_publicacao_jornal)
+                                                FROM tb_jornal j1
+                                               WHERE j1.id_situacao = 2)';
+
+
+        $stm = $conn->prepare($sql);
+        $stm->execute();
+        return $stm->fetch(PDO::FETCH_ASSOC);
+    }
  
 
 

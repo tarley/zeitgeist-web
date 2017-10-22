@@ -26,12 +26,15 @@ class PaginaDadoRepository extends BaseRepository
     {
         $conn = $this->db->getConnection();
 
-        $sql = 'SELECT 
-                id_pagina_dado, id_pagina, id_template_dado
-            FROM 
-                tb_pagina_dado
-            WHERE 
-                id_pagina = :id_pagina';
+        $sql = ' SELECT pd.id_pagina_dado, 
+                        pd.id_pagina, 
+                        pd.id_template_dado,
+                        td.id_tipo_template_dado,
+                        td.chave_template_dado,
+                        td.desc_template_dado
+                   FROM tb_pagina_dado pd
+             INNER JOIN tb_template_dado td ON td.id_template_dado = pd.id_template_dado
+                  WHERE pd.id_pagina = :id_pagina';
 
         $stm = $conn->prepare($sql);
         $stm->bindParam(':id_pagina', $idPagina);
