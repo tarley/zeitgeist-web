@@ -68,7 +68,6 @@ class PaginaController extends BaseController
 
     function ActionInsert($data)
     {
-        echo $data;
         if (!$data) {
             throw new Warning("Os dados enviados são inválidos");
         }

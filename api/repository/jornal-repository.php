@@ -23,21 +23,60 @@ class JornalRepository extends BaseRepository
         return $result;
     }
   
-  
+    function GetThisUltimaEdicao()
+    {
+        $conn = $this->db->getConnection();
+
+        $sql = 'SELECT MAX(num_edicao_jornal) + 1 as num_edicao_jornal
+            FROM 
+                tb_jornal';
+
+        $stm = $conn->prepare($sql);
+        $stm->execute();
+        $result = $stm->fetch(PDO::FETCH_ASSOC);
+
+        return $result;
+    }
+    
+    function GetThisMobile()
+    {
+        $conn = $this->db->getConnection();
+
+        $sql = 'SELECT 
+               id_jornal,num_edicao_jornal,nom_titulo_jornal,dta_publicacao_jornal,dta_ultima_atualizacao_jornal
+            FROM 
+                tb_jornal J
+            WHERE 
+                id_jornal = (SELECT MAX(id_jornal) FROM tb_jornal)';
+
+        $stm = $conn->prepare($sql);
+        $stm->execute();
+        $result = $stm->fetch(PDO::FETCH_ASSOC);
+
+        return $result;
+    }
 
     function GetList($id_situacao)
     {
         $conn = $this->db->getConnection();
 
         $sql = 'SELECT 
-               id_jornal,S.id_situacao,S.desc_situacao,num_edicao_jornal,nom_titulo_jornal, date_format(dta_publicacao_jornal, "%m/%Y") AS dta_publicacao_jornal, "%d/%m/%Y",dta_ultima_atualizacao_jornal
+               id_jornal,S.id_situacao,S.desc_situacao,num_edicao_jornal,nom_titulo_jornal, dta_publicacao_jornal, date_format(dta_publicacao_jornal, "%m/%Y") AS dta_publicacao_jornal_reduzida, "%d/%m/%Y",dta_ultima_atualizacao_jornal,
+               (SELECT pi.valor_pagina_imagem
+            		FROM tb_pagina_imagem pi 
+            		INNER JOIN tb_pagina_dado pd ON (pi.id_pagina_dado = pd.id_pagina_dado)
+            		INNER JOIN tb_pagina p ON (pd.id_pagina = p.id_pagina)
+            		INNER JOIN tb_jornal jn ON (p.id_jornal = jn.id_jornal)
+            		WHERE 
+            		    p.num_pagina = 1 AND 
+            		    jn.id_jornal = J.id_jornal
+            	) as valor_pagina_imagem
             FROM 
                 tb_jornal J INNER JOIN tb_situacao S ON(J.id_situacao=S.id_situacao)
             WHERE
                 :id_situacao IS NULL OR J.id_situacao = :id_situacao
             ORDER BY 
                 num_edicao_jornal DESC';
-
 
       $stm = $conn->prepare($sql);
       $stm->bindParam(':id_situacao', $id_situacao);
@@ -50,19 +89,20 @@ class JornalRepository extends BaseRepository
     function Insert(Jornal &$jornal)
     {
       
-          $conn = $this->db->getConnection();
+        $conn = $this->db->getConnection();
 
-        $sql = 'INSERT INTO tb_jornal (idUsuario,idSituacao,nomTituloJornal,numEdicaoJornal,dtaPublicacaoJornal,dtaUltimaAtualizacaoJornal) 
-        VALUES (:nome, :endereco, :telefone, :email, :login, SHA1(:senha))';
+        $sql = 'INSERT INTO tb_jornal (id_usuario, id_situacao, num_edicao_jornal, nom_titulo_jornal, dta_publicacao_jornal, dta_ultima_atualizacao_jornal) 
+        VALUES (:id_usuario, :id_situacao, :num_edicao_jornal, :nom_titulo_jornal, :dta_publicacao_jornal, NOW())';
 
+        $dataPublicacao = DateTime::createFromFormat("d/m/Y", $jornal->dtaPublicacaoJornal);
+        $dataPublicacao = date_format($dataPublicacao, "Y-m-d");
+        
         $stm = $conn->prepare($sql);
-        $stm->bindParam(':id_jornal', $jornal->idJornal);
         $stm->bindParam(':id_usuario', $jornal->idUsuario);
         $stm->bindParam(':id_situacao', $jornal->idSituacao);
-        $stm->bindParam(':num_edicao_jornal', $jornal->nomTituloJornal);
-        $stm->bindParam(':num_titulo_jornal', $jornal->numEdicaoJornal);
-        $stm->bindParam(':dta_publicacao_jornal', $jornal->dtaPublicacaoJornal);
-        $stm->bindParam(':dta_ultima_atualizacao_jornal', $jornal->dtaUltimaAtualizacaoJornal);
+        $stm->bindParam(':num_edicao_jornal', $jornal->numEdicaoJornal);
+        $stm->bindParam(':nom_titulo_jornal', $jornal->nomTituloJornal);
+        $stm->bindParam(':dta_publicacao_jornal', $dataPublicacao);
   
         $stm->execute();
 
@@ -95,37 +135,31 @@ class JornalRepository extends BaseRepository
         return $stm->fetch(PDO::FETCH_ASSOC);
     }
  
-
-
-
-
-
-
- /*    function Update(Jornal &$jornal)
+ /*    function Update(Jornal &$jornal)*/
+    function Update(Jornal &$jornal)
     {
-        if (!$this->IsAvailableUser($usuario->login, $usuario->codUsuario))
-            throw new Warning("Login já cadastrado");
-
         $conn = $this->db->getConnection();
 
-        $sql = 'UPDATE tb_usuario SET 
-            nome = :nome, 
-            endereco = :endereco, 
-            telefone = :telefone, 
-            email = :email,
-            login = :login
-        WHERE cod_usuario = :codUsuario';
+        $sql = 'UPDATE tb_jornal SET 
+            id_situacao = :id_situacao, 
+            num_edicao_jornal = :num_edicao_jornal, 
+            nom_titulo_jornal = :nom_titulo_jornal, 
+            dta_publicacao_jornal = :dta_publicacao_jornal,
+            dta_ultima_atualizacao_jornal = NOW()
+        WHERE id_jornal = :id_jornal';
 
+        $dataPublicacao = DateTime::createFromFormat("d/m/Y", $jornal->dtaPublicacaoJornal);
+        $dataPublicacao = date_format($dataPublicacao, "Y-m-d");
+        
         $stm = $conn->prepare($sql);
-        $stm->bindParam(':codUsuario', $usuario->codUsuario);
-        $stm->bindParam(':nome', $usuario->nome);
-        $stm->bindParam(':endereco', $usuario->endereco);
-        $stm->bindParam(':telefone', $usuario->telefone);
-        $stm->bindParam(':email', $usuario->email);
-        $stm->bindParam(':login', $usuario->login);
+        $stm->bindParam(':id_situacao', $jornal->idSituacao);
+        $stm->bindParam(':num_edicao_jornal', $jornal->numEdicaoJornal);
+        $stm->bindParam(':nom_titulo_jornal', $jornal->nomTituloJornal);
+        $stm->bindParam(':dta_publicacao_jornal', $dataPublicacao);
+        $stm->bindParam(':id_jornal', $jornal->idJornal);
         $stm->execute();
 
         return $stm->rowCount() > 0;
-    }*/
+    }
 
 }

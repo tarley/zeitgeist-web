@@ -1,0 +1,4 @@
+[17-Oct-2017 13:33:52 UTC] PHP Fatal error:  Class 'BaseController' not found in /home/ubuntu/workspace/api/controller/pagina-imagem-controller.php on line 4
+[17-Oct-2017 13:33:54 UTC] PHP Fatal error:  Class 'BaseController' not found in /home/ubuntu/workspace/api/controller/usuario-controller.php on line 4
+[17-Oct-2017 13:34:43 UTC] PHP Fatal error:  Class 'BaseRepository' not found in /home/ubuntu/workspace/api/repository/pagina-string-repository.php on line 4
+[17-Oct-2017 13:34:46 UTC] PHP Fatal error:  Class 'BaseRepository' not found in /home/ubuntu/workspace/api/repository/jornal-repository.php on line 4

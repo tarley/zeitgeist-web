@@ -10,3 +10,4 @@ require_once "dados-template.php";
 require_once "jornal.php";
 require_once "situacao.php";
 require_once "template.php";
+require_once "jornal-mobile.php";

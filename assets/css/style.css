@@ -63,3 +63,30 @@ ul.side-bar li a {
 ul.side-bar li a:hover {
     background-color: #c5cae9;
 }
+
+
+
+div.card.horizontal.tamanhoCard{
+    width:100%;    
+}
+
+.card.horizontal, img.tamanhoImagem {
+    height: 100%;
+}    
+
+#selectDefault{
+    width: 115%;
+}
+
+#divDadosTemplate {
+    padding-top: 50px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-left: 30px;    
+}
+
+#divButtonSaveBack {
+    padding-top: 20px;
+    padding-bottom: 50px;
+    padding-left: 30px;    
+}

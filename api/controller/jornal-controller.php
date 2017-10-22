@@ -17,9 +17,19 @@ class JornalController extends BaseController
                     $data = file_get_contents("php://input");
                     $this->ActionInsert($data);
                     break;
+                case "update":
+                    $data = file_get_contents("php://input");
+                    $this->ActionUpdate($data);
+                    break;
                  case "get":
                     $idJornal = isset($_GET['key']) ? $_GET['key'] : null;
                     $this->ActionGetThis($idJornal);
+                    break;
+                case "getUltimaEdicao":
+                    $this->ActionGetThisUltimaEdicao();
+                    break;
+                case "getMobile":
+                    $this->ActionGetMobileVersion();
                     break;
                 default:
                     ToErrorJson("Action not found");
@@ -62,7 +72,51 @@ class JornalController extends BaseController
 
         ToWrappedJson($jornal);
     }
+    
+    function ActionGetThisUltimaEdicao()
+    {
+        $jornalRepository = new JornalRepository();
+        $result = $jornalRepository->GetThisUltimaEdicao();
 
+        $jornal = new Jornal();
+        $jornal->FillByDB($result);
+
+        ToWrappedJson($jornal);
+    }
+
+    function ActionGetMobileVersion()
+    {
+        $jornalRepository = new JornalRepository();
+        $result = $jornalRepository->GetThisMobile();
+
+        $jornal = new JornalMobile();
+        $jornal->FillByDB($result);
+    
+        if (!$jornal->idJornal)
+            throw new Warning("Jornal não encontrado");
+            
+         $jornalArray = (array)$jornal;
+         
+        foreach ($jornalArray['listaPaginas'] as $value){
+            
+            $paginaDadoRepository = new PaginaDadoRepository();
+            $listaPaginaDado = $paginaDadoRepository->GetListMobile($value['idPagina']);
+        
+            $listPaginaDado = array();
+    
+            foreach ($listaPaginaDado as $dbPaginaDado) {
+                $modelPaginaDado = new PaginaDado();
+                $modelPaginaDado->FillByDB($dbPaginaDado);
+                $listPaginaDado[] = $modelPaginaDado;
+            }
+        
+            foreach ($listPaginaDado as $value1){
+                $jornalArray[$value][$value1['chave_template_dado']] = [$value1['ValorMetadado']];
+            }
+        }
+        
+        echo $jornalArray;
+    }
 
 
     function ActionInsert($data)
@@ -132,6 +186,21 @@ class JornalController extends BaseController
     }
             //CREATE UPDATE
             //IN PROGRESS.....
+    function ActionUpdate($data)
+    {
+        if (!$data) {
+            throw new Warning("Os dados enviados são inválidos");
+        }
 
+        $obj = json_decode($data);
+
+        $jornal = new Jornal();
+        $jornal->FillByObject($obj);
+
+        $jornalRepository = new JornalRepository();
+        $jornalRepository->Update($jornal);
+
+        ToWrappedJson($jornal, "Dados atualizados com sucesso");
+    }
    
 }

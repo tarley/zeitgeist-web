@@ -5,9 +5,9 @@ class PaginaDado
     var $idPaginaDado;
     var $idPagina;
     var $idTemplateDado;
-    var $paginaImagem;
+    /*var $paginaImagem;
     var $paginaString;
-    var $paginaTexto;
+    var $paginaTexto;*/
 
     function FillByObject($obj)
     {
@@ -20,7 +20,7 @@ class PaginaDado
         if (property_exists($obj, 'idTemplateDado'))
             $this->idTemplateDado = $obj->idTemplateDado;
             
-        if (property_exists($obj, 'paginaImagem')) {
+        /*if (property_exists($obj, 'paginaImagem')) {
             $this->paginaImagem = array();
 
             foreach ($obj->paginaImagem as $paginaImagem) {
@@ -51,7 +51,7 @@ class PaginaDado
 
                 $this->paginaTexto[] = $modelPaginaTexto;
             }
-        }
+        }*/
     }
 
     function FillByDB($dbArray)
@@ -65,7 +65,7 @@ class PaginaDado
         if (array_key_exists("id_template_dado", $dbArray))
             $this->idTemplateDado = $dbArray['id_template_dado'];
             
-        $this->paginaImagem = array();
+        /*$this->paginaImagem = array();
         
         $paginaImagemRepository = new PaginaImagemRepository();
         $result = $paginaImagemRepository->GetList($this->idPaginaDado);
@@ -96,6 +96,6 @@ class PaginaDado
             $modelPaginaTexto = new PaginaTexto();
             $modelPaginaTexto->FillByDB($dbPaginaTexto);
             $this->paginaTexto[] = $modelPaginaTexto;
-        }
+        }*/
     }
 }
