@@ -1,7 +1,0 @@
-/*==========================================================*/
-/*		CADASTRO DE SITUAÇÃO			    */
-/*==========================================================*/
-
-INSERT INTO `tb_situacao`(`desc_situacao`) VALUES ("EM ANÁLISE");
-INSERT INTO `tb_situacao`(`desc_situacao`) VALUES ("PUBLICADO");
-INSERT INTO `tb_situacao`(`desc_situacao`) VALUES ("RASCUNHO");
