@@ -17,9 +17,14 @@ class Usuario
 
         if (property_exists($obj, 'emailUsuario'))
             $this->emailUsuario = $obj->emailUsuario;
+        elseif(property_exists($obj, 'login'))
+            $this->emailUsuario = $obj->login;
 
         if (property_exists($obj, 'senhaUsuario'))
             $this->senhaUsuario = $obj->senhaUsuario;
+        elseif (property_exists($obj, 'senha'))
+            $this->senhaUsuario = $obj->senha;
+            
     }
 
     function FillByDB($dbArray)
