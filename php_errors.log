@@ -13233,3 +13233,7 @@
 >>>>>>> 26a3077c8cd4f5d6b4d07a263fac97c72152d430
 >>>>>>> 2d85b9a4c2d19c5fd00522f87be0df4ae8fe1f7b
 >>>>>>> e676b1d9967ce583c95e0e7ce004f195e4715f69
+[31-Oct-2017 12:33:30 America/Sao_Paulo] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/api/repository/jornal-repository.php on line 81
+[31-Oct-2017 12:33:31 America/Sao_Paulo] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/api/repository/jornal-repository.php on line 34
+[31-Oct-2017 12:33:43 America/Sao_Paulo] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/api/repository/jornal-repository.php on line 100
+[31-Oct-2017 12:33:48 America/Sao_Paulo] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/api/repository/jornal-repository.php on line 81
