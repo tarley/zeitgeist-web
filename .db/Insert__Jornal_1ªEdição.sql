@@ -11,7 +11,7 @@ INSERT INTO tb_jornal (
 	dta_ultima_atualizacao_jornal
 ) 
 VALUES (
-	1, 
+	7, 
 	1, 
 	1, 
 	"Primeiro Jornal", 
