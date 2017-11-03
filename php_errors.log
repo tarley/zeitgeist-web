@@ -13237,3 +13237,9 @@
 [31-Oct-2017 12:33:31 America/Sao_Paulo] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/api/repository/jornal-repository.php on line 34
 [31-Oct-2017 12:33:43 America/Sao_Paulo] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/api/repository/jornal-repository.php on line 100
 [31-Oct-2017 12:33:48 America/Sao_Paulo] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/api/repository/jornal-repository.php on line 81
+[03-Nov-2017 20:10:10 America/Sao_Paulo] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/api/repository/usuario-repository.php on line 90
+[03-Nov-2017 20:10:10 America/Sao_Paulo] PHP Stack trace:
+[03-Nov-2017 20:10:10 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[03-Nov-2017 20:10:10 America/Sao_Paulo] PHP   2. UsuarioController->ProcessRequest() /home/ubuntu/workspace/api/index.php:34
+[03-Nov-2017 20:10:10 America/Sao_Paulo] PHP   3. UsuarioController->ActionLogin() /home/ubuntu/workspace/api/controller/usuario-controller.php:26
+[03-Nov-2017 20:10:10 America/Sao_Paulo] PHP   4. UsuarioRepository->Login() /home/ubuntu/workspace/api/controller/usuario-controller.php:116
