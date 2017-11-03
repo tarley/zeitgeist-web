@@ -63,6 +63,7 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
             controller: 'MainCtrl'
         })
         
+      
         .when('/login', {})
         .otherwise({ templateUrl: 'view/page-404.html' });
 

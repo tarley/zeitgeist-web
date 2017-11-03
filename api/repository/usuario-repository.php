@@ -87,7 +87,16 @@ class UsuarioRepository extends BaseRepository
 
         Log::Debug(print_r($usuario, true));
 
-        $sql = 'SELECT id_usuario, nom_usuario FROM tb_usuario WHERE email_usuario = :login';
+        $sql = 'SELECT u.id_usuario,  
+                       u.nom_usuario,
+                       u.email_usuario,
+                       u.senha_usuario,
+                       u.id_perfil_usuario,
+                       p.nome_perfil
+                  FROM tb_usuario u
+                INNER JOIN tb_perfil_usuario p ON p.id_perfil_usuario = u.id_perfil_usuario
+                 WHERE email_usuario = :login
+               ';
 
         $stm = $conn->prepare($sql);
         $stm->bindParam(':login', $usuario->emailUsuario);
@@ -95,9 +104,18 @@ class UsuarioRepository extends BaseRepository
 
         $result = $stm->fetch(PDO::FETCH_ASSOC);
         Log::Debug(print_r($result, true));
-        if (empty($result['id_usuario'])) {
-            throw new Warning("Usuário ou senha inválidos");
+        
+        if (empty($result)) {
+            throw new Warning("Usuário não encontrado.");
         }
+        
+        $senha = sha1($usuario->senhaUsuario);
+        
+        if($senha != $result['senha_usuario']) {
+            throw new Warning("Senha inválida.");
+        }
+        
+        unset($result['senha_usuario']);
 
         $usuario->FillByDB($result);
     }

@@ -14315,3 +14315,39 @@
 [30-Oct-2017 21:30:34 America/Sao_Paulo] PHP   4. BaseRepository->__construct() /home/ubuntu/workspace/api/controller/usuario-controller.php:54
 [30-Oct-2017 21:30:34 America/Sao_Paulo] PHP   5. DBContext->__construct() /home/ubuntu/workspace/api/repository/base-repository.php:9
 [30-Oct-2017 21:30:34 America/Sao_Paulo] PHP   6. PDO->__construct() /home/ubuntu/workspace/api/util/db-context.php:15
+[03-Nov-2017 20:52:58 America/Sao_Paulo] PHP Fatal error:  Cannot pass parameter 2 by reference in /home/ubuntu/workspace/api/repository/usuario-repository.php on line 93
+[03-Nov-2017 20:52:58 America/Sao_Paulo] PHP Stack trace:
+[03-Nov-2017 20:52:58 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[03-Nov-2017 20:52:58 America/Sao_Paulo] PHP   2. UsuarioController->ProcessRequest() /home/ubuntu/workspace/api/index.php:34
+[03-Nov-2017 20:52:58 America/Sao_Paulo] PHP   3. UsuarioController->ActionLogin() /home/ubuntu/workspace/api/controller/usuario-controller.php:28
+[03-Nov-2017 20:52:58 America/Sao_Paulo] PHP   4. UsuarioRepository->Login() /home/ubuntu/workspace/api/controller/usuario-controller.php:118
+[03-Nov-2017 20:52:59 America/Sao_Paulo] PHP Fatal error:  Cannot pass parameter 2 by reference in /home/ubuntu/workspace/api/repository/usuario-repository.php on line 93
+[03-Nov-2017 20:52:59 America/Sao_Paulo] PHP Stack trace:
+[03-Nov-2017 20:52:59 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[03-Nov-2017 20:52:59 America/Sao_Paulo] PHP   2. UsuarioController->ProcessRequest() /home/ubuntu/workspace/api/index.php:34
+[03-Nov-2017 20:52:59 America/Sao_Paulo] PHP   3. UsuarioController->ActionLogin() /home/ubuntu/workspace/api/controller/usuario-controller.php:28
+[03-Nov-2017 20:52:59 America/Sao_Paulo] PHP   4. UsuarioRepository->Login() /home/ubuntu/workspace/api/controller/usuario-controller.php:118
+[03-Nov-2017 20:53:09 America/Sao_Paulo] PHP Fatal error:  Cannot pass parameter 2 by reference in /home/ubuntu/workspace/api/repository/usuario-repository.php on line 93
+[03-Nov-2017 20:53:09 America/Sao_Paulo] PHP Stack trace:
+[03-Nov-2017 20:53:09 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[03-Nov-2017 20:53:09 America/Sao_Paulo] PHP   2. UsuarioController->ProcessRequest() /home/ubuntu/workspace/api/index.php:34
+[03-Nov-2017 20:53:09 America/Sao_Paulo] PHP   3. UsuarioController->ActionLogin() /home/ubuntu/workspace/api/controller/usuario-controller.php:28
+[03-Nov-2017 20:53:09 America/Sao_Paulo] PHP   4. UsuarioRepository->Login() /home/ubuntu/workspace/api/controller/usuario-controller.php:118
+[03-Nov-2017 20:53:09 America/Sao_Paulo] PHP Fatal error:  Cannot pass parameter 2 by reference in /home/ubuntu/workspace/api/repository/usuario-repository.php on line 93
+[03-Nov-2017 20:53:09 America/Sao_Paulo] PHP Stack trace:
+[03-Nov-2017 20:53:09 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[03-Nov-2017 20:53:09 America/Sao_Paulo] PHP   2. UsuarioController->ProcessRequest() /home/ubuntu/workspace/api/index.php:34
+[03-Nov-2017 20:53:09 America/Sao_Paulo] PHP   3. UsuarioController->ActionLogin() /home/ubuntu/workspace/api/controller/usuario-controller.php:28
+[03-Nov-2017 20:53:09 America/Sao_Paulo] PHP   4. UsuarioRepository->Login() /home/ubuntu/workspace/api/controller/usuario-controller.php:118
+[03-Nov-2017 20:53:19 America/Sao_Paulo] PHP Fatal error:  Cannot pass parameter 2 by reference in /home/ubuntu/workspace/api/repository/usuario-repository.php on line 93
+[03-Nov-2017 20:53:19 America/Sao_Paulo] PHP Stack trace:
+[03-Nov-2017 20:53:19 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[03-Nov-2017 20:53:19 America/Sao_Paulo] PHP   2. UsuarioController->ProcessRequest() /home/ubuntu/workspace/api/index.php:34
+[03-Nov-2017 20:53:19 America/Sao_Paulo] PHP   3. UsuarioController->ActionLogin() /home/ubuntu/workspace/api/controller/usuario-controller.php:28
+[03-Nov-2017 20:53:19 America/Sao_Paulo] PHP   4. UsuarioRepository->Login() /home/ubuntu/workspace/api/controller/usuario-controller.php:118
+[03-Nov-2017 20:53:20 America/Sao_Paulo] PHP Fatal error:  Cannot pass parameter 2 by reference in /home/ubuntu/workspace/api/repository/usuario-repository.php on line 93
+[03-Nov-2017 20:53:20 America/Sao_Paulo] PHP Stack trace:
+[03-Nov-2017 20:53:20 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[03-Nov-2017 20:53:20 America/Sao_Paulo] PHP   2. UsuarioController->ProcessRequest() /home/ubuntu/workspace/api/index.php:34
+[03-Nov-2017 20:53:20 America/Sao_Paulo] PHP   3. UsuarioController->ActionLogin() /home/ubuntu/workspace/api/controller/usuario-controller.php:28
+[03-Nov-2017 20:53:20 America/Sao_Paulo] PHP   4. UsuarioRepository->Login() /home/ubuntu/workspace/api/controller/usuario-controller.php:118
