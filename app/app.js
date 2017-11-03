@@ -77,11 +77,11 @@ app.run(['$rootScope', '$location', '$cookies', '$http', function($rootScope, $l
         $http.defaults.headers.common['Authorization'] = 'Basic ' + $rootScope.globals.currentUser.authdata; // jshint ignore:line
     }
 
-    // $rootScope.$on('$locationChangeStart', function () {
-    //     if ($location.path() !== '/login' && !$rootScope.globals.currentUser) {
-    //         window.location = 'login';
-    //     }
-    // });
+    $rootScope.$on('$locationChangeStart', function () {
+         if ($location.path() !== '/login' && !$rootScope.globals.currentUser) {
+             window.location = 'login';
+         }
+    });
 }]);
 
 app.controller('MainCtrl', ['$scope', '$location', 'AuthenticationService', function($scope, $location, AuthenticationService) {
