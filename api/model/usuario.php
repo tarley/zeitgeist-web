@@ -6,6 +6,8 @@ class Usuario
     var $nomUsuario;
     var $emailUsuario;
     var $senhaUsuario;
+    var $idPerfil;
+    var $perfil;
 
     function FillByObject($obj)
     {
@@ -37,6 +39,12 @@ class Usuario
 
         if (array_key_exists("email_usuario", $dbArray))
             $this->emailUsuario = $dbArray['email_usuario'];
+        
+        if (array_key_exists("id_perfil_usuario", $dbArray))
+            $this->idPerfil = $dbArray['id_perfil_usuario'];
+            
+        if (array_key_exists("nome_perfil", $dbArray))
+            $this->perfil = $dbArray['nome_perfil'];
 
         $this->senhaUsuario = "";
     }

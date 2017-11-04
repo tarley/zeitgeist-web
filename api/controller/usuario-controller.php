@@ -115,12 +115,12 @@ Log::Debug('Depois da conversão: ' . print_r($usuario, true));
         $authData = base64_encode($usuario->emailUsuario . ':' . $usuario->senhaUsuario);
 
         $usuarioRepository = new UsuarioRepository();
-        $usuarioRepository->Login($usuario);
+        $result = $usuarioRepository->Login($usuario);
 
         $_SESSION['cod_usuario'] = $usuario->idUsuario;
         $_SESSION['nome'] = $usuario->nomUsuario;
         $_SESSION['authData'] = $authData;
 
-        ToWrappedJson(null, "Usuário autenticado com sucesso");
+        ToWrappedJson($result, "Usuário autenticado com sucesso");
     }
 }

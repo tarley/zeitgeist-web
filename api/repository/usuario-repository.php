@@ -117,7 +117,7 @@ class UsuarioRepository extends BaseRepository
         
         unset($result['senha_usuario']);
 
-        $usuario->FillByDB($result);
+        return $result;
     }
 
     private function IsAvailableUser($emailUsuario, $idUsuario = null)
