@@ -1,0 +1,57 @@
+-- ----------------------------------------------------------------
+-- Insert do primeiro template – 1 metadado (imagem) - Padrão Capa - Nome Template: Somente imagem
+-- ----------------------------------------------------------------
+
+-- -------------------------------------------------------------------------------------------------------------------
+-- Insert do segundo template – 5 metadados (imagem, nome_pagina, titulo_texto, texto, autor_texto) - Padrão Editorial - Nome template: Texto simples com imagem
+-- -------------------------------------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------------------------------------------------
+-- Insert do terceiro template – 5 metadados (titulo, nome_jornal, desc_produtores, contato, logo_instituicao) - Padrão expediente - Nome Template: expediente
+-- -------------------------------------------------------------------------------------------------------------------------------
+
+-- ----------------------------------------------------------------------------------------------------------------------------------
+-- Insert do quarto template – 6 metadados (imagem, nome_pagina, autor_texto, desc_autor, titulo_texto, texto) - Padrão Com a Palavra - Nome Template: Texto simples com imagem e detalhamento de autor 
+-- ----------------------------------------------------------------------------------------------------------------------------------
+
+-- --------------------------------------------------------------------------------------------------------------
+-- Insert do quinto template – 4 metadados (nome_pagina, titulo_texto, texto, autor_texto) - Padrão comportamento - Nome template: Texto simples sem imagem
+-- --------------------------------------------------------------------------------------------------------------
+
+-- ------------------------------------------------------------------------------------------------------------------------
+-- Insert do sexto template – 5 metadados (nome_pagina, titulo_texto, texto1, texto2, autor_texto) - Padrão comportamento 2 - Nome Template: Texto duplo sem imagem
+-- ------------------------------------------------------------------------------------------------------------------------
+
+-- -----------------------------------------------------------------------------------------------------
+-- Insert do sétimo template – 4 metadados (nome_pagina, imagem, titulo_texto, texto) - Padrão Fale mais - Nome Template: Texto livre com imagem
+-- -----------------------------------------------------------------------------------------------------
+
+-- -----------------------------------------------------------
+-- Insert do oitavo template – 25 metadados - Padrão indicador - Nome template: Grupos de texto e fotos
+-- -----------------------------------------------------------
+
+nome_pagina
+autor
+grupo1
+	grupo1_titulo1
+		grupo1_titulo1_texto1
+		grupo1_titulo1_imagem1
+	grupo1_titulo2
+		grupo1_titulo2_texto2
+		grupo1_titulo2_imagem2
+grupo2
+	grupo2_titulo1
+		grupo2_titulo1_texto1
+		grupo2_titulo1_imagem1
+	grupo2_titulo2
+		grupo2_titulo2_texto2
+		grupo2_titulo2_imagem2
+grupo3
+	grupo3_titulo1
+		grupo3_titulo1_texto1
+		grupo3_titulo1_imagem1
+	grupo3_titulo2
+		grupo3_titulo2_texto2
+		grupo3_titulo2_imagem2
+titulo_rodape
+	texto_rodape
