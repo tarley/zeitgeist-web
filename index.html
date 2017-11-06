@@ -13,13 +13,13 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
-<body ng-app="ZeitGeist">
+<body ng-app="ZeitGeist" ng-controller="MainCtrl as main">
     <div class="header indigo lighten-1 valign-wrapper">
         <img class="logo" src="assets/images/logo-zeitgeist.png" />
         <div class="right-nav">
             <div class="user">
                 <ul id="dropUser" class="dropdown-content">
-                    <li><a href="#">Sair</a></li>
+                    <li><input type="button" ng-click="logout()">Sair</input></li>
                 </ul>
                 <a class="profile dropdown-button" href="#" data-activates="dropUser">John Doe<i class="material-icons right">arrow_drop_down</i></a>
             </div>
@@ -55,7 +55,7 @@
 
         </ul>
     </div>
-    <div class="content" ng-controller="MainCtrl as main">
+    <div class="content">
         <div ng-view></div>
     </div>
 

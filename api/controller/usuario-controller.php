@@ -4,6 +4,8 @@ class UsuarioController extends BaseController
 {
     function ProcessRequest($action)
     {
+        Log::Debug('ProcessRequest:' . $action);
+        
         try {
             switch ($action) {
                 case "get":
@@ -106,19 +108,19 @@ class UsuarioController extends BaseController
         }
 
         $obj = json_decode($data);
-
+Log::Debug('Objeto do banco:' . print_r($obj, true));
         $usuario = new Usuario();
         $usuario->FillByObject($obj);
-
-        $authData = base64_encode($usuario->login . ':' . $usuario->senha);
+Log::Debug('Depois da conversão: ' . print_r($usuario, true));
+        $authData = base64_encode($usuario->emailUsuario . ':' . $usuario->senhaUsuario);
 
         $usuarioRepository = new UsuarioRepository();
-        $usuarioRepository->Login($usuario);
+        $result = $usuarioRepository->Login($usuario);
 
-        $_SESSION['cod_usuario'] = $usuario->codUsuario;
-        $_SESSION['nome'] = $usuario->nome;
+        $_SESSION['cod_usuario'] = $usuario->idUsuario;
+        $_SESSION['nome'] = $usuario->nomUsuario;
         $_SESSION['authData'] = $authData;
 
-        ToWrappedJson(null, "Usuário autenticado com sucesso");
+        ToWrappedJson($result, "Usuário autenticado com sucesso");
     }
 }

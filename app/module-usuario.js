@@ -96,21 +96,4 @@ var app = angular.module('ZeitGeistModule')
                 $scope.msg = result.msg;
             });
         }
-
-     /*   var senha = document.getElementById("senha"),
-            confirmacaoSenha = document.getElementById("confirmacaoSenha");
-
-        function validarSenha() {
-            if (senha.value != confirmacaoSenha.value) {
-                confirmacaoSenha.setCustomValidity("Senhas diferentes!");
-            }
-            else {
-                confirmacaoSenha.setCustomValidity('');
-            }
-        }
-
-        senha.onchange = validarSenha;
-        confirmacaoSenha.onkeyup = validarSenha;
-    */
-    
     }]);

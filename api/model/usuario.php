@@ -6,6 +6,8 @@ class Usuario
     var $nomUsuario;
     var $emailUsuario;
     var $senhaUsuario;
+    var $idPerfil;
+    var $perfil;
 
     function FillByObject($obj)
     {
@@ -17,9 +19,14 @@ class Usuario
 
         if (property_exists($obj, 'emailUsuario'))
             $this->emailUsuario = $obj->emailUsuario;
+        elseif(property_exists($obj, 'login'))
+            $this->emailUsuario = $obj->login;
 
         if (property_exists($obj, 'senhaUsuario'))
             $this->senhaUsuario = $obj->senhaUsuario;
+        elseif (property_exists($obj, 'senha'))
+            $this->senhaUsuario = $obj->senha;
+            
     }
 
     function FillByDB($dbArray)
@@ -32,6 +39,12 @@ class Usuario
 
         if (array_key_exists("email_usuario", $dbArray))
             $this->emailUsuario = $dbArray['email_usuario'];
+        
+        if (array_key_exists("id_perfil_usuario", $dbArray))
+            $this->idPerfil = $dbArray['id_perfil_usuario'];
+            
+        if (array_key_exists("nome_perfil", $dbArray))
+            $this->perfil = $dbArray['nome_perfil'];
 
         $this->senhaUsuario = "";
     }

@@ -13,16 +13,6 @@ var app = angular.module('ZeitGeist', [
 app.config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
     $routeProvider
 
-        .when('/', {
-            templateUrl: 'view/home.html',
-            controller: 'HomeCtrl'
-        })
-
-        .when('/home', {
-            templateUrl: 'view/home.html',
-            controller: 'HomeCtrl'
-        })
-
         .when('/usuario', {
             templateUrl: 'view/usuario-list.html',
             controller: 'UsuarioCtrl'
@@ -33,16 +23,16 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
             controller: 'UsuarioCtrl'
         })
 
-        .when('/jornal/', {
+        .when('/', {
             templateUrl: 'view/jornal-list.html',
             controller: 'JornalCtrl'
         })
-        
+
         .when('/jornal-view/:codJornal', {
             templateUrl: 'view/jornal-view.html',
             controller: 'PaginaPreviewCtrl'
         })
-        
+
         .when('/jornal/:codJornal', {
             templateUrl: 'view/jornal-edit.html',
             controller: 'JornalCtrl'
@@ -52,17 +42,18 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
             templateUrl: 'view/pagina-edit.html',
             controller: 'PaginaCtrl'
         })
-        
+
         .when('/team', {
             templateUrl: 'team.html',
             controller: 'MainCtrl'
         })
-        
-         .when('/contato', {
+
+        .when('/contato', {
             templateUrl: 'contato.php',
             controller: 'MainCtrl'
         })
-        
+
+
         .when('/login', {})
         .otherwise({ templateUrl: 'view/page-404.html' });
 
@@ -76,11 +67,16 @@ app.run(['$rootScope', '$location', '$cookies', '$http', function($rootScope, $l
         $http.defaults.headers.common['Authorization'] = 'Basic ' + $rootScope.globals.currentUser.authdata; // jshint ignore:line
     }
 
-    // $rootScope.$on('$locationChangeStart', function () {
-    //     if ($location.path() !== '/login' && !$rootScope.globals.currentUser) {
-    //         window.location = 'login';
-    //     }
-    // });
+    $rootScope.$on('$locationChangeStart', function() {
+        if ($location.path() !== '/login' && !$rootScope.globals.currentUser) {
+            window.location = 'login';
+        }
+        else if ($location.path() == '/usuario' &&
+            $rootScope.globals.currentUser.role != '1') {
+            window.location = '/';
+        }
+
+    });
 }]);
 
 app.controller('MainCtrl', ['$scope', '$location', 'AuthenticationService', function($scope, $location, AuthenticationService) {
