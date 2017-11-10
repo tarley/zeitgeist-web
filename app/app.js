@@ -14,59 +14,59 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
     $routeProvider
 
         .when('/usuario', {
-            templateUrl: 'view/usuario-list.html',
+            templateUrl: '/view/usuario-list.html',
             controller: 'UsuarioCtrl',
             admin: true
         })
 
         .when('/usuario/:idUsuario', {
-            templateUrl: 'view/usuario-edit.html',
+            templateUrl: '/view/usuario-edit.html',
             controller: 'UsuarioCtrl',
             admin: true
         })
 
         .when('/', {
-            templateUrl: 'view/jornal-list.html',
+            templateUrl: '/view/jornal-list.html',
             controller: 'JornalCtrl'
         })
 
         .when('/jornal-view/:codJornal', {
-            templateUrl: 'view/jornal-view.html',
+            templateUrl: '/view/jornal-view.html',
             controller: 'PaginaPreviewCtrl'
         })
 
         .when('/jornal/:codJornal', {
-            templateUrl: 'view/jornal-edit.html',
+            templateUrl: '/view/jornal-edit.html',
             controller: 'JornalCtrl'
         })
 
         .when('/pagina/:codJornal', {
-            templateUrl: 'view/pagina-edit.html',
+            templateUrl: '/view/pagina-edit.html',
             controller: 'PaginaCtrl'
         })
 
         .when('/team', {
-            templateUrl: 'team.html',
+            templateUrl: '/team.html',
             controller: 'MainCtrl'
         })
 
         .when('/contato', {
-            templateUrl: 'contato.php',
+            templateUrl: '/contato.php',
             controller: 'MainCtrl'
         })
         .when('/login', {
-            templateUrl: 'login.html',
+            templateUrl: '/login.html',
             controller: 'MainCtrl',
             open: true
         })
         .when('/page-404', {
-            templateUrl: 'view/page-404.html'
+            templateUrl: '/view/page-404.html'
         })
         .otherwise({
             redirectTo: "/login"
         });
 
-    $locationProvider.html5Mode(true);
+    $locationProvider.html5Mode(false);
 }]);
 
 app.run(['$rootScope', '$location', '$cookies', '$http', function($rootScope, $location, $cookies, $http) {
