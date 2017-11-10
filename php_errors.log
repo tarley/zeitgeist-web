@@ -13243,3 +13243,433 @@
 [03-Nov-2017 20:10:10 America/Sao_Paulo] PHP   2. UsuarioController->ProcessRequest() /home/ubuntu/workspace/api/index.php:34
 [03-Nov-2017 20:10:10 America/Sao_Paulo] PHP   3. UsuarioController->ActionLogin() /home/ubuntu/workspace/api/controller/usuario-controller.php:26
 [03-Nov-2017 20:10:10 America/Sao_Paulo] PHP   4. UsuarioRepository->Login() /home/ubuntu/workspace/api/controller/usuario-controller.php:116
+[10-Nov-2017 18:19:16 America/Sao_Paulo] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/api/repository/jornal-repository.php on line 81
+[10-Nov-2017 18:19:16 America/Sao_Paulo] PHP Stack trace:
+[10-Nov-2017 18:19:16 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[10-Nov-2017 18:19:16 America/Sao_Paulo] PHP   2. JornalController->ProcessRequest() /home/ubuntu/workspace/api/index.php:62
+[10-Nov-2017 18:19:16 America/Sao_Paulo] PHP   3. JornalController->ActionGetList() /home/ubuntu/workspace/api/controller/jornal-controller.php:11
+[10-Nov-2017 18:19:16 America/Sao_Paulo] PHP   4. JornalRepository->GetList() /home/ubuntu/workspace/api/controller/jornal-controller.php:49
+[10-Nov-2017 18:19:20 America/Sao_Paulo] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/api/repository/usuario-repository.php on line 101
+[10-Nov-2017 18:19:20 America/Sao_Paulo] PHP Stack trace:
+[10-Nov-2017 18:19:20 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[10-Nov-2017 18:19:20 America/Sao_Paulo] PHP   2. UsuarioController->ProcessRequest() /home/ubuntu/workspace/api/index.php:34
+[10-Nov-2017 18:19:20 America/Sao_Paulo] PHP   3. UsuarioController->ActionLogin() /home/ubuntu/workspace/api/controller/usuario-controller.php:28
+[10-Nov-2017 18:19:20 America/Sao_Paulo] PHP   4. UsuarioRepository->Login() /home/ubuntu/workspace/api/controller/usuario-controller.php:118
+[10-Nov-2017 18:19:20 America/Sao_Paulo] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/api/repository/usuario-repository.php on line 101
+[10-Nov-2017 18:19:20 America/Sao_Paulo] PHP Stack trace:
+[10-Nov-2017 18:19:20 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[10-Nov-2017 18:19:20 America/Sao_Paulo] PHP   2. UsuarioController->ProcessRequest() /home/ubuntu/workspace/api/index.php:34
+[10-Nov-2017 18:19:20 America/Sao_Paulo] PHP   3. UsuarioController->ActionLogin() /home/ubuntu/workspace/api/controller/usuario-controller.php:28
+[10-Nov-2017 18:19:20 America/Sao_Paulo] PHP   4. UsuarioRepository->Login() /home/ubuntu/workspace/api/controller/usuario-controller.php:118
+[10-Nov-2017 18:19:26 America/Sao_Paulo] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/api/repository/usuario-repository.php on line 101
+[10-Nov-2017 18:19:26 America/Sao_Paulo] PHP Stack trace:
+[10-Nov-2017 18:19:26 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[10-Nov-2017 18:19:26 America/Sao_Paulo] PHP   2. UsuarioController->ProcessRequest() /home/ubuntu/workspace/api/index.php:34
+[10-Nov-2017 18:19:26 America/Sao_Paulo] PHP   3. UsuarioController->ActionLogin() /home/ubuntu/workspace/api/controller/usuario-controller.php:28
+[10-Nov-2017 18:19:26 America/Sao_Paulo] PHP   4. UsuarioRepository->Login() /home/ubuntu/workspace/api/controller/usuario-controller.php:118
+[10-Nov-2017 18:19:26 America/Sao_Paulo] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/api/repository/usuario-repository.php on line 101
+[10-Nov-2017 18:19:26 America/Sao_Paulo] PHP Stack trace:
+[10-Nov-2017 18:19:26 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[10-Nov-2017 18:19:26 America/Sao_Paulo] PHP   2. UsuarioController->ProcessRequest() /home/ubuntu/workspace/api/index.php:34
+[10-Nov-2017 18:19:26 America/Sao_Paulo] PHP   3. UsuarioController->ActionLogin() /home/ubuntu/workspace/api/controller/usuario-controller.php:28
+[10-Nov-2017 18:19:26 America/Sao_Paulo] PHP   4. UsuarioRepository->Login() /home/ubuntu/workspace/api/controller/usuario-controller.php:118
+[10-Nov-2017 18:19:26 America/Sao_Paulo] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/api/repository/usuario-repository.php on line 101
+[10-Nov-2017 18:19:26 America/Sao_Paulo] PHP Stack trace:
+[10-Nov-2017 18:19:26 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[10-Nov-2017 18:19:26 America/Sao_Paulo] PHP   2. UsuarioController->ProcessRequest() /home/ubuntu/workspace/api/index.php:34
+[10-Nov-2017 18:19:26 America/Sao_Paulo] PHP   3. UsuarioController->ActionLogin() /home/ubuntu/workspace/api/controller/usuario-controller.php:28
+[10-Nov-2017 18:19:26 America/Sao_Paulo] PHP   4. UsuarioRepository->Login() /home/ubuntu/workspace/api/controller/usuario-controller.php:118
+[10-Nov-2017 18:19:27 America/Sao_Paulo] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/api/repository/usuario-repository.php on line 101
+[10-Nov-2017 18:19:27 America/Sao_Paulo] PHP Stack trace:
+[10-Nov-2017 18:19:27 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[10-Nov-2017 18:19:27 America/Sao_Paulo] PHP   2. UsuarioController->ProcessRequest() /home/ubuntu/workspace/api/index.php:34
+[10-Nov-2017 18:19:27 America/Sao_Paulo] PHP   3. UsuarioController->ActionLogin() /home/ubuntu/workspace/api/controller/usuario-controller.php:28
+[10-Nov-2017 18:19:27 America/Sao_Paulo] PHP   4. UsuarioRepository->Login() /home/ubuntu/workspace/api/controller/usuario-controller.php:118
+[10-Nov-2017 18:19:28 America/Sao_Paulo] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/api/repository/usuario-repository.php on line 101
+[10-Nov-2017 18:19:28 America/Sao_Paulo] PHP Stack trace:
+[10-Nov-2017 18:19:28 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[10-Nov-2017 18:19:28 America/Sao_Paulo] PHP   2. UsuarioController->ProcessRequest() /home/ubuntu/workspace/api/index.php:34
+[10-Nov-2017 18:19:28 America/Sao_Paulo] PHP   3. UsuarioController->ActionLogin() /home/ubuntu/workspace/api/controller/usuario-controller.php:28
+[10-Nov-2017 18:19:28 America/Sao_Paulo] PHP   4. UsuarioRepository->Login() /home/ubuntu/workspace/api/controller/usuario-controller.php:118
+[10-Nov-2017 18:19:28 America/Sao_Paulo] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/api/repository/usuario-repository.php on line 101
+[10-Nov-2017 18:19:28 America/Sao_Paulo] PHP Stack trace:
+[10-Nov-2017 18:19:28 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[10-Nov-2017 18:19:28 America/Sao_Paulo] PHP   2. UsuarioController->ProcessRequest() /home/ubuntu/workspace/api/index.php:34
+[10-Nov-2017 18:19:28 America/Sao_Paulo] PHP   3. UsuarioController->ActionLogin() /home/ubuntu/workspace/api/controller/usuario-controller.php:28
+[10-Nov-2017 18:19:28 America/Sao_Paulo] PHP   4. UsuarioRepository->Login() /home/ubuntu/workspace/api/controller/usuario-controller.php:118
+[10-Nov-2017 18:19:28 America/Sao_Paulo] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/api/repository/usuario-repository.php on line 101
+[10-Nov-2017 18:19:28 America/Sao_Paulo] PHP Stack trace:
+[10-Nov-2017 18:19:28 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[10-Nov-2017 18:19:28 America/Sao_Paulo] PHP   2. UsuarioController->ProcessRequest() /home/ubuntu/workspace/api/index.php:34
+[10-Nov-2017 18:19:28 America/Sao_Paulo] PHP   3. UsuarioController->ActionLogin() /home/ubuntu/workspace/api/controller/usuario-controller.php:28
+[10-Nov-2017 18:19:28 America/Sao_Paulo] PHP   4. UsuarioRepository->Login() /home/ubuntu/workspace/api/controller/usuario-controller.php:118
+[10-Nov-2017 18:19:29 America/Sao_Paulo] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/api/repository/usuario-repository.php on line 101
+[10-Nov-2017 18:19:29 America/Sao_Paulo] PHP Stack trace:
+[10-Nov-2017 18:19:29 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[10-Nov-2017 18:19:29 America/Sao_Paulo] PHP   2. UsuarioController->ProcessRequest() /home/ubuntu/workspace/api/index.php:34
+[10-Nov-2017 18:19:29 America/Sao_Paulo] PHP   3. UsuarioController->ActionLogin() /home/ubuntu/workspace/api/controller/usuario-controller.php:28
+[10-Nov-2017 18:19:29 America/Sao_Paulo] PHP   4. UsuarioRepository->Login() /home/ubuntu/workspace/api/controller/usuario-controller.php:118
+[10-Nov-2017 18:19:29 America/Sao_Paulo] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/api/repository/usuario-repository.php on line 101
+[10-Nov-2017 18:19:29 America/Sao_Paulo] PHP Stack trace:
+[10-Nov-2017 18:19:29 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[10-Nov-2017 18:19:29 America/Sao_Paulo] PHP   2. UsuarioController->ProcessRequest() /home/ubuntu/workspace/api/index.php:34
+[10-Nov-2017 18:19:29 America/Sao_Paulo] PHP   3. UsuarioController->ActionLogin() /home/ubuntu/workspace/api/controller/usuario-controller.php:28
+[10-Nov-2017 18:19:29 America/Sao_Paulo] PHP   4. UsuarioRepository->Login() /home/ubuntu/workspace/api/controller/usuario-controller.php:118
+[10-Nov-2017 18:19:29 America/Sao_Paulo] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/api/repository/usuario-repository.php on line 101
+[10-Nov-2017 18:19:29 America/Sao_Paulo] PHP Stack trace:
+[10-Nov-2017 18:19:29 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[10-Nov-2017 18:19:29 America/Sao_Paulo] PHP   2. UsuarioController->ProcessRequest() /home/ubuntu/workspace/api/index.php:34
+[10-Nov-2017 18:19:29 America/Sao_Paulo] PHP   3. UsuarioController->ActionLogin() /home/ubuntu/workspace/api/controller/usuario-controller.php:28
+[10-Nov-2017 18:19:29 America/Sao_Paulo] PHP   4. UsuarioRepository->Login() /home/ubuntu/workspace/api/controller/usuario-controller.php:118
+[10-Nov-2017 18:19:29 America/Sao_Paulo] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/api/repository/usuario-repository.php on line 101
+[10-Nov-2017 18:19:29 America/Sao_Paulo] PHP Stack trace:
+[10-Nov-2017 18:19:29 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[10-Nov-2017 18:19:29 America/Sao_Paulo] PHP   2. UsuarioController->ProcessRequest() /home/ubuntu/workspace/api/index.php:34
+[10-Nov-2017 18:19:29 America/Sao_Paulo] PHP   3. UsuarioController->ActionLogin() /home/ubuntu/workspace/api/controller/usuario-controller.php:28
+[10-Nov-2017 18:19:29 America/Sao_Paulo] PHP   4. UsuarioRepository->Login() /home/ubuntu/workspace/api/controller/usuario-controller.php:118
+[10-Nov-2017 18:19:29 America/Sao_Paulo] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/api/repository/usuario-repository.php on line 101
+[10-Nov-2017 18:19:29 America/Sao_Paulo] PHP Stack trace:
+[10-Nov-2017 18:19:29 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[10-Nov-2017 18:19:29 America/Sao_Paulo] PHP   2. UsuarioController->ProcessRequest() /home/ubuntu/workspace/api/index.php:34
+[10-Nov-2017 18:19:29 America/Sao_Paulo] PHP   3. UsuarioController->ActionLogin() /home/ubuntu/workspace/api/controller/usuario-controller.php:28
+[10-Nov-2017 18:19:29 America/Sao_Paulo] PHP   4. UsuarioRepository->Login() /home/ubuntu/workspace/api/controller/usuario-controller.php:118
+[10-Nov-2017 18:19:30 America/Sao_Paulo] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/api/repository/usuario-repository.php on line 101
+[10-Nov-2017 18:19:30 America/Sao_Paulo] PHP Stack trace:
+[10-Nov-2017 18:19:30 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[10-Nov-2017 18:19:30 America/Sao_Paulo] PHP   2. UsuarioController->ProcessRequest() /home/ubuntu/workspace/api/index.php:34
+[10-Nov-2017 18:19:30 America/Sao_Paulo] PHP   3. UsuarioController->ActionLogin() /home/ubuntu/workspace/api/controller/usuario-controller.php:28
+[10-Nov-2017 18:19:30 America/Sao_Paulo] PHP   4. UsuarioRepository->Login() /home/ubuntu/workspace/api/controller/usuario-controller.php:118
+[10-Nov-2017 18:19:30 America/Sao_Paulo] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/api/repository/usuario-repository.php on line 101
+[10-Nov-2017 18:19:30 America/Sao_Paulo] PHP Stack trace:
+[10-Nov-2017 18:19:30 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[10-Nov-2017 18:19:30 America/Sao_Paulo] PHP   2. UsuarioController->ProcessRequest() /home/ubuntu/workspace/api/index.php:34
+[10-Nov-2017 18:19:30 America/Sao_Paulo] PHP   3. UsuarioController->ActionLogin() /home/ubuntu/workspace/api/controller/usuario-controller.php:28
+[10-Nov-2017 18:19:30 America/Sao_Paulo] PHP   4. UsuarioRepository->Login() /home/ubuntu/workspace/api/controller/usuario-controller.php:118
+[10-Nov-2017 18:19:30 America/Sao_Paulo] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/api/repository/usuario-repository.php on line 101
+[10-Nov-2017 18:19:30 America/Sao_Paulo] PHP Stack trace:
+[10-Nov-2017 18:19:30 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[10-Nov-2017 18:19:30 America/Sao_Paulo] PHP   2. UsuarioController->ProcessRequest() /home/ubuntu/workspace/api/index.php:34
+[10-Nov-2017 18:19:30 America/Sao_Paulo] PHP   3. UsuarioController->ActionLogin() /home/ubuntu/workspace/api/controller/usuario-controller.php:28
+[10-Nov-2017 18:19:30 America/Sao_Paulo] PHP   4. UsuarioRepository->Login() /home/ubuntu/workspace/api/controller/usuario-controller.php:118
+[10-Nov-2017 18:19:30 America/Sao_Paulo] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/api/repository/usuario-repository.php on line 101
+[10-Nov-2017 18:19:30 America/Sao_Paulo] PHP Stack trace:
+[10-Nov-2017 18:19:30 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[10-Nov-2017 18:19:30 America/Sao_Paulo] PHP   2. UsuarioController->ProcessRequest() /home/ubuntu/workspace/api/index.php:34
+[10-Nov-2017 18:19:30 America/Sao_Paulo] PHP   3. UsuarioController->ActionLogin() /home/ubuntu/workspace/api/controller/usuario-controller.php:28
+[10-Nov-2017 18:19:30 America/Sao_Paulo] PHP   4. UsuarioRepository->Login() /home/ubuntu/workspace/api/controller/usuario-controller.php:118
+[10-Nov-2017 18:19:30 America/Sao_Paulo] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/api/repository/usuario-repository.php on line 101
+[10-Nov-2017 18:19:30 America/Sao_Paulo] PHP Stack trace:
+[10-Nov-2017 18:19:30 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[10-Nov-2017 18:19:30 America/Sao_Paulo] PHP   2. UsuarioController->ProcessRequest() /home/ubuntu/workspace/api/index.php:34
+[10-Nov-2017 18:19:30 America/Sao_Paulo] PHP   3. UsuarioController->ActionLogin() /home/ubuntu/workspace/api/controller/usuario-controller.php:28
+[10-Nov-2017 18:19:30 America/Sao_Paulo] PHP   4. UsuarioRepository->Login() /home/ubuntu/workspace/api/controller/usuario-controller.php:118
+[10-Nov-2017 18:19:30 America/Sao_Paulo] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/api/repository/usuario-repository.php on line 101
+[10-Nov-2017 18:19:30 America/Sao_Paulo] PHP Stack trace:
+[10-Nov-2017 18:19:30 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[10-Nov-2017 18:19:30 America/Sao_Paulo] PHP   2. UsuarioController->ProcessRequest() /home/ubuntu/workspace/api/index.php:34
+[10-Nov-2017 18:19:30 America/Sao_Paulo] PHP   3. UsuarioController->ActionLogin() /home/ubuntu/workspace/api/controller/usuario-controller.php:28
+[10-Nov-2017 18:19:30 America/Sao_Paulo] PHP   4. UsuarioRepository->Login() /home/ubuntu/workspace/api/controller/usuario-controller.php:118
+[10-Nov-2017 18:19:30 America/Sao_Paulo] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/api/repository/usuario-repository.php on line 101
+[10-Nov-2017 18:19:30 America/Sao_Paulo] PHP Stack trace:
+[10-Nov-2017 18:19:30 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[10-Nov-2017 18:19:30 America/Sao_Paulo] PHP   2. UsuarioController->ProcessRequest() /home/ubuntu/workspace/api/index.php:34
+[10-Nov-2017 18:19:30 America/Sao_Paulo] PHP   3. UsuarioController->ActionLogin() /home/ubuntu/workspace/api/controller/usuario-controller.php:28
+[10-Nov-2017 18:19:30 America/Sao_Paulo] PHP   4. UsuarioRepository->Login() /home/ubuntu/workspace/api/controller/usuario-controller.php:118
+[10-Nov-2017 18:19:30 America/Sao_Paulo] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/api/repository/usuario-repository.php on line 101
+[10-Nov-2017 18:19:30 America/Sao_Paulo] PHP Stack trace:
+[10-Nov-2017 18:19:30 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[10-Nov-2017 18:19:30 America/Sao_Paulo] PHP   2. UsuarioController->ProcessRequest() /home/ubuntu/workspace/api/index.php:34
+[10-Nov-2017 18:19:30 America/Sao_Paulo] PHP   3. UsuarioController->ActionLogin() /home/ubuntu/workspace/api/controller/usuario-controller.php:28
+[10-Nov-2017 18:19:30 America/Sao_Paulo] PHP   4. UsuarioRepository->Login() /home/ubuntu/workspace/api/controller/usuario-controller.php:118
+[10-Nov-2017 18:19:30 America/Sao_Paulo] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/api/repository/usuario-repository.php on line 101
+[10-Nov-2017 18:19:30 America/Sao_Paulo] PHP Stack trace:
+[10-Nov-2017 18:19:30 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[10-Nov-2017 18:19:30 America/Sao_Paulo] PHP   2. UsuarioController->ProcessRequest() /home/ubuntu/workspace/api/index.php:34
+[10-Nov-2017 18:19:30 America/Sao_Paulo] PHP   3. UsuarioController->ActionLogin() /home/ubuntu/workspace/api/controller/usuario-controller.php:28
+[10-Nov-2017 18:19:30 America/Sao_Paulo] PHP   4. UsuarioRepository->Login() /home/ubuntu/workspace/api/controller/usuario-controller.php:118
+[10-Nov-2017 18:19:30 America/Sao_Paulo] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/api/repository/usuario-repository.php on line 101
+[10-Nov-2017 18:19:30 America/Sao_Paulo] PHP Stack trace:
+[10-Nov-2017 18:19:30 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[10-Nov-2017 18:19:30 America/Sao_Paulo] PHP   2. UsuarioController->ProcessRequest() /home/ubuntu/workspace/api/index.php:34
+[10-Nov-2017 18:19:30 America/Sao_Paulo] PHP   3. UsuarioController->ActionLogin() /home/ubuntu/workspace/api/controller/usuario-controller.php:28
+[10-Nov-2017 18:19:30 America/Sao_Paulo] PHP   4. UsuarioRepository->Login() /home/ubuntu/workspace/api/controller/usuario-controller.php:118
+[10-Nov-2017 18:19:30 America/Sao_Paulo] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/api/repository/usuario-repository.php on line 101
+[10-Nov-2017 18:19:30 America/Sao_Paulo] PHP Stack trace:
+[10-Nov-2017 18:19:30 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[10-Nov-2017 18:19:30 America/Sao_Paulo] PHP   2. UsuarioController->ProcessRequest() /home/ubuntu/workspace/api/index.php:34
+[10-Nov-2017 18:19:30 America/Sao_Paulo] PHP   3. UsuarioController->ActionLogin() /home/ubuntu/workspace/api/controller/usuario-controller.php:28
+[10-Nov-2017 18:19:30 America/Sao_Paulo] PHP   4. UsuarioRepository->Login() /home/ubuntu/workspace/api/controller/usuario-controller.php:118
+[10-Nov-2017 18:19:30 America/Sao_Paulo] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/api/repository/usuario-repository.php on line 101
+[10-Nov-2017 18:19:30 America/Sao_Paulo] PHP Stack trace:
+[10-Nov-2017 18:19:30 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[10-Nov-2017 18:19:30 America/Sao_Paulo] PHP   2. UsuarioController->ProcessRequest() /home/ubuntu/workspace/api/index.php:34
+[10-Nov-2017 18:19:30 America/Sao_Paulo] PHP   3. UsuarioController->ActionLogin() /home/ubuntu/workspace/api/controller/usuario-controller.php:28
+[10-Nov-2017 18:19:30 America/Sao_Paulo] PHP   4. UsuarioRepository->Login() /home/ubuntu/workspace/api/controller/usuario-controller.php:118
+[10-Nov-2017 18:19:31 America/Sao_Paulo] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/api/repository/usuario-repository.php on line 101
+[10-Nov-2017 18:19:31 America/Sao_Paulo] PHP Stack trace:
+[10-Nov-2017 18:19:31 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[10-Nov-2017 18:19:31 America/Sao_Paulo] PHP   2. UsuarioController->ProcessRequest() /home/ubuntu/workspace/api/index.php:34
+[10-Nov-2017 18:19:31 America/Sao_Paulo] PHP   3. UsuarioController->ActionLogin() /home/ubuntu/workspace/api/controller/usuario-controller.php:28
+[10-Nov-2017 18:19:31 America/Sao_Paulo] PHP   4. UsuarioRepository->Login() /home/ubuntu/workspace/api/controller/usuario-controller.php:118
+[10-Nov-2017 18:19:31 America/Sao_Paulo] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/api/repository/usuario-repository.php on line 101
+[10-Nov-2017 18:19:31 America/Sao_Paulo] PHP Stack trace:
+[10-Nov-2017 18:19:31 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[10-Nov-2017 18:19:31 America/Sao_Paulo] PHP   2. UsuarioController->ProcessRequest() /home/ubuntu/workspace/api/index.php:34
+[10-Nov-2017 18:19:31 America/Sao_Paulo] PHP   3. UsuarioController->ActionLogin() /home/ubuntu/workspace/api/controller/usuario-controller.php:28
+[10-Nov-2017 18:19:31 America/Sao_Paulo] PHP   4. UsuarioRepository->Login() /home/ubuntu/workspace/api/controller/usuario-controller.php:118
+[10-Nov-2017 18:19:31 America/Sao_Paulo] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/api/repository/usuario-repository.php on line 101
+[10-Nov-2017 18:19:31 America/Sao_Paulo] PHP Stack trace:
+[10-Nov-2017 18:19:31 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[10-Nov-2017 18:19:31 America/Sao_Paulo] PHP   2. UsuarioController->ProcessRequest() /home/ubuntu/workspace/api/index.php:34
+[10-Nov-2017 18:19:31 America/Sao_Paulo] PHP   3. UsuarioController->ActionLogin() /home/ubuntu/workspace/api/controller/usuario-controller.php:28
+[10-Nov-2017 18:19:31 America/Sao_Paulo] PHP   4. UsuarioRepository->Login() /home/ubuntu/workspace/api/controller/usuario-controller.php:118
+[10-Nov-2017 18:19:31 America/Sao_Paulo] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/api/repository/usuario-repository.php on line 101
+[10-Nov-2017 18:19:31 America/Sao_Paulo] PHP Stack trace:
+[10-Nov-2017 18:19:31 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[10-Nov-2017 18:19:31 America/Sao_Paulo] PHP   2. UsuarioController->ProcessRequest() /home/ubuntu/workspace/api/index.php:34
+[10-Nov-2017 18:19:31 America/Sao_Paulo] PHP   3. UsuarioController->ActionLogin() /home/ubuntu/workspace/api/controller/usuario-controller.php:28
+[10-Nov-2017 18:19:31 America/Sao_Paulo] PHP   4. UsuarioRepository->Login() /home/ubuntu/workspace/api/controller/usuario-controller.php:118
+[10-Nov-2017 18:19:32 America/Sao_Paulo] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/api/repository/usuario-repository.php on line 101
+[10-Nov-2017 18:19:32 America/Sao_Paulo] PHP Stack trace:
+[10-Nov-2017 18:19:32 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[10-Nov-2017 18:19:32 America/Sao_Paulo] PHP   2. UsuarioController->ProcessRequest() /home/ubuntu/workspace/api/index.php:34
+[10-Nov-2017 18:19:32 America/Sao_Paulo] PHP   3. UsuarioController->ActionLogin() /home/ubuntu/workspace/api/controller/usuario-controller.php:28
+[10-Nov-2017 18:19:32 America/Sao_Paulo] PHP   4. UsuarioRepository->Login() /home/ubuntu/workspace/api/controller/usuario-controller.php:118
+[10-Nov-2017 18:19:32 America/Sao_Paulo] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/api/repository/usuario-repository.php on line 101
+[10-Nov-2017 18:19:32 America/Sao_Paulo] PHP Stack trace:
+[10-Nov-2017 18:19:32 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[10-Nov-2017 18:19:32 America/Sao_Paulo] PHP   2. UsuarioController->ProcessRequest() /home/ubuntu/workspace/api/index.php:34
+[10-Nov-2017 18:19:32 America/Sao_Paulo] PHP   3. UsuarioController->ActionLogin() /home/ubuntu/workspace/api/controller/usuario-controller.php:28
+[10-Nov-2017 18:19:32 America/Sao_Paulo] PHP   4. UsuarioRepository->Login() /home/ubuntu/workspace/api/controller/usuario-controller.php:118
+[10-Nov-2017 18:19:32 America/Sao_Paulo] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/api/repository/usuario-repository.php on line 101
+[10-Nov-2017 18:19:32 America/Sao_Paulo] PHP Stack trace:
+[10-Nov-2017 18:19:32 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[10-Nov-2017 18:19:32 America/Sao_Paulo] PHP   2. UsuarioController->ProcessRequest() /home/ubuntu/workspace/api/index.php:34
+[10-Nov-2017 18:19:32 America/Sao_Paulo] PHP   3. UsuarioController->ActionLogin() /home/ubuntu/workspace/api/controller/usuario-controller.php:28
+[10-Nov-2017 18:19:32 America/Sao_Paulo] PHP   4. UsuarioRepository->Login() /home/ubuntu/workspace/api/controller/usuario-controller.php:118
+[10-Nov-2017 18:19:32 America/Sao_Paulo] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/api/repository/usuario-repository.php on line 101
+[10-Nov-2017 18:19:32 America/Sao_Paulo] PHP Stack trace:
+[10-Nov-2017 18:19:32 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[10-Nov-2017 18:19:32 America/Sao_Paulo] PHP   2. UsuarioController->ProcessRequest() /home/ubuntu/workspace/api/index.php:34
+[10-Nov-2017 18:19:32 America/Sao_Paulo] PHP   3. UsuarioController->ActionLogin() /home/ubuntu/workspace/api/controller/usuario-controller.php:28
+[10-Nov-2017 18:19:32 America/Sao_Paulo] PHP   4. UsuarioRepository->Login() /home/ubuntu/workspace/api/controller/usuario-controller.php:118
+[10-Nov-2017 18:19:32 America/Sao_Paulo] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/api/repository/usuario-repository.php on line 101
+[10-Nov-2017 18:19:32 America/Sao_Paulo] PHP Stack trace:
+[10-Nov-2017 18:19:32 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[10-Nov-2017 18:19:32 America/Sao_Paulo] PHP   2. UsuarioController->ProcessRequest() /home/ubuntu/workspace/api/index.php:34
+[10-Nov-2017 18:19:32 America/Sao_Paulo] PHP   3. UsuarioController->ActionLogin() /home/ubuntu/workspace/api/controller/usuario-controller.php:28
+[10-Nov-2017 18:19:32 America/Sao_Paulo] PHP   4. UsuarioRepository->Login() /home/ubuntu/workspace/api/controller/usuario-controller.php:118
+[10-Nov-2017 18:19:32 America/Sao_Paulo] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/api/repository/usuario-repository.php on line 101
+[10-Nov-2017 18:19:32 America/Sao_Paulo] PHP Stack trace:
+[10-Nov-2017 18:19:32 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[10-Nov-2017 18:19:32 America/Sao_Paulo] PHP   2. UsuarioController->ProcessRequest() /home/ubuntu/workspace/api/index.php:34
+[10-Nov-2017 18:19:32 America/Sao_Paulo] PHP   3. UsuarioController->ActionLogin() /home/ubuntu/workspace/api/controller/usuario-controller.php:28
+[10-Nov-2017 18:19:32 America/Sao_Paulo] PHP   4. UsuarioRepository->Login() /home/ubuntu/workspace/api/controller/usuario-controller.php:118
+[10-Nov-2017 18:19:32 America/Sao_Paulo] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/api/repository/usuario-repository.php on line 101
+[10-Nov-2017 18:19:32 America/Sao_Paulo] PHP Stack trace:
+[10-Nov-2017 18:19:32 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[10-Nov-2017 18:19:32 America/Sao_Paulo] PHP   2. UsuarioController->ProcessRequest() /home/ubuntu/workspace/api/index.php:34
+[10-Nov-2017 18:19:32 America/Sao_Paulo] PHP   3. UsuarioController->ActionLogin() /home/ubuntu/workspace/api/controller/usuario-controller.php:28
+[10-Nov-2017 18:19:32 America/Sao_Paulo] PHP   4. UsuarioRepository->Login() /home/ubuntu/workspace/api/controller/usuario-controller.php:118
+[10-Nov-2017 18:19:32 America/Sao_Paulo] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/api/repository/usuario-repository.php on line 101
+[10-Nov-2017 18:19:32 America/Sao_Paulo] PHP Stack trace:
+[10-Nov-2017 18:19:32 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[10-Nov-2017 18:19:32 America/Sao_Paulo] PHP   2. UsuarioController->ProcessRequest() /home/ubuntu/workspace/api/index.php:34
+[10-Nov-2017 18:19:32 America/Sao_Paulo] PHP   3. UsuarioController->ActionLogin() /home/ubuntu/workspace/api/controller/usuario-controller.php:28
+[10-Nov-2017 18:19:32 America/Sao_Paulo] PHP   4. UsuarioRepository->Login() /home/ubuntu/workspace/api/controller/usuario-controller.php:118
+[10-Nov-2017 18:19:33 America/Sao_Paulo] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/api/repository/usuario-repository.php on line 101
+[10-Nov-2017 18:19:33 America/Sao_Paulo] PHP Stack trace:
+[10-Nov-2017 18:19:33 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[10-Nov-2017 18:19:33 America/Sao_Paulo] PHP   2. UsuarioController->ProcessRequest() /home/ubuntu/workspace/api/index.php:34
+[10-Nov-2017 18:19:33 America/Sao_Paulo] PHP   3. UsuarioController->ActionLogin() /home/ubuntu/workspace/api/controller/usuario-controller.php:28
+[10-Nov-2017 18:19:33 America/Sao_Paulo] PHP   4. UsuarioRepository->Login() /home/ubuntu/workspace/api/controller/usuario-controller.php:118
+[10-Nov-2017 18:19:33 America/Sao_Paulo] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/api/repository/usuario-repository.php on line 101
+[10-Nov-2017 18:19:33 America/Sao_Paulo] PHP Stack trace:
+[10-Nov-2017 18:19:33 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[10-Nov-2017 18:19:33 America/Sao_Paulo] PHP   2. UsuarioController->ProcessRequest() /home/ubuntu/workspace/api/index.php:34
+[10-Nov-2017 18:19:33 America/Sao_Paulo] PHP   3. UsuarioController->ActionLogin() /home/ubuntu/workspace/api/controller/usuario-controller.php:28
+[10-Nov-2017 18:19:33 America/Sao_Paulo] PHP   4. UsuarioRepository->Login() /home/ubuntu/workspace/api/controller/usuario-controller.php:118
+[10-Nov-2017 18:19:33 America/Sao_Paulo] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/api/repository/usuario-repository.php on line 101
+[10-Nov-2017 18:19:33 America/Sao_Paulo] PHP Stack trace:
+[10-Nov-2017 18:19:33 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[10-Nov-2017 18:19:33 America/Sao_Paulo] PHP   2. UsuarioController->ProcessRequest() /home/ubuntu/workspace/api/index.php:34
+[10-Nov-2017 18:19:33 America/Sao_Paulo] PHP   3. UsuarioController->ActionLogin() /home/ubuntu/workspace/api/controller/usuario-controller.php:28
+[10-Nov-2017 18:19:33 America/Sao_Paulo] PHP   4. UsuarioRepository->Login() /home/ubuntu/workspace/api/controller/usuario-controller.php:118
+[10-Nov-2017 18:19:33 America/Sao_Paulo] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/api/repository/usuario-repository.php on line 101
+[10-Nov-2017 18:19:33 America/Sao_Paulo] PHP Stack trace:
+[10-Nov-2017 18:19:33 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[10-Nov-2017 18:19:33 America/Sao_Paulo] PHP   2. UsuarioController->ProcessRequest() /home/ubuntu/workspace/api/index.php:34
+[10-Nov-2017 18:19:33 America/Sao_Paulo] PHP   3. UsuarioController->ActionLogin() /home/ubuntu/workspace/api/controller/usuario-controller.php:28
+[10-Nov-2017 18:19:33 America/Sao_Paulo] PHP   4. UsuarioRepository->Login() /home/ubuntu/workspace/api/controller/usuario-controller.php:118
+[10-Nov-2017 18:23:24 America/Sao_Paulo] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/api/repository/usuario-repository.php on line 101
+[10-Nov-2017 18:23:24 America/Sao_Paulo] PHP Stack trace:
+[10-Nov-2017 18:23:24 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[10-Nov-2017 18:23:24 America/Sao_Paulo] PHP   2. UsuarioController->ProcessRequest() /home/ubuntu/workspace/api/index.php:34
+[10-Nov-2017 18:23:24 America/Sao_Paulo] PHP   3. UsuarioController->ActionLogin() /home/ubuntu/workspace/api/controller/usuario-controller.php:28
+[10-Nov-2017 18:23:24 America/Sao_Paulo] PHP   4. UsuarioRepository->Login() /home/ubuntu/workspace/api/controller/usuario-controller.php:118
+[10-Nov-2017 18:23:24 America/Sao_Paulo] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/api/repository/usuario-repository.php on line 101
+[10-Nov-2017 18:23:24 America/Sao_Paulo] PHP Stack trace:
+[10-Nov-2017 18:23:24 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[10-Nov-2017 18:23:24 America/Sao_Paulo] PHP   2. UsuarioController->ProcessRequest() /home/ubuntu/workspace/api/index.php:34
+[10-Nov-2017 18:23:24 America/Sao_Paulo] PHP   3. UsuarioController->ActionLogin() /home/ubuntu/workspace/api/controller/usuario-controller.php:28
+[10-Nov-2017 18:23:24 America/Sao_Paulo] PHP   4. UsuarioRepository->Login() /home/ubuntu/workspace/api/controller/usuario-controller.php:118
+[10-Nov-2017 18:23:24 America/Sao_Paulo] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/api/repository/usuario-repository.php on line 101
+[10-Nov-2017 18:23:24 America/Sao_Paulo] PHP Stack trace:
+[10-Nov-2017 18:23:24 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[10-Nov-2017 18:23:24 America/Sao_Paulo] PHP   2. UsuarioController->ProcessRequest() /home/ubuntu/workspace/api/index.php:34
+[10-Nov-2017 18:23:24 America/Sao_Paulo] PHP   3. UsuarioController->ActionLogin() /home/ubuntu/workspace/api/controller/usuario-controller.php:28
+[10-Nov-2017 18:23:24 America/Sao_Paulo] PHP   4. UsuarioRepository->Login() /home/ubuntu/workspace/api/controller/usuario-controller.php:118
+[10-Nov-2017 18:23:24 America/Sao_Paulo] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/api/repository/usuario-repository.php on line 101
+[10-Nov-2017 18:23:24 America/Sao_Paulo] PHP Stack trace:
+[10-Nov-2017 18:23:24 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[10-Nov-2017 18:23:24 America/Sao_Paulo] PHP   2. UsuarioController->ProcessRequest() /home/ubuntu/workspace/api/index.php:34
+[10-Nov-2017 18:23:24 America/Sao_Paulo] PHP   3. UsuarioController->ActionLogin() /home/ubuntu/workspace/api/controller/usuario-controller.php:28
+[10-Nov-2017 18:23:24 America/Sao_Paulo] PHP   4. UsuarioRepository->Login() /home/ubuntu/workspace/api/controller/usuario-controller.php:118
+[10-Nov-2017 18:23:24 America/Sao_Paulo] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/api/repository/usuario-repository.php on line 101
+[10-Nov-2017 18:23:24 America/Sao_Paulo] PHP Stack trace:
+[10-Nov-2017 18:23:24 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[10-Nov-2017 18:23:24 America/Sao_Paulo] PHP   2. UsuarioController->ProcessRequest() /home/ubuntu/workspace/api/index.php:34
+[10-Nov-2017 18:23:24 America/Sao_Paulo] PHP   3. UsuarioController->ActionLogin() /home/ubuntu/workspace/api/controller/usuario-controller.php:28
+[10-Nov-2017 18:23:24 America/Sao_Paulo] PHP   4. UsuarioRepository->Login() /home/ubuntu/workspace/api/controller/usuario-controller.php:118
+[10-Nov-2017 18:23:24 America/Sao_Paulo] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/api/repository/usuario-repository.php on line 101
+[10-Nov-2017 18:23:24 America/Sao_Paulo] PHP Stack trace:
+[10-Nov-2017 18:23:24 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[10-Nov-2017 18:23:24 America/Sao_Paulo] PHP   2. UsuarioController->ProcessRequest() /home/ubuntu/workspace/api/index.php:34
+[10-Nov-2017 18:23:24 America/Sao_Paulo] PHP   3. UsuarioController->ActionLogin() /home/ubuntu/workspace/api/controller/usuario-controller.php:28
+[10-Nov-2017 18:23:24 America/Sao_Paulo] PHP   4. UsuarioRepository->Login() /home/ubuntu/workspace/api/controller/usuario-controller.php:118
+[10-Nov-2017 18:23:25 America/Sao_Paulo] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/api/repository/usuario-repository.php on line 101
+[10-Nov-2017 18:23:25 America/Sao_Paulo] PHP Stack trace:
+[10-Nov-2017 18:23:25 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[10-Nov-2017 18:23:25 America/Sao_Paulo] PHP   2. UsuarioController->ProcessRequest() /home/ubuntu/workspace/api/index.php:34
+[10-Nov-2017 18:23:25 America/Sao_Paulo] PHP   3. UsuarioController->ActionLogin() /home/ubuntu/workspace/api/controller/usuario-controller.php:28
+[10-Nov-2017 18:23:25 America/Sao_Paulo] PHP   4. UsuarioRepository->Login() /home/ubuntu/workspace/api/controller/usuario-controller.php:118
+[10-Nov-2017 18:23:25 America/Sao_Paulo] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/api/repository/usuario-repository.php on line 101
+[10-Nov-2017 18:23:25 America/Sao_Paulo] PHP Stack trace:
+[10-Nov-2017 18:23:25 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[10-Nov-2017 18:23:25 America/Sao_Paulo] PHP   2. UsuarioController->ProcessRequest() /home/ubuntu/workspace/api/index.php:34
+[10-Nov-2017 18:23:25 America/Sao_Paulo] PHP   3. UsuarioController->ActionLogin() /home/ubuntu/workspace/api/controller/usuario-controller.php:28
+[10-Nov-2017 18:23:25 America/Sao_Paulo] PHP   4. UsuarioRepository->Login() /home/ubuntu/workspace/api/controller/usuario-controller.php:118
+[10-Nov-2017 18:23:25 America/Sao_Paulo] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/api/repository/usuario-repository.php on line 101
+[10-Nov-2017 18:23:25 America/Sao_Paulo] PHP Stack trace:
+[10-Nov-2017 18:23:25 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[10-Nov-2017 18:23:25 America/Sao_Paulo] PHP   2. UsuarioController->ProcessRequest() /home/ubuntu/workspace/api/index.php:34
+[10-Nov-2017 18:23:25 America/Sao_Paulo] PHP   3. UsuarioController->ActionLogin() /home/ubuntu/workspace/api/controller/usuario-controller.php:28
+[10-Nov-2017 18:23:25 America/Sao_Paulo] PHP   4. UsuarioRepository->Login() /home/ubuntu/workspace/api/controller/usuario-controller.php:118
+[10-Nov-2017 18:23:25 America/Sao_Paulo] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/api/repository/usuario-repository.php on line 101
+[10-Nov-2017 18:23:25 America/Sao_Paulo] PHP Stack trace:
+[10-Nov-2017 18:23:25 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[10-Nov-2017 18:23:25 America/Sao_Paulo] PHP   2. UsuarioController->ProcessRequest() /home/ubuntu/workspace/api/index.php:34
+[10-Nov-2017 18:23:25 America/Sao_Paulo] PHP   3. UsuarioController->ActionLogin() /home/ubuntu/workspace/api/controller/usuario-controller.php:28
+[10-Nov-2017 18:23:25 America/Sao_Paulo] PHP   4. UsuarioRepository->Login() /home/ubuntu/workspace/api/controller/usuario-controller.php:118
+[10-Nov-2017 18:23:25 America/Sao_Paulo] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/api/repository/usuario-repository.php on line 101
+[10-Nov-2017 18:23:25 America/Sao_Paulo] PHP Stack trace:
+[10-Nov-2017 18:23:25 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[10-Nov-2017 18:23:25 America/Sao_Paulo] PHP   2. UsuarioController->ProcessRequest() /home/ubuntu/workspace/api/index.php:34
+[10-Nov-2017 18:23:25 America/Sao_Paulo] PHP   3. UsuarioController->ActionLogin() /home/ubuntu/workspace/api/controller/usuario-controller.php:28
+[10-Nov-2017 18:23:25 America/Sao_Paulo] PHP   4. UsuarioRepository->Login() /home/ubuntu/workspace/api/controller/usuario-controller.php:118
+[10-Nov-2017 18:23:25 America/Sao_Paulo] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/api/repository/usuario-repository.php on line 101
+[10-Nov-2017 18:23:25 America/Sao_Paulo] PHP Stack trace:
+[10-Nov-2017 18:23:25 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[10-Nov-2017 18:23:25 America/Sao_Paulo] PHP   2. UsuarioController->ProcessRequest() /home/ubuntu/workspace/api/index.php:34
+[10-Nov-2017 18:23:25 America/Sao_Paulo] PHP   3. UsuarioController->ActionLogin() /home/ubuntu/workspace/api/controller/usuario-controller.php:28
+[10-Nov-2017 18:23:25 America/Sao_Paulo] PHP   4. UsuarioRepository->Login() /home/ubuntu/workspace/api/controller/usuario-controller.php:118
+[10-Nov-2017 18:23:25 America/Sao_Paulo] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/api/repository/usuario-repository.php on line 101
+[10-Nov-2017 18:23:25 America/Sao_Paulo] PHP Stack trace:
+[10-Nov-2017 18:23:25 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[10-Nov-2017 18:23:25 America/Sao_Paulo] PHP   2. UsuarioController->ProcessRequest() /home/ubuntu/workspace/api/index.php:34
+[10-Nov-2017 18:23:25 America/Sao_Paulo] PHP   3. UsuarioController->ActionLogin() /home/ubuntu/workspace/api/controller/usuario-controller.php:28
+[10-Nov-2017 18:23:25 America/Sao_Paulo] PHP   4. UsuarioRepository->Login() /home/ubuntu/workspace/api/controller/usuario-controller.php:118
+[10-Nov-2017 18:23:25 America/Sao_Paulo] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/api/repository/usuario-repository.php on line 101
+[10-Nov-2017 18:23:25 America/Sao_Paulo] PHP Stack trace:
+[10-Nov-2017 18:23:25 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[10-Nov-2017 18:23:25 America/Sao_Paulo] PHP   2. UsuarioController->ProcessRequest() /home/ubuntu/workspace/api/index.php:34
+[10-Nov-2017 18:23:25 America/Sao_Paulo] PHP   3. UsuarioController->ActionLogin() /home/ubuntu/workspace/api/controller/usuario-controller.php:28
+[10-Nov-2017 18:23:25 America/Sao_Paulo] PHP   4. UsuarioRepository->Login() /home/ubuntu/workspace/api/controller/usuario-controller.php:118
+[10-Nov-2017 18:23:25 America/Sao_Paulo] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/api/repository/usuario-repository.php on line 101
+[10-Nov-2017 18:23:25 America/Sao_Paulo] PHP Stack trace:
+[10-Nov-2017 18:23:25 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[10-Nov-2017 18:23:25 America/Sao_Paulo] PHP   2. UsuarioController->ProcessRequest() /home/ubuntu/workspace/api/index.php:34
+[10-Nov-2017 18:23:25 America/Sao_Paulo] PHP   3. UsuarioController->ActionLogin() /home/ubuntu/workspace/api/controller/usuario-controller.php:28
+[10-Nov-2017 18:23:25 America/Sao_Paulo] PHP   4. UsuarioRepository->Login() /home/ubuntu/workspace/api/controller/usuario-controller.php:118
+[10-Nov-2017 18:23:25 America/Sao_Paulo] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/api/repository/usuario-repository.php on line 101
+[10-Nov-2017 18:23:25 America/Sao_Paulo] PHP Stack trace:
+[10-Nov-2017 18:23:25 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[10-Nov-2017 18:23:25 America/Sao_Paulo] PHP   2. UsuarioController->ProcessRequest() /home/ubuntu/workspace/api/index.php:34
+[10-Nov-2017 18:23:25 America/Sao_Paulo] PHP   3. UsuarioController->ActionLogin() /home/ubuntu/workspace/api/controller/usuario-controller.php:28
+[10-Nov-2017 18:23:25 America/Sao_Paulo] PHP   4. UsuarioRepository->Login() /home/ubuntu/workspace/api/controller/usuario-controller.php:118
+[10-Nov-2017 18:23:26 America/Sao_Paulo] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/api/repository/usuario-repository.php on line 101
+[10-Nov-2017 18:23:26 America/Sao_Paulo] PHP Stack trace:
+[10-Nov-2017 18:23:26 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[10-Nov-2017 18:23:26 America/Sao_Paulo] PHP   2. UsuarioController->ProcessRequest() /home/ubuntu/workspace/api/index.php:34
+[10-Nov-2017 18:23:26 America/Sao_Paulo] PHP   3. UsuarioController->ActionLogin() /home/ubuntu/workspace/api/controller/usuario-controller.php:28
+[10-Nov-2017 18:23:26 America/Sao_Paulo] PHP   4. UsuarioRepository->Login() /home/ubuntu/workspace/api/controller/usuario-controller.php:118
+[10-Nov-2017 18:24:53 America/Sao_Paulo] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/api/repository/usuario-repository.php on line 34
+[10-Nov-2017 18:24:53 America/Sao_Paulo] PHP Stack trace:
+[10-Nov-2017 18:24:53 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[10-Nov-2017 18:24:53 America/Sao_Paulo] PHP   2. UsuarioController->ProcessRequest() /home/ubuntu/workspace/api/index.php:34
+[10-Nov-2017 18:24:53 America/Sao_Paulo] PHP   3. UsuarioController->ActionGetList() /home/ubuntu/workspace/api/controller/usuario-controller.php:16
+[10-Nov-2017 18:24:53 America/Sao_Paulo] PHP   4. UsuarioRepository->GetList() /home/ubuntu/workspace/api/controller/usuario-controller.php:57
+[10-Nov-2017 18:42:06 America/Sao_Paulo] PHP Warning:  PDO::__construct(): MySQL server has gone away in /home/ubuntu/workspace/api/util/db-context.php on line 15
+[10-Nov-2017 18:42:06 America/Sao_Paulo] PHP Stack trace:
+[10-Nov-2017 18:42:06 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[10-Nov-2017 18:42:06 America/Sao_Paulo] PHP   2. JornalController->ProcessRequest() /home/ubuntu/workspace/api/index.php:62
+[10-Nov-2017 18:42:06 America/Sao_Paulo] PHP   3. JornalController->ActionGetList() /home/ubuntu/workspace/api/controller/jornal-controller.php:11
+[10-Nov-2017 18:42:06 America/Sao_Paulo] PHP   4. BaseRepository->__construct() /home/ubuntu/workspace/api/controller/jornal-controller.php:48
+[10-Nov-2017 18:42:06 America/Sao_Paulo] PHP   5. DBContext->__construct() /home/ubuntu/workspace/api/repository/base-repository.php:9
+[10-Nov-2017 18:42:06 America/Sao_Paulo] PHP   6. PDO->__construct() /home/ubuntu/workspace/api/util/db-context.php:15
+[10-Nov-2017 18:42:59 America/Sao_Paulo] PHP Warning:  PDO::__construct(): MySQL server has gone away in /home/ubuntu/workspace/api/util/db-context.php on line 15
+[10-Nov-2017 18:42:59 America/Sao_Paulo] PHP Stack trace:
+[10-Nov-2017 18:42:59 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[10-Nov-2017 18:42:59 America/Sao_Paulo] PHP   2. JornalController->ProcessRequest() /home/ubuntu/workspace/api/index.php:62
+[10-Nov-2017 18:42:59 America/Sao_Paulo] PHP   3. JornalController->ActionGetList() /home/ubuntu/workspace/api/controller/jornal-controller.php:11
+[10-Nov-2017 18:42:59 America/Sao_Paulo] PHP   4. BaseRepository->__construct() /home/ubuntu/workspace/api/controller/jornal-controller.php:48
+[10-Nov-2017 18:42:59 America/Sao_Paulo] PHP   5. DBContext->__construct() /home/ubuntu/workspace/api/repository/base-repository.php:9
+[10-Nov-2017 18:42:59 America/Sao_Paulo] PHP   6. PDO->__construct() /home/ubuntu/workspace/api/util/db-context.php:15
+[10-Nov-2017 20:08:59 America/Sao_Paulo] PHP Warning:  PDO::__construct(): MySQL server has gone away in /home/ubuntu/workspace/api/util/db-context.php on line 15
+[10-Nov-2017 20:08:59 America/Sao_Paulo] PHP Stack trace:
+[10-Nov-2017 20:08:59 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[10-Nov-2017 20:08:59 America/Sao_Paulo] PHP   2. JornalController->ProcessRequest() /home/ubuntu/workspace/api/index.php:62
+[10-Nov-2017 20:08:59 America/Sao_Paulo] PHP   3. JornalController->ActionGetList() /home/ubuntu/workspace/api/controller/jornal-controller.php:11
+[10-Nov-2017 20:08:59 America/Sao_Paulo] PHP   4. BaseRepository->__construct() /home/ubuntu/workspace/api/controller/jornal-controller.php:48
+[10-Nov-2017 20:08:59 America/Sao_Paulo] PHP   5. DBContext->__construct() /home/ubuntu/workspace/api/repository/base-repository.php:9
+[10-Nov-2017 20:08:59 America/Sao_Paulo] PHP   6. PDO->__construct() /home/ubuntu/workspace/api/util/db-context.php:15
+[10-Nov-2017 20:09:12 America/Sao_Paulo] PHP Warning:  PDO::__construct(): MySQL server has gone away in /home/ubuntu/workspace/api/util/db-context.php on line 15
+[10-Nov-2017 20:09:12 America/Sao_Paulo] PHP Stack trace:
+[10-Nov-2017 20:09:12 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[10-Nov-2017 20:09:12 America/Sao_Paulo] PHP   2. UsuarioController->ProcessRequest() /home/ubuntu/workspace/api/index.php:34
+[10-Nov-2017 20:09:12 America/Sao_Paulo] PHP   3. UsuarioController->ActionLogin() /home/ubuntu/workspace/api/controller/usuario-controller.php:28
+[10-Nov-2017 20:09:12 America/Sao_Paulo] PHP   4. BaseRepository->__construct() /home/ubuntu/workspace/api/controller/usuario-controller.php:117
+[10-Nov-2017 20:09:12 America/Sao_Paulo] PHP   5. DBContext->__construct() /home/ubuntu/workspace/api/repository/base-repository.php:9
+[10-Nov-2017 20:09:12 America/Sao_Paulo] PHP   6. PDO->__construct() /home/ubuntu/workspace/api/util/db-context.php:15
+[10-Nov-2017 20:09:13 America/Sao_Paulo] PHP Warning:  PDO::__construct(): MySQL server has gone away in /home/ubuntu/workspace/api/util/db-context.php on line 15
+[10-Nov-2017 20:09:13 America/Sao_Paulo] PHP Stack trace:
+[10-Nov-2017 20:09:13 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[10-Nov-2017 20:09:13 America/Sao_Paulo] PHP   2. UsuarioController->ProcessRequest() /home/ubuntu/workspace/api/index.php:34
+[10-Nov-2017 20:09:13 America/Sao_Paulo] PHP   3. UsuarioController->ActionLogin() /home/ubuntu/workspace/api/controller/usuario-controller.php:28
+[10-Nov-2017 20:09:13 America/Sao_Paulo] PHP   4. BaseRepository->__construct() /home/ubuntu/workspace/api/controller/usuario-controller.php:117
+[10-Nov-2017 20:09:13 America/Sao_Paulo] PHP   5. DBContext->__construct() /home/ubuntu/workspace/api/repository/base-repository.php:9
+[10-Nov-2017 20:09:13 America/Sao_Paulo] PHP   6. PDO->__construct() /home/ubuntu/workspace/api/util/db-context.php:15
+[10-Nov-2017 20:09:14 America/Sao_Paulo] PHP Warning:  PDO::__construct(): MySQL server has gone away in /home/ubuntu/workspace/api/util/db-context.php on line 15
+[10-Nov-2017 20:09:14 America/Sao_Paulo] PHP Stack trace:
+[10-Nov-2017 20:09:14 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[10-Nov-2017 20:09:14 America/Sao_Paulo] PHP   2. UsuarioController->ProcessRequest() /home/ubuntu/workspace/api/index.php:34
+[10-Nov-2017 20:09:14 America/Sao_Paulo] PHP   3. UsuarioController->ActionLogin() /home/ubuntu/workspace/api/controller/usuario-controller.php:28
+[10-Nov-2017 20:09:14 America/Sao_Paulo] PHP   4. BaseRepository->__construct() /home/ubuntu/workspace/api/controller/usuario-controller.php:117
+[10-Nov-2017 20:09:14 America/Sao_Paulo] PHP   5. DBContext->__construct() /home/ubuntu/workspace/api/repository/base-repository.php:9
+[10-Nov-2017 20:09:14 America/Sao_Paulo] PHP   6. PDO->__construct() /home/ubuntu/workspace/api/util/db-context.php:15
+[10-Nov-2017 20:09:15 America/Sao_Paulo] PHP Warning:  PDO::__construct(): MySQL server has gone away in /home/ubuntu/workspace/api/util/db-context.php on line 15
+[10-Nov-2017 20:09:15 America/Sao_Paulo] PHP Stack trace:
+[10-Nov-2017 20:09:15 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[10-Nov-2017 20:09:15 America/Sao_Paulo] PHP   2. UsuarioController->ProcessRequest() /home/ubuntu/workspace/api/index.php:34
+[10-Nov-2017 20:09:15 America/Sao_Paulo] PHP   3. UsuarioController->ActionLogin() /home/ubuntu/workspace/api/controller/usuario-controller.php:28
+[10-Nov-2017 20:09:15 America/Sao_Paulo] PHP   4. BaseRepository->__construct() /home/ubuntu/workspace/api/controller/usuario-controller.php:117
+[10-Nov-2017 20:09:15 America/Sao_Paulo] PHP   5. DBContext->__construct() /home/ubuntu/workspace/api/repository/base-repository.php:9
+[10-Nov-2017 20:09:15 America/Sao_Paulo] PHP   6. PDO->__construct() /home/ubuntu/workspace/api/util/db-context.php:15
+[10-Nov-2017 20:09:20 America/Sao_Paulo] PHP Warning:  PDO::__construct(): MySQL server has gone away in /home/ubuntu/workspace/api/util/db-context.php on line 15
+[10-Nov-2017 20:09:20 America/Sao_Paulo] PHP Stack trace:
+[10-Nov-2017 20:09:20 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[10-Nov-2017 20:09:20 America/Sao_Paulo] PHP   2. UsuarioController->ProcessRequest() /home/ubuntu/workspace/api/index.php:34
+[10-Nov-2017 20:09:20 America/Sao_Paulo] PHP   3. UsuarioController->ActionLogin() /home/ubuntu/workspace/api/controller/usuario-controller.php:28
+[10-Nov-2017 20:09:20 America/Sao_Paulo] PHP   4. BaseRepository->__construct() /home/ubuntu/workspace/api/controller/usuario-controller.php:117
+[10-Nov-2017 20:09:20 America/Sao_Paulo] PHP   5. DBContext->__construct() /home/ubuntu/workspace/api/repository/base-repository.php:9
+[10-Nov-2017 20:09:20 America/Sao_Paulo] PHP   6. PDO->__construct() /home/ubuntu/workspace/api/util/db-context.php:15
