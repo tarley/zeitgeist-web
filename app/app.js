@@ -15,12 +15,14 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
 
         .when('/usuario', {
             templateUrl: 'view/usuario-list.html',
-            controller: 'UsuarioCtrl'
+            controller: 'UsuarioCtrl',
+            admin: true
         })
 
         .when('/usuario/:idUsuario', {
             templateUrl: 'view/usuario-edit.html',
-            controller: 'UsuarioCtrl'
+            controller: 'UsuarioCtrl',
+            admin: true
         })
 
         .when('/', {
@@ -52,10 +54,17 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
             templateUrl: 'contato.php',
             controller: 'MainCtrl'
         })
-
-
-        .when('/login', {})
-        .otherwise({ templateUrl: 'view/page-404.html' });
+        .when('/login', {
+            templateUrl: 'login.html',
+            controller: 'MainCtrl',
+            open: true
+        })
+        .when('/page-404', {
+            templateUrl: 'view/page-404.html'
+        })
+        .otherwise({
+            redirectTo: "/login"
+        });
 
     $locationProvider.html5Mode(true);
 }]);
@@ -67,22 +76,24 @@ app.run(['$rootScope', '$location', '$cookies', '$http', function($rootScope, $l
         $http.defaults.headers.common['Authorization'] = 'Basic ' + $rootScope.globals.currentUser.authdata; // jshint ignore:line
     }
 
-    $rootScope.$on('$locationChangeStart', function() {
-        if ($location.path() !== '/login' && !$rootScope.globals.currentUser) {
-            window.location = 'login';
+    $rootScope.$on('$routeChangeStart', function(event, next, current) {
+        
+        instance = next.__proto__;
+        
+        if(!instance.open) {
+            if (!$rootScope.globals.currentUser) {
+                $location.path('/login');
+            } else if (instance.admin && $rootScope.globals.currentUser.role != '1') {
+                $location.path('/');
+            }
         }
-        else if ($location.path() == '/usuario' &&
-            $rootScope.globals.currentUser.role != '1') {
-            window.location = '/';
-        }
-
     });
 }]);
 
 app.controller('MainCtrl', ['$scope', '$location', 'AuthenticationService', function($scope, $location, AuthenticationService) {
     $scope.logout = function() {
         AuthenticationService.ClearCredentials();
-        window.location = 'login';
+        $location.path('/login');
     };
 
     $scope.go = function(path) {
