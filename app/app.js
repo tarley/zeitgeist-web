@@ -55,7 +55,7 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
             controller: 'MainCtrl'
         })
         .when('/login', {
-            templateUrl: '/login.html',
+            templateUrl: '/view/login.html',
             controller: 'MainCtrl',
             open: true
         })
@@ -63,7 +63,7 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
             templateUrl: '/view/page-404.html'
         })
         .otherwise({
-            redirectTo: "/login"
+            redirectTo: "/login.html"
         });
 
     $locationProvider.html5Mode(false);

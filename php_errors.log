@@ -13721,3 +13721,43 @@
 [10-Nov-2017 21:52:59 America/Sao_Paulo] PHP   4. BaseRepository->__construct() /home/ubuntu/workspace/api/controller/usuario-controller.php:56
 [10-Nov-2017 21:52:59 America/Sao_Paulo] PHP   5. DBContext->__construct() /home/ubuntu/workspace/api/repository/base-repository.php:9
 [10-Nov-2017 21:52:59 America/Sao_Paulo] PHP   6. PDO->__construct() /home/ubuntu/workspace/api/util/db-context.php:15
+[10-Nov-2017 22:01:30 America/Sao_Paulo] PHP Warning:  PDO::__construct(): MySQL server has gone away in /home/ubuntu/workspace/api/util/db-context.php on line 15
+[10-Nov-2017 22:01:30 America/Sao_Paulo] PHP Stack trace:
+[10-Nov-2017 22:01:30 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[10-Nov-2017 22:01:30 America/Sao_Paulo] PHP   2. UsuarioController->ProcessRequest() /home/ubuntu/workspace/api/index.php:34
+[10-Nov-2017 22:01:30 America/Sao_Paulo] PHP   3. UsuarioController->ActionLogin() /home/ubuntu/workspace/api/controller/usuario-controller.php:28
+[10-Nov-2017 22:01:30 America/Sao_Paulo] PHP   4. BaseRepository->__construct() /home/ubuntu/workspace/api/controller/usuario-controller.php:117
+[10-Nov-2017 22:01:30 America/Sao_Paulo] PHP   5. DBContext->__construct() /home/ubuntu/workspace/api/repository/base-repository.php:9
+[10-Nov-2017 22:01:30 America/Sao_Paulo] PHP   6. PDO->__construct() /home/ubuntu/workspace/api/util/db-context.php:15
+[10-Nov-2017 22:01:31 America/Sao_Paulo] PHP Warning:  PDO::__construct(): MySQL server has gone away in /home/ubuntu/workspace/api/util/db-context.php on line 15
+[10-Nov-2017 22:01:31 America/Sao_Paulo] PHP Stack trace:
+[10-Nov-2017 22:01:31 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[10-Nov-2017 22:01:31 America/Sao_Paulo] PHP   2. JornalController->ProcessRequest() /home/ubuntu/workspace/api/index.php:62
+[10-Nov-2017 22:01:31 America/Sao_Paulo] PHP   3. JornalController->ActionGetList() /home/ubuntu/workspace/api/controller/jornal-controller.php:11
+[10-Nov-2017 22:01:31 America/Sao_Paulo] PHP   4. BaseRepository->__construct() /home/ubuntu/workspace/api/controller/jornal-controller.php:48
+[10-Nov-2017 22:01:31 America/Sao_Paulo] PHP   5. DBContext->__construct() /home/ubuntu/workspace/api/repository/base-repository.php:9
+[10-Nov-2017 22:01:31 America/Sao_Paulo] PHP   6. PDO->__construct() /home/ubuntu/workspace/api/util/db-context.php:15
+[10-Nov-2017 22:02:37 America/Sao_Paulo] PHP Warning:  PDO::__construct(): MySQL server has gone away in /home/ubuntu/workspace/api/util/db-context.php on line 15
+[10-Nov-2017 22:02:37 America/Sao_Paulo] PHP Stack trace:
+[10-Nov-2017 22:02:37 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[10-Nov-2017 22:02:37 America/Sao_Paulo] PHP   2. UsuarioController->ProcessRequest() /home/ubuntu/workspace/api/index.php:34
+[10-Nov-2017 22:02:37 America/Sao_Paulo] PHP   3. UsuarioController->ActionLogin() /home/ubuntu/workspace/api/controller/usuario-controller.php:28
+[10-Nov-2017 22:02:37 America/Sao_Paulo] PHP   4. BaseRepository->__construct() /home/ubuntu/workspace/api/controller/usuario-controller.php:117
+[10-Nov-2017 22:02:37 America/Sao_Paulo] PHP   5. DBContext->__construct() /home/ubuntu/workspace/api/repository/base-repository.php:9
+[10-Nov-2017 22:02:37 America/Sao_Paulo] PHP   6. PDO->__construct() /home/ubuntu/workspace/api/util/db-context.php:15
+[10-Nov-2017 22:03:00 America/Sao_Paulo] PHP Warning:  PDO::__construct(): MySQL server has gone away in /home/ubuntu/workspace/api/util/db-context.php on line 15
+[10-Nov-2017 22:03:00 America/Sao_Paulo] PHP Stack trace:
+[10-Nov-2017 22:03:00 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[10-Nov-2017 22:03:00 America/Sao_Paulo] PHP   2. JornalController->ProcessRequest() /home/ubuntu/workspace/api/index.php:62
+[10-Nov-2017 22:03:00 America/Sao_Paulo] PHP   3. JornalController->ActionGetList() /home/ubuntu/workspace/api/controller/jornal-controller.php:11
+[10-Nov-2017 22:03:00 America/Sao_Paulo] PHP   4. BaseRepository->__construct() /home/ubuntu/workspace/api/controller/jornal-controller.php:48
+[10-Nov-2017 22:03:00 America/Sao_Paulo] PHP   5. DBContext->__construct() /home/ubuntu/workspace/api/repository/base-repository.php:9
+[10-Nov-2017 22:03:00 America/Sao_Paulo] PHP   6. PDO->__construct() /home/ubuntu/workspace/api/util/db-context.php:15
+[10-Nov-2017 22:03:11 America/Sao_Paulo] PHP Warning:  PDO::__construct(): MySQL server has gone away in /home/ubuntu/workspace/api/util/db-context.php on line 15
+[10-Nov-2017 22:03:11 America/Sao_Paulo] PHP Stack trace:
+[10-Nov-2017 22:03:11 America/Sao_Paulo] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[10-Nov-2017 22:03:11 America/Sao_Paulo] PHP   2. UsuarioController->ProcessRequest() /home/ubuntu/workspace/api/index.php:34
+[10-Nov-2017 22:03:11 America/Sao_Paulo] PHP   3. UsuarioController->ActionGetList() /home/ubuntu/workspace/api/controller/usuario-controller.php:16
+[10-Nov-2017 22:03:11 America/Sao_Paulo] PHP   4. BaseRepository->__construct() /home/ubuntu/workspace/api/controller/usuario-controller.php:56
+[10-Nov-2017 22:03:11 America/Sao_Paulo] PHP   5. DBContext->__construct() /home/ubuntu/workspace/api/repository/base-repository.php:9
+[10-Nov-2017 22:03:11 America/Sao_Paulo] PHP   6. PDO->__construct() /home/ubuntu/workspace/api/util/db-context.php:15
