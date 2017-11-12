@@ -9,6 +9,8 @@ class Pagina
     var $nomPagina;
     var $paginaDado;
     var $dadosTemplate;
+    var $primeiraPagina;
+    var $ultimaPagina;
 
     function FillByObject($obj)
     {
@@ -63,7 +65,16 @@ class Pagina
 
         if (array_key_exists("num_pagina", $dbArray))
             $this->numPagina = $dbArray['num_pagina'];
-
+            
+        if($this->numPagina == 1){
+            $this->primeiraPagina = true;
+            $this->ultimaPagina = false;
+        }
+        else if($this->numPagina == $dbArray['qtd_paginas_jornal']){
+            $this->primeiraPagina = false;
+            $this->ultimaPagina = true;
+        }
+            
         if (array_key_exists("nom_pagina", $dbArray))
             $this->nomPagina = $dbArray['nom_pagina'];
             

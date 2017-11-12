@@ -31,6 +31,18 @@ class JornalController extends BaseController
                 case "getMobile":
                     $this->ActionGetMobileVersion();
                     break;
+                case "subirPagina":
+                    $idPagina = isset($_GET['key']) ? $_GET['key'] : null;
+                    $this->ActionSubirPagina($idPagina);
+                    break;
+                case "descerPagina":
+                    $idPagina = isset($_GET['key']) ? $_GET['key'] : null;
+                    $this->ActionDescerPagina($idPagina);
+                    break;
+                case "publicarJornal":
+                    $idJornal = isset($_GET['key']) ? $_GET['key'] : null;
+                    $this->ActionPublicar($idJornal);
+                    break;
                 default:
                     ToErrorJson("Action not found");
             }
@@ -201,6 +213,56 @@ class JornalController extends BaseController
         $jornalRepository->Update($jornal);
 
         ToWrappedJson($jornal, "Dados atualizados com sucesso");
+    }
+    
+    function ActionSubirPagina($idPagina)
+    {
+        $jornalRepository = new JornalRepository();
+        $result = $jornalRepository->SubirPagina($idPagina);
+
+        $listPaginas = array();
+
+        foreach ($result as $dbPagina) {
+            $modelPagina = new Pagina();
+            $modelPagina->FillByDB($dbPagina);
+            $listPaginas[] = $modelPagina;
+        }
+
+        ToWrappedJson($listPaginas);
+    }
+    
+    function ActionDescerPagina($idPagina)
+    {
+        $jornalRepository = new JornalRepository();
+        $result = $jornalRepository->DescerPagina($idPagina);
+
+        $listPaginas = array();
+
+        foreach ($result as $dbPagina) {
+            $modelPagina = new Pagina();
+            $modelPagina->FillByDB($dbPagina);
+            $listPaginas[] = $modelPagina;
+        }
+
+        ToWrappedJson($listPaginas);
+    }
+    
+    function ActionPublicar($idJornal)
+    {
+        $jornalRepository = new JornalRepository();
+        $result = $jornalRepository->PublicarJornal($idJornal);
+        
+        $resultLista = $jornalRepository->GetList(null);
+
+        $listJornal = array();
+
+        foreach ($resultLista as $dbJornal) {
+            $modelJornal = new Jornal();
+            $modelJornal->FillByDB($dbJornal);
+            $listJornal[] = $modelJornal;
+        }
+
+        ToWrappedJson($listJornal);
     }
    
 }

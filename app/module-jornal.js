@@ -1,6 +1,6 @@
 var app = angular.module('ZeitGeistModule')
 
-    .controller('JornalCtrl', function($scope, $http, $routeParams, $location) {
+    .controller('JornalCtrl', function($scope, $http, $routeParams, $location, $rootScope) {
 
         $scope.init = function() {
             $(document).ready(function() {
@@ -19,6 +19,7 @@ var app = angular.module('ZeitGeistModule')
                 $http.get('api/jornal/getUltimaEdicao/').then(function(response) {
                     var result = response.data;
                     $scope.jornal = result.data;
+                    $scope.jornal.idSituacao = 1;
                 });
             }
         };
@@ -95,8 +96,8 @@ var app = angular.module('ZeitGeistModule')
         }
 
         function insertJornal() {
-            $scope.jornal.idSituacao = 3;
-            $scope.jornal.idUsuario = 1;
+            $scope.jornal.idSituacao = 1; //rascunho
+            $scope.jornal.idUsuario = $rootScope.globals.currentUser.id;
             $http.post('api/jornal/insert/', $scope.jornal).then(function(response) {
                 var result = response.data;
                 $scope.jornal = result.data;
@@ -127,6 +128,34 @@ var app = angular.module('ZeitGeistModule')
         };
         
         $scope.goPagina = function() {
-            $location.path('pagina/' + $scope.jornal.idJornal);
+            $location.path('/jornal/' + $scope.jornal.idJornal + '/pagina/0');
         };
+        
+        $scope.subirPagina = function(idPagina){
+            $http.get('api/jornal/subirPagina/' + idPagina).then(function(response) {
+                var result = response.data;
+                $scope.paginaList = result.data;
+                $scope.hasError = result.hasError;
+                $scope.msg = result.msg;
+            });
+        };
+        
+        $scope.descerPagina = function(idPagina){
+            $http.get('api/jornal/descerPagina/' + idPagina).then(function(response) {
+                var result = response.data;
+                $scope.paginaList = result.data;
+                $scope.hasError = result.hasError;
+                $scope.msg = result.msg;
+            });
+        };
+        
+        $scope.publicarJornal = function(idJornal){
+            $http.get('api/jornal/publicarJornal/' + idJornal).then(function(response) {
+                var result = response.data;
+                $scope.jornalList = result.data;
+                $scope.hasError = result.hasError;
+                $scope.msg = result.msg;
+            });
+        };
+        
     });

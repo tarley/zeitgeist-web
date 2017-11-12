@@ -11,11 +11,12 @@ angular.module('ZeitGeistService')
                 });
         };
 
-        service.SetCredentials = function (username, password, role) {
+        service.SetCredentials = function (id, username, password, role) {
             var authdata = Base64.encode(username + ':' + password);
 
             $rootScope.globals = {
                 currentUser: {
+                    id: id,
                     username: username,
                     authdata: authdata,
                     role: role

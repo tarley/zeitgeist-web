@@ -29,7 +29,7 @@
         <div class="col l4 m6" ng-repeat="j in jornalList">
             <div class="card horizontal tamanhoCard">
                 <div ng-if="j.valorPaginaImagem != '' " class="card-image">
-                    <img class="tamanhoImagem" src='data:image/jpg;base64,{{j.valorPaginaImagem}}' ng-click="goJornal(j.idJornal)"></img>
+                    <img class="tamanhoImagem" src='data:image/jpg;base64,{{j.valorPaginaImagem}}'></img>
                 </div>
                 <div ng-if="j.valorPaginaImagem == '' " class="card-image">
                     <img class="tamanhoImagem" src= '../assets/images/sem-imagem.png' ng-click="goJornal(j.idJornal)"></img>
@@ -41,7 +41,9 @@
                         <h6>{{j.descSituacao}}</h6>
                     </div>
                     <div class="card-action">
-                        <a href="../jornal-view/{{j.idJornal}}">Visualizar</a>
+                        <!--<a href="../jornal-view/{{j.idJornal}}">Visualizar</a>-->
+                        <i class="small material-icons" title="Editar" ng-click="goJornal(j.idJornal)">create</i>
+                        <i class="small material-icons" title="Publicar" ng-click="publicarJornal(j.idJornal)" ng-hide={{j.publicado}} style="margin-left: 30px;">cloud_upload</i>
                     </div>
                 </div>
             </div>

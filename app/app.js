@@ -24,6 +24,10 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
         })
 
         .when('/', {
+           redirectTo: "/jornal"
+        })
+        
+        .when('/jornal', {
             templateUrl: 'view/jornal-list.html',
             controller: 'JornalCtrl'
         })
