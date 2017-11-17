@@ -42,7 +42,7 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
             controller: 'JornalCtrl'
         })
 
-        .when('/pagina/:codJornal', {
+        .when('/jornal/:codJornal/pagina/:codPagina', {
             templateUrl: 'view/pagina-edit.html',
             controller: 'PaginaCtrl'
         })
@@ -72,13 +72,13 @@ app.run(['$rootScope', '$location', '$cookies', '$http', function($rootScope, $l
     }
 
     $rootScope.$on('$locationChangeStart', function() {
-        if ($location.path() !== '/login' && !$rootScope.globals.currentUser) {
-            window.location = 'login';
-        }
-        else if ($location.path() == '/usuario' &&
-            $rootScope.globals.currentUser.role != '1') {
-            window.location = '/';
-        }
+        // if ($location.path() !== '/login' && !$rootScope.globals.currentUser) {
+        //     window.location = 'login';
+        // }
+        // else if ($location.path() == '/usuario' &&
+        //     $rootScope.globals.currentUser.role != '1') {
+        //     window.location = '/';
+        // }
 
     });
 }]);

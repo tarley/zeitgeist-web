@@ -27,9 +27,10 @@ class TemplateRepository extends BaseRepository
         $conn = $this->db->getConnection();
 
         $sql = 'SELECT 
-                id_template,desc_template,desc_caminho_template 
+                id_template, desc_template 
             FROM 
-                tb_template';
+                tb_template
+            ORDER BY id_template';
 
         $stm = $conn->prepare($sql);
         $stm->execute();
@@ -37,6 +38,4 @@ class TemplateRepository extends BaseRepository
 
         return $result;
     }
-
-   
 }

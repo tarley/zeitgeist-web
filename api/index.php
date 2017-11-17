@@ -65,6 +65,10 @@ switch ($controller){
         $situacao = new SituacaoController();
         $situacao->ProcessRequest($action);
         break;
+    case "template":
+        $template = new TemplateController();
+        $template->ProcessRequest($action);
+        break;
     default:
         ToErrorJson("Controller not found");
 }

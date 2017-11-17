@@ -1,24 +1,17 @@
 var app = angular.module('ZeitGeistModule')
 
     .controller('PaginaCtrl', function($scope, $http, $routeParams, $location, $window) {
-
-        $scope.initCadastro = function() {
-            $scope.pagina = {};
-            $scope.isEdit = false;
-        };
-
-        /*if ($routeParams.idPagina && $routeParams.idPagina != 0) {
-            $scope.isEdit = true;
-            getPagina($routeParams.idPagina);
-        }
-        else {
-            getListPagina();
-        }
-
-        getListPagina();*/
+        $scope.pagina = {};
+        $scope.templateList = [];
 
         if ($scope.hasError)
             toastr.error($scope.msg);
+
+        if ($routeParams.codPagina && $routeParams.codPagina != 0) {
+            getPagina($routeParams.codPagina);
+        }
+
+        getTemplateList();
 
         $scope.fillTemplateDados = function() {
 
@@ -132,6 +125,15 @@ var app = angular.module('ZeitGeistModule')
             $http.get('api/pagina/get/' + idPagina).then(function(response) {
                 var result = response.data;
                 $scope.pagina = result.data;
+                $scope.hasError = result.hasError;
+                $scope.msg = result.msg;
+            });
+        }
+
+        function getTemplateList() {
+            $http.get('api/template/list/').then(function(response) {
+                var result = response.data;
+                $scope.templateList = result.data;
                 $scope.hasError = result.hasError;
                 $scope.msg = result.msg;
             });

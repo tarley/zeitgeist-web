@@ -17,9 +17,12 @@ html, body {
 
 .header {
     height: 90px;
-    position: relative;
+    position: fixed;
     display: flex;
     justify-content: center;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
 }
 
 .header .logo {
@@ -50,6 +53,7 @@ html, body {
 .content {
     margin-left: 25%;
     padding: 0 20px;
+    margin-top: 90px;
 }
 
 ul.side-bar {
