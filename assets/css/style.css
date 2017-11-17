@@ -17,9 +17,12 @@ html, body {
 
 .header {
     height: 90px;
-    position: relative;
+    position: fixed;
     display: flex;
     justify-content: center;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
 }
 
 .header .logo {
@@ -50,6 +53,7 @@ html, body {
 .content {
     margin-left: 25%;
     padding: 0 20px;
+    margin-top: 90px;
 }
 
 ul.side-bar {
@@ -64,25 +68,15 @@ ul.side-bar li a:hover {
     background-color: #c5cae9;
 }
 
-
-
-div.card.horizontal.tamanhoCard{
-    width:100%;    
+.page-title {
+	padding: 20px 0 0;
+	margin: 0;
+	font-size: 2.5rem;
+	font-weight: 500;
 }
 
-.card.horizontal, img.tamanhoImagem {
-    height: 100%;
-}    
-
-#selectDefault{
-    width: 115%;
-}
-
-#divDadosTemplate {
-    padding-top: 50px;
-    padding-right: 30px;
-    padding-bottom: 50px;
-    padding-left: 30px;    
+.action {
+	cursor: pointer;
 }
 
 #divButtonSaveBack {
@@ -91,21 +85,65 @@ div.card.horizontal.tamanhoCard{
     padding-left: 30px;    
 }
 
+/* CSS Página - Inicio */
+
+.form-content {
+	padding: 20px 20px;
+}
+
+.template-list {
+	margin-top: 20px;
+}
+
+.template-list .label {
+	font-size: 1.05rem;
+	color: #9e9e9e;
+	margin-left: 12px;
+}
+
+.template-list ul {
+	display: flex;
+    flex-wrap: wrap;
+	justify-content: center;
+	margin: 0;
+}
+
+.template-list ul li {
+	display: inline-block;
+	padding: 10px;
+}
+
+.template-list ul li.selected {
+	background-color: #CCC;
+	border-radius: 5px;
+}
+
+.template-list ul li img {
+	width: 80px;
+}
+
+.template-form {
+	padding: 20px 50px;
+}
+/* CSS Página - Fim */
+
 /* ini new login*/
 
-body {
-      display: flex;
-      min-height: 100vh;
-      flex-direction: column;
-    }
+
+/*TODO: Mover CSS de login para outro arquivo de estilo */
+/*body {*/
+      /*display: flex;*/
+      /*min-height: 100vh;*/
+      /*flex-direction: column;*/
+    /*}*/
 
     main {
       flex: 1 0 auto;
     }
 
-    body {
-      background: #fff;
-    }
+    /*body {*/
+      /*background: #fff;*/
+    /*}*/
 
     .input-field input[type=date]:focus + label,
     .input-field input[type=text]:focus + label,
@@ -121,5 +159,5 @@ body {
       border-bottom: 2px solid #e91e63;
       box-shadow: none;
     }
-    
+
 /*end new login*/

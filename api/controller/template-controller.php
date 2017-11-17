@@ -7,8 +7,8 @@ class TemplateController extends BaseController
         try {
             switch ($action) {
                 case "get":
-                    $template = isset($_GET['key']) ? $_GET['key'] : null;
-                    $this->ActionGetThis($id_template);
+                    $templateId = isset($_GET['key']) ? $_GET['key'] : null;
+                    $this->ActionGetThis($templateId);
                     break;
                 case "list":
                     $this->ActionGetList();
@@ -34,7 +34,7 @@ class TemplateController extends BaseController
         if (!$template->template)
             throw new Warning("Template não encontrado");
 
-        ToWrappedJson($usuario);
+        ToWrappedJson($template);
     }
 
     function ActionGetList()

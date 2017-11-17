@@ -27,16 +27,23 @@ class TemplateRepository extends BaseRepository
         $conn = $this->db->getConnection();
 
         $sql = 'SELECT 
-                id_template,desc_template,desc_caminho_template 
+                id_template, desc_template 
             FROM 
-                tb_template';
+                tb_template
+            ORDER BY id_template';
 
         $stm = $conn->prepare($sql);
         $stm->execute();
-        $result = $stm->fetchAll(PDO::FETCH_ASSOC);
+        $listaTemplate = $stm->fetchAll(PDO::FETCH_ASSOC);
+
+		$dadosTemplateRepository = new DadosTemplateRepository();
+
+		$result = array();
+		foreach ($listaTemplate as $template) {
+			$template["dadosTemplate"] = $dadosTemplateRepository->GetList($template["id_template"]);
+			$result[] = $template;
+		}
 
         return $result;
     }
-
-   
 }

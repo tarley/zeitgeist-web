@@ -1,59 +1,48 @@
 var app = angular.module('ZeitGeistModule')
 
     .controller('PaginaCtrl', function($scope, $http, $routeParams, $location, $window) {
-
-        $scope.initCadastro = function() {
-            $scope.pagina = {};
-            $scope.isEdit = false;
-        };
-
-        /*if ($routeParams.idPagina && $routeParams.idPagina != 0) {
-            $scope.isEdit = true;
-            getPagina($routeParams.idPagina);
-        }
-        else {
-            getListPagina();
-        }
-
-        getListPagina();*/
+        $scope.pagina = {};
+        $scope.templateList = [];
+		$scope.selectedTemplate = {};
 
         if ($scope.hasError)
             toastr.error($scope.msg);
 
-        $scope.fillTemplateDados = function() {
+        if ($routeParams.codPagina && $routeParams.codPagina != 0) {
+            getPagina($routeParams.codPagina);
+        }
 
-            $("div[id*='divDadosTemplate']").html("");
+        getTemplateList();
 
-            var templateSelecionado = $scope.currentTab;
+		$scope.selectTemplate = function(template) {
+			$scope.selectedTemplate = template;
 
-            $scope.dadosTemplate = {};
-            $http.get('api/dadosTemplate/list/' + templateSelecionado).then(function(response) {
-                var result = response.data;
-                $scope.dadosTemplate = result.data;
-                $scope.hasError = result.hasError;
-                $scope.msg = result.msg;
+		};
 
-                if (!$scope.hasError) {
-                    for (var i = 0; i < $scope.dadosTemplate.length; i++) {
-                        if ($scope.dadosTemplate[i].idTipoTemplateDado == 1) {
-                            var input = $("<input id='" + $scope.dadosTemplate[i].chaveTemplateDado + "' type='text'>");
-                            $("div[id*='divDadosTemplate']").append(input);
-                        }
-                        else if ($scope.dadosTemplate[i].idTipoTemplateDado == 2) {
-                            var textArea = $("<textarea id='" + $scope.dadosTemplate[i].chaveTemplateDado + "' cols='40' rows='5'></textarea>");
-                            $("div[id*='divDadosTemplate']").append(textArea);
-                        }
-                        else if ($scope.dadosTemplate[i].idTipoTemplateDado == 3) {
-                            var uploadFile = $("<div flow-init='{target: '/upload'}' flow-files-submitted='$flow.upload()' flow-file-success='$file.msg = $message'>" +
-                                "<input type='file' flow-btn/> Input OR Other element as upload button" +
-                                "<span class='btn' flow-btn>Upload File</span>" +
-                                "</div>");
-                            $("div[id*='divDadosTemplate']").append(uploadFile);
-                        }
-                    }
-                }
-            });
-        };
+		function getPagina(idPagina) {
+			$http.get('api/pagina/get/' + idPagina).then(function(response) {
+				var result = response.data;
+				$scope.pagina = result.data;
+				$scope.hasError = result.hasError;
+				$scope.msg = result.msg;
+				Materialize.updateTextFields();
+			});
+		}
+
+		function getTemplateList() {
+			$http.get('api/template/list/').then(function(response) {
+				var result = response.data;
+				$scope.templateList = result.data;
+				$scope.hasError = result.hasError;
+				$scope.msg = result.msg;
+			});
+		}
+
+		$scope.voltar = function() {
+			$scope.go('jornal/' + $scope.pagina.idJornal);
+		};
+
+		//=============================
 
         $scope.save = function() {
             var templateSelecionado = $scope.currentTab;
@@ -128,14 +117,7 @@ var app = angular.module('ZeitGeistModule')
             });
         };
 
-        function getPagina(idPagina) {
-            $http.get('api/pagina/get/' + idPagina).then(function(response) {
-                var result = response.data;
-                $scope.pagina = result.data;
-                $scope.hasError = result.hasError;
-                $scope.msg = result.msg;
-            });
-        }
+
 
         function getListPagina() {
             $http.get('api/pagina/list/').then(function(response) {
@@ -169,26 +151,6 @@ var app = angular.module('ZeitGeistModule')
 
                 if (!$scope.hasError)
                     toastr.success(result.msg);
-            });
-        }
-    })
-
-    .controller('PaginaPreviewCtrl', function($scope, $http, $routeParams, $location, $window) {
-
-        if ($routeParams.codJornal && $routeParams.codJornal != 0) {
-
-            getListPagina($routeParams.codJornal);
-        }
-        else {
-            $location.path('jornal/');
-        }
-
-        function getListPagina(codJornal) {
-            $http.get('api/pagina/list/' + codJornal).then(function(response) {
-                var result = response.data;
-                $scope.paginaList = result.data;
-                $scope.hasError = result.hasError;
-                $scope.msg = result.msg;
             });
         }
     });

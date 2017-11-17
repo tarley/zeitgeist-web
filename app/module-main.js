@@ -17,7 +17,7 @@ var app = angular.module('ZeitGeistModule')
                 $scope.msg = result.msg;
 
                 if (!result.hasError) {
-                    AuthenticationService.SetCredentials(result.data.nom_usuario, $scope.usuario.login, $scope.usuario.senha, result.data.id_perfil_usuario);
+                    AuthenticationService.SetCredentials(result.data.id_usuario, result.data.nom_usuario, $scope.usuario.senha, $scope.usuario.login, result.data.id_perfil_usuario);
                     window.location = "/";
                 }
             });

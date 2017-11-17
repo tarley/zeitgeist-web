@@ -1,0 +1,5 @@
+INSERT INTO tb_situacao 
+VALUES (1, "RASCUNHO");
+
+INSERT INTO tb_situacao 
+VALUES (2, "PUBLICADO");

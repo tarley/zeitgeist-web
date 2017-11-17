@@ -8,7 +8,7 @@ class PaginaRepository extends BaseRepository
         $conn = $this->db->getConnection();
 
         $sql = 'SELECT 
-                id_pagina, id_jornal, id_template, num_pagina, nom_pagina 
+                id_pagina, id_jornal, id_template, num_pagina, nom_pagina
             FROM 
                 tb_pagina
             WHERE 
@@ -28,7 +28,7 @@ class PaginaRepository extends BaseRepository
 
         $sql = 'SELECT 
                 p.id_pagina, p.id_jornal, p.id_template, p.num_pagina, p.nom_pagina,
-                t.desc_template
+                t.desc_template, (SELECT COUNT(*) FROM tb_pagina p1 WHERE p1.id_jornal = p.id_jornal) as qtd_paginas_jornal
             FROM 
                 tb_pagina p
           INNER JOIN tb_template t ON t.id_template = p.id_template  

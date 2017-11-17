@@ -13,6 +13,7 @@ class Jornal
     var $descSituacao;
     var $valorPaginaImagem;
     var $paginas;
+    var $publicado;
 
     function FillByObject($obj)
     {
@@ -65,7 +66,12 @@ class Jornal
 
         if (array_key_exists("id_situacao", $dbArray))
             $this->idSituacao = $dbArray['id_situacao'];
-    
+        
+        if($this->idSituacao == 2)
+            $this->publicado = true;
+        else
+            $this->publicado = false;
+        
          if (array_key_exists("nom_titulo_jornal", $dbArray))
             $this->nomTituloJornal = $dbArray['nom_titulo_jornal'];
             

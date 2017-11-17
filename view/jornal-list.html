@@ -1,22 +1,15 @@
 <div ng-init="initListage()">
     <div class="row">
-        <div class="col s11">
-            <div class="col s6">
-                <span id="titulo" class="flow-text">Edições</span>
-            </div>
+        <div class="col s7">
+			<div class="page-title">Edições</div>
         </div>
-    </div>
-
-    <div class="row">
-        <div class="col s12">
-            <div class="col s3 offset-s8">
-                <select select-name="dropChange" id="selectDefault" ng-model="ZeitGeistModule" class="browser-default" ng-change="DropDownChanged()">
-					<option value="" selected="selected">Todas</option>
-					<option value="2">Publicadas</option>
-					<option value="1">Rascunhos</option>
-		 	</select>
-            </div>
-        </div>
+		<div class="col s5" style="padding-top: 20px">
+			<select select-name="dropChange" id="selectDefault" ng-model="ZeitGeistModule" class="browser-default" ng-change="DropDownChanged()">
+				<option value="" selected="selected">Todas</option>
+				<option value="2">Publicadas</option>
+				<option value="1">Rascunhos</option>
+			</select>
+		</div>
     </div>
 
     <div class="valign-wrapper" class="col s2">
@@ -27,12 +20,12 @@
 
     <div class="row">
         <div class="col l4 m6" ng-repeat="j in jornalList">
-            <div class="card horizontal tamanhoCard">
+            <div class="card horizontal">
                 <div ng-if="j.valorPaginaImagem != '' " class="card-image">
-                    <img class="tamanhoImagem" src='data:image/jpg;base64,{{j.valorPaginaImagem}}' ng-click="goJornal(j.idJornal)"></img>
+                    <img src='data:image/jpg;base64,{{j.valorPaginaImagem}}' />
                 </div>
                 <div ng-if="j.valorPaginaImagem == '' " class="card-image">
-                    <img class="tamanhoImagem" src= '../assets/images/sem-imagem.png' ng-click="goJornal(j.idJornal)"></img>
+                    <img class="tamanhoImagem" src= '../assets/images/sem-imagem.png' ng-click="goJornal(j.idJornal)" />
                 </div>
                 <div class="card-stacked">
                     <div class="card-content">
@@ -41,7 +34,9 @@
                         <h6>{{j.descSituacao}}</h6>
                     </div>
                     <div class="card-action">
-                        <a href="../jornal-view/{{j.idJornal}}">Visualizar</a>
+                        <!--<a href="../jornal-view/{{j.idJornal}}">Visualizar</a>-->
+                        <i class="small material-icons action" title="Editar" ng-click="goJornal(j.idJornal)">create</i>
+                        <i class="small material-icons action" title="Publicar" ng-click="publicarJornal(j.idJornal)" ng-hide={{j.publicado}} style="margin-left: 30px;">cloud_upload</i>
                     </div>
                 </div>
             </div>

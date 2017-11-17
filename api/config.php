@@ -5,19 +5,17 @@ date_default_timezone_set('America/Sao_Paulo');
 define('CONTEXT_NAME', '/zeitgeist-web/api/');
 define('LOG_DIR', $_SERVER['DOCUMENT_ROOT'] . CONTEXT_NAME . '_log/');
 
- 
-define('SERVERNAME', "108.179.193.39");
+
+define('SERVERNAME', "108.179.193.39:3306");
 define('USERNAME', 'tarley_zeitgeist');
 define('PASSWORD', 'H@w>7%++');
 define('DBNAME', 'tarley_zeitgeist');
 
 
-/*
-define('SERVERNAME', "localhost");
-define('USERNAME', 'root');
-define('PASSWORD', '');
-define('DBNAME', 'bd_zeitgeist');
-*/
+//define('SERVERNAME', "localhost");
+//define('USERNAME', 'root');
+//define('PASSWORD', '');
+//define('DBNAME', 'tarley_zeitgeist');
 
 define('ENV', 'Dev');
 

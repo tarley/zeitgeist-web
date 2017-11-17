@@ -26,6 +26,10 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
         })
 
         .when('/', {
+           redirectTo: "/jornal"
+        })
+
+        .when('/jornal', {
             templateUrl: '/view/jornal-list.html',
             controller: 'JornalCtrl'
         })
@@ -40,7 +44,7 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
             controller: 'JornalCtrl'
         })
 
-        .when('/pagina/:codJornal', {
+        .when('/jornal/:codJornal/pagina/:codPagina', {
             templateUrl: '/view/pagina-edit.html',
             controller: 'PaginaCtrl'
         })
@@ -54,14 +58,17 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
             templateUrl: '/contato.php',
             controller: 'MainCtrl'
         })
+
         .when('/login', {
             templateUrl: '/view/login.html',
             controller: 'MainCtrl',
             open: true
         })
+
         .when('/page-404', {
             templateUrl: '/view/page-404.html'
         })
+
         .otherwise({
             redirectTo: "/login.html"
         });
@@ -77,9 +84,9 @@ app.run(['$rootScope', '$location', '$cookies', '$http', function($rootScope, $l
     }
 
     $rootScope.$on('$routeChangeStart', function(event, next, current) {
-        
+
         instance = next.__proto__;
-        
+
         if(!instance.open) {
             if (!$rootScope.globals.currentUser) {
                 $location.path('/login');

@@ -1,38 +1,53 @@
-<h2>Página</h2>
+<div class="page-title">Página</div>
 <hr>
 
-<div class="form-group">
-    <label class="col-sm-4 col-md-4 control-label">Número Página</label>
-    <div class="col-sm-3 col-md-3">
-        <input type="text" class="form-control" placeholder="Número da Página" required ng-model="pagina.numPagina">
-    </div>
+<div class="form-content">
+	<div class="row">
+		<div class="input-field col s3">
+			<input id="numPagina" type="text" class="validate" ng-model="pagina.numPagina" disabled>
+			<label for="numPagina" ng-class="{ 'active' : pagina.numPagina != undefined }">Número da Página</label>
+		</div>
+		<div class="input-field col s9">
+			<input id="nomePagina" type="text" class="validate" ng-model="pagina.nomPagina" required>
+			<label for="nomePagina" ng-class="{ 'active' : pagina.numPagina != undefined }">Nome da Página</label>
+		</div>
+	</div>
+		<div class="template-list">
+			<div class="label">Template:</div>
+			<ul>
+				<li ng-repeat="template in templateList" ng-class="{ 'selected' : template.idTemplate == selectedTemplate.idTemplate}" ng-click="selectTemplate(template)">
+					<img src="assets/images/{{template.idTemplate}}.png" />
+				</li>
+			</ul>
+		</div>
+</div>
+<div class="template-form" ng-show="selectedTemplate.idTemplate != undefined">
+	<div ng-repeat="dado in selectedTemplate.dadosTemplate">
+		<div class="input-field col s12" ng-if="dado.idTipoTemplateDado == 1">
+			<input id="dado-{{dado.idTemplateDado}}" type="text" class="validate">
+			<label for="dado-{{dado.idTemplateDado}}">{{dado.descTemplateDado}}</label>
+		</div>
+		<div class="input-field col s12" ng-if="dado.idTipoTemplateDado == 2">
+			<textarea id="textarea1" class="materialize-textarea"></textarea>
+			<label for="textarea1">{{dado.descTemplateDado}}</label>
+		</div>
+		<div class="file-field input-field" ng-if="dado.idTipoTemplateDado == 3">
+			<div class="btn">
+				<span>{{dado.descTemplateDado}}</span>
+				<input type="file" required>
+			</div>
+			<div class="file-path-wrapper">
+				<input class="file-path validate" type="text">
+			</div>
+		</div>
+	</div>
 </div>
 
-<div class="form-group">
-    <label class="col-sm-4 col-md-4 control-label">Nome da Página</label>
-    <div class="col-sm-3 col-md-3">
-        <input type="text" class="form-control" placeholder="Nome da Página" required ng-model="pagina.nomPagina">
-    </div>
-</div>
-
-<nav class="nav-extended">
-    <div class="nav-content">
-        <ul class="tabs nav-mobile hide-on-med-and-down">
-            <li class="tab col s3" ng-click="currentTab = '2'; fillTemplateDados()"><a ng-class="{'active':currentTab == 'T1'}">Template1</a></li>
-            <li class="tab col s3" ng-click="currentTab = '3'; fillTemplateDados()"><a ng-class="{'active':currentTab == 'T2'}">Template2</a></li>
-            <li class="tab col s3" ng-click="currentTab = '4'; fillTemplateDados()"><a ng-class="{'active':currentTab == 'T3'}">Template3</a></li>
-        </ul>
-    </div>
-</nav>
-
-<div id="divDadosTemplate">
-
-</div>
 <div id="divButtonSaveBack">
     <div class="form-group">
         <div class="col-sm-offset-4 col-md-offset-4 col-sm-3 col-md-3">
             <button type="submit" class="btn btn-blue" ng-click="save()">Salvar</button>
-            <button type="button" class="btn btn-default" ng-click="go('jornal/')">Voltar</button>
+            <button type="button" class="btn btn-default" ng-click="voltar()">Voltar</button>
         </div>
     </div>
 </div>
