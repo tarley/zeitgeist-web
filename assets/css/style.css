@@ -103,6 +103,7 @@ ul.side-bar li a:hover {
 
 .template-list ul {
 	display: flex;
+    flex-wrap: wrap;
 	justify-content: center;
 	margin: 0;
 }
