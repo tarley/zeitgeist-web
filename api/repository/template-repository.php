@@ -34,7 +34,15 @@ class TemplateRepository extends BaseRepository
 
         $stm = $conn->prepare($sql);
         $stm->execute();
-        $result = $stm->fetchAll(PDO::FETCH_ASSOC);
+        $listaTemplate = $stm->fetchAll(PDO::FETCH_ASSOC);
+
+		$dadosTemplateRepository = new DadosTemplateRepository();
+
+		$result = array();
+		foreach ($listaTemplate as $template) {
+			$template["dadosTemplate"] = $dadosTemplateRepository->GetList($template["id_template"]);
+			$result[] = $template;
+		}
 
         return $result;
     }

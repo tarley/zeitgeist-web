@@ -1,6 +1,6 @@
 <div ng-init="init()">
-    <h2>Jornal</h2>
-    <hr>
+	<div class="page-title">Jornal</div>
+	<hr>
     <form role="form" class="form-horizontal" ng-submit="save()">
         <div class="form-group">
             <label for="numero" class="col-sm-4 col-md-4 control-label">Número da edição</label>
@@ -23,7 +23,7 @@
         <div class="form-group" ng-show="isEdit">
             <label for="situacao" class="col-sm-4 col-md-4 control-label">Situação</label>
             <div class="col-sm-3 col-md-3">
-                <select class="browser-default" ng-model="jornal.idSituacao" disabled>
+                <select id="situacao" class="browser-default" ng-model="jornal.idSituacao" disabled>
                     <option value="1">Rascunho</option>
                     <option value="2">Publicado</option>
                 </select>
@@ -42,7 +42,7 @@
             </div>
         </div>
         <div ng-show="isEdit">
-            <h3>Páginas</h3>
+            <div class="page-title">Páginas</div>
             <hr>
             <a class="btn btn-default" style="margin-bottom: 10px" ng-click="goPagina()">Nova</a>
             <table class="bordered">

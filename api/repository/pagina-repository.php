@@ -8,7 +8,7 @@ class PaginaRepository extends BaseRepository
         $conn = $this->db->getConnection();
 
         $sql = 'SELECT 
-                id_pagina, id_jornal, id_template, num_pagina, nom_pagina 
+                id_pagina, id_jornal, id_template, num_pagina, nom_pagina
             FROM 
                 tb_pagina
             WHERE 

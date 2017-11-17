@@ -12,7 +12,7 @@ define('LOG_DIR', $_SERVER['DOCUMENT_ROOT'] . CONTEXT_NAME . '_log/');
 //define('DBNAME', 'tarley_zeitgeist');
 
 
-define('SERVERNAME', "localhost");
+define('SERVERNAME', "192.168.0.17");
 define('USERNAME', 'root');
 define('PASSWORD', '');
 define('DBNAME', 'tarley_zeitgeist');

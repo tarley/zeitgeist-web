@@ -66,11 +66,10 @@ class Pagina
         if (array_key_exists("num_pagina", $dbArray))
             $this->numPagina = $dbArray['num_pagina'];
             
-        if($this->numPagina == 1){
+        if ($this->numPagina == 1) {
             $this->primeiraPagina = true;
             $this->ultimaPagina = false;
-        }
-        else if($this->numPagina == $dbArray['qtd_paginas_jornal']){
+        } else if(array_key_exists("qtd_paginas_jornal", $dbArray) && $this->numPagina == $dbArray['qtd_paginas_jornal']) {
             $this->primeiraPagina = false;
             $this->ultimaPagina = true;
         }

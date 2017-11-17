@@ -31,7 +31,8 @@ class DadosTemplateRepository extends BaseRepository
             FROM 
                 tb_template_dado
             WHERE 
-               id_template = :id_template';
+               id_template = :id_template
+            ORDER BY ordem_dados';
 
         $stm = $conn->prepare($sql);
         $stm->bindParam(':id_template', $idTemplate);
