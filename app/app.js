@@ -14,54 +14,66 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
     $routeProvider
 
         .when('/usuario', {
-            templateUrl: 'view/usuario-list.html',
-            controller: 'UsuarioCtrl'
+            templateUrl: '/view/usuario-list.html',
+            controller: 'UsuarioCtrl',
+            admin: true
         })
 
         .when('/usuario/:idUsuario', {
-            templateUrl: 'view/usuario-edit.html',
-            controller: 'UsuarioCtrl'
+            templateUrl: '/view/usuario-edit.html',
+            controller: 'UsuarioCtrl',
+            admin: true
         })
 
         .when('/', {
            redirectTo: "/jornal"
         })
-        
+
         .when('/jornal', {
-            templateUrl: 'view/jornal-list.html',
+            templateUrl: '/view/jornal-list.html',
             controller: 'JornalCtrl'
         })
 
         .when('/jornal-view/:codJornal', {
-            templateUrl: 'view/jornal-view.html',
+            templateUrl: '/view/jornal-view.html',
             controller: 'PaginaPreviewCtrl'
         })
 
         .when('/jornal/:codJornal', {
-            templateUrl: 'view/jornal-edit.html',
+            templateUrl: '/view/jornal-edit.html',
             controller: 'JornalCtrl'
         })
 
         .when('/jornal/:codJornal/pagina/:codPagina', {
-            templateUrl: 'view/pagina-edit.html',
+            templateUrl: '/view/pagina-edit.html',
             controller: 'PaginaCtrl'
         })
 
         .when('/team', {
-            templateUrl: 'team.html',
+            templateUrl: '/team.html',
             controller: 'MainCtrl'
         })
 
         .when('/contato', {
-            templateUrl: 'contato.php',
+            templateUrl: '/contato.php',
             controller: 'MainCtrl'
         })
 
+        .when('/login', {
+            templateUrl: '/view/login.html',
+            controller: 'MainCtrl',
+            open: true
+        })
 
-        .when('/login', {})
-        .otherwise({ templateUrl: 'view/page-404.html' });
+        .when('/page-404', {
+            templateUrl: '/view/page-404.html'
+        })
 
-    $locationProvider.html5Mode(true);
+        .otherwise({
+            redirectTo: "/login.html"
+        });
+
+    $locationProvider.html5Mode(false);
 }]);
 
 app.run(['$rootScope', '$location', '$cookies', '$http', function($rootScope, $location, $cookies, $http) {
@@ -71,22 +83,24 @@ app.run(['$rootScope', '$location', '$cookies', '$http', function($rootScope, $l
         $http.defaults.headers.common['Authorization'] = 'Basic ' + $rootScope.globals.currentUser.authdata; // jshint ignore:line
     }
 
-    $rootScope.$on('$locationChangeStart', function() {
-        // if ($location.path() !== '/login' && !$rootScope.globals.currentUser) {
-        //     window.location = 'login';
-        // }
-        // else if ($location.path() == '/usuario' &&
-        //     $rootScope.globals.currentUser.role != '1') {
-        //     window.location = '/';
-        // }
+    $rootScope.$on('$routeChangeStart', function(event, next, current) {
 
+        instance = next.__proto__;
+
+        if(!instance.open) {
+            if (!$rootScope.globals.currentUser) {
+                $location.path('/login');
+            } else if (instance.admin && $rootScope.globals.currentUser.role != '1') {
+                $location.path('/');
+            }
+        }
     });
 }]);
 
 app.controller('MainCtrl', ['$scope', '$location', 'AuthenticationService', function($scope, $location, AuthenticationService) {
     $scope.logout = function() {
         AuthenticationService.ClearCredentials();
-        window.location = 'login';
+        $location.path('/login');
     };
 
     $scope.go = function(path) {
