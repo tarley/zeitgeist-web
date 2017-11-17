@@ -56,7 +56,7 @@
             echo '
                     <script type="text/JavaScript">
                         alert("Seu e-mail foi enviado com sucesso. Obrigado");
-                        location.href="../home"
+                        location.href="../#!/"
                     </script>
                  ';
         } else {
