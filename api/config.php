@@ -6,16 +6,16 @@ define('CONTEXT_NAME', '/zeitgeist-web/api/');
 define('LOG_DIR', $_SERVER['DOCUMENT_ROOT'] . CONTEXT_NAME . '_log/');
 
 
-define('SERVERNAME', "108.179.193.39:3306");
-define('USERNAME', 'tarley_zeitgeist');
-define('PASSWORD', 'H@w>7%++');
-define('DBNAME', 'tarley_zeitgeist');
-
-
-//define('SERVERNAME', "localhost");
-//define('USERNAME', 'root');
-//define('PASSWORD', '');
+//define('SERVERNAME', "108.179.193.39:3306");
+//define('USERNAME', 'tarley_zeitgeist');
+//define('PASSWORD', 'H@w>7%++');
 //define('DBNAME', 'tarley_zeitgeist');
+
+
+define('SERVERNAME', "jcheringer.ddns.net");
+define('USERNAME', 'zeitgeist');
+define('PASSWORD', 'zeit123');
+define('DBNAME', 'tarley_zeitgeist');
 
 define('ENV', 'Dev');
 

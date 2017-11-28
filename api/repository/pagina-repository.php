@@ -8,7 +8,11 @@ class PaginaRepository extends BaseRepository
         $conn = $this->db->getConnection();
 
         $sql = 'SELECT 
-                id_pagina, id_jornal, id_template, num_pagina, nom_pagina
+                id_pagina, 
+                id_jornal, 
+                id_template, 
+                num_pagina, 
+                nom_pagina
             FROM 
                 tb_pagina
             WHERE 
@@ -17,9 +21,13 @@ class PaginaRepository extends BaseRepository
         $stm = $conn->prepare($sql);
         $stm->bindParam(':id_pagina', $idPagina);
         $stm->execute();
-        $result = $stm->fetch(PDO::FETCH_ASSOC);
+        $pagina = $stm->fetch(PDO::FETCH_ASSOC);
 
-        return $result;
+        $paginaDadoRepository = new PaginaDadoRepository();
+
+        //$pagina["pagina_dado"] = $paginaDadoRepository->GetList($pagina["id_pagina"], $conn);
+
+        return $pagina;
     }
 
     function GetList($idJornal)

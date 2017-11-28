@@ -6,6 +6,10 @@ class DBContext
 
     function __construct()
     {
+        $this->startConnection();
+    }
+
+    public function startConnection() {
         try {
             $options = array(
                 PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES UTF8',
@@ -24,6 +28,10 @@ class DBContext
 
     public function getConnection()
     {
+        if ($this->conn == null) {
+            $this->startConnection();
+        }
+
         return $this->conn;
     }
 

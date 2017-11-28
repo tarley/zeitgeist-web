@@ -76,27 +76,26 @@ class Pagina
             
         if (array_key_exists("nom_pagina", $dbArray))
             $this->nomPagina = $dbArray['nom_pagina'];
-            
-        $this->paginaDado = array();
-        
-        $paginaDadoRepository = new PaginaDadoRepository();
-        $result = $paginaDadoRepository->GetList($this->idPagina);
 
-        foreach ($result as $dbPaginaDado) {
-            $modelPaginaDado = new PaginaDado();
-            $modelPaginaDado->FillByDB($dbPaginaDado);
-            $this->paginaDado[] = $modelPaginaDado;
-        }
-        
-        $this->dadosTemplate = array();
-        
-        $dadosTemplateRepository = new DadosTemplateRepository();
-        $result = $dadosTemplateRepository->GetList($this->idTemplate);
+        if (array_key_exists("pagina_dado", $dbArray)) {
+            $this->paginaDado = array();
 
-        foreach ($result as $dbDadosTemplate) {
-            $modelDadosTemplate = new DadosTemplate();
-            $modelDadosTemplate->FillByDB($dbDadosTemplate);
-            $this->dadosTemplate[] = $modelDadosTemplate;
+            foreach ($dbArray["pagina_dado"] as $dbPaginaDado) {
+                $modelPaginaDado = new PaginaDado();
+                $modelPaginaDado->FillByDB($dbPaginaDado);
+                $this->paginaDado[] = $modelPaginaDado;
+            }
         }
+
+//        $this->dadosTemplate = array();
+//
+//        $dadosTemplateRepository = new DadosTemplateRepository();
+//        $result = $dadosTemplateRepository->GetList($this->idTemplate);
+//
+//        foreach ($result as $dbDadosTemplate) {
+//            $modelDadosTemplate = new DadosTemplate();
+//            $modelDadosTemplate->FillByDB($dbDadosTemplate);
+//            $this->dadosTemplate[] = $modelDadosTemplate;
+//        }
     }
 }

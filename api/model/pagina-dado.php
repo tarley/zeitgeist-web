@@ -5,9 +5,10 @@ class PaginaDado
     var $idPaginaDado;
     var $idPagina;
     var $idTemplateDado;
-    /*var $paginaImagem;
-    var $paginaString;
-    var $paginaTexto;*/
+    var $idTipoTemplateDado;
+    var $chaveTemplateDado;
+    var $descTemplateDado;
+    var $valorPaginaDado;
 
     function FillByObject($obj)
     {
@@ -64,38 +65,17 @@ class PaginaDado
 
         if (array_key_exists("id_template_dado", $dbArray))
             $this->idTemplateDado = $dbArray['id_template_dado'];
-            
-        /*$this->paginaImagem = array();
-        
-        $paginaImagemRepository = new PaginaImagemRepository();
-        $result = $paginaImagemRepository->GetList($this->idPaginaDado);
 
-        foreach ($result as $dbPaginaImagem) {
-            $modelPaginaImagem = new PaginaImagem();
-            $modelPaginaImagem->FillByDB($dbPaginaImagem);
-            $this->paginaImagem[] = $modelPaginaImagem;
-        }
-        
-        $this->paginaString = array();
-        
-        $paginaStringRepository = new PaginaStringRepository();
-        $result = $paginaStringRepository->GetList($this->idPaginaDado);
+        if (array_key_exists("id_tipo_template_dado", $dbArray))
+            $this->idTipoTemplateDado = $dbArray['id_tipo_template_dado'];
 
-        foreach ($result as $dbPaginaString) {
-            $modelPaginaString = new PaginaString();
-            $modelPaginaString->FillByDB($dbPaginaString);
-            $this->paginaString[] = $modelPaginaString;
-        }
-        
-        $this->paginaTexto = array();
-        
-        $paginaTextoRepository = new PaginaTextoRepository();
-        $result = $paginaTextoRepository->GetList($this->idPaginaDado);
+        if (array_key_exists("chave_template_dado", $dbArray))
+            $this->chaveTemplateDado = $dbArray['chave_template_dado'];
 
-        foreach ($result as $dbPaginaTexto) {
-            $modelPaginaTexto = new PaginaTexto();
-            $modelPaginaTexto->FillByDB($dbPaginaTexto);
-            $this->paginaTexto[] = $modelPaginaTexto;
-        }*/
+        if (array_key_exists("desc_template_dado", $dbArray))
+            $this->descTemplateDado = $dbArray['desc_template_dado'];
+
+        if (array_key_exists("valor_pagina_dado", $dbArray))
+            $this->valorPaginaDado = $dbArray['valor_pagina_dado'];
     }
 }
