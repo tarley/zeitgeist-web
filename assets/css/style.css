@@ -44,14 +44,14 @@ html, body {
 
 .side-bar {
     position: fixed;
-    width: 25%;
+    width: 20%;
     top: 0;
     bottom: 0;
     margin-top: 90px;
 }
 
 .content {
-    margin-left: 25%;
+    margin-left: 20%;
     padding: 0 20px;
     margin-top: 90px;
 }
@@ -62,16 +62,32 @@ ul.side-bar {
 ul.side-bar li a {
     padding: 20px 20px;
     display: block;
+	color: #636363;
 }
 
 ul.side-bar li a:hover {
-    background-color: #c5cae9;
+    background-color: #a7a7a7;
+}
+
+.dropdown-content li>a {
+	color: #636363;
+}
+
+a.profile {
+	cursor: pointer;
 }
 
 .page-title {
 	padding: 20px 0 0;
 	margin: 0;
 	font-size: 2.5rem;
+	font-weight: 500;
+}
+
+.page-sub-title {
+	padding: 20px 0 0;
+	margin: 0;
+	font-size: 1.7rem;
 	font-weight: 500;
 }
 
@@ -125,7 +141,60 @@ ul.side-bar li a:hover {
 .template-form {
 	padding: 20px 50px;
 }
+
+.image-wrapper {
+	width: 150px;
+	height: 150px;
+	overflow: hidden;
+	margin-right: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid #BBB;
+}
+
+.image-wrapper img {
+	width: 100%;
+}
+
+.form-wrapper {
+	flex-grow: 1;
+}
+
+.form-wrapper .file-path-wrapper .file-path {
+	margin-bottom: 0;
+}
+
+.dp-flex {
+	display: flex;
+	align-items: center;
+}
 /* CSS Página - Fim */
+
+.page-error-404 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.page-error-404 .error-text h2 {
+	font-size: 12rem;
+	text-align: center;
+}
+
+.page-error-404 .error-text p {
+	font-size: 5rem;
+	margin: 0;
+}
+
+
+
+.login-container {
+	margin-right: 20%;
+	display: flex;
+	align-items: center;
+	padding-top: 50px;
+}
 
 /* ini new login*/
 
@@ -137,27 +206,27 @@ ul.side-bar li a:hover {
       /*flex-direction: column;*/
     /*}*/
 
-    main {
-      flex: 1 0 auto;
-    }
-
-    /*body {*/
-      /*background: #fff;*/
+    /*main {*/
+      /*flex: 1 0 auto;*/
     /*}*/
 
-    .input-field input[type=date]:focus + label,
-    .input-field input[type=text]:focus + label,
-    .input-field input[type=email]:focus + label,
-    .input-field input[type=password]:focus + label {
-      color: #e91e63;
-    }
+    /*!*body {*!*/
+      /*!*background: #fff;*!*/
+    /*!*}*!*/
 
-    .input-field input[type=date]:focus,
-    .input-field input[type=text]:focus,
-    .input-field input[type=email]:focus,
-    .input-field input[type=password]:focus {
-      border-bottom: 2px solid #e91e63;
-      box-shadow: none;
-    }
+    /*.input-field input[type=date]:focus + label,*/
+    /*.input-field input[type=text]:focus + label,*/
+    /*.input-field input[type=email]:focus + label,*/
+    /*.input-field input[type=password]:focus + label {*/
+      /*color: #e91e63;*/
+    /*}*/
+
+    /*.input-field input[type=date]:focus,*/
+    /*.input-field input[type=text]:focus,*/
+    /*.input-field input[type=email]:focus,*/
+    /*.input-field input[type=password]:focus {*/
+      /*border-bottom: 2px solid #e91e63;*/
+      /*box-shadow: none;*/
+    /*}*/
 
 /*end new login*/

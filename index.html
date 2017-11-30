@@ -11,26 +11,23 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="assets/materialize/css/materialize.min.css" media="screen,projection" />
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/team.css">
 </head>
 
 <body ng-app="ZeitGeist" ng-controller="MainCtrl as main">
-    <div class="header indigo lighten-1 valign-wrapper">
+    <div class="header grey darken-1 valign-wrapper">
         <img class="logo" src="assets/images/logo-zeitgeist.png" />
         <div class="right-nav">
             <div ng-show="globals.currentUser" class="user">
                 <ul id="dropUser" class="dropdown-content">
                     <li><a ng-click="logout()">Sair</a></li>
                 </ul>
-                <a class="profile dropdown-button" href="#" data-activates="dropUser">{{globals.currentUser.username}}<i class="material-icons right">arrow_drop_down</i></a>
+                <a class="profile dropdown-button" data-activates="dropUser">{{globals.currentUser.username}}<i class="material-icons right">arrow_drop_down</i></a>
             </div>
         </div>
     </div>
 
-
-    <!--<div ng-show="globals.currentUser" class="side-bar indigo lighten-5 center-align">-->
-    <div class="side-bar indigo lighten-5 center-align">
-
-
+    <div ng-show="globals.currentUser" class="side-bar grey lighten-1 center-align">
         <ul class="side-bar">
             <li>
                 <a href="#!/">
@@ -68,6 +65,7 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="assets/materialize/js/materialize.min.js"></script>
     <script type="text/javascript" src="assets/js/custom/jquery.mask.min.js"></script>
+    <script type="text/javascript" src="assets/js/toastr.js"></script>
 
 
     <script src="assets/js/custom/custom.js"></script>

@@ -55,7 +55,7 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
         })
 
         .when('/contato', {
-            templateUrl: 'contato.php',
+            templateUrl: 'view/contato.html',
             controller: 'MainCtrl'
         })
 
@@ -70,7 +70,8 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
         })
 
         .otherwise({
-            redirectTo: "/login.html"
+            //redirectTo: "/login.html"
+			templateUrl: 'view/page-404.html'
         });
 
     $locationProvider.html5Mode(false);
@@ -87,13 +88,13 @@ app.run(['$rootScope', '$location', '$cookies', '$http', function($rootScope, $l
 
         instance = next.__proto__;
 
-        // if(!instance.open) {
-        //     if (!$rootScope.globals.currentUser) {
-        //         $location.path('/login');
-        //     } else if (instance.admin && $rootScope.globals.currentUser.role != '1') {
-        //         $location.path('/');
-        //     }
-        // }
+        if(!instance.open) {
+            if (!$rootScope.globals.currentUser) {
+                $location.path('/login');
+            } else if (instance.admin && $rootScope.globals.currentUser.role != '1') {
+                $location.path('/');
+            }
+        }
     });
 }]);
 

@@ -12,9 +12,9 @@ define('LOG_DIR', $_SERVER['DOCUMENT_ROOT'] . CONTEXT_NAME . '_log/');
 //define('DBNAME', 'tarley_zeitgeist');
 
 
-define('SERVERNAME', "jcheringer.ddns.net");
-define('USERNAME', 'zeitgeist');
-define('PASSWORD', 'zeit123');
+define('SERVERNAME', "localhost");
+define('USERNAME', 'root');
+define('PASSWORD', '');
 define('DBNAME', 'tarley_zeitgeist');
 
 define('ENV', 'Dev');

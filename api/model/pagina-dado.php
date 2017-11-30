@@ -20,39 +20,12 @@ class PaginaDado
 
         if (property_exists($obj, 'idTemplateDado'))
             $this->idTemplateDado = $obj->idTemplateDado;
-            
-        /*if (property_exists($obj, 'paginaImagem')) {
-            $this->paginaImagem = array();
 
-            foreach ($obj->paginaImagem as $paginaImagem) {
-                $modelPaginaImagem = new PaginaImagem();
-                $modelPaginaImagem->FillByObject($paginaImagem);
+		if (property_exists($obj, 'idTipoTemplateDado'))
+			$this->idTipoTemplateDado = $obj->idTipoTemplateDado;
 
-                $this->paginaImagem[] = $modelPaginaImagem;
-            }
-        }
-        
-        if (property_exists($obj, 'paginaString')) {
-            $this->paginaString = array();
-
-            foreach ($obj->paginaString as $paginaString) {
-                $modelPaginaString = new PaginaString();
-                $modelPaginaString->FillByObject($paginaString);
-
-                $this->paginaString[] = $modelPaginaString;
-            }
-        }
-        
-        if (property_exists($obj, 'paginaTexto')) {
-            $this->paginaTexto = array();
-
-            foreach ($obj->paginaTexto as $paginaTexto) {
-                $modelPaginaTexto = new PaginaTexto();
-                $modelPaginaTexto->FillByObject($paginaTexto);
-
-                $this->paginaTexto[] = $modelPaginaTexto;
-            }
-        }*/
+		if (property_exists($obj, 'valorPaginaDado'))
+			$this->valorPaginaDado = $obj->valorPaginaDado;
     }
 
     function FillByDB($dbArray)
@@ -75,7 +48,8 @@ class PaginaDado
         if (array_key_exists("desc_template_dado", $dbArray))
             $this->descTemplateDado = $dbArray['desc_template_dado'];
 
-        if (array_key_exists("valor_pagina_dado", $dbArray))
-            $this->valorPaginaDado = $dbArray['valor_pagina_dado'];
+        if (array_key_exists("valor_pagina_dado", $dbArray)) {
+			$this->valorPaginaDado = $dbArray['valor_pagina_dado'];
+		}
     }
 }

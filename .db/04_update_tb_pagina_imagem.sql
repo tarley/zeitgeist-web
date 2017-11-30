@@ -1,0 +1,1 @@
+UPDATE tb_pagina_imagem SET valor_pagina_imagem_64 = CONCAT('data:image/', tipo, ';base64, ', TO_BASE64(valor_pagina_imagem));

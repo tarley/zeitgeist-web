@@ -11,6 +11,7 @@ class Pagina
     var $dadosTemplate;
     var $primeiraPagina;
     var $ultimaPagina;
+	var $newIdTemplate;
 
     function FillByObject($obj)
     {
@@ -32,24 +33,19 @@ class Pagina
         if (property_exists($obj, 'paginaDado')) {
             $this->paginaDado = array();
 
-            foreach ($obj->paginaDado as $paginaDado) {
-                $modelPaginaDado = new PaginaDado();
-                $modelPaginaDado->FillByObject($paginaDado);
+			if ($obj->paginaDado && sizeof($obj->paginaDado) > 0) {
+				foreach ($obj->paginaDado as $paginaDado) {
+					$modelPaginaDado = new PaginaDado();
+					$modelPaginaDado->FillByObject($paginaDado);
+					$modelPaginaDado->idPagina = $this->idPagina;
 
-                $this->paginaDado[] = $modelPaginaDado;
-            }
-        }
-        
-        if (property_exists($obj, 'dadosTemplate')) {
-            $this->dadosTemplate = array();
+					$this->paginaDado[] = $modelPaginaDado;
+				}
+			}
+		}
 
-            foreach ($obj->dadosTemplate as $dadosTemplate) {
-                $modelDadosTemplate = new DadosTemplate();
-                $modelDadosTemplate->FillByObject($paginaDado);
-
-                $this->dadosTemplate[] = $modelDadosTemplate;
-            }
-        }
+		if (property_exists($obj, 'newIdTemplate'))
+			$this->newIdTemplate = $obj->newIdTemplate;
     }
 
     function FillByDB($dbArray)
@@ -83,19 +79,8 @@ class Pagina
             foreach ($dbArray["pagina_dado"] as $dbPaginaDado) {
                 $modelPaginaDado = new PaginaDado();
                 $modelPaginaDado->FillByDB($dbPaginaDado);
-                $this->paginaDado[] = $modelPaginaDado;
+                $this->paginaDado[$modelPaginaDado->idTemplateDado] = $modelPaginaDado;
             }
         }
-
-//        $this->dadosTemplate = array();
-//
-//        $dadosTemplateRepository = new DadosTemplateRepository();
-//        $result = $dadosTemplateRepository->GetList($this->idTemplate);
-//
-//        foreach ($result as $dbDadosTemplate) {
-//            $modelDadosTemplate = new DadosTemplate();
-//            $modelDadosTemplate->FillByDB($dbDadosTemplate);
-//            $this->dadosTemplate[] = $modelDadosTemplate;
-//        }
     }
 }

@@ -41,40 +41,54 @@ class PaginaImagemRepository extends BaseRepository
         return $result;
     }
 
-    function Insert(PaginaImagem &$paginaImagem)
+    function Insert(PaginaDado &$paginaDado)
     {
         $conn = $this->db->getConnection();
 
         $sql = 'INSERT INTO tb_pagina_imagem (id_pagina_dado, valor_pagina_imagem) VALUES (:idPaginaDado, :valorPaginaImagem)';
 
         $stm = $conn->prepare($sql);
-        $stm->bindParam(':idPaginaDado', $pagina->idPaginaDado);
-        $stm->bindParam(':valorPaginaImagem', base64_decode($pagina->valorPaginaImagem));
+        $stm->bindParam(':idPaginaDado', $paginaDado->idPaginaDado);
+        $stm->bindParam(':valorPaginaImagem', $paginaDado->valorPaginaDado);
         $stm->execute();
-
-        $pagina->idPaginaImagem = $conn->lastInsertId();
 
         return $stm->rowCount() > 0;
     }
 
-    function Update(PaginaImagem &$paginaImagem)
+    function Update(PaginaDado &$paginaDado)
     {
         $conn = $this->db->getConnection();
 
         $sql = 'UPDATE 
                     tb_pagina_imagem
                 SET 
-                    valor_pagina_imagem = :valorPaginaImagem
+                    valor_pagina_imagem_64 = :valorPaginaImagem
                 WHERE 
-                    id_pagina_imagem = :idPaginaImagem';
+                    id_pagina_dado = :idPaginaImagem';
 
         $stm = $conn->prepare($sql);
-        $stm->bindParam(':valorPaginaImagem', base64_decode($paginaImagem->valorPaginaImagem));
-        $stm->bindParam(':idPaginaImagem', $paginaImagem->idPaginaImagem);
+        $stm->bindParam(':valorPaginaImagem', $paginaDado->valorPaginaDado);
+        $stm->bindParam(':idPaginaImagem', $paginaDado->idPaginaDado);
         $stm->execute();
 
         return $stm->rowCount() > 0;
     }
+
+	function InsertOrUpdate(PaginaDado &$paginaDado) {
+		$conn = $this->db->getConnection();
+
+		$sql = 'SELECT * FROM tb_pagina_imagem WHERE id_pagina_dado = :idPaginaDado ';
+
+		$stm = $conn->prepare($sql);
+		$stm->bindParam(':idPaginaDado', $paginaDado->idPaginaDado);
+		$stm->execute();
+
+		if ($stm->rowCount() > 0) {
+			$this->Update($paginaDado);
+		} else {
+			$this->Insert($paginaDado);
+		}
+	}
     
     function Delete($idPaginaImagem)
     {

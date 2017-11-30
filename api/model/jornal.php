@@ -47,12 +47,14 @@ class Jornal
         if (property_exists($obj, 'paginas')) {
             $this->paginas = array();
 
-            foreach ($obj->paginas as $pagina) {
-                $modelPagina = new Pagina();
-                $modelPagina->FillByObject($pagina);
+			if ($obj->paginas != null && sizeof($obj->paginas) > 0) {
+				foreach ($obj->paginas as $pagina) {
+					$modelPagina = new Pagina();
+					$modelPagina->FillByObject($pagina);
 
-                $this->paginas[] = $modelPagina;
-            }
+					$this->paginas[] = $modelPagina;
+				}
+			}
         }
     }
 
@@ -100,17 +102,17 @@ class Jornal
             $this->descSituacao = $dbArray['desc_situacao'];
             
         if (array_key_exists("valor_pagina_imagem", $dbArray))
-            $this->valorPaginaImagem = base64_encode($dbArray['valor_pagina_imagem']);  
+            $this->valorPaginaImagem = $dbArray['valor_pagina_imagem'];
             
-        $this->paginas = array();
-        
-        $paginaRepository = new PaginaRepository();
-        $result = $paginaRepository->GetList($this->idJornal);
-
-        foreach ($result as $dbPagina) {
-            $modelPagina = new Pagina();
-            $modelPagina->FillByDB($dbPagina);
-            $this->paginas[] = $modelPagina;
-        }
+//        $this->paginas = array();
+//
+//        $paginaRepository = new PaginaRepository();
+//        $result = $paginaRepository->GetList($this->idJornal);
+//
+//        foreach ($result as $dbPagina) {
+//            $modelPagina = new Pagina();
+//            $modelPagina->FillByDB($dbPagina);
+//            $this->paginas[] = $modelPagina;
+//        }
     }
 }

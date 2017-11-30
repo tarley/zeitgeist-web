@@ -1,7 +1,7 @@
 <div>
     <div class="page-title">Usuário</div>
     <hr>
-    <a class="btn waves-effect waves-light indigo" style="margin-bottom: 10px" ng-href="/#!/usuario/0">Novo</a>
+    <a class="btn waves-effect waves-light grey darken-3" style="margin-bottom: 10px" ng-href="#!/usuario/0">Novo</a>
     <table class="bordered">
         <tr>
             <th class="text-center col-sm-1 col-md 1">Código</th>
@@ -14,9 +14,9 @@
             <td>{{usuario.nomUsuario}}</td>
             <td>{{usuario.emailUsuario}}</td>
             <td class="text-center">
-                <a ng-href="/#!/usuario/{{usuario.idUsuario}}" class="btn btn-default btn-sm btn-icon icon-left">
-                    <i class="entypo-pencil"></i>Editar
-                </a>
+				<a ng-href="#!/usuario/{{usuario.idUsuario}}" class="btn grey darken-3 waves-effect waves-light">Editar
+					<i class="material-icons left">create</i>
+				</a>
             </td>
         </tr>
     </table>

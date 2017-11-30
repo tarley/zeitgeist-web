@@ -7,7 +7,7 @@ var app = angular.module('ZeitGeistModule')
         
         $scope.login = function() {
             login();
-        }
+        };
 
         function login() {
             AuthenticationService.ClearCredentials();
@@ -18,7 +18,7 @@ var app = angular.module('ZeitGeistModule')
 
                 if (!result.hasError) {
                     AuthenticationService.SetCredentials(result.data.id_usuario, result.data.nom_usuario, $scope.usuario.senha, $scope.usuario.login, result.data.id_perfil_usuario);
-                    window.location = "/";
+					$location.path('jornal/');
                 }
             });
         }
