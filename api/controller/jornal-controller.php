@@ -13,6 +13,9 @@ class JornalController extends BaseController
                 case "listToApp":
                     $this->ActionGetListToApp();
                     break;
+                case "listCompleteToApp":
+                    $this->ActionGetListCompleteToApp();
+                    break;
                 case "insert":
                     $data = file_get_contents("php://input");
                     $this->ActionInsert($data);
@@ -195,6 +198,58 @@ class JornalController extends BaseController
         }*/
 
         ToWrappedJson($jornal);
+    }
+    
+    function ActionGetListCompleteToApp()
+    {
+        $jornalRepository = new JornalRepository();
+        $paginaRepository = new PaginaRepository();
+        $paginaDadoRepository = new PaginaDadoRepository();
+        
+        $paginaStringRepository = new PaginaStringRepository();
+        $paginaTextoRepository = new PaginaTextoRepository();
+        $paginaImagemRepository = new PaginaImagemRepository();
+        
+        $listaJornal['jornal'] = $jornalRepository->GetEdicoesApp();
+        
+         foreach($listaJornal['jornal'] as $key1 => $value1) {
+            $listaJornal['jornal'][$key1]['paginas'] = $paginaRepository->GetList($value1['id_jornal']);
+            
+            foreach($listaJornal['jornal'][$key1]['paginas'] as $key => $value) {
+               
+                $dadosPagina = $paginaDadoRepository->GetList($value['id_pagina']);
+                
+                $metadados = array();
+                
+                foreach($dadosPagina as $dado) {
+                    if($dado['id_tipo_template_dado'] == 1) {
+                        $string = $paginaStringRepository->Get($dado['id_pagina_dado']);
+                        $valor = $string['valor_pagina_string'];
+                    } elseif($dado['id_tipo_template_dado'] == 2) {
+                        $texto = $paginaTextoRepository->Get($dado['id_pagina_dado']);
+                        $valor = $texto['valor_pagina_texto'];
+                    } elseif($dado['id_tipo_template_dado'] == 3) {
+                        $imagem = $paginaImagemRepository->Get($dado['id_pagina_dado']);
+                        
+                        $valor = 'data:image/' . $imagem['tipo'] . ';base64, ' . 
+                            base64_encode($imagem['valor_pagina_imagem']);
+                    } else
+                        $valor = null;
+                         
+                    $metadados[$dado['chave_template_dado']] = $valor;
+                }
+                
+                $listaJornal['jornal'][$key1]['paginas'][$key]['metadados'] = $metadados;
+            }
+        }
+
+        /*foreach ($result as $dbJornal) {
+            $modelJornal = new Jornal();
+            $modelJornal->FillByDB($dbJornal);
+            $listJornal[] = $modelJornal;
+        }*/
+
+        ToWrappedJson($listaJornal);
     }
             //CREATE UPDATE
             //IN PROGRESS.....

@@ -133,6 +133,29 @@ class JornalRepository extends BaseRepository
         $stm->execute();
         return $stm->fetch(PDO::FETCH_ASSOC);
     }
+    
+    function GetEdicoesApp()
+    {
+        $conn = $this->db->getConnection();
+
+        $sql = '
+            SELECT j.id_jornal,
+                   j.num_edicao_jornal,
+                   j.nom_titulo_jornal,
+                   j.dta_publicacao_jornal,
+                   j.dta_ultima_atualizacao_jornal,
+                   u.nom_usuario,
+                   u.email_usuario
+              FROM tb_jornal j 
+        INNER JOIN tb_usuario u ON u.id_usuario = j.id_usuario';
+
+
+        $stm = $conn->prepare($sql);
+        $stm->execute();
+        $result = $stm->fetchAll(PDO::FETCH_ASSOC);
+        
+        return $result;
+    }
  
  /*    function Update(Jornal &$jornal)*/
     function Update(Jornal &$jornal)
