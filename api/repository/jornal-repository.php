@@ -61,14 +61,13 @@ class JornalRepository extends BaseRepository
 
         $sql = 'SELECT 
                id_jornal,S.id_situacao,S.desc_situacao,num_edicao_jornal,nom_titulo_jornal, dta_publicacao_jornal, date_format(dta_publicacao_jornal, "%m/%Y") AS dta_publicacao_jornal_reduzida, "%d/%m/%Y",dta_ultima_atualizacao_jornal,
-               (SELECT pi.valor_pagina_imagem
-            		FROM tb_pagina_imagem pi 
+            	(SELECT pi.valor_pagina_imagem_64 FROM tb_pagina_imagem pi
             		INNER JOIN tb_pagina_dado pd ON (pi.id_pagina_dado = pd.id_pagina_dado)
             		INNER JOIN tb_pagina p ON (pd.id_pagina = p.id_pagina)
             		INNER JOIN tb_jornal jn ON (p.id_jornal = jn.id_jornal)
-            		WHERE 
-            		    p.num_pagina = 1 AND 
-            		    jn.id_jornal = J.id_jornal
+            		WHERE
+            		    p.num_pagina = 1 AND
+                        jn.id_jornal = J.id_jornal
             	) as valor_pagina_imagem
             FROM 
                 tb_jornal J INNER JOIN tb_situacao S ON(J.id_situacao=S.id_situacao)
@@ -77,10 +76,11 @@ class JornalRepository extends BaseRepository
             ORDER BY 
                 num_edicao_jornal DESC';
 
-      $stm = $conn->prepare($sql);
-      $stm->bindParam(':id_situacao', $id_situacao);
-        $stm->execute();
-        $result = $stm->fetchAll(PDO::FETCH_ASSOC);
+
+		$stm = $conn->prepare($sql);
+		$stm->bindParam(':id_situacao', $id_situacao);
+		$stm->execute();
+		$result = $stm->fetchAll(PDO::FETCH_ASSOC);
         
         return $result;
     }

@@ -37,35 +37,41 @@
         </div>
         <div class="form-group">
             <div class="col-sm-offset-4 col-md-offset-4 col-sm-3 col-md-3">
-                <button type="submit" class="btn btn-blue">Salvar</button>
-                <button type="button" class="btn btn-default" ng-click="go('jornal/')">Voltar</button>
+                <button type="submit" class="btn grey darken-3">Salvar</button>
+                <button type="button" class="btn grey lighten-1" ng-click="go('jornal/')">Voltar</button>
             </div>
         </div>
         <div ng-show="isEdit">
-            <div class="page-title">Páginas</div>
+            <div class="page-sub-title">Páginas</div>
             <hr>
-            <a class="btn btn-default" style="margin-bottom: 10px" ng-click="goPagina()">Nova</a>
+            <a class="btn grey darken-3" style="margin-bottom: 10px" ng-click="goPagina()">Nova</a>
             <table class="bordered">
                 <tr>
-                    <th class="text-center col-sm-1 col-md-1">Número da página</th>
-                    <th class="col-sm-5 col-md-5">Nome</th>
-                    <th class="col-sm-1 col-md-1">Reordenar</th>
-                    <th class="col-sm-3 col-md-3"></th>
+                    <th style="width: 5%">#</th>
+                    <th style="width: 45%">Nome</th>
+                    <th style="width: 10%">Reordenar</th>
+                    <th style="width: 20%"></th>
+                    <th style="width: 20%"></th>
                 </tr>
                 <tr ng-repeat="pagina in paginaList">
                     <td class="text-center">{{pagina.numPagina}}</td>
                     <td>{{pagina.nomPagina}}</td>
                     <td class="text-center">
                         <div>
-                           <i class="small material-icons" title="Mover para cima" ng-hide="{{pagina.primeiraPagina}}" ng-click="subirPagina(pagina.idPagina)">arrow_drop_up</i>
-                           <i class="small material-icons" title="Mover para baixo" ng-hide="{{pagina.ultimaPagina}}" ng-click="descerPagina(pagina.idPagina)">arrow_drop_down</i>
+                           <i class="small material-icons action" title="Mover para cima" ng-hide="{{pagina.primeiraPagina}}" ng-click="subirPagina(pagina.idPagina)">arrow_drop_up</i>
+                           <i class="small material-icons action" title="Mover para baixo" ng-hide="{{pagina.ultimaPagina}}" ng-click="descerPagina(pagina.idPagina)">arrow_drop_down</i>
                         </div>
                     </td>
                     <td class="text-center">
-                        <a ng-href="jornal/{{jornal.idJornal}}/pagina/{{pagina.idPagina}}" class="btn btn-default btn-sm btn-icon icon-left">
-                            <i class="entypo-pencil"></i>Editar
-                        </a>
+						<a ng-href="#!/jornal/{{jornal.idJornal}}/pagina/{{pagina.idPagina}}" class="btn grey darken-3 waves-effect waves-light">Editar
+							<i class="material-icons left">create</i>
+						</a>
                     </td>
+					<td class="text-center">
+						<a class="btn red waves-effect waves-light" ng-click="excluirPagina(pagina)">Excluir
+							<i class="material-icons left">delete</i>
+						</a>
+					</td>
                 </tr>
             </table>
         </div>

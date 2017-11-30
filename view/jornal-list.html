@@ -11,10 +11,11 @@
 			</select>
 		</div>
     </div>
+	<hr>
 
     <div class="valign-wrapper" class="col s2">
         <div class="fixed-action-btn">
-            <a class="btn-floating btn-large waves-effect waves-light red" ng-href="jornal/0" ><i class="material-icons">add</i></a>
+            <a class="btn-floating btn-large waves-effect waves-light grey darken-3" ng-href="#!/jornal/0" ><i class="material-icons">add</i></a>
         </div>
     </div>
 
@@ -22,7 +23,7 @@
         <div class="col l4 m6" ng-repeat="j in jornalList">
             <div class="card horizontal">
                 <div ng-if="j.valorPaginaImagem != '' " class="card-image">
-                    <img src='data:image/jpg;base64,{{j.valorPaginaImagem}}' />
+                    <img src='{{j.valorPaginaImagem}}' />
                 </div>
                 <div ng-if="j.valorPaginaImagem == '' " class="card-image">
                     <img class="tamanhoImagem" src= '../assets/images/sem-imagem.png' ng-click="goJornal(j.idJornal)" />

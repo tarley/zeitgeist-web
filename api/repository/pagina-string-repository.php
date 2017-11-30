@@ -8,11 +8,11 @@ class PaginaStringRepository extends BaseRepository
         $conn = $this->db->getConnection();
 
         $sql = 'SELECT 
-                id_pagina_string, id_pagina_dado, valor_pagina_string
+                id_pagina_dado, valor_pagina_string
             FROM 
                 tb_pagina_string
             WHERE 
-                id_pagina_String = :id_pagina_String';
+                id_pagina_dado = :idPaginaDado';
 
         $stm = $conn->prepare($sql);
         $stm->bindParam(':id_pagina_string', $idPaginaString);
@@ -41,23 +41,21 @@ class PaginaStringRepository extends BaseRepository
         return $result;
     }
 
-    function Insert(PaginaString &$paginaString)
+    function Insert(PaginaDado &$paginaDado)
     {
         $conn = $this->db->getConnection();
 
         $sql = 'INSERT INTO tb_pagina_string (id_pagina_dado, valor_pagina_string) VALUES (:idPaginaDado, :valorPaginaString)';
 
         $stm = $conn->prepare($sql);
-        $stm->bindParam(':idPaginaDado', $pagina->idPaginaDado);
-        $stm->bindParam(':valorPaginaString', $pagina->valorPaginaString);
+        $stm->bindParam(':idPaginaDado', $paginaDado->idPaginaDado);
+        $stm->bindParam(':valorPaginaString', $paginaDado->valorPaginaDado);
         $stm->execute();
-
-        $pagina->idPaginaString = $conn->lastInsertId();
 
         return $stm->rowCount() > 0;
     }
 
-    function Update(PaginaString &$paginaString)
+    function Update(PaginaDado &$paginaDado)
     {
         $conn = $this->db->getConnection();
 
@@ -66,25 +64,40 @@ class PaginaStringRepository extends BaseRepository
                 SET 
                     valor_pagina_string = :valorPaginaString
                 WHERE 
-                    id_pagina_string = :idPaginaString';
+                    id_pagina_dado = :idPaginaDado';
 
         $stm = $conn->prepare($sql);
-        $stm->bindParam(':valorPaginaString', $paginaString->valorPaginaString);
-        $stm->bindParam(':idPaginaString', $paginaString->idPaginaString);
+        $stm->bindParam(':valorPaginaString', $paginaDado->valorPaginaDado);
+        $stm->bindParam(':idPaginaDado', $paginaDado->idPaginaDado);
         $stm->execute();
 
         return $stm->rowCount() > 0;
     }
+
+    function InsertOrUpdate(PaginaDado &$paginaDado) {
+		$conn = $this->db->getConnection();
+
+		$sql = 'SELECT * FROM tb_pagina_string WHERE id_pagina_dado = :idPaginaDado ';
+
+		$stm = $conn->prepare($sql);
+		$stm->bindParam(':idPaginaDado', $paginaDado->idPaginaDado);
+		$stm->execute();
+
+		if ($stm->rowCount() > 0) {
+			$this->Update($paginaDado);
+		} else {
+			$this->Insert($paginaDado);
+		}
+	}
     
     function Delete($idPaginaString)
     {
         $conn = $this->db->getConnection();
 
-        $sql = 'DELETE FROM tb_pagina_string
-                WHERE id_pagina_string = :idPaginaString';
+        $sql = 'DELETE FROM tb_pagina_string WHERE id_pagina_dado = :idPaginaDado';
 
         $stm = $conn->prepare($sql);
-        $stm->bindParam(':idPaginaString', $idPaginaString);
+        $stm->bindParam(':idPaginaDado', $idPaginaString);
         $stm->execute();
 
         return $stm->rowCount() > 0;

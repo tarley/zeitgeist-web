@@ -14,13 +14,13 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
     $routeProvider
 
         .when('/usuario', {
-            templateUrl: '/view/usuario-list.html',
+            templateUrl: 'view/usuario-list.html',
             controller: 'UsuarioCtrl',
             admin: true
         })
 
         .when('/usuario/:idUsuario', {
-            templateUrl: '/view/usuario-edit.html',
+            templateUrl: 'view/usuario-edit.html',
             controller: 'UsuarioCtrl',
             admin: true
         })
@@ -30,47 +30,48 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
         })
 
         .when('/jornal', {
-            templateUrl: '/view/jornal-list.html',
+            templateUrl: 'view/jornal-list.html',
             controller: 'JornalCtrl'
         })
 
         .when('/jornal-view/:codJornal', {
-            templateUrl: '/view/jornal-view.html',
+            templateUrl: 'view/jornal-view.html',
             controller: 'PaginaPreviewCtrl'
         })
 
         .when('/jornal/:codJornal', {
-            templateUrl: '/view/jornal-edit.html',
+            templateUrl: 'view/jornal-edit.html',
             controller: 'JornalCtrl'
         })
 
         .when('/jornal/:codJornal/pagina/:codPagina', {
-            templateUrl: '/view/pagina-edit.html',
+            templateUrl: 'view/pagina-edit.html',
             controller: 'PaginaCtrl'
         })
 
         .when('/team', {
-            templateUrl: '/team.html',
+            templateUrl: 'view/team.html',
             controller: 'MainCtrl'
         })
 
         .when('/contato', {
-            templateUrl: '/contato.php',
+            templateUrl: 'view/contato.html',
             controller: 'MainCtrl'
         })
 
         .when('/login', {
-            templateUrl: '/view/login.html',
+            templateUrl: 'view/login.html',
             controller: 'MainCtrl',
             open: true
         })
 
         .when('/page-404', {
-            templateUrl: '/view/page-404.html'
+            templateUrl: 'view/page-404.html'
         })
 
         .otherwise({
-            redirectTo: "/login.html"
+            //redirectTo: "/login.html"
+			templateUrl: 'view/page-404.html'
         });
 
     $locationProvider.html5Mode(false);

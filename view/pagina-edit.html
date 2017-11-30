@@ -22,22 +22,30 @@
 		</div>
 </div>
 <div class="template-form" ng-show="selectedTemplate.idTemplate != undefined">
-	<div ng-repeat="dado in selectedTemplate.dadosTemplate">
-		<div class="input-field col s12" ng-if="dado.idTipoTemplateDado == 1">
-			<input id="dado-{{dado.idTemplateDado}}" type="text" class="validate">
-			<label for="dado-{{dado.idTemplateDado}}">{{dado.descTemplateDado}}</label>
+	<div ng-repeat="dadoTemplate in selectedTemplate.dadosTemplate">
+		<div class="input-field col s12" ng-if="dadoTemplate.idTipoTemplateDado == 1">
+			<input type="text" class="validate" ng-model="dado[dadoTemplate.idTemplateDado].valorPaginaDado">
+			<label ng-class="{ 'active' : dado[dadoTemplate.idTemplateDado].valorPaginaDado != '' }">{{dadoTemplate.descTemplateDado}}</label>
 		</div>
-		<div class="input-field col s12" ng-if="dado.idTipoTemplateDado == 2">
-			<textarea id="textarea1" class="materialize-textarea"></textarea>
-			<label for="textarea1">{{dado.descTemplateDado}}</label>
+		<div class="input-field col s12" ng-if="dadoTemplate.idTipoTemplateDado == 2">
+			<textarea class="materialize-textarea" ng-model="dado[dadoTemplate.idTemplateDado].valorPaginaDado"></textarea>
+			<label ng-class="{ 'active' : dado[dadoTemplate.idTemplateDado].valorPaginaDado != '' }">{{dadoTemplate.descTemplateDado}}</label>
 		</div>
-		<div class="file-field input-field" ng-if="dado.idTipoTemplateDado == 3">
-			<div class="btn">
-				<span>{{dado.descTemplateDado}}</span>
-				<input type="file" required>
+		<div class="file-field input-field dp-flex" ng-if="dadoTemplate.idTipoTemplateDado == 3">
+			<div class="image-wrapper">
+				<div ng-if="dado[dadoTemplate.idTemplateDado].valorPaginaDado == ''">
+					Sem Imagem
+				</div>
+				<img src='{{dado[dadoTemplate.idTemplateDado].valorPaginaDado}}' ng-if="dado[dadoTemplate.idTemplateDado].valorPaginaDado != ''" />
 			</div>
-			<div class="file-path-wrapper">
-				<input class="file-path validate" type="text">
+			<div class="form-wrapper">
+				<div class="btn grey darken-3">
+					<span>{{dadoTemplate.descTemplateDado}}</span>
+					<input type="file" file-input="dado[dadoTemplate.idTemplateDado].valorPaginaDado">
+				</div>
+				<div class="file-path-wrapper">
+					<input class="file-path validate" type="text">
+				</div>
 			</div>
 		</div>
 	</div>
@@ -46,8 +54,8 @@
 <div id="divButtonSaveBack">
     <div class="form-group">
         <div class="col-sm-offset-4 col-md-offset-4 col-sm-3 col-md-3">
-            <button type="submit" class="btn btn-blue" ng-click="save()">Salvar</button>
-            <button type="button" class="btn btn-default" ng-click="voltar()">Voltar</button>
+            <button type="submit" class="btn grey darken-3" ng-click="save()">Salvar</button>
+            <button type="button" class="btn grey lighten-1" ng-click="voltar()">Voltar</button>
         </div>
     </div>
 </div>

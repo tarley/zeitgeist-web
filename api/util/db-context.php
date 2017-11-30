@@ -6,24 +6,31 @@ class DBContext
 
     function __construct()
     {
+        $this->startConnection();
+    }
+
+    public function startConnection() {
         try {
             $options = array(
                 PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES UTF8',
                 PDO::ATTR_PERSISTENT => TRUE
             );
 
-            $c = new PDO("mysql:host=" . SERVERNAME . ";dbname=" . DBNAME . ";charset=utf8;", USERNAME, PASSWORD, $options);
-            $c->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-            $c->exec("set names utf8");
-            $this->conn = $c;
+			$this->conn = new PDO("mysql:host=" . SERVERNAME . ";dbname=" . DBNAME . ";charset=utf8;", USERNAME, PASSWORD, $options);
+			$this->conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+			//$this->conn->exec("set names utf8");
         } catch (PDOException $e) {
-            $conn = NULL;
+			$this->conn = null;
             Log::Error($e->getMessage());
         }
     }
 
     public function getConnection()
     {
+        if ($this->conn == null) {
+            $this->startConnection();
+        }
+
         return $this->conn;
     }
 

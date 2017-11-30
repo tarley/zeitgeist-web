@@ -23,8 +23,8 @@ class PaginaController extends BaseController
                     $this->ActionUpdate($data);
                     break;
                 case "delete":
-                    $idPagina = isset($_GET['key']) ? $_GET['key'] : null;
-                    $this->ActionDelete($idPagina);
+					$data = file_get_contents("php://input");
+                    $this->ActionDelete($data);
                     break;
                 default:
                     ToErrorJson("Action not found");
@@ -100,14 +100,28 @@ class PaginaController extends BaseController
         ToWrappedJson($pagina, "Dados atualizados com sucesso");
     }
     
-    function ActionDelete($idPagina)
+    function ActionDelete($data)
     {
+		if (!$data) {
+			throw new Warning("Os dados enviados são inválidos");
+		}
+
+		$obj = json_decode($data);
+
+		$pagina = new Pagina();
+		$pagina->FillByObject($obj);
+
         $paginaRepository = new PaginaRepository();
-        $result = $paginaRepository->Delete($idPagina);
+        $result = $paginaRepository->Delete($pagina);
 
-        if(!$result)
-            throw new Warning("Falha ao excluir página.");
+		$listPaginas = array();
 
-        ToWrappedJson("{}", "Página excluido com sucesso");
+		foreach ($result as $dbPagina) {
+			$modelPagina = new Pagina();
+			$modelPagina->FillByDB($dbPagina);
+			$listPaginas[] = $modelPagina;
+		}
+
+		ToWrappedJson($listPaginas, "Página excluida com sucesso");
     }
 }

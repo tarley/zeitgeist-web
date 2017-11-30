@@ -158,4 +158,21 @@ var app = angular.module('ZeitGeistModule')
             });
         };
         
+        $scope.excluirPagina = function (pagina) {
+			if (confirm("Tem certeza que deseja excluir esta página?")) {
+				$http.post('api/pagina/delete/', pagina).then(function(response) {
+					var result = response.data;
+					$scope.hasError = result.hasError;
+					$scope.msg = result.msg;
+
+					if (!$scope.hasError) {
+						$scope.paginaList = result.data;
+						toastr.success($scope.msg, { positionClass: "toast-top-center"});
+					} else {
+						toastr.error($scope.msg, { positionClass: "toast-top-center"});
+					}
+				});
+			}
+		};
+        
     });

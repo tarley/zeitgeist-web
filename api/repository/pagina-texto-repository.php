@@ -41,23 +41,21 @@ class PaginaTextoRepository extends BaseRepository
         return $result;
     }
 
-    function Insert(PaginaTexto &$paginaTexto)
+    function Insert(PaginaDado &$paginaDado)
     {
         $conn = $this->db->getConnection();
 
         $sql = 'INSERT INTO tb_pagina_texto (id_pagina_dado, valor_pagina_texto) VALUES (:idPaginaDado, :valorPaginaTexto)';
 
         $stm = $conn->prepare($sql);
-        $stm->bindParam(':idPaginaDado', $pagina->idPaginaDado);
-        $stm->bindParam(':valorPaginaTexto', $pagina->valorPaginaTexto);
+        $stm->bindParam(':idPaginaDado', $paginaDado->idPaginaDado);
+        $stm->bindParam(':valorPaginaTexto', $paginaDado->valorPaginaDado);
         $stm->execute();
-
-        $pagina->idPaginaTexto = $conn->lastInsertId();
 
         return $stm->rowCount() > 0;
     }
 
-    function Update(PaginaTexto &$paginaTexto)
+    function Update(PaginaDado &$paginaDado)
     {
         $conn = $this->db->getConnection();
 
@@ -66,15 +64,31 @@ class PaginaTextoRepository extends BaseRepository
                 SET 
                     valor_pagina_texto = :valorPaginaTexto
                 WHERE 
-                    id_pagina_texto = :idPaginaTexto';
+                    id_pagina_dado = :idPaginaTexto';
 
         $stm = $conn->prepare($sql);
-        $stm->bindParam(':valorPaginaTexto', $paginaTexto->valorPaginaTexto);
-        $stm->bindParam(':idPaginaTexto', $paginaTexto->idPaginaTexto);
+        $stm->bindParam(':valorPaginaTexto', $paginaDado->valorPaginaDado);
+        $stm->bindParam(':idPaginaTexto', $paginaDado->idPaginaDado);
         $stm->execute();
 
         return $stm->rowCount() > 0;
     }
+
+	function InsertOrUpdate(PaginaDado &$paginaDado) {
+		$conn = $this->db->getConnection();
+
+		$sql = 'SELECT * FROM tb_pagina_texto WHERE id_pagina_dado = :idPaginaDado ';
+
+		$stm = $conn->prepare($sql);
+		$stm->bindParam(':idPaginaDado', $paginaDado->idPaginaDado);
+		$stm->execute();
+
+		if ($stm->rowCount() > 0) {
+			$this->Update($paginaDado);
+		} else {
+			$this->Insert($paginaDado);
+		}
+	}
     
     function Delete($idPaginaTexto)
     {
