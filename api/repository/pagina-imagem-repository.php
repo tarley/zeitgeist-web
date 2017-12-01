@@ -8,7 +8,7 @@ class PaginaImagemRepository extends BaseRepository
         $conn = $this->db->getConnection();
 
         $sql = 'SELECT 
-                id_pagina_imagem, id_pagina_dado, valor_pagina_imagem
+                id_pagina_imagem, id_pagina_dado, valor_pagina_imagem_64
             FROM 
                 tb_pagina_imagem
             WHERE 
@@ -27,7 +27,7 @@ class PaginaImagemRepository extends BaseRepository
         $conn = $this->db->getConnection();
 
         $sql = 'SELECT 
-                id_pagina_dado, tipo, valor_pagina_imagem
+                id_pagina_dado, tipo, valor_pagina_imagem_64
             FROM 
                 tb_pagina_imagem
             WHERE 
@@ -45,7 +45,7 @@ class PaginaImagemRepository extends BaseRepository
     {
         $conn = $this->db->getConnection();
 
-        $sql = 'INSERT INTO tb_pagina_imagem (id_pagina_dado, valor_pagina_imagem) VALUES (:idPaginaDado, :valorPaginaImagem)';
+        $sql = 'INSERT INTO tb_pagina_imagem (id_pagina_dado, valor_pagina_imagem_64) VALUES (:idPaginaDado, :valorPaginaImagem)';
 
         $stm = $conn->prepare($sql);
         $stm->bindParam(':idPaginaDado', $paginaDado->idPaginaDado);

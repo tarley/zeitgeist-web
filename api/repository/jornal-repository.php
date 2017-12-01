@@ -68,7 +68,7 @@ class JornalRepository extends BaseRepository
             		WHERE
             		    p.num_pagina = 1 AND
                         jn.id_jornal = J.id_jornal
-            	) as valor_pagina_imagem
+            	) as valor_pagina_imagem_64
             FROM 
                 tb_jornal J INNER JOIN tb_situacao S ON(J.id_situacao=S.id_situacao)
             WHERE

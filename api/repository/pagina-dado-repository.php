@@ -61,8 +61,8 @@ class PaginaDadoRepository extends BaseRepository
                 id_pagina_dado, id_pagina, pd.id_template_dado, td.chave_template_dado,
                 CASE
                     WHEN td.id_tipo_template_dado = 1 THEN ps.valor_pagina_string
-                    WHEN td.id_tipo_template_dado = 2 THEN pi.valor_pagina_imagem
-                    WHEN td.id_tipo_template_dado = 3 THEN pt. valor_pagina_texto
+                    WHEN td.id_tipo_template_dado = 2 THEN pt.valor_pagina_texto
+                    WHEN td.id_tipo_template_dado = 3 THEN pi.valor_pagina_imagem_64
                 END AS ValorMetadado
             FROM 
                 tb_pagina_dado pd

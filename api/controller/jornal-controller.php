@@ -180,8 +180,7 @@ class JornalController extends BaseController
                 } elseif($dado['id_tipo_template_dado'] == 3) {
                     $imagem = $paginaImagemRepository->Get($dado['id_pagina_dado']);
                     
-                    $valor = 'data:image/' . $imagem['tipo'] . ';base64, ' . 
-                        base64_encode($imagem['valor_pagina_imagem']);
+                    $valor = $imagem['valor_pagina_imagem_64'];
                 } else
                     $valor = null;
                      
@@ -231,8 +230,7 @@ class JornalController extends BaseController
                     } elseif($dado['id_tipo_template_dado'] == 3) {
                         $imagem = $paginaImagemRepository->Get($dado['id_pagina_dado']);
                         
-                        $valor = 'data:image/' . $imagem['tipo'] . ';base64, ' . 
-                            base64_encode($imagem['valor_pagina_imagem']);
+                        $valor = $imagem['valor_pagina_imagem_64'];
                     } else
                         $valor = null;
                          

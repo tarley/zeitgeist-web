@@ -101,8 +101,8 @@ class Jornal
         if (array_key_exists("desc_situacao", $dbArray))
             $this->descSituacao = $dbArray['desc_situacao'];
             
-        if (array_key_exists("valor_pagina_imagem", $dbArray))
-            $this->valorPaginaImagem = $dbArray['valor_pagina_imagem'];
+        if (array_key_exists("valor_pagina_imagem_64", $dbArray))
+            $this->valorPaginaImagem = $dbArray['valor_pagina_imagem_64'];
             
 //        $this->paginas = array();
 //

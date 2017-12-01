@@ -42,7 +42,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    border: 2px solid rgba(255, 255, 255, 0.5);
+    border: 2px solid rgba(148, 148, 148, 1);
     transition: border-color .15s, -webkit-transform .15s;
     transition: transform .15s, border-color .15s;
     transition: transform .15s, border-color .15s, -webkit-transform .15s
@@ -51,14 +51,14 @@
 .avatar-wrapper:hover::after {
     -webkit-transform: scale(1.2);
     transform: scale(1.2);
-    border-color: #42c4ac;
+    border-color: #585858;
     transition: border-color 0.2s, -webkit-transform 0.2s cubic-bezier(0.06, 0.59, 0.24, 1.55);
     transition: transform 0.2s cubic-bezier(0.06, 0.59, 0.24, 1.55), border-color 0.2s;
     transition: transform 0.2s cubic-bezier(0.06, 0.59, 0.24, 1.55), border-color 0.2s, -webkit-transform 0.2s cubic-bezier(0.06, 0.59, 0.24, 1.55)
 }
 
 .team .divider {
-    margin: 40px 0 80px
+    margin: 0px 0 40px;
 }
 
 .team .avatar-wrapper {
@@ -91,7 +91,7 @@
 }
 
 .team .avatar-name {
-    margin-top: 5px;
+    margin: 20px 0;
     display: block;
     text-align: center
 }
