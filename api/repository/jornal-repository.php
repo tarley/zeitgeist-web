@@ -147,7 +147,9 @@ class JornalRepository extends BaseRepository
                    u.nom_usuario,
                    u.email_usuario
               FROM tb_jornal j 
-        INNER JOIN tb_usuario u ON u.id_usuario = j.id_usuario';
+        INNER JOIN tb_usuario u ON u.id_usuario = j.id_usuario
+        WHERE id_situacao = 2
+        ORDER BY dta_publicacao_jornal DESC';
 
 
         $stm = $conn->prepare($sql);
