@@ -23,6 +23,14 @@ class UsuarioController extends BaseController
                     $data = file_get_contents("php://input");
                     $this->ActionUpdate($data);
                     break;
+				case "inactivate":
+					$data = file_get_contents("php://input");
+					$this->ActionChangeStatus($data, 1);
+					break;
+				case "activate":
+					$data = file_get_contents("php://input");
+					$this->ActionChangeStatus($data, 0);
+					break;
                 case "login":
                     $data = file_get_contents("php://input");
                     $this->ActionLogin($data);
@@ -100,6 +108,25 @@ class UsuarioController extends BaseController
 
         ToWrappedJson($usuario, "Dados atualizados com sucesso");
     }
+
+	function ActionChangeStatus($data, $status)
+	{
+		if (!$data) {
+			throw new Warning("Os dados enviados são inválidos");
+		}
+
+		$obj = json_decode($data);
+
+		$usuario = new Usuario();
+		$usuario->FillByObject($obj);
+
+		$usuarioRepository = new UsuarioRepository();
+		$usuarioRepository->ChangeStatus($usuario, $status);
+
+		$msg = ($status == 1) ? "Usuário inativado com sucesso" : "Usuário ativado com sucesso";
+
+		ToWrappedJson($usuario, $msg);
+	}
 
     function ActionLogin($data)
     {

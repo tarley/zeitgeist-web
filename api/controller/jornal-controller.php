@@ -24,6 +24,10 @@ class JornalController extends BaseController
                     $data = file_get_contents("php://input");
                     $this->ActionUpdate($data);
                     break;
+				case "delete":
+					$data = file_get_contents("php://input");
+					$this->ActionDelete($data);
+					break;
                  case "get":
                     $idJornal = isset($_GET['key']) ? $_GET['key'] : null;
                     $this->ActionGetThis($idJornal);
@@ -267,7 +271,21 @@ class JornalController extends BaseController
 
         ToWrappedJson($jornal, "Dados atualizados com sucesso");
     }
-    
+
+	function ActionDelete($data)
+	{
+		if (!$data) {
+			throw new Warning("Os dados enviados são inválidos");
+		}
+
+		$obj = json_decode($data);
+
+		$jornalRepository = new JornalRepository();
+		$jornalRepository->Delete($obj->idJornal);
+
+		ToWrappedJson("", "Jornal excluido com sucesso");
+	}
+
     function ActionSubirPagina($idPagina)
     {
         $jornalRepository = new JornalRepository();

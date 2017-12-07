@@ -60,8 +60,8 @@ class JornalRepository extends BaseRepository
         $conn = $this->db->getConnection();
 
         $sql = 'SELECT 
-               id_jornal,S.id_situacao,S.desc_situacao,num_edicao_jornal,nom_titulo_jornal, dta_publicacao_jornal, date_format(dta_publicacao_jornal, "%m/%Y") AS dta_publicacao_jornal_reduzida, "%d/%m/%Y",dta_ultima_atualizacao_jornal,
-            	(SELECT pi.valor_pagina_imagem_64 FROM tb_pagina_imagem pi
+               id_jornal,S.id_situacao,S.desc_situacao,num_edicao_jornal,nom_titulo_jornal, dta_publicacao_jornal, date_format(dta_publicacao_jornal, "%m/%Y") AS dta_publicacao_jornal_reduzida, dta_ultima_atualizacao_jornal,
+				(SELECT pi.valor_pagina_imagem_64 FROM tb_pagina_imagem pi
             		INNER JOIN tb_pagina_dado pd ON (pi.id_pagina_dado = pd.id_pagina_dado)
             		INNER JOIN tb_pagina p ON (pd.id_pagina = p.id_pagina)
             		INNER JOIN tb_jornal jn ON (p.id_jornal = jn.id_jornal)
@@ -159,7 +159,6 @@ class JornalRepository extends BaseRepository
         return $result;
     }
  
- /*    function Update(Jornal &$jornal)*/
     function Update(Jornal &$jornal)
     {
         $conn = $this->db->getConnection();
@@ -185,6 +184,22 @@ class JornalRepository extends BaseRepository
 
         return $stm->rowCount() > 0;
     }
+
+	function Delete($idJornal)
+	{
+		$conn = $this->db->getConnection();
+
+		$paginaRep = new PaginaRepository();
+		$paginaRep->DeleteAllByJornal($idJornal);
+
+		$sql = 'DELETE FROM tb_jornal WHERE id_jornal = :id_jornal';
+
+		$stm = $conn->prepare($sql);
+		$stm->bindParam(':id_jornal', $idJornal);
+		$stm->execute();
+
+		return $stm->rowCount() > 0;
+	}
 
     function SubirPagina($idPagina)
     {

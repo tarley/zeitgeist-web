@@ -15,6 +15,9 @@
 </head>
 
 <body ng-app="ZeitGeist" ng-controller="MainCtrl as main">
+	<div class="loader" ng-show="loading">
+		<img src="assets/images/z.png">
+	</div>
     <div class="header grey darken-1 valign-wrapper">
         <img class="logo" src="assets/images/logo-zeitgeist.png" />
         <div class="right-nav">
@@ -34,7 +37,7 @@
                 <span>Jornal</span>
             </a>
             </li>
-            <li>
+            <li ng-if="globals.currentUser.role == '1'">
                 <a href="#!/usuario">
                 <span>Usuário</span>
             </a>

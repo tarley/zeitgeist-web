@@ -69,6 +69,28 @@ ul.side-bar li a:hover {
     background-color: #a7a7a7;
 }
 
+.loader {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	background-color: rgba(0,0,0, 0.6);
+	z-index: 2000;
+	top: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.loader img {
+	-webkit-animation:spin 2.5s linear infinite;
+	-moz-animation:spin 2.5s linear infinite;
+	animation:spin 2.5s linear infinite;
+}
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
 .dropdown-content li>a {
 	color: #636363;
 }
@@ -187,8 +209,6 @@ a.profile {
 	margin: 0;
 }
 
-
-
 .login-container {
 	margin-right: 20%;
 	display: flex;
@@ -196,37 +216,12 @@ a.profile {
 	padding-top: 50px;
 }
 
-/* ini new login*/
+.card.horizontal {
+	height: 350px;
+	overflow: hidden;
+}
 
-
-/*TODO: Mover CSS de login para outro arquivo de estilo */
-/*body {*/
-      /*display: flex;*/
-      /*min-height: 100vh;*/
-      /*flex-direction: column;*/
-    /*}*/
-
-    /*main {*/
-      /*flex: 1 0 auto;*/
-    /*}*/
-
-    /*!*body {*!*/
-      /*!*background: #fff;*!*/
-    /*!*}*!*/
-
-    /*.input-field input[type=date]:focus + label,*/
-    /*.input-field input[type=text]:focus + label,*/
-    /*.input-field input[type=email]:focus + label,*/
-    /*.input-field input[type=password]:focus + label {*/
-      /*color: #e91e63;*/
-    /*}*/
-
-    /*.input-field input[type=date]:focus,*/
-    /*.input-field input[type=text]:focus,*/
-    /*.input-field input[type=email]:focus,*/
-    /*.input-field input[type=password]:focus {*/
-      /*border-bottom: 2px solid #e91e63;*/
-      /*box-shadow: none;*/
-    /*}*/
-
-/*end new login*/
+.card-action {
+	display: flex;
+	justify-content: space-around;
+}

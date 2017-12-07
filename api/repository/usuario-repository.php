@@ -27,7 +27,7 @@ class UsuarioRepository extends BaseRepository
         $conn = $this->db->getConnection();
 
         $sql = 'SELECT 
-                id_usuario, nom_usuario, email_usuario 
+                id_usuario, nom_usuario, email_usuario, inativo_usuario
             FROM 
                 tb_usuario';
 
@@ -81,6 +81,23 @@ class UsuarioRepository extends BaseRepository
         return $stm->rowCount() > 0;
     }
 
+    function ChangeStatus(Usuario &$usuario, $status)
+    {
+        $conn = $this->db->getConnection();
+
+        $sql = 'UPDATE tb_usuario SET inativo_usuario = 1 WHERE id_usuario = :idUsuario';
+
+		if ($status == 0) {
+			$sql = 'UPDATE tb_usuario SET inativo_usuario = 0 WHERE id_usuario = :idUsuario';
+		}
+
+        $stm = $conn->prepare($sql);
+        $stm->bindParam(':idUsuario', $usuario->idUsuario);
+        $stm->execute();
+
+        return $stm->rowCount() > 0;
+    }
+
     function Login(Usuario &$usuario)
     {
         $conn = $this->db->getConnection();
@@ -93,9 +110,11 @@ class UsuarioRepository extends BaseRepository
                        u.senha_usuario,
                        u.id_perfil_usuario,
                        p.nome_perfil
-                  FROM tb_usuario u
-                INNER JOIN tb_perfil_usuario p ON p.id_perfil_usuario = u.id_perfil_usuario
-                 WHERE email_usuario = :login
+			  	FROM tb_usuario u
+					INNER JOIN tb_perfil_usuario p ON p.id_perfil_usuario = u.id_perfil_usuario
+				WHERE 
+					email_usuario = :login AND
+					inativo_usuario = 0
                ';
 
         $stm = $conn->prepare($sql);

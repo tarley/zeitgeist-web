@@ -148,6 +148,27 @@ class PaginaRepository extends BaseRepository
 		return $result;
     }
 
+    function DeleteAllByJornal($idJornal) {
+		$conn = $this->db->getConnection();
+
+		$sql = "SELECT id_pagina FROM tb_pagina WHERE id_jornal = :idJornal";
+		$stm = $conn->prepare($sql);
+		$stm->bindParam(':idJornal', $idJornal);
+		$stm->execute();
+		$listaPagina = $stm->fetchAll(PDO::FETCH_ASSOC);
+
+		$paginaDadoRep = new PaginaDadoRepository();
+
+		foreach ($listaPagina as $pagina) {
+			$paginaDadoRep->DeleteAllByPage($pagina["id_pagina"]);
+		}
+
+		$sql = 'DELETE FROM tb_pagina WHERE id_jornal = :idJornal';
+		$stm = $conn->prepare($sql);
+		$stm->bindParam(':idJornal', $idJornal);
+		$stm->execute();
+	}
+
     function UpdatePageNum(Pagina $pagina) {
 		$conn = $this->db->getConnection();
 

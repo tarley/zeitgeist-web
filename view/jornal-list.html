@@ -1,4 +1,4 @@
-<div ng-init="initListage()">
+<div ng-init="initList()">
     <div class="row">
         <div class="col s7">
 			<div class="page-title">Edições</div>
@@ -20,24 +20,23 @@
     </div>
 
     <div class="row">
-        <div class="col l4 m6" ng-repeat="j in jornalList">
+        <div class="col l4 m6 s12" ng-repeat="j in jornalList">
             <div class="card horizontal">
-                <div ng-if="j.valorPaginaImagem != '' " class="card-image">
-                    <img src='{{j.valorPaginaImagem}}' />
-                </div>
-                <div ng-if="j.valorPaginaImagem == '' " class="card-image">
-                    <img class="tamanhoImagem" src= '../assets/images/sem-imagem.png' ng-click="goJornal(j.idJornal)" />
+                <div  class="card-image">
+                    <img class="action" src='{{j.valorPaginaImagem}}' ng-if="j.valorPaginaImagem != '' && j.valorPaginaImagem != null" ng-click="goJornal(j.idJornal)" />
+					<img class="tamanhoImagem action" src= 'assets/images/sem-imagem.png' ng-if="j.valorPaginaImagem == '' || j.valorPaginaImagem == null" ng-click="goJornal(j.idJornal)" />
                 </div>
                 <div class="card-stacked">
                     <div class="card-content">
-                        <h6>N° {{j.numEdicaoJornal}}</h6>
-                        <h6>{{j.dtaPublicacaoJornalReduzida}}</h6>
+                        <h4>Jornal N° {{j.numEdicaoJornal}}</h4>
+                        <h5>{{j.dtaPublicacaoJornalReduzida}}</h5>
                         <h6>{{j.descSituacao}}</h6>
                     </div>
                     <div class="card-action">
                         <!--<a href="../jornal-view/{{j.idJornal}}">Visualizar</a>-->
                         <i class="small material-icons action" title="Editar" ng-click="goJornal(j.idJornal)">create</i>
-                        <i class="small material-icons action" title="Publicar" ng-click="publicarJornal(j.idJornal)" ng-hide={{j.publicado}} style="margin-left: 30px;">cloud_upload</i>
+                        <i class="small material-icons action" title="Publicar" ng-click="publicarJornal(j.idJornal)" ng-hide={{j.publicado}}>cloud_upload</i>
+                        <i class="small material-icons action" title="Excluir" ng-click="excluirJornal(j.idJornal)">delete</i>
                     </div>
                 </div>
             </div>
